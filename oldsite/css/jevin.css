@@ -1,0 +1,597 @@
+/* CSS for jevinwest.org */
+
+html, body {
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ 
+
+body {
+	font: 12px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	background-color: #E2DEED;
+}
+
+
+p {
+	text-align: justify;
+	margin-top: 0em;
+	margin-bottom: 1em;
+	line-height: 16px;
+}
+	
+
+a {
+    color: #6D28A0;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+a:hover {
+    color: #EF9615;
+}
+
+a:visited {
+	color: #6D28A0;
+}	
+	
+
+/* paper titles */
+.papers {
+	font-weight: bold;
+	color: #333333;
+}
+
+.papers a:link {
+	color: #333333;
+}
+
+.papers a:visited {
+	color: #333333;
+}
+	
+.papers a:hover {
+	color: #EF9615;
+}
+
+
+
+/*container and main headers*/
+
+#container {
+    min-height: 100%;
+    height: auto; 
+    margin: 0 auto;
+    width: 724px;
+    position: relative;
+    background: #fff;
+	border-style:solid;
+	border-color: #AAAAAA;
+	border-width: 0px 2px 2px 2px;
+}
+	
+
+#initials {
+	background-image: url(../images/jw.png);
+	float: right;
+	width: 55px;
+	height: 36px;
+}
+	
+
+#mainHeader {
+	background: #fff;
+	font:Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #333333;
+	height: 70px;
+	padding-top: 55px;
+	margin-left: 44px;
+}
+
+#mainHeader a {
+	color: #333333; 
+}
+
+#mainHeader a:hover {
+    color: #EF9615;
+}
+
+
+
+/*navigation bar*/
+
+#navbar {
+	margin-top: -10px;
+	margin-left: 40px;
+	height: 35px;
+	
+	font-size: 14px;
+	font-weight:bold;
+
+	border-style:solid;
+    border-color: #AAAAAA;
+	border-width: 3px 3px 3px 3px;
+	
+	margin-right: 44px;
+}
+
+#navbar ul {
+	white-space: nowrap;
+	margin-left: -18px;
+}
+	
+
+#navbar li.list1 {
+	list-style-type: none;
+	display: inline;
+}
+	
+#navbar li.list2 {
+	list-style-type: none;
+	display: inline;
+	
+	border-style: solid;
+	border-color: #AAAAAA;
+	border: 1px 1px 1px 1px;
+	background-color: #E2DEED;
+}
+
+
+
+#navbar li {	
+	padding: 3px 10px 3px 10px;
+}
+
+#navbar li a:link {
+	color: #333333;
+}
+
+#navbar li a:visited {
+	color: #333333;
+}
+	
+#navbar li a:hover {
+	color: #EF9615;
+}
+
+
+
+/*footer*/
+
+#footer {
+	margin-right: 75px;
+	color: #474747;
+    text-align: center;
+    line-height: 26px;
+    font-size: 11px; 
+    clear: both;
+    padding-top: 70px;  
+}
+   
+/*display the list on one line and put some space between elements*/	
+#footer li {
+   display: inline;
+}
+     
+
+
+
+
+/* individual page content */
+
+
+/* homepage contents */
+
+section {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+#homeimage-section {
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin-left:36px;
+}
+
+#summary-section {
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right:26px;
+    height: 200px;
+}
+
+#homeImage {
+	background-image: url(../images/JevinWest.jpg);
+	margin-top: 20px;
+	width: 140px;
+	height: 158px;
+	border-style: solid;
+	border-color: #D8D8D8;	
+	border: 1px 1px 1px 1px;
+}
+
+#summary {
+	margin-left: 30px;
+}
+
+#summary p {
+	margin-right: 20px;
+	line-height: 1.5;
+}
+
+
+/* projects */
+section#projects {
+	margin-top: 20px;
+}
+
+#projects-1 {
+    height: 200px;
+    float: left;
+}
+#projects-2 {
+	height: 200px;
+	float: left;
+    margin-left: 2%;   
+}
+#projects-3 {
+	height: 200px;
+	float: left;
+    margin-left: 2%;   
+}
+
+section#projects img {
+	width: 200px;
+	height: 160px;
+	border-style: solid;
+	border-color: #D8D8D8;
+	border: 1px 1px 1px 1px;
+}
+
+
+/* announcements */
+
+.announce1 {
+	float: left;
+	border: thin solid #E8E8E8;
+	margin-left: 37px;
+	width: 450px;
+	padding-right: 10px;
+	margin-top: 30px;
+	height: auto;
+	background-color: #EEEEEE;
+}
+
+.announce1 li {
+	list-style-type: square;
+   	margin-top: 0.6em;
+   	margin-bottom: 0.6em;
+   	line-height: 1.5;
+}
+
+.announce1 ul {
+   margin-left: -15px;
+}
+
+.announce1:after {
+	clear: both;
+	display: block;
+}
+
+.announce2 {
+	float: left;
+	margin-left: 30px;
+	width: 120px;
+	padding: 5px;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-weight:bold;
+	color: #333333;
+}
+
+.announce2 a:link {
+	color: #333333;
+}
+
+.announce2 a:visited {
+	color: #333333;
+}
+	
+.announce2 a:hover {
+	color: #EF9615;
+}
+
+.announce2:after {
+	clear: both;
+/*	display: block;*/
+}
+
+
+
+
+
+/* CV Page */
+			
+.contact1 {
+    margin-left: 100px;
+    float: left;
+}
+
+.contact2 {
+    margin-left: 400px;
+}
+
+.grant {
+	margin: 10px 100px 20px 70px;
+}
+
+
+
+/*bio page contents*/
+
+/*#bioImage
+	{
+	background-image: url(images/EFnet.png);
+	margin-top: 20px;
+	margin-left: 55px;
+	width: 614px;
+	height: 202px;
+	}
+*/
+
+
+/* Teaching */
+
+.courses {
+	margin-left: 55px;
+}
+
+/*.courses ul {
+	margin-left: 40px;
+	list-style-type: none;
+}
+	
+.courses span {
+	margin-left: 30px;
+}	
+
+.courses li{
+  margin: 4px 0;
+}*/
+
+.courses td {
+    padding-left: 20px;
+}
+
+
+/*.courses a:link {
+	color: #333333;
+}
+
+.courses a:visited {
+	color: #333333;
+}
+	
+.courses a:hover {
+	color: #EF9615;
+}*/
+
+
+
+
+
+/*Misc*/
+
+
+/* publications lines and titles */
+
+.publicationTitle {
+	margin-top: 30px;
+	margin-bottom: 8px;
+	margin-left: 105px;
+	font-size: 18px;
+/*	color: #6F359E;*/
+	color: #333333;
+	font-weight: bold;
+
+}
+
+.publicationLine {
+	margin-left: 103px;
+	margin-right: 110px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-top: 1px;
+}
+
+/* research lines and titles */
+
+.researchTitle {
+	margin-top: 30px;
+	margin-bottom: 8px;
+	margin-left: 62px;
+	font-size: 18px;
+	color: #333333;
+	font-weight: bold;
+
+}
+
+.researchLine {
+	margin-left: 60px;
+	margin-right: 70px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-top: 1px;
+	margin-bottom: 10px;
+}
+
+
+.researchContent {
+	margin-left: 65px;
+	margin-right: 70px;
+}
+
+
+.researchBox1 {
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+
+.researchBox2 {
+	margin-top: 30px;
+    margin-left: 20px;
+    height: 200px;
+}
+
+
+
+/* Class information for displaying citations */
+
+.article {
+	margin: 10px 110px 20px 107px;
+/*	font-size: 14px;*/
+}
+
+.title {display: block; font-weight: bold;}
+.authors {display: block;}
+.citation {display: block;}
+.journal {font-style: italic;}
+.journal-poster {font-style: italic;}
+.journal-poster a {color: #000000;
+	font-weight:normal;}
+.journal-poster a:hover {color: #EF9615;}
+.journal-poster a:visited {color: #000000;}
+
+.volume {font-style: normal;}
+.publisher {font-style: normal;}
+.pdflink {display: inline;}
+a.pdflink {font-size: 12px;text-decoration: none;}
+
+.more {
+	display: none;
+}	
+a.showLink, a.hideLink {
+	font-size:12px;
+	display: inline; 
+}
+a.showLink:hover, a.hideLink:hover { }
+
+.abstract-display {
+	font-size: 12px;
+	text-align: justify;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+.bibtex-display {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+/* title links */
+.title a{
+	background-color: #ffffff;
+	text-decoration: none;
+	color: #33333;
+}
+
+.title a:visited {
+	color: #333333;
+}
+
+.title a:hover {
+	color: #307082;
+	text-decoration: underline;
+}
+
+.title a:active {
+	color: #333333;
+}
+
+
+.name {
+	color: #444444;
+	display: inline;
+	font-weight: bold;
+}
+
+
+
+/* Presentations */
+
+div.pres {
+	margin: 10px 70px 20px 107px;
+}
+
+div.pres_year {
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: -30px;
+	font-size: 16px;
+	color: #307082;
+}
+
+.presLine {
+	margin-left: 103px;
+	margin-right: 70px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-top: 1px;
+}
+
+
+.conf {
+	display: block;
+}
+
+.conf a:link {
+	color: #333333;
+}
+
+.conf a:visited {
+	color: #333333;
+}
+	
+.conf a:hover {
+	color: #EF9615;
+}
+
+.conf2 {
+	display: block;
+}
+
+
+
+
+
+/* News Table */
+
+div.news {
+	margin-left: 110px;
+	margin-top: 15px;
+	margin-right: 110px;
+}
+
+
+
+/* Class collaborators */
+
+div.collaborate
+	{
+	margin-left: 55px;
+	margin-top: 20px
+	}
+
+a.collaboration
+	{
+	text-decoration: none;
+	font-weight:bold;
+	}
+

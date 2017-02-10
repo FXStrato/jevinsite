@@ -1,0 +1,25 @@
+{
+  "name": "jevinsite",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.16.7",
+    "materialize-css": "^0.98.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-materialize": "^0.18.1",
+    "react-router": "^3.0.2",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

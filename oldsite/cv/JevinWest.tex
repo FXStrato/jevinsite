@@ -1,0 +1,740 @@
+
+% Jevin West
+% Curriculum Vitae
+
+
+\documentclass[11pt]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+%\bibliographystyle{apa}
+
+
+% % hyperlinks
+% \usepackage{hyperref}
+
+% this CV style was inspired by Christina Bergey from NYU (http://christinabergey.com/blog/2012/10/preparing-an-academic-cv-in-latex-using-mendeley/)
+
+
+% Palatino font
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+\def\name{Jevin D. West}
+
+\reversemarginpar
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+\bibliographystyle{apalike}
+
+% Print name centered and bold:
+{\LARGE \bf \name}
+
+% vertical space
+\vspace{2mm}
+
+% horizontal line
+\line(1,0){460}
+
+% vertical space
+\vspace{5mm}
+
+% contact information
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    Assistant Professor \\
+    \href{https://ischool.uw.edu}{Information School} \\
+    \href{http://www.washington.edu/}{University of Washington} \\
+    Box 352840, Seattle, WA, 98195
+  \end{tabular}
+\end{minipage}
+\begin{minipage}{0.40\linewidth}
+  \begin{tabular}{ll}
+  Email: & \href{mailto:jevinw@uw.edu}{jevinw@uw.edu} \\
+  Web: & \href{http://jevinwest.org/}{jevinwest.org} \\
+  Lab: & \href{https://datalab.ischool.uw.edu}{datalab.ischool.uw.edu} \\
+  Phone: & (206) 543-2646
+  \end{tabular}
+\end{minipage}
+
+
+
+
+
+% vertical space
+\vspace{5mm}
+
+
+
+% Professional Experience
+\section*{\textbf{Academic Positions}}
+
+\begin{tabular}{ll}
+	2013 -  & Assistant Professor, Information School, Univ. of Washington \\
+	2014 -  & Data Science Fellow, eScience Institute, Univ. of Washington \\
+	2014 -  & Affiliate Faculty, Center for Statistics \& Social Sciences, Univ. of Washington \\
+\end{tabular}
+
+
+
+% Research Areas
+\section*{\textbf{Research}}
+
+
+\textit{Science of Science, Scholarly Communication, Big Scholarly Data, Digital Humanities}
+
+\vspace{4mm}
+
+I study the \textit{Science of Science}. I develop methods for tracking the origin and evolution of ideas and disciplines. My laboratory is the vast network of scholarly papers. I engineer \textit{knowledge discovery} tools to both study science and facilitate science. These tools include interactive maps and recommendation algorithms. I use these tools to study the sociological and economic factors that drive and slow science. My goal is to help scientists and their computer compatriots read the literature, find relevant papers, generate new hypotheses, and maximize the problem-solving capabilities of science for the betterment of society. 
+
+
+
+% Education
+\section*{\textbf{Education}}
+
+\begin{tabular}{ll}
+	2011 - 2012 & Postdoc, Department of Physics, Umea Unviersity, Sweden \\
+	2005 - 2010 & Ph.D., Department of Biology, University of Washington \\
+	1996 - 2004 & B.S., M.S., Department of Biology, Utah State University \\
+\end{tabular}
+
+
+% set vertical space for tables
+\setlength{\extrarowheight}{10pt}
+
+
+%% Publications
+\section*{\textbf{Publications}}
+
+% Peer-Review Journals
+\subsection*{\textbf{Peer-Review Journals}}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2017  & \bibentry{Hiniker2017jasist} \\
+  2016  & \bibentry{Lee2016arxiv} \\
+        & \bibentry{Aulck2016transfers} \\
+        % & \bibentry{King2016} \\
+        % & \bibentry{Torrance2016} \\
+        & \bibentry{Larsen2015} \\
+        & \bibentry{Althouse2016measles} \\
+        & \bibentry{Nahum2016alife} \\
+        & \bibentry{Bae2016tkdd} \\
+        & \bibentry{West2016IEEE} \\
+  2015  & \bibentry{Sugimoto2015PlosOne} \\
+  2014  & \bibentry{West2014EconInquiry} \\
+        & \bibentry{Rosvall2014NatureCom} \\
+        & \bibentry{Vilhena2014SocScience} \\
+  2013  & \bibentry{West2013JASIST} \\
+        & \bibentry{West2013PlosOne} \\	
+  2010  & \bibentry{West2010CRL} \\
+        & \bibentry{West2010JASIST} \\
+  2009  & \bibentry{Althouse2009JASIST} \\
+  	    & \bibentry{Prado2009JTheorBiol} \\
+  2005  & \bibentry{West2005PCE} \\
+  2004  & \bibentry{Peak2004PNAS} \\
+\end{longtable}
+
+
+% Peer-Review Conferences
+\subsection*{\textbf{Peer-Review Conferences}}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2016  & \bibentry{West2016JCDL} \\
+  		  & \bibentry{Aulck2016ICML} \\
+  		  & \bibentry{wesleysmith2016babel} \\
+        & \bibentry{Lee2016www} \\
+        & \bibentry{Portenoy2016www} \\
+  2015  & \bibentry{WesleySmith2015EurInfoRetr} \\
+  2014  & \bibentry{Larsen2014HICSS} \\
+  		  & \bibentry{West2014ASIST} \\
+  2013  & \bibentry{Bae2013IEEE} \\
+        & \bibentry{Brooks2013Interact} \\
+        & \bibentry{Milojevic2013asist} \\
+  2011  & \bibentry{West2011Complex} \\
+\end{longtable}
+
+
+
+%% Journals invited
+\subsection*{\textbf{Journals Invited}}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}	
+  2016 & \bibentry{West2016jics} \\
+  2011 & \bibentry{West2011Science} \\
+  2010 & \bibentry{West2010Nature} \\
+       & \bibentry{West2010JASIST-2} \\
+  2009 & \bibentry{West2009AmSocBiochem} \\
+  2008 & \bibentry{Bergstrom2008Neurology} \\
+       & \bibentry{Bergstrom2008JNeuroscience} \\
+       & \bibentry{West2008FrontMatter} \\
+\end{longtable}
+
+
+
+% Conferences
+\subsection*{\textbf{Peer-Reviewed Conferences}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2016 & \bibentry{WesleySmith2016wsdm} \\
+\end{longtable}
+
+
+
+% Book Chapters
+\subsection*{\textbf{Book Chapters}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2016 & \bibentry{West2016patents} \\
+  2015 & \bibentry{West2016goldrush} \\
+  2014 & \bibentry{West2014BeyondBiblio} \\
+  2008 & \bibentry{Kerr2008Bacteriophages} \\
+\end{longtable}
+
+
+
+
+
+% Theses
+\subsection*{\textbf{Theses}}
+\begin{longtable}{p{0.5in}|p{5.5in}}	
+  2010 & \bibentry{West2010Phd} \\
+  2004 & \bibentry{West2004Masters} \\
+\end{longtable}
+
+
+
+% Patents
+\subsection*{\textbf{Patents}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2015 & \bibentry{West2013Patent} \\
+\end{longtable}
+
+
+% Pseudocode
+\subsection*{\textbf{Pseudocode}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2008 & \bibentry{West2008pseudocodeAuthors} \\
+  	   & \bibentry{Bergstrom2008pseudocodeJournals} \\
+       & \bibentry{West2008pseudocodeJournals} \\
+\end{longtable}
+
+% Posters
+\subsection*{\textbf{Posters}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2016 	& \bibentry{chow2016} \\
+  		& \bibentry{Portenoy2016iconference} \\
+  2015 	& \bibentry{Wesley-Smith2015ischool} \\
+        & \bibentry{Portenoy2015ischool} \\
+        & \bibentry{Aulck2015ischool} \\
+        & \bibentry{West2015datalab} \\
+        % & \bibentry{Pradhan2015coursector} \\
+  2014	& \bibentry{Hong2014metaphor} \\
+  2009  & \bibentry{Nahum2009gordon} \\
+  2007  & \bibentry{West2007gordon} \\
+        & \bibentry{West2007teaching} \\
+  2006  & \bibentry{West2006evowibo} \\
+  2005  & \bibentry{West2005plant} \\
+  2004  & \bibentry{West2004complex} \\
+        & \bibentry{West2004aaas} \\
+  2003  & \bibentry{West2003santafe} \\
+  2001  & \bibentry{West2001usu} \\
+
+\end{longtable}
+
+
+
+
+
+
+% vertical space
+\vspace{5mm}
+
+
+%%%% Presentations  
+\section*{\textbf{Presentations}}
+
+\setlength{\extrarowheight}{8pt}
+
+% Invited Talks
+\subsection*{\textbf{Invited Talks}}
+
+%\begin{longtable}{p{0.5in}|p{5.5in}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  
+  2016	
+  		& Plenary. The Science of Science. \textit{\href{http://159.226.100.150:8084/cjlis/EN/column/item157.shtml}{International Conference on “Data-driven Discovery: Data Science Meets Information Science}.} Fred Hutchinson Cancer Institute Annual Retreat, Grand Hyatt, Seattle, WA (Sept 12) \\
+
+      & Plenary. Ranking and Mapping Science. \textit{\href{http://159.226.100.150:8084/cjlis/EN/column/item157.shtml}{International Conference on “Data-driven Discovery: Data Science Meets Information Science}.} National Science Library, Chinese Academy of Sciences, Beijing, China (June 20) \\
+
+  		% & Ranking and Mapping Science. Wuhan University, Wuhan, China (June 17) \\
+
+  		% & Ranking and Mapping Science. Tsinghua University, Beijing, China (June 16) \\
+
+  		% & Ranking and Mapping Science. Shanghai Jiao Tong University, Shanghai, China (June 14) \\
+
+  		& Measuring and Messaging Research Outcomes. \textit{\href{https://www.healthra.org}{Health Research Alliance Annual Meeting}.} New York City, NY (April 1) \\
+
+  		& Measuring the translational lag from scientific publications to patents. \textit{\href{http://icss.ist.psu.edu}{International Symposium on Science of Science}.} Library of Congress, Washington, DC (March 23) \\
+
+  		& Static Ranking of Scholarly Papers using Article-Level Eignefactor (ALEF). \textit{\href{https://wsdmcupchallenge.azurewebsites.net/Home/Workshop}{WSDM Cup 2016 - Entity Ranking Challenge Workshop}}. San Francisco, CA (Feb. 22) \\ 
+
+  		& Mapping the Emergence of Scientific Disciplines. \textit{\href{http://www2.yukawa.kyoto-u.ac.jp/~future/IS20160212/index.html}{International Symposium on Advanced Future Studies}.} Kyoto University, Japan (Feb. 12) \\
+
+  		& The Data Gold Rush in Science Education. \textit{\href{http://www.gsee-kyoto.kier.kyoto-u.ac.jp/GSEEKyoto2016_Program.html}{International Symposium on Advanced Future Studies}.} Kyoto University, Japan (Feb. 11) \\
+
+  		& \href{http://www.jevinwest.org/presentations/AI2_jevin_west.pdf}{Facilitating discovery with zoomable maps}. \textit{\href{http://www.gsee-kyoto.kier.kyoto-u.ac.jp/GSEEKyoto2016_Program.html}{Allen Institute for Artificial Intelligence}.} Seattle, WA (Feb. 4) \\
+
+
+  2015  
+
+  		& Mapping Knowledge Networks. \textit{\href{http://machinelearning.duke.edu/education/seminar-series}{Duke University Machine Learning Seminar Series}.} Durham, NC (Nov. 11) \\
+
+  		& Mapping the citation influence of the Pew Biomedical Scholars Program. \textit{Pew Biomedical Scholars Conference.} Grand Cayman, West Indies (Nov. 5) \\
+
+  		& Gender Differences in Scholarly Self Citation. \textit{Social-Personality Psychology Seminar.} University of Washington, (Oct. 22) \\
+
+  		& Plenary. Loosing sleep in a data-driven dream. \textit{Moore-Sloan Data Science Environment Summit.} Suncadia Resort, Cle Elem, WA (Oct. 5) \\
+
+  		& Data Cartography: Managing Knowledge Networks. \textit{SKKU Library and Information Science Distinguished Lecture Series}, Sungkyunkwan University, Seoul, South Korea (July 16) \\
+  		
+  		& Normalizing Eigenfactor Scores. \textit{Thomson Reuters Webinar on the State of Journal Evaluation}. (June 23) \\
+
+       	& The Jargon Barriers of Science. \textit{\href{http://www.santafe.edu/gevent/?start=2015-03-01}{Santa Fe Institute Speaker Series}.} Santa Fe, NM (March 17) \\
+
+       	& Data Cartography: using maps to navigate knowledge networks. \textit{Cisco Data Science Speaker Series.} San Jose, CA (Jan. 27) \\
+
+       	& Data Cartography: using maps to navigate knowledge networks. \textit{Pacific Northwest National Laboratory.} Richland, WA (Jan. 14) \\
+
+       	& The Economics and Structure of Scholarly Publishing. \textit{Group Health Research Seminar.} Seattle, WA (Jan. 13) \\
+
+  2014 & Data Cartography. \textit{Boulder Analytics Fellows, Leeds School of Business.} University of Colorado, Boulder, CO (Nov. 6) \\
+  		&  Mapping Jargon. \textit{Center for Statistics \& Social Sciences Seminar Series.} University of Washington, Seattle, WA (Oct. 5) \\
+  		&  \textit{TechMining International Conference.} Leiden, Netherlands (Sept. 2) \\
+  		&  \textit{Gordon Research Conference on Science and Technology Policy} Waterville Valley, NH (Aug 13) \\
+  		&  \textit{Microsoft Faculty Summit.} Remond, WA (July 16) \\
+  		&  \textit{Gruter Institute for Law and Behavior.} Squaw Valley, CA (May 19) \\
+  		&  \textit{Department of Biology Annual Awards Banquet.} University of Washington, Seattle, WA (April 8) \\
+  		&  \textit{Biomedical \& Health Informatics Lecture Series.} University of Washington, Seattle, WA (Feb. 4) \\
+  2013 	&  \textit{School of Library \& Information Science.} Bloomington, IN (Nov 18) \\
+  		&  \textit{National Science Communication Institute.} Seattle, WA (Nov 15) \\
+  		&  \textit{Public Library of Science Article-level Metrics Workshop.} San Francisco, CA (Oct 11) \\
+  		&  \textit{Genome Sciences Seminar.} University of Washington, Seattle, WA (Nov 12) \\
+  		&  \textit{Association for Information Science and Technology.} Montreal, Canada (Nov 5) \\
+  		&  \textit{International Society of Managing \& Technical Editors.} Washington, DC (Aug 6) \\
+  		&  \textit{Microsoft Faculty Summit.} Redmond, WA (July 15) \\
+  		&  \textit{Gruter Institute For Law \& Behavioral Research.} Squaw Valley, CA (May 21) \\
+  		&  \textit{National Socio-Environmental Synthesis Center.} University of Maryland, Annopolis, MD (April 9) \\
+  		&  \textit{Aquatic \& Fishery Science.} University of Washington, Seattle, WA (March 22) \\
+  2012	&  \textit{Gruter Institute For Law \& Behavioral Research.} Stanford University, Palo Alto, CA (Oct 12) \\
+  		&  \textit{Digital Science.} London, UK (June 14) \\
+  		&  \textit{International Conference on Academia \& Publishing.} Torino, Italy (May 31) \\
+  		&  \textit{Gruter Institute For Law \& Behavioral Research.} Squaw Valley, CA (May 21) \\
+  2011  &  \textit{Computer Science and Engineering Seminar Series}, University of Washington, Seattle, WA (Dec 1) \\
+  		&  \textit{Graduate School of Library and Information Science}, University of Illinois, Champaign\textemdash Urbana, IL (Nov 11) \\
+  		&  \textit{Department of Computer Science}, University of Colorado, Boulder, CO (Nov 3) \\
+  		&  \textit{Harvard eScience Workshop}, Harvard University, Boston, MA (Oct 24) \\
+  		&  \textit{Canadian Research Knowledge Network}, Ottawa, Canada (Oct 5) \\
+  		&  \textit{Microsoft Faculty Summit}, Redmond, WA (July 20) \\
+  		&  \textit{Open Repositories}, University of Texas, Austin, TX (June 7) \\
+  		&  \textit{Society of Scholarly Publishing}, Boston, MA (June 1) \\
+  		&  \textit{Law and Human Behavior - Innovation and Economic Growth}, Gruter Institute, CA (May 26) \\
+  		&  \textit{Mapping and Measuring Scientific Output}, Santa Fe, NM (May 10) \\
+  		&  \textit{Centers for Models of Life}, Niels Bohr Institute, Copenhagen, Denmark (April 19) \\
+  		&  \textit{Applications in Network Theory - The Conference}, NORDITA, Stockholm, Sweden (April 8) \\
+  2010 	&  \textit{The Changing Face of Scientific Research}, McGill University, Montreal, Canada (Dec 1) \\
+  		&  \textit{Assessing The Usage and Value of Scholarly and Scientific Output}, Philadelphia, PA (Nov 10) \\
+  		&  \textit{Impact \& Productivity Measurements in a Changing Research Environment}, Washington, DC (Oct 27) \\
+  		&  \textit{ITHAKA Sustainable Scholarship 2010: Discovering Scholarly Content}, New York, NY (Sept 28) \\
+  		&  \textit{Society for Scholarly Publishing 32nd Annual Meeting}, San Francisco, CA (June 4) \\
+  		&  \textit{American Chemistry Society National Meeting}, San Francisco, CA (March 24) \\
+  2009	&  \textit{NSF Workshop: Scholarly Evaluation Metrics: Opportunities \& Challenges}. Washington, DC (Dec 16) \\
+  		  &  \textit{International Workshop on “What is Evolution?”}.Kyoto University, Japan (Oct 17) \\
+  		  & \textit{Department of Physics}, Umea University, Sweden (Oct 2) \\
+  		  & \textit{ALPSP International Conference}, Oxford, UK (Sept 10) \\
+  		  & \textit{Council of Science Editors Annual Meeting}, Pittsburgh, PA (May 3) \\
+  		  & \textit{Digital Research Symposium}, Portland State University (April 29) \\
+  		  & BioOne, Washington, DC (April 17) \\
+  		  & University of California, Los Angeles, CA (Feb. 11) \\
+  2008  & National Institute of Informatics, Tokyo, Japan (Nov. 25) \\ 
+ 		    & National Institute for Materials Science, Tokyo, Japan (Nov 25) \\
+  		  & Yale Library and Faculty, Yale University (Nov 3) \\
+  		  & Center for Digital Research and Scholarship, Columbia University (Oct 30) \\
+  		  & Institute of Economic Research \& Yukawa Institute of Theoretical Physics, Kyoto, Japan (Oct 21) \\
+  		  & American Library Association Annual Conference, Anaheim, CA (June 29) \\
+  		  & SLA International Conference, Seattle, WA (June 16) \\
+  		  & Council of Science Editors Annual Meeting, Vancouver, B.C. (May 19) \\
+  		  & HighWire Press, Stanford University (May 6) \\
+  		  & University of California, Los Angeles (May 5) \\
+  		  & Emerging Trends in Scholarly Publishing, National Press Club, Washington, D.C. (April 17) \\
+  		  & National Academy of Sciences, Washington, D.C. (March 18) \\
+  2007	& European Science Foundation, University of Granada, Spain (Nov. 19) \\
+  		  & 29th Annual ARCS Luncheon, Westin Hotel, Seattle, WA (Nov. 13) \\
+  		  & ARCS Auction Dinner, Conibear Shellhouse, University of Washington, Seattle, WA \\
+  2006  & Berkman Center for Internet \& Society, Harvard University, Cambridge, MA (May 4) \\
+\end{longtable}
+
+
+
+
+% Conferences, Workshops and Meetings
+\subsection*{\textbf{Conferences, Workshops and Meetings}}
+\begin{longtable}{p{0.5in}|p{5.5in}}	
+  2016 	& Metaknowledge Network. University of Chicago, IL (March 14-15) \\
+  2015 	& SciFoo. Google, Mountain View, CA (June 26-28) \\ 
+  		& Metaknowledge Network. University of Chicago, IL (March 22-24) \\
+  		& Metaknowledge Network. Asilomar, Pacific, CA (July 27-30) \\
+  2014 	& United States Patent Office, Washington, DC (Aug 4) \\
+\end{longtable}
+
+
+
+
+
+
+
+% News Items
+\section*{\textbf{News}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2016  
+  		& The Washington Post. ``\href{https://www.washingtonpost.com/news/wonk/wp/2016/08/01/new-study-finds-that-men-are-often-their-own-favorite-experts-on-any-given-subject/?tid=sm_tw}{New study finds that men are often their own favorite experts on any given subject}.'' (Aug 1) \\
+
+      & Vice Media's Motherboard. ``\href{http://motherboard.vice.com/read/manciting-study-finds-men-cite-their-own-science-papers-more-than-women}{Study Finds Men Are More Likely Than Women to Cite Their Own Science Papers}.'' (July 22) \\
+
+      & The London Times. ``\href{http://www.economist.com/news/science-and-technology/21700617-scientific-study-importance-diagrams-science-graphic-details}{Women academics trail men (at shameless self-citation)}.'' (July 16) \\ 
+
+      & Nature. ``\href{http://www.nature.com/news/men-cite-themselves-more-than-women-do-1.20176?WT.mc_id=TWT_NatureNews}{Men cite themselves more than women do}.'' (July 5) \\ 
+
+      & Economist. ``\href{http://www.economist.com/news/science-and-technology/21700617-scientific-study-importance-diagrams-science-graphic-details}{A scientific study of the importance of diagrams to science}.'' (June 18) \\
+  		& MIT Technology Review. ``\href{https://www.technologyreview.com/s/601589/the-first-visual-search-engine-for-scientific-diagrams/}{The First Visual Search Engine for Scientific Diagrams}.'' (May 27) \\
+        & Microsoft Research. ``\href{https://blogs.msdn.microsoft.com/msr_er/2016/02/23/microsoft-opens-up-online-infrastructure-to-the-research-community/}{Microsoft opens up online infrastructure to the research community}.'' (Feb 23) \\
+
+        & UW iSchool. ``\href{https://ischool.uw.edu/news/2016/02/uw-team-takes-second-place-microsoft-search-challenge}{UW team takes second place in Microsoft search challenge}.'' (Feb 24) \\
+        & Microsoft Research. ``\href{https://blogs.msdn.microsoft.com/msr_er/2016/02/23/microsoft-opens-up-online-infrastructure-to-the-research-community/}{Microsoft opens up online infrastructure to the research community}.'' (Feb 23) \\
+        & Chronicle of Higher Education. `'\href{http://chronicle.com/article/As-an-Open-Access-Megajournal/234890/?key=V9WzHg4QbDkFuXONne07CiwpC5cgiOVgA5_Vr92e1bNrUktRMEhhLXpCT3hONUR3VHN1VWdLUk5ZdFVJUENKVFNWdkpscWJvWmFn}{The rise of the megajournal}'' (Jan 13) \\
+  2015  & UW eScience. `'\href{http://escience.washington.edu/uw-research-science-team-takes-2nd-in-wsdm-cup/}{UW Research Science Team Takes 2nd in WSDM Cup}'' (Dec 1) \\
+  		& Bloomberg News. ``\href{http://www.bna.com/patents-womenbetter-life-b57982063501/}{Patents By Women—Better In The Life Sciences?}'' (Nov 12) \\
+  		  & Inside Higher Ed. `'\href{https://www.insidehighered.com/news/2015/08/25/study-finds-men-are-more-likely-women-engage-self-citation}{Men Who Admire Their Own Work}.'' (Aug. 25) \\
+        & FiveThirtyEight. `'\href{http://fivethirtyeight.com/features/in-science-it-matters-that-women-come-last/}{In Science, It Matters that Women Come Last}.'' (Aug. 5) \\
+        & UW iSchool. ``\href{https://ischool.uw.edu/videos/datalab-ischool}{DataLab at the University of Washington iSchool}.'' (June 15) \\
+  2014  & UW iSchool. ``\href{https://ischool.uw.edu/feature-stories/big-data-expert-jevin-west-joins-ischool-assistant-professor}{Big Data expert Jevin West joins the iSchool as assistant professor}.'' (Jan 5) \\
+        
+\end{longtable}
+
+
+
+
+
+
+
+
+
+%% Funding
+\section*{\textbf{Funding}}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2016  & (PI) Measuring scholarly influence. Pew Charitable Trust (\$18,000) \\
+        & (RA) Incorporating citation recommendation into Semantic Scholar. Allen Institute for Artificle Intelligence (\$14,000) \\
+        & (PI) Improving market function in Open Access publishing through transparent comparison of journal price and quality. Sloan Foundation (\$124,370) \\
+        & (PI) Measuring student transfer attrition and performance at a large public university. Royalty Research Fund, UW (\$39,404) \\
+        & (PI) National Science Foundation Career Proposal, NSF (in prep) \\
+        & (PI) Mapping and Recommending Schoarly Articles. JSTOR (\$110,000) \\ 
+  2015  & (PI) Diversification dynamics of scientific ideas using small clustering for community detection. Metaknowledge Network, Templeton Foundation (\$35,000) \\
+        & (PI) Inferring the hierarchical structure of citation networks to improve semantic search. Metaknowledge Network, Templeton Foundation (\$109,172) \\
+        & (PI) Measuring the Influence Pew Scholars. Pew Charitable Trust (\$24,044) \\
+        & (RA) Mapping student trajectories. UW Grad School (\$14,000) \\
+        & (AWS) Recommendation as a service (\$5,000) \\
+        & (PI) Data Science Education. Cisco (\$2,000) \\
+  2014  & (PI) Scholarly recommendation of PLoS content. Public Library of Science (\$24,000) \\
+        & (RA) Metaknowledge Network, Templeton Foundation (\$14,000) \\
+        & (co-PI) Blackrock Research (\$49,251) \\
+        & (PI) Auto-classifying scholarly content. Microsoft (\$40,000) \\
+        & (co-PI) Metaknowledge Network, Templeton Foundation (\$15,000) \\
+        & (co-PI) Eigenfactor Project. CoMotion, UW (\$5,000) \\ 
+  2013  & (PI) Evaluating scholarly influence. Kauffman Foundation (\$18,000) \\
+        & (co-PI) DataLab. Costco (\$60,000) \\ 
+  2012  & (PI) Postdoctoral Fellow. Center for Commercialization, UW (\$36,000) \\ 
+  2011  & (co-PI) Mapping citation networks over time. JSTOR (\$90,000) \\ 
+  
+
+\end{longtable}
+
+
+\section*{\textbf{Broader Impacts}}
+
+The Self-Citation paper is in the top 1\% of all papers scored by Altmetric [link, and list after citations].
+
+The Viziometric paper is in the top 5\% of all papers scored by Altmetric [link, and list after citations].
+
+
+\section*{\textbf{Teaching}}
+
+I am actively involved in developing curricula in Data Science at the University of Washington at the undergraduate and graduate level.  I am also founded the Coursector.org project, which looks at historical transcript data as a way of better understanding student trajectories.
+
+% Include Teaching Philosophy in this statement
+
+% Courses
+\subsection*{Courses}
+\setlength{\extrarowheight}{10pt}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2017  & INFX 574: Machine Learning and Econometrics (Winter) \\
+  2016 	& INFX 575: Data Scaling, Applications and Ethics (Spring) \\
+  		  & INFO 370: Introduction to Data Science (Fall) \\
+  2015 	& INFO 370: Introduction to Data Science (Fall) \\
+  		& Introduction to Data Science \& Management (Summer, Sungkyunkwan University) \\
+  		& INFX 575: Data Science III: Scaling, Applications, \& Ethics (Spring) \\
+  		& INFO 370: Introduction to Data Science (Spring) \\
+  2014	& INSC 570: Research Design (Fall) \\
+  		& INFX 598: Advanced Methods in Data Science (Spring) \\
+  		& INFO 498: Introduction to Data Science (Spring) \\
+  2013  & INSC 570: Research Design (Fall) \\		
+\end{longtable}
+
+% Curriculum Development
+\subsection*{Curriculum Development}
+\begin{itemize}
+\item Undergraduate Option in Data Science, UW Informatics Program (2013 - present) 
+\item Masters in Data Science, UW Professional \& Continuing Education (2014 - present)
+\item Introduction to Data Science, UW iSchool (2014 - present)
+\item MSIM Data Science Series, UW iSchool (2013 - present)
+\item Summer Teaching Institute, Seattle School District (Summer 2009)
+\item Huckabay Teaching Seminar (Winter 2009), Howard Hughs RA (Summer 2006)
+\end{itemize}
+
+% Advising
+\subsection*{Advising}
+\setlength{\extrarowheight}{3pt}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  PhD   & Ian Wesley-Smith, Information School (2015 - present) \\
+        & Ryan McGee, Biology (2015 - present) \\
+        & Poshen Lee, Computer Science (2014 - present) \\
+        & Lavi Aulck, Information School (2014 - present) \\
+        & Jason Portenoy, Information School (2013 - present) \\
+        & Ray Hong, HCDE (2013 - present) \\
+        & Amit Misra, Astronomy (2013 - 2014) \\
+  MS    & Prerak Pradhan, MSIM (2013-2015) \\
+        & Nishant Sinha, MSIM (2013-2015) \\
+        & Kelly Toskey, MLIS (2014 - 2015) \\	
+        & Terri Northcut, MLIS (2014) \\
+  BS    & Nishant Velagapudi, Informatics (2016 - present) \\
+        & Logan Walls, Informatics (2016 - present) \\
+        & Patrick Spieker, Computer Science (2015 - present) \\
+        & Katherine Zhu, Informatics (2015 - present) \\
+        & Nick Thorpe, Informatics (2015) \\
+        & Jeff Giorgi, Informatics (2013 - 2014) \\
+\end{longtable}
+
+
+
+
+% Guest Lectures
+\subsection*{Guest Lectures}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2016 & INFX561:  Visualization Design (April 25) \\
+  2015 	& INFO 372:  Introduction to Data Science (MLIS, MSIM) (Dec. 2) \\
+  		& INFO 200:  Intellectual Foundations of Informatics (Oct. 28) \\
+  		& INSC 570 Research Design (Oct. 23) \\
+      & SKKU Data Science Camp, UW (Feb 2-12) \\
+  2014 & UW iSchool Preview Day Lecture (Nov. 15) \\
+       & Network Science, University Colorado Leeds School of Business (Nov. 7) \\
+        & SKKU Big Data Lecture, UW (Aug 19) \\
+        & HCDE 411:  Information Visualization (Winter) \\
+        & HCDE 511:  Information Visualization (Feb. 26) \\
+  2013	& INFO 200:  Introduction to Information Science (Fall) \\
+        & HCDE 411:  Information Visualization (Winter) \\
+  2009  & BIS 232:  Visualizing Quantitative Data, UW Bothell (Feb 25) \\
+  2008  & BIOL 113:  Diversity in Learning (May 22) \\
+  2007  & BIOL 492:  The Teaching of Biology, UW (Spring) \\
+  2006  & BIOL 429:  Models in Biology, UW (Dec 6) \\
+        & BIOL 510:  Seminar in Mathematical Biology, UW (May 11) \\
+  2004  & AP Calculus, Logan High School (May 5) \\     
+
+\end{longtable}
+
+
+% Teaching Assistant
+\subsection*{Teaching Assistant}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2009  & BIOL 354:  Foundations in Evolution \& Systematics, UW (Spring) \\
+  2007  & BIOL 462:  Advanced Animal Physiology, UW (Fall) \\
+  2006  & BIOL 481:  Experimental Evolutionary Ecology (Fall) \\
+  2005  & BIOL 462:  Advanced Animal Physiology, UW (Fall) \\
+  2004  & BIOL 2010:  Human Anatomy, USU (Spring) \\
+        & BIOL 4400:  Plant Physiology, USU (Fall) \\
+  2003  & BIOL 2010:  Human Anatomy, USU (Spring) \\
+        & BIOL 4400:  Plant Physiology, USU (Fall) \\     
+\end{longtable}
+
+
+
+
+
+
+%% Service
+\section*{\textbf{Service}}
+
+% iSchool Committees
+\subsection*{UW iSchool Committees}
+\begin{itemize}
+\item Informatics Program Committee, UW iSchool (2015 - present)
+\item PhD Admissions, UW iSchool (2014 - 2015)
+\item Informatics Admissions, UW iSchool (2013 - 2014) 
+\end{itemize}
+
+% Hiring
+\subsection*{Hiring Committees}
+\begin{itemize}
+\item Data Science (2016 - present)
+\item Information Assurance \& Cybersecurity (2014 - 2015)
+\end{itemize}
+
+
+% UW Committees
+\subsection*{UW Committees}
+\begin{itemize}
+\item Faculty Council on University Libraries, UW (2015 - present)
+\item eScience Steering Committee, UW (2014 - present)
+\item eScience Education Working Group, UW (2014 - present)
+\item Data Science Seminar Committee, UW (2014 - present) 
+\end{itemize}
+
+
+
+% Professional (peer review, journals)
+\subsection*{Peer Review, Journals}
+Journal of the Association for Information Science \& Technology (Editorial Board), Science Advances, Economic Inquiry, Journal of Informetrics, Scientometrics, PLoS One, eLife, Information Management, R Journal, PeerJ, Knowledge-based Systems, BioScience, PLoS Computational Biology, Plant Cell \& Environment, Journal of Information Technology  
+
+% Professional (peer review, conferences)
+\subsection*{Peer Review, Conferences}
+ASIS\&T, WWW 
+
+
+% other teaching or outreach
+% BIOL 180 field trips
+% medicinal tour
+
+
+% % Dissertation committees
+% \subsection*{Dissertation Committees}
+
+
+% % TA
+% \subsection*{TA}
+
+% \setlength{\extrarowheight}{10pt}
+% \begin{longtable}{p{0.5in}|p{5.5in}}
+%   2016 	& INFX 575: Advanced Methods in Data Science (Spring) \\
+%   2015 	& INFO 370: Introduction to Data Science (Fall) \\
+%   		& INFX 575: Advanced Methods in Data Science (Spring) \\
+%   		& INFO 370: Introduction to Data Science (Spring) \\
+%   2014	& INFX 370: Research Methods (Fall) \\
+%   		& INFX 575: Data Science (Spring)
+%   		& INFO 498: Introduction to Data Science (Spring) \\		
+% \end{longtable}
+
+
+% Phd Students advised
+
+% Independent instruction
+
+
+% 
+
+
+% %% Service 
+% \section*{\textbf{In the news}}
+
+% \setlength{\extrarowheight}{10pt}
+% \begin{longtable}{p{0.5in}|p{5.5in}}
+%   2015  & \href{http://www.bna.com/patents-womenbetter-life-b57982063501/}{Bloomberg News}. Patents by women-better in the life sciences? (Nov. 12) \\   
+% \end{longtable}
+
+% peer review for journals and conferences
+
+
+% %% Service 
+% \section*{\textbf{Service}}
+
+% % Information School
+% \subsection*{Information School}
+
+
+% % University of Washington
+% \subsection*{University of Washington}
+
+
+% % Professional 
+% \subsection*{Professional}
+
+
+% % Peer Review 
+% \section*{Peer Review}
+
+% \begin{tabular}{>{\everypar{\hangindent0.5in}}p{6in}}
+% 	eLife
+% 	BioScience
+% 	JASIST
+
+% \end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+% Footer
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today
+  \end{footnotesize}
+\end{center}
+
+% bib file
+\nobibliography{JevinWest}
+
+\end{document}
+
