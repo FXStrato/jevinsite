@@ -13,6 +13,7 @@ import Publications from './Publications';
 import Research from './Research';
 import Teaching from './Teaching';
 import './index.css';
+import '../node_modules/materialize-css/dist/css/materialize.min.css';
 
 // Needed for onTouchTap
 injectTapEventPlugin();
