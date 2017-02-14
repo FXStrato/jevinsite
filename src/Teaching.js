@@ -4,9 +4,15 @@ import {Row, Col} from 'react-materialize';
 class Teaching extends Component {
   render() {
     return (
-      <div>
-        Teaching goes here
-      </div>
+      <section className="container">
+        <Row>
+          <Col s={12}>
+            <div>
+              Teaching goes here
+            </div>
+          </Col>
+        </Row>
+      </section>
     );
   }
 }

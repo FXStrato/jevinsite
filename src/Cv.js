@@ -4,9 +4,15 @@ import {Row, Col} from 'react-materialize';
 class Cv extends Component {
   render() {
     return (
-      <div>
-        CV goes here.
-      </div>
+      <section className="container">
+        <Row>
+          <Col s={12}>
+            <div>
+              CV goes here
+            </div>
+          </Col>
+        </Row>
+      </section>
     );
   }
 }

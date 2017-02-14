@@ -4,9 +4,15 @@ import {Row, Col} from 'react-materialize';
 class Bio extends Component {
   render() {
     return (
-      <div>
-        This is the bio.html page
-      </div>
+      <section className="container">
+        <Row>
+          <Col s={12}>
+            <div>
+              Bio goes here
+            </div>
+          </Col>
+        </Row>
+      </section>
     );
   }
 }
