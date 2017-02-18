@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import {Row, Col} from 'react-materialize';
-import {browserHistory, Link} from 'react-router';
+import {browserHistory} from 'react-router';
 import {AppBar, Drawer, MenuItem, Tabs, Tab} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import _ from 'lodash';
+import {purple500, blueGrey100} from 'material-ui/styles/colors';
+import {drawerLinks} from './Data';
+import JWBanner from './img/jw.png';
 
 
 //Put navigation here if a constant menu is wanted
@@ -23,7 +27,7 @@ class App extends Component {
   handleActive = (path) => {
     let currentTab = path.split('/').pop();
     // you can add more validations here
-    this.setState({ activeTab: currentTab || 'home' });
+    this.setState({ activeTab: currentTab || 'home' , open: false});
     if(browserHistory.getCurrentLocation().pathname !== path) browserHistory.push(path);
   }
 
@@ -31,7 +35,35 @@ class App extends Component {
     this.setState({open: !this.state.open});
   }
 
+  handleActiveLink = (link) => {
+    let path = browserHistory.getCurrentLocation().pathname;
+    if(path === link) {
+      if(browserHistory.getCurrentLocation().pathname !== '/' && link === '/') return {color: '#000'};
+      return {backgroundColor: blueGrey100, color: '#000'};
+    } else {
+      return {color: '#000'};
+    }
+  }
+
   render() {
+    const tabStyle = {
+      backgroundColor: '#fff',
+      color: '#000'
+    };
+
+    let drawerlinks = _.map(drawerLinks.toArray(), (elem, index) => {
+      let activeStyle = this.handleActiveLink(elem.link);
+      return (
+        <MenuItem  style={activeStyle} key={'drawerlink-' + index} onTouchTap={() => this.handleActive(elem.link)}>{elem.body}</MenuItem>
+      )
+    });
+
+    let tablinks = _.map(drawerLinks.toArray(), (elem, index) => {
+      let value = elem.body.toLowerCase();
+      return (
+        <Tab key={'tablink-' + index} style={tabStyle} value={value} onActive={() => this.handleActive(elem.link)} data-route={elem.link} label={elem.body} />
+      )
+    });
     return (
       <div>
         <header>
@@ -39,8 +71,10 @@ class App extends Component {
               <MuiThemeProvider muiTheme={getMuiTheme()}>
                 <AppBar
                   id="navbar-appbar"
-                title="Jevin West"
-                onLeftIconButtonTouchTap={this.handleToggle}
+                  style={{backgroundColor: '#fff !important', height: 60}}
+                  title={<span style={{color: '#000'}}>Jevin D. West</span>}
+                  onLeftIconButtonTouchTap={this.handleToggle}
+                  iconElementRight={<img src={JWBanner} style={{marginTop: -8}} alt="Jevin West Banner"/>}
                 />
               </MuiThemeProvider>
           </Row>
@@ -50,15 +84,10 @@ class App extends Component {
                 <MuiThemeProvider muiTheme={getMuiTheme()}>
                   <Tabs className="hide-on-med-and-down"
                     id="nav-tabs"
+                    inkBarStyle={{backgroundColor: purple500}}
+                    style={{border: 'solid 2px grey'}}
                     value={this.state.activeTab}>
-                    <Tab value="home" onActive={() => this.handleActive('/')} data-route="/" label="Home" />
-                    <Tab value="research" onActive={() => this.handleActive('/research')} data-route="/research" label="Research" />
-                    <Tab value="publications" onActive={() => this.handleActive('/publications')} data-route="/publications" label="Publications" />
-                    <Tab value="teaching" onActive={() => this.handleActive('/teaching')} data-route="/teaching" label="Teaching" />
-                    <Tab value="presentations" onActive={() => this.handleActive('/presentations')} data-route="/presentations" label="Presentations" />
-                    <Tab value="bio" onActive={() => this.handleActive('/bio')} data-route="/bio" label="Bio" />
-                    <Tab value="cv" onActive={() => this.handleActive('/cv')} data-route="/cv" label="CV" />
-                    <Tab value="news" onActive={() => this.handleActive('/news')} data-route="/news" label="News" />
+                    {tablinks}
                   </Tabs>
                 </MuiThemeProvider>
               </Col>
@@ -71,13 +100,7 @@ class App extends Component {
                 onRequestChange={(open) => this.setState({open})}
               >
                 <div style={{height: 64, backgroundColor: '#000'}}></div>
-                <Link to="/research" onTouchTap={() => this.setState({open: false})}><MenuItem>Research</MenuItem></Link>
-                <Link to="/publications" onTouchTap={() => this.setState({open: false})}><MenuItem>Publications</MenuItem></Link>
-                <Link to="/teaching" onTouchTap={() => this.setState({open: false})}><MenuItem>Teaching</MenuItem></Link>
-                <Link to="/presentations" onTouchTap={() => this.setState({open: false})}><MenuItem>Presentations</MenuItem></Link>
-                <Link to="/bio" onTouchTap={() => this.setState({open: false})}><MenuItem>Bio</MenuItem></Link>
-                <Link to="/cv" onTouchTap={() => this.setState({open: false})}><MenuItem>CV</MenuItem></Link>
-                <Link to="/news" onTouchTap={() => this.setState({open: false})}><MenuItem>News</MenuItem></Link>
+                {drawerlinks}
               </Drawer>
             </MuiThemeProvider>
           </div>
