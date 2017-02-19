@@ -24,6 +24,17 @@ class App extends Component {
   this.setState({ activeTab: currentTab || 'home' });
   }
 
+  componentDidUpdate = () => {
+    //Should handle in-site page changes and reflect it on the Tab Navigation.
+    //Might not actually handle going from a page back to home, prob add something to handle that later down the line.
+    let newTab = browserHistory.getCurrentLocation().pathname.split('/').pop();
+    if(newTab !== this.state.activeTab) {
+      if(newTab) {
+        this.setState({ activeTab: newTab });
+      }
+    }
+  }
+
   handleActive = (path) => {
     let currentTab = path.split('/').pop();
     this.setState({ activeTab: currentTab || 'home' , open: false});

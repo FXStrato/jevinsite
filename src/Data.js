@@ -1,6 +1,7 @@
 import Immutable from 'immutable';
 import React from 'react';
 import {Row, Col} from 'react-materialize';
+import {Link} from 'react-router';
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
 import eigenfactorImg from './img/eigenfactor.png';
@@ -148,7 +149,7 @@ const homeData = Immutable.Map({
 const researchData = Immutable.Map({
   header: (
     <div>
-      <img className="responsive-img" src={researchCollageImg} alt="Research Collage" title="Research Collage"/>
+      <Link to="/publications"><img className="responsive-img" src={researchCollageImg} alt="Research Collage" title="Research Collage"/></Link>
     </div>
   ),
   section_1: (
