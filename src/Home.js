@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import {Row, Col} from 'react-materialize';
+import {homeData} from './Data';
 
 class Home extends Component {
   render() {
     return (
-      <section className="container">
-        <Row>
-          <Col s={12}>
-            <div>
-              Info about prof, stuff will go here.
-            </div>
-          </Col>
-        </Row>
-      </section>
+      <div className="container extra-padding">
+        <h1 style={{display: 'none'}}>Home Page</h1>
+        <section>{homeData.get('summary')}</section>
+        <br/>
+        <hr/>
+        <section>{homeData.get('projects')}</section>
+        <section>{homeData.get('announcements')}</section>
+      </div>
     );
   }
 }
