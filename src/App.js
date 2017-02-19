@@ -26,7 +26,6 @@ class App extends Component {
 
   handleActive = (path) => {
     let currentTab = path.split('/').pop();
-    // you can add more validations here
     this.setState({ activeTab: currentTab || 'home' , open: false});
     if(browserHistory.getCurrentLocation().pathname !== path) browserHistory.push(path);
   }
