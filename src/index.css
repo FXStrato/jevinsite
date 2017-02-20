@@ -62,6 +62,10 @@ a:hover {
     font-weight: bold;
 }
 
+.boxed {
+    border: 2px solid lightgrey;
+}
+
 .reduce-bot-margin {
     margin-bottom: 0 !important;
 }
