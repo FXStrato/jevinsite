@@ -117,31 +117,31 @@ const homeData = Immutable.Map({
   ],
   presentations: [
     {
-      body: <span>PAE Reform Symposium, Stanford University (May 7, 2017)</span>
+      body: <p>PAE Reform Symposium, Stanford University (May 7, 2017)</p>
     },
     {
-      body: <span>KnoweScape Conference. Sofia, Bulgaria (Feb. 23, 2017)</span>
+      body: <p>KnoweScape Conference. Sofia, Bulgaria (Feb. 23, 2017)</p>
     },
     {
-      body: <span>HICSS Conference. Kona, Hawaii (Jan. 4-7)</span>
+      body: <p>HICSS Conference. Kona, Hawaii (Jan. 4-7)</p>
     },
     {
-      body: <span>Network Indicators. George Washington University (Dec. 14, 2016)</span>
+      body: <p>Network Indicators. George Washington University (Dec. 14, 2016)</p>
     },
     {
-      body: <span>WoS as a research data set. Indiana University (Nov 13-14, 2016)</span>
+      body: <p>WoS as a research data set. Indiana University (Nov 13-14, 2016)</p>
     },
     {
-      body: <span>The role of gender in scholarly authorship. Ohio State University (Nov 3-4, 2016)</span>
+      body: <p>The role of gender in scholarly authorship. Ohio State University (Nov 3-4, 2016)</p>
     },
     {
-      body: <span>Moore-Sloan Data Science Environments, NYC (Oct 23-26, 2016)</span>
+      body: <p>Moore-Sloan Data Science Environments, NYC (Oct 23-26, 2016)</p>
     },
     {
-      body: <span>JSTOR Workshop on Reimagining the Monograph, NYC (Oct 13, 2016)</span>
+      body: <p>JSTOR Workshop on Reimagining the Monograph, NYC (Oct 13, 2016)</p>
     },
     {
-      body: <span>Science of Science. Fred Hutch Cancer Research Center, Seattle (Sept 12, 2016)</span>
+      body: <p>Science of Science. Fred Hutch Cancer Research Center, Seattle (Sept 12, 2016)</p>
     }
   ],
 });
@@ -232,8 +232,6 @@ const researchData = Immutable.Map({
       <div><p>Scientometricians have spent considerable effort analyzing citations and text. They use these modes of communication as a way of measuring impact and tracking the flow of ideas. Figures have largely been ignored, yet contain the key findings and summaries of models and mechanisms. The aim of the <a href="http://www.viziometrics.org">Viziometrics Project</a> is to focus on these dense, information objects. We have developed an open source platform for extracting the millions of figures in the literature and applying computer vision techniques for organizing and analyzing visual representations of data and ideas.</p></div>
 
     </div>
-
-
     <div>
 
       <div><a href="http://babel.eigenfactor.org"><img src={babelEigenImg} alt="babel.eigenfactor.org" title="babel.eigenfactor.org" width="200" height="160"/></a></div>
@@ -241,9 +239,6 @@ const researchData = Immutable.Map({
       <div><p>The <a href="http://babel.eigenfactor.org">babel.eigenfactor.org</a> project aims to bring recommender research to scholarly navigation. There has been considerable effort developing recommendation algorithms for finding restaurants, movies and books, but far less effort helping scientists find relevant papers. To keep up with the exponential growth of the literature, scientists will need tools beyond simple google keyword searchers. They will need better interfaces and filtering algorithms designed specifically for scholarly search. The goal of the babel project is to build data environments for facilitating this research.</p></div>
 
     </div>
-
-
-
     <div>
 
       <div><a href="http://www.coursector.org/"><img src={coursectorImg} alt="Coursector Project" title="Coursector Project" width="200" height="160"/></a></div>
@@ -280,8 +275,6 @@ const researchData = Immutable.Map({
         <div><p>The <a href="https://datalab.ischool.uw.edu/">DataLab</a> is a lab at the University of Washington Information School. <a href="http://faculty.washington.edu/espiro/">Emma Spiro</a>, <a href="http://www.jblumenstock.com">Josh Blumenstock</a> and I started the lab in 2013. Currently, Emma and I co-direct the lab. The idea is to bring students, post-docs and faculty together around topics in data science. Our research focus areas are the Science of Science, Computational Social Science, Visualization, Data Curation, Data for Developmental and Social Networks. One of our themes is doing Data Science for Social Good. Most of our projects have some social element. If you are prospective student or postdoc interested in joining the lab, please feel free to <a href="mailto:jevinw@uw.edu">contact me</a>.</p></div>
 
       </div>
-
-
       <div>
 
         <div><a target="_blank" href="https://datalab.ischool.uw.edu/"><img src={dataProvImg} alt="DataLab" title="DataLab" width="200" height="160"/></a></div>
@@ -289,7 +282,6 @@ const researchData = Immutable.Map({
         <div><p><span className="bold">Data Providers.</span> Curating good, clean corpora takes an enormous amount of effort. I want to give a special thanks to JSTOR, arXiv, SSRN, PubMed, DBLP, Thomson Reuters, ADS, Aminer, Microsoft Academic Search, Semantic Scholar, Open Academic Society, and the many other groups contributing to (open) big scholarly data. For as much flak as I give publishers, I want to thank them as well. I may not completely agree with their antiquated models of dissemination, but they have provided an important service for science. They will continue to play an important role. </p></div>
 
       </div>
-
       <div>
 
       <p><span className="bold">Funders.</span> I am grateful for the generous funding from many organizations supporting this research, including JSTOR, Microsoft, the NSF, Sloan Foundation, PNNL, University of Washington, and many others.</p>
@@ -301,4 +293,59 @@ const researchData = Immutable.Map({
   )
 });
 
-export {drawerLinks, homeData, researchData};
+const publicationsData = Immutable.Map({
+  inPrep: [
+    {
+      title: 'Mapping mathematical jargon in the scholarly literature (2016)',
+      authors: <div>J. Portenoy, <span className="bold">J.D. West</span></div>,
+      volume: '[In Review]'
+    },
+    {
+      title: 'Assessing Gender Authorship in Aquaculture Publications (2016)',
+      authors: <div>M. Chow, H. Egna, <span className="bold">J.D. West</span></div>,
+      volume: '[In Review]'
+    },
+    {
+      title: 'Attrition and Performance of Community College Transfers (2016)',
+      authors: <div>L. Aulck, <span className="bold">J.D. West</span></div>,
+      volume: '[In Review]'
+    },
+    {
+      title: 'Are Trolls Good (At Choosing Valuable Patents)? (2017)',
+      authors: <div>A.W. Torrance, <span className="bold">J.D. West</span></div>,
+      volume: '[In Prep]'
+    },
+    {
+      title: 'Improved Adaptation in Exogenously and Endogenously Changing Environments (2016)',
+      authors: <div>J.R. Nahum, <span className="bold">J.D. West</span>, B.A. Althouse, L. Zaman, C. Ofria, B. Kerr</div>,
+      volume: '[In Prep]'
+    },
+  ],
+  prePrints: [
+    {
+      title: 'Viziometrics: Analyzing Visual Information in the Scientific Literature (2016)',
+      authors: <div>P. Lee, <span className="bold">J.D. West</span>, B. Howe</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">arXiv </span>
+          :1605.04951. Top 0.01% of all arXiv articles scored by <a href="https://www.altmetric.com/details/9231143?src=bookmarklet#score">Altmetric</a> (792)
+          <div>[In Review]</div>
+        </div>
+      ),
+      html: 'https://arxiv.org/abs/1607.00376',
+      pdf: 'papers/king2016arxiv.pdf',
+      abstract: "How common is self-citation in scholarly publication and does the practice vary by gender? Using novel methods and a dataset of 1.5 million research papers in the scholarly database JSTOR published between 1779-2011, we find that nearly 10% of references are self-citations by a paper's authors. We further find that over the years between 1779-2011, men cite their own papers 56% more than women do. In the last two decades of our data, men self-cite 70% more than women. Women are also more than ten percentage points more likely than men to not cite their own previous work at all. Despite increased representation of women in academia, this gender gap in self-citation rates has remained stable over the last 50 years. We break down self-citation patterns by academic field and number of authors, and comment on potential mechanisms behind these observations. These findings have important implications for scholarly visibility and likely consequences for academic careers.",
+      bibTex: (
+        <div>
+          &#64;ARTICLE&#123;Lee2016arxiv, <br/>
+              author = 	&#123;M.M. King and C.T. Bergstrom and S.J. Correll and J. Jacquet and J.D. West&#125;,<br/>
+              title = 	&#123;Men set their own cites high: Gender and self-citation across fields and over time&#125;,<br/>
+              journal = 	&#123;arXiv preprint:1607.00376&#125;,<br/>
+              year = 	&#123;2016&#125;&#125;<br/>
+        </div>
+      )
+    }
+  ],
+});
+
+export {drawerLinks, homeData, researchData, publicationsData};
