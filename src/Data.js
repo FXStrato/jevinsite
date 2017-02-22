@@ -2,6 +2,13 @@ import Immutable from 'immutable';
 import React from 'react';
 import {Row, Col} from 'react-materialize';
 import {Link} from 'react-router';
+
+//PDF's used
+//import Aulck2016ICMLPDF from './documents/Aulck2016ICML.pdf';
+//import West2014EconInquiryPDF from './documents/West2014EconInquiry.pdf';
+import king2016arxivPDF from './papers/King2016arxiv.pdf';
+import Portenoy2016arxivPDF from './papers/Portenoy2016arxiv.pdf';
+
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
 import eigenfactorImg from './img/eigenfactor.png';
@@ -153,7 +160,7 @@ const researchData = Immutable.Map({
     </Col>
   ),
   section_1: (
-    <div>
+    <Row>
       <Col s={12}>
         <h2>Science of Science</h2>
         <hr/>
@@ -173,7 +180,7 @@ const researchData = Immutable.Map({
 
         <p><span className="bold">(2)</span> I develop tools and techniques for auto-categorizing and mining the literature, improving scholarly navigation (e.g., recommenders) and rethinking models of dissemination. My passion is to facilitate science and to keep this powerful machine running well. What I learn from knowledge science informs the recommender systems, search tools and mining techniques and vice versa. </p>
 
-        <p id="model_system"><span className="bold">Citation networks.</span> As a biologist, I appreciate the utility of a good model system.  Most of what we know about biology comes from a fruit fly, a worm and a small bacterium. A citation network is my model system for studying the flow of information. This model system is found, not within any <span className="italics">one</span> scholarly paper, but among the millions of scholarly papers that have been written over the last several centuries and the references that connect these papers. Initially, it was my interest in the history and sociology of science that attracted me to citation networks.</p>
+        <p><span className="bold">Citation networks.</span> As a biologist, I appreciate the utility of a good model system.  Most of what we know about biology comes from a fruit fly, a worm and a small bacterium. A citation network is my model system for studying the flow of information. This model system is found, not within any <span className="italics">one</span> scholarly paper, but among the millions of scholarly papers that have been written over the last several centuries and the references that connect these papers. Initially, it was my interest in the history and sociology of science that attracted me to citation networks.</p>
 
         <ul className="browser-default">
             <li>How does the structure of science change over time?</li>
@@ -181,92 +188,102 @@ const researchData = Immutable.Map({
             <li>What is interdisciplinary science and what is its role in generating novel ideas?</li>
         </ul>
 
-        <p>Citation networks by themselves are interesting, but they also server as model systems for complex information networks of all kinds. One of the big challenges for understanding gene regulatory networks, ecosystem function or the evolution of virulence is to understand how the topology&#8212;the structure of these communication networks&#8212;affects function.  The goal is the same with citation networks.  The distinguishing quality is that a citation is relatively well defined, and the data is vast and easily accessible.  The <a href="http://www.eigenfactor.org/">Eigenfactor Project</a> provides some examples of the types of research that can be done with large, citation networks.</p>
+        <p>Citation networks by themselves are interesting, but they also server as model systems for complex information networks of all kinds. One of the big challenges for understanding gene regulatory networks, ecosystem function or the evolution of virulence is to understand how the topology&#8212;the structure of these communication networks&#8212;affects function.  The goal is the same with citation networks.  The distinguishing quality is that a citation is relatively well defined, and the data is vast and easily accessible.  The <a href="http://www.eigenfactor.org/" target="_blank">Eigenfactor Project</a> provides some examples of the types of research that can be done with large, citation networks.</p>
       </Col>
       <Col className="center-align" s={12}>
         <a target="_blank" href="http://www.eigenfactor.org/projects/mappingScience/"><img className="responsive-img z-depth-2 hoverable" src={mappingScienceIMG} alt="Mapping Science" title="Science of Science"/></a>
       </Col>
-    </div>
+    </Row>
   ),
   section_2: (
-    <Col s={12}>
-      <h2>The Scholarly Graph</h2>
-      <hr/>
-      <div>
-      <p>The <span className="bold">scholarly graph</span> is the keystone species in my research ecosystem. This consists of the millions of papers and billions of links that connect these papers. It includes the full text, figures, authors, and any other data associated with a scholarly article. It also includes connections to intellectual products on the web, in patents and in books. I have spent a good part of my academic career curating this scholarly graph using open data sources and content provided by publishers. It is from here that we can begin to ask questions about <span className="italics">the origin and evolution of ideas and disciplines and how we can we use this to better facilitate science and innovation?</span> I think of myself as a librarian with data science tools. I help scholars mine the literature in ways that go beyond a simple google scholar search.</p>
+    <Row>
+      <Col s={12}>
+        <h2>The Scholarly Graph</h2>
+        <hr/>
+        <div>
+        <p>The <span className="bold">scholarly graph</span> is the keystone species in my research ecosystem. This consists of the millions of papers and billions of links that connect these papers. It includes the full text, figures, authors, and any other data associated with a scholarly article. It also includes connections to intellectual products on the web, in patents and in books. I have spent a good part of my academic career curating this scholarly graph using open data sources and content provided by publishers. It is from here that we can begin to ask questions about <span className="italics">the origin and evolution of ideas and disciplines and how we can we use this to better facilitate science and innovation?</span> I think of myself as a librarian with data science tools. I help scholars mine the literature in ways that go beyond a simple google scholar search.</p>
 
-      <p><span className="bold">The Scholarly Graph, <span className="italics">In Aggregate</span>.</span> It is only in the last 5-10 years that researchers have been able to access and analyze the literature in aggregate. By aggregate, I mean the literature as a whole, not individual papers but millions of papers sewed together through citations, common language and across generations of scientists. Why not sooner? Publishers are reluctant to share their publications in bulk, and technologies for hosting and analyzing the literature at scale are just now becoming available. The arXiv, NIH mandate, and other Open Access initiatives are improving aggregate potential, but more needs to be done. There are many reasons to support Open Access, but for me, the reason is simple. There is a treasure trove that exists in the literature that can only be found through aggregate mining. No human has the capacity to read millions of publications and follow billions of links. Computers can. New advances in machine learning, natural language processing and network analytics are begging for a chance to go to work on scientific corpora. Humans can then interpret the nuggets mined.</p>
+        <p><span className="bold">The Scholarly Graph, <span className="italics">In Aggregate</span>.</span> It is only in the last 5-10 years that researchers have been able to access and analyze the literature in aggregate. By aggregate, I mean the literature as a whole, not individual papers but millions of papers sewed together through citations, common language and across generations of scientists. Why not sooner? Publishers are reluctant to share their publications in bulk, and technologies for hosting and analyzing the literature at scale are just now becoming available. The arXiv, NIH mandate, and other Open Access initiatives are improving aggregate potential, but more needs to be done. There are many reasons to support Open Access, but for me, the reason is simple. There is a treasure trove that exists in the literature that can only be found through aggregate mining. No human has the capacity to read millions of publications and follow billions of links. Computers can. New advances in machine learning, natural language processing and network analytics are begging for a chance to go to work on scientific corpora. Humans can then interpret the nuggets mined.</p>
 
-      <p><span className="bold">What if you had the entire literature? What could you do differently in your field? What kinds of questions could you ask that you could not when only looking at individual papers?</span> This is not a hypothetical any more. It is now possible and guides my research trajectory. It is a question I pose to collaborators and students. It often leads to interesting conversations and new questions. If you have an interesting answer, let's discuss and explore!</p>
+        <p><span className="bold">What if you had the entire literature? What could you do differently in your field? What kinds of questions could you ask that you could not when only looking at individual papers?</span> This is not a hypothetical any more. It is now possible and guides my research trajectory. It is a question I pose to collaborators and students. It often leads to interesting conversations and new questions. If you have an interesting answer, let's discuss and explore!</p>
 
-      </div>
-    </Col>
+        </div>
+      </Col>
+    </Row>
   ),
   section_3: (
     <div>
-      <h2>Research Projects</h2>
-      <hr/>
-
-      <div>
-
-      <div><a href="http://www.eigenfactor.org/"><img src={eigenfactorImg} alt="Eigenfactor Project" title="Eigenfactor Project" width="200" height="160"/></a></div>
-
-      <div><p>The aim of the <a href="http://www.eigenfactor.org/">Eigenfactor Project</a> is to develop methods, algorithms, and visualizations for mapping the structure of science. We use these maps to identify (1) disciplines and emerging areas of science, (2) key authors, papers and venues and (3) communication patterns such as differences in gender bias. We also use these maps to study scholarly publishing models and build recommendation engines and search interfaces for improving how scholars access and navigate the literature.</p></div>
-
-    </div>
-
-
-    <div>
-
-      <div><a href="http://www.eigenfactor.org/gender/"><img src={genderAuthorshipImg} alt="Gender Authorship" title="Gender Authorship" width="200" height="160"/></a></div>
-
-      <div><p>There are many places where bias exists in science: publication bias, bias in funding decisions and bias in promotion and tenure. These matter for people's careers, and they matter for the health of science. The <a href="http://www.eigenfactor.org/gender/">Gender Project</a> looks at gender differences in <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066212">authorship patterns</a> (e.g., who authors with whom) and <a href="https://arxiv.org/abs/1607.00376">self-promotion</a>. We have built a <a href="http://www.eigenfactor.org/gender/">gender browser</a> for exploring this data by field. Our goal is to provide data and tools for policy makers and those interested in the sociology of science.</p></div>
-
-    </div>
-
-
-      <div>
-
-      <div><a href="http://www.viziometrics.org/"><img src={viziometricsImg} alt="Viziometrics Project" title="Viziometrics Project" width="200" height="160"/></a></div>
-
-      <div><p>Scientometricians have spent considerable effort analyzing citations and text. They use these modes of communication as a way of measuring impact and tracking the flow of ideas. Figures have largely been ignored, yet contain the key findings and summaries of models and mechanisms. The aim of the <a href="http://www.viziometrics.org">Viziometrics Project</a> is to focus on these dense, information objects. We have developed an open source platform for extracting the millions of figures in the literature and applying computer vision techniques for organizing and analyzing visual representations of data and ideas.</p></div>
-
-    </div>
-    <div>
-
-      <div><a href="http://babel.eigenfactor.org"><img src={babelEigenImg} alt="babel.eigenfactor.org" title="babel.eigenfactor.org" width="200" height="160"/></a></div>
-
-      <div><p>The <a href="http://babel.eigenfactor.org">babel.eigenfactor.org</a> project aims to bring recommender research to scholarly navigation. There has been considerable effort developing recommendation algorithms for finding restaurants, movies and books, but far less effort helping scientists find relevant papers. To keep up with the exponential growth of the literature, scientists will need tools beyond simple google keyword searchers. They will need better interfaces and filtering algorithms designed specifically for scholarly search. The goal of the babel project is to build data environments for facilitating this research.</p></div>
-
-    </div>
-    <div>
-
-      <div><a href="http://www.coursector.org/"><img src={coursectorImg} alt="Coursector Project" title="Coursector Project" width="200" height="160"/></a></div>
-
-      <div><p>UW is becoming a hub for data-driven research and teaching. However, its ability to apply data science tools to its own administrative data is underdeveloped - a general problem for higher education. We have several projects applying data science to university data. <a href="http://www.coursector.org/">Coursector.org</a> is one example. We are developing techniques for predicting <a href="Documents/Aulck2016ICML.pdf">[1]</a> and understanding student attrition, evaluating program performance, and building course recommenders. Other examples include mapping UW's global imprint and examining library journal holdings, usage and costs.</p></div>
-
-    </div>
-
-
-    <div>
-
-      <div><a href="http://www.eigenfactor.org/projects/openAccess/"><img src={openAccessImg} alt="Cost Effectiveness" title="Cost Effectiveness" width="200" height="160"/></a></div>
-
-      <div><p>The <a href="https://en.wikipedia.org/wiki/Open_access">open access</a> movement has made great strides. There has been a significant increase in Open Access journals over the last ten years and many large foundations now <a href="http://www.gatesfoundation.org/How-We-Work/General-Information/Open-Access-Policy">require OA</a>. Unfortunately, during the same time, there has been a signficiant increase in exploitative, <a href="https://en.wikipedia.org/wiki/Predatory_open_access_publishing">predatory publishers</a>, which charge authors to publish with little or no peer review, editorial services or authentic certifiation. We are developing a <a href="http://www.eigenfactor.org/projects/openAccess/">cost effectiveness </a> tool that will create an open journal market of prices and influence scores where these kinds of journals can be objectively identified <a href="Documents/West2014EconInquiry.pdf">[2]</a>.</p></div>
-
-      </div>
+      <Row>
+        <Col s={12}>
+          <h2>Research Projects</h2>
+          <hr/>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12} m={3} className="center-align">
+          <a href="http://www.eigenfactor.org/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={eigenfactorImg} alt="Eigenfactor Project" title="Eigenfactor Project"/></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p>The aim of the <a href="http://www.eigenfactor.org/">Eigenfactor Project</a> is to develop methods, algorithms, and visualizations for mapping the structure of science. We use these maps to identify (1) disciplines and emerging areas of science, (2) key authors, papers and venues and (3) communication patterns such as differences in gender bias. We also use these maps to study scholarly publishing models and build recommendation engines and search interfaces for improving how scholars access and navigate the literature.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12} m={3}>
+          <a href="http://www.eigenfactor.org/gender/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={genderAuthorshipImg} alt="Gender Authorship" title="Gender Authorship"/></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p>There are many places where bias exists in science: publication bias, bias in funding decisions and bias in promotion and tenure. These matter for people's careers, and they matter for the health of science. The <a href="http://www.eigenfactor.org/gender/" target="_blank">Gender Project</a> looks at gender differences in <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066212" target="_blank">authorship patterns</a> (e.g., who authors with whom) and <a href="https://arxiv.org/abs/1607.00376"target="_blank">self-promotion</a>. We have built a <a href="http://www.eigenfactor.org/gender/" target="_blank">gender browser</a> for exploring this data by field. Our goal is to provide data and tools for policy makers and those interested in the sociology of science.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12} m={3}>
+          <a href="http://www.viziometrics.org/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={viziometricsImg} alt="Viziometrics Project" title="Viziometrics Project"/></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p>Scientometricians have spent considerable effort analyzing citations and text. They use these modes of communication as a way of measuring impact and tracking the flow of ideas. Figures have largely been ignored, yet contain the key findings and summaries of models and mechanisms. The aim of the <a href="http://www.viziometrics.org" target="blank">Viziometrics Project</a> is to focus on these dense, information objects. We have developed an open source platform for extracting the millions of figures in the literature and applying computer vision techniques for organizing and analyzing visual representations of data and ideas.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12} m={3}>
+          <a href="http://babel.eigenfactor.org" target="_blank"><img src={babelEigenImg} className="hoverable z-depth-2 responsive-img" alt="babel.eigenfactor.org" title="babel.eigenfactor.org"/></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p>The <a href="http://babel.eigenfactor.org" target="_blank">babel.eigenfactor.org</a> project aims to bring recommender research to scholarly navigation. There has been considerable effort developing recommendation algorithms for finding restaurants, movies and books, but far less effort helping scientists find relevant papers. To keep up with the exponential growth of the literature, scientists will need tools beyond simple google keyword searchers. They will need better interfaces and filtering algorithms designed specifically for scholarly search. The goal of the babel project is to build data environments for facilitating this research.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12} m={3}>
+          <a href="http://www.coursector.org/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={coursectorImg} alt="Coursector Project" title="Coursector Project"/></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p>UW is becoming a hub for data-driven research and teaching. However, its ability to apply data science tools to its own administrative data is underdeveloped - a general problem for higher education. We have several projects applying data science to university data. <a href="http://www.coursector.org/" target="_blank">Coursector.org</a> is one example. We are developing techniques for predicting <a href="" target="_blank">[1]</a> and understanding student attrition, evaluating program performance, and building course recommenders. Other examples include mapping UW's global imprint and examining library journal holdings, usage and costs.
+        </p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12} m={3}>
+          <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={openAccessImg} alt="Cost Effectiveness" title="Cost Effectiveness"/></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p>The <a href="https://en.wikipedia.org/wiki/Open_access" target="_blank">open access</a> movement has made great strides. There has been a significant increase in Open Access journals over the last ten years and many large foundations now <a href="http://www.gatesfoundation.org/How-We-Work/General-Information/Open-Access-Policy" target="_blank">require OA</a>. Unfortunately, during the same time, there has been a signficiant increase in exploitative, <a href="https://en.wikipedia.org/wiki/Predatory_open_access_publishing" target="_blank">predatory publishers</a>, which charge authors to publish with little or no peer review, editorial services or authentic certifiation. We are developing a <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank">cost effectiveness </a> tool that will create an open journal market of prices and influence scores where these kinds of journals can be objectively identified <a href="" target="_blank">[2]</a>.</p>
+        </Col>
+      </Row>
     </div>
   ),
   section_4: (
     <div>
-      <h2>Research Support</h2>
-      <hr/>
+      <Row>
+        <Col s={12}>
+          <h2>Research Support</h2>
+          <hr/>
+          <p>Science is a highly collaborative effort. It is no different for my research. I rely on my colleagues' expertise, students, university support, data providers and funders.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12}>
 
-      <div>
-
-      <p>Science is a highly collaborative effort. It is no different for my research. I rely on my colleagues' expertise, students, university support, data providers and funders.</p>
-
-      </div>
+        </Col>
+      </Row>
 
       <div>
 
@@ -333,7 +350,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'https://arxiv.org/abs/1607.00376',
-      pdf: 'papers/king2016arxiv.pdf',
+      pdf: king2016arxivPDF,
       abstract: "How common is self-citation in scholarly publication and does the practice vary by gender? Using novel methods and a dataset of 1.5 million research papers in the scholarly database JSTOR published between 1779-2011, we find that nearly 10% of references are self-citations by a paper's authors. We further find that over the years between 1779-2011, men cite their own papers 56% more than women do. In the last two decades of our data, men self-cite 70% more than women. Women are also more than ten percentage points more likely than men to not cite their own previous work at all. Despite increased representation of women in academia, this gender gap in self-citation rates has remained stable over the last 50 years. We break down self-citation patterns by academic field and number of authors, and comment on potential mechanisms behind these observations. These findings have important implications for scholarly visibility and likely consequences for academic careers.",
       bibTex: (
         <div>
@@ -342,6 +359,28 @@ const publicationsData = Immutable.Map({
               title = 	&#123;Men set their own cites high: Gender and self-citation across fields and over time&#125;,<br/>
               journal = 	&#123;arXiv preprint:1607.00376&#125;,<br/>
               year = 	&#123;2016&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'Leveraging Citation Networks to Visualize Scholarly Influence Over Time (2016)',
+      authors: <div>J. Portenoy, J. Hullman, <span className="bold">J.D. West</span></div>,
+      journal_volume: (
+        <div>
+          <span className="italics">arXiv</span>
+           :1611.07135.
+        </div>
+      ),
+      html: 'https://arxiv.org/abs/1611.07135',
+      pdf: Portenoy2016arxivPDF,
+      abstract: "Assessing the influence of a scholar's work is an important task for funding organizations, academic departments, and researchers. Common methods, such as measures of citation counts, can ignore much of the nuance and multidimensionality of scholarly influence. We present an approach for generating dynamic narrative visualizations of scholars' careers. This approach uses an animated node-link diagram showing the citation network accumulated around the researcher over the course of the career in concert with key indicators, highlighting influence both within and across fields. We developed our design in collaboration with one funding organization—the Pew Biomedical Scholars program—but the methods are generalizable to visualizations of scholarly influence in general. We applied the design method to the Microsoft Academic Graph, which includes more than 120 million publications. We validate our abstractions throughout the process through collaboration with the Pew Biomedical Scholars program officers and summative evaluations with their scholars.",
+      bibTex: (
+        <div>
+          &#64;ARTICLE&#123;Portenoy2016arxiv,<br/>
+              author = &#123;J. Portenoy and J. Hullman and J.D. West&#125;,<br/>
+              title = &#123;Leveraging Citation Networks to Visualize Scholarly Influence Over Time&#125;,<br/>
+              journal = &#123;arXiv preprint:1605.04951&#125;,<br/>
+              year = &#123;2016&#125;&#125;<br/>
         </div>
       )
     }

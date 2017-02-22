@@ -11,18 +11,10 @@ class Research extends Component {
         <Row>
           {researchData.get('header')}
         </Row>
-        <Row>
-          {researchData.get('section_1')}
-        </Row>
-        <Row>
-          {researchData.get('section_2')}
-        </Row>
-        <Row>
-          {researchData.get('section_3')}
-        </Row>
-        <Row>
-          {researchData.get('section_4')}
-        </Row>
+        {researchData.get('section_1')}
+        {researchData.get('section_2')}
+        {researchData.get('section_3')}
+        {researchData.get('section_4')}
       </section>
     );
   }
