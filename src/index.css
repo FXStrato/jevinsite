@@ -87,6 +87,9 @@ a:hover {
     h2 {
         font-size: 1.25rem;
     }
+    .home-intro {
+      height: 175px !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -107,6 +110,9 @@ a:hover {
         display: none;
         margin: 8px 8px 0px -66px !important;
     }
+    .home-intro {
+      height: 200px !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -115,5 +121,8 @@ a:hover {
     }
     h2 {
         font-size: 2.25rem;
+    }
+    .home-intro {
+      height: 225px !important;
     }
 }

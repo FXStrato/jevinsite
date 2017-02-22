@@ -31,10 +31,10 @@ const homeData = Immutable.Map({
   summary: (
     <Row>
       <Col className="center-align" s={12} m={4}>
-        <img className="responsive-img z-depth-2" src={jevinJPG} alt="Jevin West"/>
+        <img className="responsive-img z-depth-2 home-intro" src={jevinJPG} alt="Jevin West"/>
       </Col>
-      <Col s={12} m={8}>
-        <p>
+      <Col s={12} m={8} className="valign-wrapper home-intro">
+        <p className="valign">
           I am an Assistant Professor in the <a href="https://ischool.uw.edu/" target="_blank">Information School</a> at the <a href="http://www.washington.edu" target="_blank">University of Washington</a>. I co-direct the <a href="https://datalab.ischool.uw.edu" target="_blank">DataLab</a>. I study the <span className="italics">Science of Science</span>. My laboratory consists of millions of scholarly papers and the billions of links that connect these papers. I develop <span className="italics">knowledge discovery</span> tools to both study and facilitate science.  In particular, I am interested in the origin of scholarly disciplines and how sociological and economic factors drive and slow the evolution of science.
         </p>
       </Col>
@@ -156,6 +156,7 @@ const homeData = Immutable.Map({
 const researchData = Immutable.Map({
   header: (
     <Col className="center-align" s={12}>
+      <br/>
       <Link to="/publications"><img className="responsive-img boxed z-depth-2 hoverable" src={researchCollageImg} alt="Research Collage" title="Research Collage"/></Link>
     </Col>
   ),
@@ -228,7 +229,7 @@ const researchData = Immutable.Map({
         </Col>
       </Row>
       <Row>
-        <Col s={12} m={3}>
+        <Col s={12} m={3} className="center-align">
           <a href="http://www.eigenfactor.org/gender/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={genderAuthorshipImg} alt="Gender Authorship" title="Gender Authorship"/></a>
         </Col>
         <Col s={12} m={9}>
@@ -236,7 +237,7 @@ const researchData = Immutable.Map({
         </Col>
       </Row>
       <Row>
-        <Col s={12} m={3}>
+        <Col s={12} m={3} className="center-align">
           <a href="http://www.viziometrics.org/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={viziometricsImg} alt="Viziometrics Project" title="Viziometrics Project"/></a>
         </Col>
         <Col s={12} m={9}>
@@ -244,7 +245,7 @@ const researchData = Immutable.Map({
         </Col>
       </Row>
       <Row>
-        <Col s={12} m={3}>
+        <Col s={12} m={3} className="center-align">
           <a href="http://babel.eigenfactor.org" target="_blank"><img src={babelEigenImg} className="hoverable z-depth-2 responsive-img" alt="babel.eigenfactor.org" title="babel.eigenfactor.org"/></a>
         </Col>
         <Col s={12} m={9}>
@@ -252,7 +253,7 @@ const researchData = Immutable.Map({
         </Col>
       </Row>
       <Row>
-        <Col s={12} m={3}>
+        <Col s={12} m={3} className="center-align">
           <a href="http://www.coursector.org/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={coursectorImg} alt="Coursector Project" title="Coursector Project"/></a>
         </Col>
         <Col s={12} m={9}>
@@ -261,7 +262,7 @@ const researchData = Immutable.Map({
         </Col>
       </Row>
       <Row>
-        <Col s={12} m={3}>
+        <Col s={12} m={3} className="center-align">
           <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={openAccessImg} alt="Cost Effectiveness" title="Cost Effectiveness"/></a>
         </Col>
         <Col s={12} m={9}>
@@ -280,32 +281,29 @@ const researchData = Immutable.Map({
         </Col>
       </Row>
       <Row>
-        <Col s={12}>
-
+        <Col s={12} m={3} className="center-align">
+          <a href="https://datalab.ischool.uw.edu/" target="_blank"><img src={datalabImg} alt="DataLab" title="DataLab" className="hoverable z-depth-2 responsive-img"/></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p>The <a href="https://datalab.ischool.uw.edu/">DataLab</a> is a lab at the University of Washington Information School. <a href="http://faculty.washington.edu/espiro/">Emma Spiro</a>, <a href="http://www.jblumenstock.com">Josh Blumenstock</a> and I started the lab in 2013. Currently, Emma and I co-direct the lab. The idea is to bring students, post-docs and faculty together around topics in data science. Our research focus areas are the Science of Science, Computational Social Science, Visualization, Data Curation, Data for Developmental and Social Networks. One of our themes is doing Data Science for Social Good. Most of our projects have some social element. If you are prospective student or postdoc interested in joining the lab, please feel free to <a href="mailto:jevinw@uw.edu">contact me</a>.</p>
         </Col>
       </Row>
-
-      <div>
-
-        <div><a href="https://datalab.ischool.uw.edu/"><img src={datalabImg} alt="DataLab" title="DataLab" width="200" height="160"/></a></div>
-
-        <div><p>The <a href="https://datalab.ischool.uw.edu/">DataLab</a> is a lab at the University of Washington Information School. <a href="http://faculty.washington.edu/espiro/">Emma Spiro</a>, <a href="http://www.jblumenstock.com">Josh Blumenstock</a> and I started the lab in 2013. Currently, Emma and I co-direct the lab. The idea is to bring students, post-docs and faculty together around topics in data science. Our research focus areas are the Science of Science, Computational Social Science, Visualization, Data Curation, Data for Developmental and Social Networks. One of our themes is doing Data Science for Social Good. Most of our projects have some social element. If you are prospective student or postdoc interested in joining the lab, please feel free to <a href="mailto:jevinw@uw.edu">contact me</a>.</p></div>
-
-      </div>
-      <div>
-
-        <div><a target="_blank" href="https://datalab.ischool.uw.edu/"><img src={dataProvImg} alt="DataLab" title="DataLab" width="200" height="160"/></a></div>
-
-        <div><p><span className="bold">Data Providers.</span> Curating good, clean corpora takes an enormous amount of effort. I want to give a special thanks to JSTOR, arXiv, SSRN, PubMed, DBLP, Thomson Reuters, ADS, Aminer, Microsoft Academic Search, Semantic Scholar, Open Academic Society, and the many other groups contributing to (open) big scholarly data. For as much flak as I give publishers, I want to thank them as well. I may not completely agree with their antiquated models of dissemination, but they have provided an important service for science. They will continue to play an important role. </p></div>
-
-      </div>
-      <div>
-
-      <p><span className="bold">Funders.</span> I am grateful for the generous funding from many organizations supporting this research, including JSTOR, Microsoft, the NSF, Sloan Foundation, PNNL, University of Washington, and many others.</p>
-
-      </div>
-
-      <img src={fundersImg} alt="funders" title="funders" width="600" height="170" />
+      <Row>
+        <Col s={12} m={3} className="center-align">
+          <a target="_blank" href="https://datalab.ischool.uw.edu/"><img src={dataProvImg} alt="DataLab" title="DataLab" className="hoverable z-depth-2 responsive-img" /></a>
+        </Col>
+        <Col s={12} m={9}>
+          <p><span className="bold">Data Providers.</span> Curating good, clean corpora takes an enormous amount of effort. I want to give a special thanks to JSTOR, arXiv, SSRN, PubMed, DBLP, Thomson Reuters, ADS, Aminer, Microsoft Academic Search, Semantic Scholar, Open Academic Society, and the many other groups contributing to (open) big scholarly data. For as much flak as I give publishers, I want to thank them as well. I may not completely agree with their antiquated models of dissemination, but they have provided an important service for science. They will continue to play an important role. </p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12}>
+          <p><span className="bold">Funders.</span> I am grateful for the generous funding from many organizations supporting this research, including JSTOR, Microsoft, the NSF, Sloan Foundation, PNNL, University of Washington, and many others.</p>
+        </Col>
+        <Col s={12} className="center-align">
+          <img src={fundersImg} alt="funders" title="funders" className="responsive-img" />
+        </Col>
+      </Row>
     </div>
   )
 });
@@ -345,7 +343,7 @@ const publicationsData = Immutable.Map({
       journal_volume: (
         <div>
           <span className="italics">arXiv </span>
-          :1605.04951. Top 0.01% of all arXiv articles scored by <a href="https://www.altmetric.com/details/9231143?src=bookmarklet#score">Altmetric</a> (792)
+          :1605.04951. Top 0.01% of all arXiv articles scored by <a href="https://www.altmetric.com/details/9231143?src=bookmarklet#score" target="_blank">Altmetric</a> (792)
           <div>[In Review]</div>
         </div>
       ),
