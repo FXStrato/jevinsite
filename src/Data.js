@@ -8,6 +8,12 @@ import {Link} from 'react-router';
 //import West2014EconInquiryPDF from './documents/West2014EconInquiry.pdf';
 import king2016arxivPDF from './papers/King2016arxiv.pdf';
 import Portenoy2016arxivPDF from './papers/Portenoy2016arxiv.pdf';
+import Bae2016tkddPDF from './papers/Bae2016tkdd.pdf';
+import West2016IEEEPDF from './papers/West2016IEEE.pdf';
+import Sugimoto2015PLoSOnePDF from './papers/Sugimoto2015PLoSOne.pdf';
+import Rosvall2014NatureComPDF from './papers/Rosvall2014NatureCom.pdf';
+import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';
+import Vilhena2014SocSciencePDF from './papers/Vilhena2014SocScience.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -382,6 +388,368 @@ const publicationsData = Immutable.Map({
         </div>
       )
     }
+  ],
+  peerJournals: [
+    {
+      title: 'Toward the Operationalization of Visual Metaphor (2017)',
+      authors: <div>A. Hiniker, R. Hong, Y. Kim, N. Chen, <span className="bold">J.D. West</span>, C. Aragon</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">Journal of the American Society for Information Science &#38 Technology</span>
+          (In Press)
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "Many successful digital interfaces employ visual metaphors to convey features or data properties to users, but the characteristics that make a visual metaphor effective are not well-understood. We used a theoretical conception of metaphor from cognitive linguistics to design an interactive system for viewing the citation network of the corpora of literature in the JSTOR database, a highly connected compound graph of 2 million papers linked by 8 million citations. We created four variants of this system, manipulating two distinct properties of metaphor. We conducted a between-subjects experimental study with 80 participants to compare understanding and engagement when working with each version. We found that building on known image schemas improved response time on lookup tasks, while contextual detail predicted increases in persistence and the number of inferences drawn from the data. Schema-congruency combined with contextual detail produced the highest gains in comprehension. These findings provide concrete mechanisms by which designers presenting large data sets through metaphorical interfaces may improve their effectiveness and appeal with users.",
+      bibTex: (
+        <div>
+          &#64;article &#123;Hiniker2017jasist,<br/>
+                author = &#123;Hiniker, A. and Hong, R. and Kim, Y. and N. Chen and J.D. West and Aragon, C.&#125;,<br/>
+                title = &#123;Toward the Operationalization of Visual Metaphor&#125;,<br/>
+                journal = &#123;Journal of the American Society for Information Science and Technology&#125;,<br/>
+                volume = &#123;(in press)&#125;,<br/>
+                year = &#123;2016&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'All Patents Great and Small - A Big Data Network Approach to Valuation (2016)',
+      authors: <div>A.W. Torrance, <span className="bold">J.D. West</span></div>,
+      journal_volume: (
+        <div>
+          <span className="bold">Virginia Journal of Law and Technology</span>.
+          (In Press)
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: 'Measuring patent value is an important goal of scholars in both patent law and patent economics.  However, doing so objectively, accurately and consistently has proved exceedingly difficult.  At least part of the reason for this difficulty is that patents themselves are complex documents that are difficult even for patent experts to interpret.  In addition, issued patents are the result of an often long and complicated negotiation between applicant and patent office (in the United States, the United States Patent & Trademark Office ("USPTO")), the result of which is an opaque “prosecution history” upon which depend the scope of claimed patent rights.  In this Article, we approach the concept of patent value by using the relative positions of issued United States ("U.S.") patents embedded within a comprehensive patent citation network to measure the importance of those patents within the network.  Thus, we tend to refer to the "importance" of patents instead of "value", but there is good reason to believe that these two concepts share a very similar meaning.',
+      bibTex: (
+        <div>
+          &#64;article&#123;torrance2016virginia,<br/>
+              author = &#123;&#123;A.W. Torrance&#125; and &#123;J.D. West&#125;&#125;,<br/>
+              title = &#123;All Patents Great and Small - A Big Data Network Approach to Valuation&#125;,<br/>
+              journal = &#123;Virginia Journal of Law and Technology&#125;,<br/>
+              volume = &#123;(in press)&#125;,<br/>
+              year = &#123;2017&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'Scalable and Efficient Flow-Based Community Detection for Large-Scale Graph Analysis (2016)',
+      authors: <div>S. Bae, D. Halperin, <span className="bold">J.D. West</span>, M. Rosvall, B. Howe</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">ACM Transactions on Knowledge Discovery from Data</span>.
+          (In Press)
+        </div>
+      ),
+      html: '',
+      pdf: Bae2016tkddPDF,
+      abstract: "Community detection is a powerful approach to uncover important structures in large networks. For real networks that often describe the flow of some entity, flow-based community detection methods are particularly important. Infomap is a flow-based community detection algorithm that optimizes the objective function known as the map equation. Third-party benchmarks have found that Infomap is the most effective algorithm for identifying clusters in large graphs. Unfortunately, though Infomap works well, it is an inherently serial algorithm and thus cannot take advantage of multi-core processing in modern computers, limiting its use for analyzing large graphs quickly. In this paper, we propose a novel algorithm to optimize the map equation called RelaxMap. RelaxMap provides two important improvements over Infomap: parallelization, so that the map equation can be optimized over much larger graphs, and prioritization, so that the most important work occurs first, iterations take less time, and the algorithm converges faster. We implement these techniques using OpenMP on shared-memory multicore systems, and evaluate our approach on a variety of graphs from standard graph clustering benchmarks as well as real graph datasets. Our evaluation shows that both techniques are effective: RelaxMap achieves 70% parallel efficiency on 8 cores, and prioritization improves algorithm performance by an additional 20%–50% in average, depending on the graph properties. Additionally, RelaxMap converges in the similar number of iterations and provides solutions of equivalent quality as the serial Infomap implementation.",
+      bibTex: (
+        <div>
+          &#64;article&#123;Bae2016tkdd,<br/>
+              title=&#123;Scalable and Efficient Flow-Based Community Detection for Large-Scale Graph Analysis&#125;,<br/>
+              author=&#123;&#123;S. Bae&#125; and &#123;D. Halperin&#125; and \textbf&#123;J.D. West&#125; and &#123;M. Rosvall&#125; and &#123;B. Howe&#125;&#125;,<br/>
+              journal = &#123;ACM Transactions on Knowledge Discovery from Data&#125;,<br/>
+              volume = &#123;(in press)&#125;,<br/>
+              year = &#123;2016&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'A recommendation system based on hierarchical clustering of an article-level citation network (2016)',
+      authors: <div><span className="bold">J.D. West</span>, I. Wesley-Smith, C.T. Bergstrom</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">IEEE Transactions on Big Data</span>.
+          2(2): 113-123 <br/>
+          doi: 10.1109/TBDATA.2016.2541167
+        </div>
+      ),
+      html: 'http://doi.ieeecomputersociety.org/10.1109/TBDATA.2016.2541167',
+      pdf: West2016IEEEPDF,
+      abstract: "To better understand the flows of ideas or information through social and biological systems, researchers develop maps that reveal important patterns in network flows. In practice, network flow models have implied memoryless first-order Markov chains, but recently researchers have introduced higher-order Markov chain models with memory to capture patterns in multi-step pathways. Higher-order models are particularly important for effectively revealing actual, overlapping community structure, but higher-order Markov chain models suffer from the curse of dimensionality: their vast parameter spaces require exponentially increasing data to avoid overfitting and therefore make mapping inefficient already for moderate-sized systems. To overcome this problem, we introduce an efficient cross-validated mapping approach based on network flows modeled by sparse Markov chains. To illustrate our approach, we present a map of citation flows in science with research fields that overlap in multidisciplinary journals. Compared with currently used categories in science of science studies, the research fields form better units of analysis because the map more effectively captures how ideas flow through science.",
+      bibTex: (
+        <div>
+          &#64;ARTICLE&#123;west2016IEEE,<br/>
+              author = &#123;\textbf&#123;J.D. West&#125; and &#123;I. Wesley-Smith&#125; and &#123;C.T. Bergstrom&#125;&#125;,<br/>
+              title = &#123;A recommendation system based on hierarchical clustering of an article-level citation network&#125;,<br/>
+              journal = &#123;IEEE Transactions on Big Data&#125;,<br/>
+              volume = &#123;2&#125;,<br/>
+              number = &#123;2&#125;,<br/>
+              month = &#123;June&#125;,<br/>
+              pages = &#123;113-123&#125;,<br/>
+              doi = &#123;10.1109/TBDATA.2016.2541167&#125;,<br/>
+              year = &#123;2016&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'The Academic Advantage: Gender Disparities in Patenting (2015)',
+      authors: <div>C.R. Sugimoto, C. Ni, <span className="bold">J.D. West</span>, Vincent Lariviere</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">PLoS One</span>.
+          <span class="volume"> 10(5): e0128000, doi: 10.1371/journal.pone.0128000</span>
+        </div>
+      ),
+      html: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128000',
+      pdf: Sugimoto2015PLoSOnePDF,
+      abstract: "We analyzed gender disparities in patenting by country, technological area, and type of as- signee using the 4.6 million utility patents issued between 1976 and 2013 by the United States Patent and Trade Office (USPTO). Our analyses of fractionalized inventorships dem- onstrate that women’s rate of patenting has increased from 2.7% of total patenting activity to 10.8% over the nearly 40-year period. Our results show that, in every technological area, female patenting is proportionally more likely to occur in academic institutions than in corpo- rate or government environments. However, women’s patents have a lower technological impact than that of men, and that gap is wider in the case of academic patents. We also pro- vide evidence that patents to which women—and in particular academic women—contribut- ed are associated with a higher number of International Patent Classification (IPC) codes and co-inventors than men. The policy implications of these disparities and academic set- ting advantages are discussed.",
+      bibTex: (
+        <div>
+          &#64;Article&#123;Sugimoto2015PlosOne,<br/>
+              author = &#123;C.R. Sugimoto AND C. Ni AND J.D. West AND V. Larivière&#125;,<br/>
+              journal = &#123;PLoS ONE&#125;,<br/>
+              publisher = &#123;Public Library of Science&#125;,<br/>
+              title = &#123;The Academic Advantage: Gender Disparities in Patenting&#125;,<br/>
+              year = &#123;2015&#125;,<br/>
+              month = &#123;05&#125;,<br/>
+              volume = &#123;10&#125;,<br/>
+              url = &#123;http://dx.doi.org/10.1371%2Fjournal.pone.0128000&#125;,<br/>
+              pages = &#123;e0128000&#125;,<br/>
+              number = &#123;5&#125;,<br/>
+              doi = &#123;10.1371/journal.pone.0128000&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'Memory in network flows and its effects on spreading dynamics and community detection (2014)',
+      authors: <div>M. Rosvall, A.V. Esquivel, A. Lancichinetti, <span className="bold">J.D. West</span>, R. Lambiotte</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">Nature Communications.</span>
+          <span class="volume"> 5:4630, doi:10.1038/ncomms5630</span>
+        </div>
+      ),
+      html: 'http://www.nature.com/articles/ncomms5630',
+      pdf: Rosvall2014NatureComPDF,
+      abstract: "Random walks on networks is the standard tool for modelling spreading processes in social and biological systems. This first-order Markov approach is used in conventional community detection, ranking and spreading analysis, although it ignores a potentially important feature of the dynamics: where flow moves to may depend on where it comes from. Here we analyse pathways from different systems, and although we only observe marginal consequences for disease spreading, we show that ignoring the effects of second-order Markov dynamics has important consequences for community detection, ranking and information spreading. For example, capturing dynamics with a second-order Markov model allows us to reveal actual travel patterns in air traffic and to uncover multidisciplinary journals in scientific communication. These findings were achieved only by using more available data and making no additional assumptions, and therefore suggest that accounting for higher-order memory in network flows can help us better understand how real systems are organized and function.",
+      bibTex: (
+        <div>
+          &#64;article&#123;Rosvall2014NatureCom,
+              title=&#123;Memory in network flows and its effects on spreading dynamics and community detection&#125;,<br/>
+              author=&#123;&#123;M. Rosvall&#125; and &#123;A.V. Esquivel&#125; and &#123;A. Lancichinetti&#125; and \textbf&#123;J.D. West&#125; and &#123;R. Lambiotte&#125;&#125;,<br/>
+              journal=&#123;Nature Communications&#125;,<br/>
+              volume=&#123;5&#125;,<br/>
+              number=&#123;1&#125;,<br/>
+              year=&#123;2014&#125;,<br/>
+              publisher=&#123;Nature Publishing Group&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'Cost-effectiveness of open access publications (2014)',
+      authors: <div><span className="bold">J.D. West</span>, T.C. Bergstrom, C.T. Bergstrom</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">Economic Inquiry</span>.
+          <span class="volume"> 52: 1315-1321, doi: 10.1111/ecin.12117</span>
+        </div>
+      ),
+      html: 'http://onlinelibrary.wiley.com/doi/10.1111/ecin.12117/abstract',
+      pdf: West2014EconInquiryPDF,
+      abstract: "Open access publishing has been proposed as one possible solution to the serials crisis—the rapidly growing subscription prices in scholarly journal publishing. However, open access publishing can present economic pitfalls as well, such as excessive article processing charges. We discuss the decision that an author faces when choosing to submit to an open access journal. We develop an interactive tool to help authors compare among alternative open access venues and thereby get the most for their article processing charges.",
+      bibTex: (
+        <div>
+          &#64;article &#123;West2014EconInquiry,<br/>
+              author = &#123;J.D. West and T.C. Bergstrom and C.T. Bergstrom&#125;,<br/>
+              title = &#123;Cost Effectiveness of Open Access Publications&#125;,<br/>
+              journal = &#123;Economic Inquiry&#125;,<br/>
+              volume = &#123;52&#125;,<br/>
+              number = &#123;4&#125;,<br/>
+              publisher = &#123;Wiley Periodicals, Inc.&#125;,<br/>
+              issn = &#123;1465-7295&#125;,<br/>
+              url = &#123;http://dx.doi.org/10.1111/ecin.12117&#125;,<br/>
+              doi = &#123;10.1111/ecin.12117&#125;,<br/>
+              pages = &#123;1315--1321&#125;,<br/>
+              year = &#123;2014&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: 'Finding Cultural Holes: How Structure and Culture Diverge in Networks of Scholarly Communication (2014)',
+      authors: <div>D. Vilhena, J.G. Foster, M. Rosvall, <span className="bold">J.D. West</span>, J.A. Evans, C.T. Bergstrom</div>,
+      journal_volume: (
+        <div>
+          <span className="italics">Sociological Science</span>.
+          <span class="volume"> 1: 221-238, doi: 10.15195/v1.a15</span>
+        </div>
+      ),
+      html: 'http://www.sociologicalscience.com/articles-vol1-15-221/',
+      pdf: Vilhena2014SocSciencePDF,
+      abstract: "Divergent interests, expertise, and language form cultural barriers to communication. No formalism has been available to characterize these “cultural holes.” Here we use information theory to measure cultural holes and demonstrate our formalism in the context of scientific communication using papers from JSTOR. We extract scientific fields from the structure of citation flows and infer field-specific cultures by cataloging phrase frequencies in full text and measuring the relative efficiency of between-field communication. We then combine citation and cultural information in a novel topographic map of science, mapping citations to geographic distance and cultural holes to topography. By analyzing the full citation network, we find that communicative efficiency decays with citation distance in a field-specific way. These decay rates reveal hidden patterns of cohesion and fragmentation. For example, the ecological sciences are balkanized by jargon, whereas the social sciences are relatively integrated. Our results highlight the importance of enriching structural analyses with cultural data.",
+      bibTex: (
+        <div>
+          &#64;article&#123;Vilhena2014SocScience,<br/>
+              author = &#123;D. Vilhena and J. Foster and M. Rosvall and J.D. West and J. Evans and C. Bergstrom&#125;,<br/>
+              title = &#123;Finding Cultural Holes: How Structure and Culture Diverge in Networks of Scholarly Communication&#125;,<br/>
+              doi = &#123;10.15195/v1.a15&#125;,<br/>
+              issn = &#123;23306696&#125;,<br/>
+              journal = &#123;Sociological Science&#125;,<br/>
+              pages = &#123;221--238&#125;,<br/>
+              url = &#123;http://www.sociologicalscience.com/articles-vol1-15-221/&#125;,<br/>
+              volume = &#123;1&#125;,<br/>
+              year = &#123;2014&#125;&#125;<br/>
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
+    {
+      title: '',
+      authors: <div></div>,
+      journal_volume: (
+        <div>
+
+        </div>
+      ),
+      html: '',
+      pdf: '',
+      abstract: "",
+      bibTex: (
+        <div>
+
+        </div>
+      )
+    },
   ],
 });
 

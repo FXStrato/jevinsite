@@ -22,7 +22,21 @@ class Publications extends Component {
           <span className="bold">{elem.title}</span><br/>
           {elem.authors}
           {elem.journal_volume}
-          [<a href={elem.html} target="_blank">HTML</a> | <a href={elem.pdf} target="_blank">PDF</a>]
+          {elem.html && elem.pdf ?
+            <span>[<a href={elem.html} target="_blank">HTML</a> | <a href={elem.pdf} target="_blank">PDF</a>]</span>
+            :
+            ''
+          }
+          {elem.html && !elem.pdf ?
+            <span>[<a href={elem.html} target="_blank">HTML</a>]</span>
+            :
+            ''
+          }
+          {!elem.html && elem.pdf ?
+            <span>[<a href={elem.pdf} target="_blank">PDF</a>]</span>
+            :
+            ''
+          }
           <Collapsible>
             <CollapsibleItem header="Abstract">
               {elem.abstract}
@@ -35,6 +49,40 @@ class Publications extends Component {
       )
     });
 
+    let peerJournals = _.map(publicationsData.get('peerJournals'), (elem, index) => {
+      return (
+        <li key={'peerJournals-' + index} style={{marginBottom: 10}}>
+          <span className="bold">{elem.title}</span><br/>
+          {elem.authors}
+          {elem.journal_volume}
+          {elem.html && elem.pdf ?
+            <span>[<a href={elem.html} target="_blank">HTML</a> | <a href={elem.pdf} target="_blank">PDF</a>]</span>
+            :
+            ''
+          }
+          {elem.html && !elem.pdf ?
+            <span>[<a href={elem.html} target="_blank">HTML</a>]</span>
+            :
+            ''
+          }
+          {!elem.html && elem.pdf ?
+            <span>[<a href={elem.pdf} target="_blank">PDF</a>]</span>
+            :
+            ''
+          }
+          <Collapsible>
+            <CollapsibleItem header="Abstract">
+              {elem.abstract}
+            </CollapsibleItem>
+            <CollapsibleItem header="BibTex">
+              {elem.bibTex}
+            </CollapsibleItem>
+          </Collapsible>
+        </li>
+      )
+    });
+
+
     return (
       <section className="container extra-padding">
         <Row>
@@ -45,11 +93,22 @@ class Publications extends Component {
               {inPrep}
             </ul>
           </Col>
+        </Row>
+        <Row>
           <Col s={12}>
             <h2>Pre-Prints</h2>
             <hr/>
             <ul>
               {prePrints}
+            </ul>
+          </Col>
+        </Row>
+        <Row>
+          <Col s={12}>
+            <h2>Peer-Review Journals</h2>
+            <hr/>
+            <ul>
+              {peerJournals}
             </ul>
           </Col>
         </Row>
