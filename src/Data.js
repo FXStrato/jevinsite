@@ -14,6 +14,7 @@ import Sugimoto2015PLoSOnePDF from './papers/Sugimoto2015PLoSOne.pdf';
 import Rosvall2014NatureComPDF from './papers/Rosvall2014NatureCom.pdf';
 import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';
 import Vilhena2014SocSciencePDF from './papers/Vilhena2014SocScience.pdf';
+import West2013PLoSOnePDF from './papers/West2013PLoSOne.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -598,19 +599,29 @@ const publicationsData = Immutable.Map({
       )
     },
     {
-      title: '',
-      authors: <div></div>,
+      title: 'The Role of Gender in Scholarly Authorship (2013)',
+      authors: <div><span className="bold">J.D. West</span>, J. Jacquet, M. King, S.J. Correll, C.T. Bergstrom</div>,
       journal_volume: (
         <div>
-
+          <span className="italics">PLoS One</span>.
+          <span class="volume"> 8(7): e66212, doi: 10.1371/journal.pone.0066212</span>
         </div>
       ),
-      html: '',
-      pdf: '',
-      abstract: "",
+      html: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066212',
+      pdf: West2013PLoSOnePDF,
+      abstract: "Gender disparities appear to be decreasing in academia according to a number of metrics, such as grant funding, hiring, acceptance at scholarly journals, and productivity, and it might be tempting to think that gender inequity will soon be a problem of the past. However, a large-scale analysis based on over eight million papers across the natural sciences, social sciences, and humanities reveals a number of understated and persistent ways in which gender inequities remain. For instance, even where raw publication counts seem to be equal between genders, close inspection reveals that, in certain fields, men predominate in the prestigious first and last author positions. Moreover, women are significantly underrepresented as authors of single-authored papers. Academics should be aware of the subtle ways that gender disparities can occur in scholarly authorship.",
       bibTex: (
         <div>
-
+          &#64;article&#123;West2013PlosOne,<br/>
+              title=&#123;The role of gender in scholarly authorship&#125;,<br/>
+              author=&#123;J.D. West and J. Jacquet and M.M. King and S.J. Correll and C.T. Bergstrom&#125;,<br/>
+              journal=&#123;PloS One&#125;,<br/>
+              volume=&#123;8&#125;,<br/>
+              number=&#123;7&#125;,<br/>
+              pages=&#123;e66212&#125;,<br/>
+              year=&#123;2013&#125;,<br/>
+              doi = &#123;10.1371/journal.pone.0066212&#125;,<br/>
+              publisher=&#123;Public Library of Science&#125;&#125;<br/>
         </div>
       )
     },
