@@ -2,8 +2,14 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import {Row, Col, Collapsible, CollapsibleItem} from 'react-materialize';
 import {publicationsData} from './Data';
+import Scroll from 'react-scroll';
+
+let scroll = Scroll.animateScroll;
 
 class Publications extends Component {
+  componentDidMount = () => {
+    scroll.scrollToTop({duration: 0});
+  }
   render() {
 
     let inPrep = _.map(publicationsData.get('inPrep'), (elem, index) => {

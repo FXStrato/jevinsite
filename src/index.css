@@ -20,6 +20,7 @@ a {
     text-decoration: none;
     color: #9C27B0 !important;
     animation: a-color-back 0.25s;
+    font-weight: bold;
 }
 
 a:hover {
@@ -68,6 +69,10 @@ a:hover {
 
 .reduce-bot-margin {
     margin-bottom: 0 !important;
+}
+
+.hidden {
+  display: none;
 }
 
 #navbar-appbar>button>div>svg {

@@ -2,8 +2,14 @@ import React, { Component } from 'react';
 import {Row, Col, Collection, CollectionItem} from 'react-materialize';
 import _ from 'lodash';
 import {homeData} from './Data';
+import Scroll from 'react-scroll';
+
+let scroll = Scroll.animateScroll;
 
 class Home extends Component {
+  componentDidMount = () => {
+    scroll.scrollToTop({duration: 0});
+  }
   render() {
 
     let announcements = _.map(homeData.get('announcements'), (elem, index) => {

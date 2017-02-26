@@ -4,17 +4,18 @@ import {Row, Col} from 'react-materialize';
 import {Link} from 'react-router';
 
 //PDF's used
-//import Aulck2016ICMLPDF from './documents/Aulck2016ICML.pdf';
-//import West2014EconInquiryPDF from './documents/West2014EconInquiry.pdf';
+import Aulck2016ICMLPDF from './papers/Aulck2016ICML.pdf';
+import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';
 import king2016arxivPDF from './papers/King2016arxiv.pdf';
 import Portenoy2016arxivPDF from './papers/Portenoy2016arxiv.pdf';
 import Bae2016tkddPDF from './papers/Bae2016tkdd.pdf';
 import West2016IEEEPDF from './papers/West2016IEEE.pdf';
 import Sugimoto2015PLoSOnePDF from './papers/Sugimoto2015PLoSOne.pdf';
 import Rosvall2014NatureComPDF from './papers/Rosvall2014NatureCom.pdf';
-import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';
 import Vilhena2014SocSciencePDF from './papers/Vilhena2014SocScience.pdf';
 import West2013PLoSOnePDF from './papers/West2013PLoSOne.pdf';
+import Peak2004PNASPDF from './papers/Peak2004PNAS.pdf';
+import Prado2009JTBPDF from './papers/Prado2009JTB.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -30,6 +31,8 @@ import coursectorImg from './img/coursector.png';
 import openAccessImg from './img/open_access.png';
 import dataProvImg from './img/data_providers.png';
 import fundersImg from './img/funders.png';
+import science_flowImg from './img/science_flow.png';
+import snow_mountainsImg from './img/snow_mountains.png';
 
 //Drawer/tab links navlinks
 const drawerLinks = Immutable.List([{link: '/', body: 'Home'}, {link: '/research', body: 'Research'}, {link: '/publications', body: 'Publications'}, {link: '/teaching', body: 'Teaching'}, {link: '/presentations', body: 'Presentations'}, {link: '/bio', body: 'Bio'}, {link: '/cv', body: 'CV'},{link: '/news', body: 'News'}]);
@@ -188,7 +191,7 @@ const researchData = Immutable.Map({
 
         <p><span className="bold">(2)</span> I develop tools and techniques for auto-categorizing and mining the literature, improving scholarly navigation (e.g., recommenders) and rethinking models of dissemination. My passion is to facilitate science and to keep this powerful machine running well. What I learn from knowledge science informs the recommender systems, search tools and mining techniques and vice versa. </p>
 
-        <p><span className="bold">Citation networks.</span> As a biologist, I appreciate the utility of a good model system.  Most of what we know about biology comes from a fruit fly, a worm and a small bacterium. A citation network is my model system for studying the flow of information. This model system is found, not within any <span className="italics">one</span> scholarly paper, but among the millions of scholarly papers that have been written over the last several centuries and the references that connect these papers. Initially, it was my interest in the history and sociology of science that attracted me to citation networks.</p>
+        <p id="model_system"><span className="bold">Citation networks.</span> As a biologist, I appreciate the utility of a good model system.  Most of what we know about biology comes from a fruit fly, a worm and a small bacterium. A citation network is my model system for studying the flow of information. This model system is found, not within any <span className="italics">one</span> scholarly paper, but among the millions of scholarly papers that have been written over the last several centuries and the references that connect these papers. Initially, it was my interest in the history and sociology of science that attracted me to citation networks.</p>
 
         <ul className="browser-default">
             <li>How does the structure of science change over time?</li>
@@ -223,7 +226,7 @@ const researchData = Immutable.Map({
     <div>
       <Row>
         <Col s={12}>
-          <h2>Research Projects</h2>
+          <h2 id="research_projects">Research Projects</h2>
           <hr/>
         </Col>
       </Row>
@@ -264,7 +267,7 @@ const researchData = Immutable.Map({
           <a href="http://www.coursector.org/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={coursectorImg} alt="Coursector Project" title="Coursector Project"/></a>
         </Col>
         <Col s={12} m={9}>
-          <p>UW is becoming a hub for data-driven research and teaching. However, its ability to apply data science tools to its own administrative data is underdeveloped - a general problem for higher education. We have several projects applying data science to university data. <a href="http://www.coursector.org/" target="_blank">Coursector.org</a> is one example. We are developing techniques for predicting <a href="" target="_blank">[1]</a> and understanding student attrition, evaluating program performance, and building course recommenders. Other examples include mapping UW's global imprint and examining library journal holdings, usage and costs.
+          <p>UW is becoming a hub for data-driven research and teaching. However, its ability to apply data science tools to its own administrative data is underdeveloped - a general problem for higher education. We have several projects applying data science to university data. <a href="http://www.coursector.org/" target="_blank">Coursector.org</a> is one example. We are developing techniques for predicting <a href={Aulck2016ICMLPDF} target="_blank">[1]</a> and understanding student attrition, evaluating program performance, and building course recommenders. Other examples include mapping UW's global imprint and examining library journal holdings, usage and costs.
         </p>
         </Col>
       </Row>
@@ -273,7 +276,7 @@ const researchData = Immutable.Map({
           <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={openAccessImg} alt="Cost Effectiveness" title="Cost Effectiveness"/></a>
         </Col>
         <Col s={12} m={9}>
-          <p>The <a href="https://en.wikipedia.org/wiki/Open_access" target="_blank">open access</a> movement has made great strides. There has been a significant increase in Open Access journals over the last ten years and many large foundations now <a href="http://www.gatesfoundation.org/How-We-Work/General-Information/Open-Access-Policy" target="_blank">require OA</a>. Unfortunately, during the same time, there has been a signficiant increase in exploitative, <a href="https://en.wikipedia.org/wiki/Predatory_open_access_publishing" target="_blank">predatory publishers</a>, which charge authors to publish with little or no peer review, editorial services or authentic certifiation. We are developing a <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank">cost effectiveness </a> tool that will create an open journal market of prices and influence scores where these kinds of journals can be objectively identified <a href="" target="_blank">[2]</a>.</p>
+          <p>The <a href="https://en.wikipedia.org/wiki/Open_access" target="_blank">open access</a> movement has made great strides. There has been a significant increase in Open Access journals over the last ten years and many large foundations now <a href="http://www.gatesfoundation.org/How-We-Work/General-Information/Open-Access-Policy" target="_blank">require OA</a>. Unfortunately, during the same time, there has been a signficiant increase in exploitative, <a href="https://en.wikipedia.org/wiki/Predatory_open_access_publishing" target="_blank">predatory publishers</a>, which charge authors to publish with little or no peer review, editorial services or authentic certifiation. We are developing a <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank">cost effectiveness </a> tool that will create an open journal market of prices and influence scores where these kinds of journals can be objectively identified <a href={West2014EconInquiryPDF} target="_blank">[2]</a>.</p>
         </Col>
       </Row>
     </div>
@@ -494,7 +497,7 @@ const publicationsData = Immutable.Map({
       journal_volume: (
         <div>
           <span className="italics">PLoS One</span>.
-          <span class="volume"> 10(5): e0128000, doi: 10.1371/journal.pone.0128000</span>
+          <span className="volume"> 10(5): e0128000, doi: 10.1371/journal.pone.0128000</span>
         </div>
       ),
       html: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128000',
@@ -523,7 +526,7 @@ const publicationsData = Immutable.Map({
       journal_volume: (
         <div>
           <span className="italics">Nature Communications.</span>
-          <span class="volume"> 5:4630, doi:10.1038/ncomms5630</span>
+          <span className="volume"> 5:4630, doi:10.1038/ncomms5630</span>
         </div>
       ),
       html: 'http://www.nature.com/articles/ncomms5630',
@@ -548,7 +551,7 @@ const publicationsData = Immutable.Map({
       journal_volume: (
         <div>
           <span className="italics">Economic Inquiry</span>.
-          <span class="volume"> 52: 1315-1321, doi: 10.1111/ecin.12117</span>
+          <span className="volume"> 52: 1315-1321, doi: 10.1111/ecin.12117</span>
         </div>
       ),
       html: 'http://onlinelibrary.wiley.com/doi/10.1111/ecin.12117/abstract',
@@ -577,7 +580,7 @@ const publicationsData = Immutable.Map({
       journal_volume: (
         <div>
           <span className="italics">Sociological Science</span>.
-          <span class="volume"> 1: 221-238, doi: 10.15195/v1.a15</span>
+          <span className="volume"> 1: 221-238, doi: 10.15195/v1.a15</span>
         </div>
       ),
       html: 'http://www.sociologicalscience.com/articles-vol1-15-221/',
@@ -604,7 +607,7 @@ const publicationsData = Immutable.Map({
       journal_volume: (
         <div>
           <span className="italics">PLoS One</span>.
-          <span class="volume"> 8(7): e66212, doi: 10.1371/journal.pone.0066212</span>
+          <span className="volume"> 8(7): e66212, doi: 10.1371/journal.pone.0066212</span>
         </div>
       ),
       html: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066212',
@@ -764,4 +767,61 @@ const publicationsData = Immutable.Map({
   ],
 });
 
-export {drawerLinks, homeData, researchData, publicationsData};
+const bioData = Immutable.Map({
+  bio: (
+    <div>
+      <h1 className="hidden">Bio</h1>
+      <Row>
+        <Col s={12}>
+          <p>"<span className="italics">...work on interesting problems, problems that are messy and problems that get you excited; don't consider disciplinary boundaries; teach; write a few papers; and most importantly, surround yourself with good people...</span>" --my inner research voice</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12} className="center-align">
+          <a target="_blank" href="http://www.nature.com/nature/journal/v510/n7506/full/510470a.html?message-global=remove"><img className="responsive-img hoverable z-depth-2" src={science_flowImg} alt="Emergence of Neuroscience" title="Emergence of Neuroscience"/></a>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12}>
+          <h2>About Me</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>I am an Assistant Professor in the <a target="_blank" href="https://ischool.uw.edu">Information School</a> at the <a target="_blank" href="http://www.washington.edu">University of Washington</a> (UW). I co-direct the <a target="_blank" href="https://datalab.ischool.uw.edu/">DataLab</a>, study the <Link to="Research.html">Science of Science</Link>, and coordinate Data Science education at UW and the <a target="_blank" href="http://escience.washington.edu">eScience Institute</a>.</p>
+
+          <p>I see information as a central unifying them in society, biology and our physical world. I spend much of my time developing methods for mapping large citation networks in order to understand the evolution of scholarly ideas; however, network thinking is useful for understanding the movement of <a target="_blank" href={Peak2004PNASPDF}>[1]</a> water molecules in stomatal networks, <a target="_blank" href={Prado2009JTBPDF}>[2]</a> infectious disease in human contact networks, and <a target="_blank" href={Rosvall2014NatureComPDF}>[3]</a> passengers in airline transportation networks. I co-founded several <Link to="/research#research_projects">research projects</Link> in the Science of Science including <a target="_blank" href="http://www.eigenfactor.org">Eigenfactor.org</a> and <a target="_blank" href="http://www.viziometrics.org">Viziometrics.org</a>.</p>
+
+          <p>In my lifetime, I have seen the advent of the home computer, the internet, email, and google. This revolution in technology, though, has produced more than just convenient forms of communication.  The information age has delivered new data, new questions and new metaphors to a whole new generation of scientists. My vocabulary as a biologist includes words like code, compression and computation; my microscope consists of cellular automata, network models and genetic algorithms. This para-discipline of science - where economists talk like biologists and biologists talk like computer scientists - is where I think the some of the most interesting questions lie.</p>
+
+          <p>I am not an expert in any one field, but my training has given me several hats. I study the properties of citation networks and look for large-scale patterns within these networks (~ physics). Citation networks - model systems for information flow - are ideal for studying the birth and death of ideas (~ biology). I investigate biases in science; specifically, I investigate gender differences in authorship and promotion (~ sociology). And I develop algorithms for mapping and navigating science (~ computer science). Interdisciplinary is requisite of most research disciplines nowadays - the science of science is no different. My non-disciplinary training has prepared and motivated me to pursue the non-disciplinary.</p>
+
+          <p>People often ask me why I reside in an information school if my training is in biology and physics. My passion is in facilitating science as much as in participating science. The ethos of Information Science is to “make information work”. I want to do this for Science. I want to bring the latest and greatest from data mining, machine learning and computer vision to scientists and their day-to-day interactions with the literature.</p>
+        </Col>
+        <Col s={12} className="center-align">
+          <img src={snow_mountainsImg} alt="snowy mountains" title="snowy mountains" className="responsive-img boxed"/>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12}>
+          <h2>Life and Information</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>I grew up in the small town of Ammon, Idaho. I attended <a target="_blank" href="http://www.usu.edu/">Utah Sate University</a> to play tennis and ski in some of the best snow on earth.  After finishing a bachelors degree in biology, I combined a tennis-pro hiatus with a Masters degree. I worked with <a target="_blank" href="http://bioweb.usu.edu/kmott/">Keith Mott</a> and <a target="_blank" href="http://www.physics.usu.edu/department/faculty/peak.html">David Peak</a> investigating stomatal networks as distributed computers <a target="_blank" href="">[1]</a>. This work hooked my interests in networks, complex systems, and information theory.</p>
+
+          <p>In the fall of 2005, I began my PhD at UW working with <a target="_blank" href="http://octavia.zoology.washington.edu">Carl Bergstrom</a> and <a target="_blank" href="http://kerrlab.org">Ben Kerr</a>. I was interested in studying the role of information processing systems in the evolution of life. During this time, I was introduced to citation networks as a <Link to="/research#model_system">model system</Link> for studying information flows in networks. The specific problem was to figure out how to better measure scholarly influence and how to automatically map scientific disciplines. That research has led me to where I am today, which includes developing methods for mapping science<a target="_blank" href="http://www.eigenfactor.org/map/maps.php">[4]</a>, visualizing citation networks <a target="_blank" href="http://well-formed.eigenfactor.org">[5]</a>, investigating the role of gender in academia <a target="_blank" href="http://www.eigenfactor.org/gender/">[6]</a>, understanding the economics of publishing and its role on science <a target="_blank" href="http://www.eigenfactor.org/openaccess/">[7]</a>, and developing scholarly recommender systems. <a target="_blank" href="http://babel.eigenfactor.org">[8]</a>.</p>
+
+          <p>During my post-doc, I was fortunate to continue thinking about networks and applying community detection methods to large, citation networks. I worked with <a target="_blank" href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a> in the <a target="_blank" href="http://www.org.umu.se/icelab/english/">IceLab</a> at <a target="_blank" href="http://www.umu.se/english/">Umea University</a> (Sweden). One of the primary research projects from the IceLab is <a target="_blank" href="http://www.mapequation.org">mapequation.org</a>. The algorithms from this project form the basis for much of the work we do in our lab around the mapping of scientific literature.</p>
+
+
+          <p>I have been lucky in my research journey so far.  I have worked with collaborators and students as passionate about science as me. I have had mentors that are both good researchers and good people. And I have worked in departments and universities that encourage the crossing of disciplinary boundaries.</p>
+
+
+          <p style={{float: 'right'}}>"<span className="italics">The whole is the sum of the parts <span className="bold">plus</span> the interactions...</span>" -Martin Rosvall</p>
+        </Col>
+      </Row>
+    </div>
+  )
+});
+
+export {drawerLinks, homeData, researchData, publicationsData, bioData};

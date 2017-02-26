@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import {Row, Col} from 'react-materialize';
+import {bioData} from './Data';
+import Scroll from 'react-scroll';
+
+let scroll = Scroll.animateScroll;
 
 class Bio extends Component {
+  componentDidMount = () => {
+    scroll.scrollToTop({duration: 0});
+  }
   render() {
     return (
       <section className="container">
-        <Row>
-          <Col s={12}>
-            <div>
-              Bio goes here
-            </div>
-          </Col>
-        </Row>
+        {bioData.get('bio')}
       </section>
     );
   }
