@@ -16,6 +16,10 @@ import Vilhena2014SocSciencePDF from './papers/Vilhena2014SocScience.pdf';
 import West2013PLoSOnePDF from './papers/West2013PLoSOne.pdf';
 import Peak2004PNASPDF from './papers/Peak2004PNAS.pdf';
 import Prado2009JTBPDF from './papers/Prado2009JTB.pdf';
+import West2013JASISTPDF from './papers/West2013JASIST.pdf';
+import West2010CRLPDF from './papers/West2010CRL.pdf';
+import West2010JASISTPDF from './papers/West2010JASIST.pdf';
+import Althouse2008JASISTPDF from './papers/Althouse2008JASIST.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -629,70 +633,107 @@ const publicationsData = Immutable.Map({
       )
     },
     {
-      title: '',
-      authors: <div></div>,
+      title: 'Author-Level Eigenfactor Metrics: Evaluating the Influence of Authors, Institutions and Countries Within the SSRN Community (2013)',
+      authors: <div><span className="bold">J. D. West</span>, M. C. Jensen, R. J. Dandrea, G. J. Gordon, and C. T. Bergstrom</div>,
       journal_volume: (
         <div>
-
+          <span className="italics">Journal of the American Society for Information Science &amp; Technology</span>.
+          <span className="volume"> 64(4): 787-801, doi: 10.1002/asi.22790</span>
         </div>
       ),
-      html: '',
-      pdf: '',
-      abstract: "",
+      html: 'http://onlinelibrary.wiley.com/doi/10.1002/asi.22790/full',
+      pdf: West2013JASISTPDF,
+      abstract: "In this article, we show how the Eigenfactor score, originally designed for ranking scholarly journals, can be adapted to rank the scholarly output of authors, institutions, and countries based on author-level citation data. Using the methods described in this article, we provide Eigenfactor rankings for 84,808 disambiguated authors of 240,804 papers in the Social Science Research Network (SSRN)â€”a preprint and postprint archive devoted to the rapid dissemination of scholarly research in the social sciences and humanities. As an additive metric, the Eigenfactor scores are readily computed for collectives such as departments or institutions as well. We show that a collectiveâ€™s Eigenfactor score can be computed either by summing the Eigenfactor scores of its members or by working directly with a collective-level cross-citation matrix. We provide Eigenfactor rankings for institutions and countries in the SSRN repository. With a network-wide comparison of Eigenfactor scores and download tallies, we demonstrate that Eigenfactor scores provide information that is both different from and complementary to that provided by download counts. We see author-level ranking as one filter for navigating the scholarly literature, and note that such rankings generate incentives for more open scholarship, because authors are rewarded for making their work available to the community as early as pos- sible and before formal publication.",
       bibTex: (
         <div>
-
+			  @article&#123;West2013JASIST,<br/>
+					title = &#123;Author-level Eigenfactor metrics: Evaluating the influence of authors, institutions, and countries within the social science research network community&#125;,<br/>
+				  	url = &#123;http://doi.wiley.com/10.1002/asi.22790&#125;,<br/>
+				  	author = &#123;J.D. West and M.C. Jensen and R.J. Dandrea and G.J. Gordon and C.T. Bergstrom&#125;,<br/>
+					doi = &#123;10.1002/asi.22790&#125;,<br/>
+					issn = &#123;1532-2882&#125;,<br/>
+					journal = &#123;Journal of the American Society for Information Science and Technology&#125;,<br/>
+					number = &#123;4&#125;,<br/>
+					pages = &#123;787--801&#125;,<br/>
+					volume = &#123;64&#125;,<br/>
+					year = &#123;2013&#125;&#125;<br/>
         </div>
       )
     },
     {
-      title: '',
-      authors: <div></div>,
+      title: 'The EigenfactorTM Metrics: A network approach to assessing scholarly journals (2010)',
+      authors: <div><span className="bold">J.D. West</span>, T.C. Bergstrom and C. T. Bergstrom</div>,
       journal_volume: (
         <div>
-
+          <span className="journal">College of Research Libraries</span>.
+          <span className="volume"> 71(3): 236-244, doi: 10.5860/0710236</span>
         </div>
       ),
-      html: '',
-      pdf: '',
-      abstract: "",
+      html: 'http://crl.acrl.org/content/71/3/236.abstract?sid=c0cbbecd-9526-4ebf-8dba-9c28c6892ca6',
+      pdf: West2010CRLPDF,
+      abstract: "Limited time and budgets have created a legitimate need for quantitative measures of scholarly work. The well-known journal impact factor is the leading measure of this sort; here we describe an alternative approach based on the full structure of the scholarly citation network. The Eigenfaclor Metrics-Eigenfactor Score and Article Influence Score-use an iterative ranking scheme similar to Google's PageRank algorithm. By this approach, citations from top journals are weighted more heavily than citations from lower-tier publications. Here we describe these metrics and the rankings that they provide.",
       bibTex: (
         <div>
-
+    			  @article&#123;West2010CRL,<br/>
+    			  		Title = &#123;The Eigenfactor Metrics: A Network Approach to Assessing Scholarly Journals&#125;,<br/>
+    					Author = &#123;J.D. West and T.C. Bergstrom and C.T. Bergstrom&#125;,<br/>
+    					Journal = &#123;College and Research Libraries&#125;,<br/>
+    					Number = &#123;3&#125;,<br/>
+    					Pages = &#123;236-244&#125;,<br/>
+    					Volume = &#123;71&#125;,<br/>
+    					Year = &#123;2010&#125;&#125;<br/>
         </div>
       )
     },
     {
-      title: '',
-      authors: <div></div>,
+      title: "Big Macs and Eigenfactor Scores: Don't Let Correlation Coefficients Fool You (2010)",
+      authors: <div><span className="bold">J.D. West</span>, T.C. Bergstrom and C. T. Bergstrom</div>,
       journal_volume: (
         <div>
-
+          <span className="journal">Journal of the American Society for Information Science &amp; Technology</span>.
+          <span className="volume"> 61(9): 1800-1807, doi: 10.1002/asi.21374</span>
         </div>
       ),
-      html: '',
-      pdf: '',
-      abstract: "",
+      html: 'http://onlinelibrary.wiley.com/doi/10.1002/asi.21374/full',
+      pdf: West2010JASISTPDF,
+      abstract: "The Eigenfactor Metrics provide an alternative way of evaluating scholarly journals based on an iterative ranking procedure analogous to Googleâ€™s PageRank algorithm. These metrics have recently been adopted by Thomson Reuters and are listed alongside the Impact Factor in the Journal Citation Reports. But do these metrics differ sufficiently so as to be a useful addition to the bibliometric toolbox? Davis (2008) has argued that they do not, based on his finding of a 0.95 correlation coefficient between Eigenfactor score and Total Citations for a sample of journals in the field of medicine. This conclusion is mistaken; in this article, we illustrate the basic statistical fallacy to which Davis succumbed. We provide a complete analysis of the 2006 Journal Citation Reports and demonstrate that there are statistically and economically significant differences between the information provided by the Eigenfactor Metrics and that provided by Impact Factor and Total Citations.",
       bibTex: (
         <div>
-
+  			  @article&#123;West2010JASIST,<br/>
+  					  title=&#123;Big Macs and Eigenfactor scores: Don't let correlation coefficients fool you&#125;,<br/>
+  					  author=&#123;J.D. West and T.C. Bergstrom and C.T. Bergstrom&#125;,<br/>
+  					  journal=&#123;Journal of the American Society for Information Science and Technology&#125;,<br/>
+  					  volume=&#123;61&#125;,<br/>
+  					  number=&#123;9&#125;,<br/>
+  					  pages=&#123;1800--1807&#125;,<br/>
+  					  year=&#123;2010&#125;,<br/>
+  					  publisher=&#123;Wiley Online Library&#125;&#125;<br/>
         </div>
       )
     },
     {
-      title: '',
-      authors: <div></div>,
+      title: 'Differences in Impact Factor across fields and over time (2008)',
+      authors: <div>B.M. Althouse, <span className="bold">J.D. West</span>, T.C. Bergstrom and C.T. Bergstrom</div>,
       journal_volume: (
         <div>
-
+          <span className="journal">Journal of the American Society for Information Science &amp; Technology</span>.
+          <span className="volume"> 60(1): 27-34, doi: 10.1002/asi.20936</span>
         </div>
       ),
-      html: '',
-      pdf: '',
-      abstract: "",
+      html: 'http://onlinelibrary.wiley.com/doi/10.1002/asi.20936/full',
+      pdf: Althouse2008JASISTPDF,
+      abstract: "The bibliometric measure impact factor is a leading indicator of journal influence, and impact factors are routinely used in making decisions ranging from selecting journal subscriptions to allocating research funding to deciding tenure cases. Yet journal impact factors have increased gradually over time, and moreover impact factors vary widely across academic disciplines. Here we quantify inflation over time and differences across fields in impact factor scores and determine the sources of these differences. We find that the average number of citations in reference lists has increased gradually, and this is the predominant factor responsible for the inflation of impact factor scores over time. Field-specific variation in the fraction of citations to literature indexed by Thomson Scientificâ€™s Journal Citation Reports is the single greatest contributor to differences among the impact factors of journals in different fields. The growth rate of the scientific literature as a whole, and cross-field differences in net size and growth rate of individual fields, have had very little influence on impact factor inflation or on cross-field differences in impact factor.",
       bibTex: (
         <div>
-
+			  @article&#123;Althouse2009JASIST,<br/>
+					  title=&#123;Differences in impact factor across fields and over time&#125;,<br/>
+					  author=&#123;B.M. Althouse and J.D. West and C.T. Bergstrom and T.C. Bergstrom&#125;,<br/>
+					  journal=&#123;Journal of the American Society for Information Science and Technology&#125;,<br/>
+					  volume=&#123;60&#125;,<br/>
+					  number=&#123;1&#125;,<br/>
+					  pages=&#123;27--34&#125;,<br/>
+					  year=&#123;2009&#125;,<br/>
+					  publisher=&#123;Wiley Online Library&#125;&#125;<br/>
         </div>
       )
     },
