@@ -20,6 +20,7 @@ import West2013JASISTPDF from './papers/West2013JASIST.pdf';
 import West2010CRLPDF from './papers/West2010CRL.pdf';
 import West2010JASISTPDF from './papers/West2010JASIST.pdf';
 import Althouse2008JASISTPDF from './papers/Althouse2008JASIST.pdf';
+import West2005PCEPDF from './papers/West2005PCE.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -403,7 +404,7 @@ const publicationsData = Immutable.Map({
       authors: <div>A. Hiniker, R. Hong, Y. Kim, N. Chen, <span className="bold">J.D. West</span>, C. Aragon</div>,
       journal_volume: (
         <div>
-          <span className="italics">Journal of the American Society for Information Science &#38 Technology</span>
+          <span className="italics">Journal of the American Society for Information Science & Technology</span>
           (In Press)
         </div>
       ),
@@ -738,72 +739,81 @@ const publicationsData = Immutable.Map({
       )
     },
     {
-      title: '',
-      authors: <div></div>,
-      journal_volume: (
-        <div>
-
-        </div>
-      ),
-      html: '',
-      pdf: '',
-      abstract: "",
-      bibTex: (
-        <div>
-
-        </div>
-      )
+        title: "Coevolutionary cycling of host sociality and pathogen virulence in contact networks (2009)",
+        abstract: "Infectious diseases may place strong selection on the social organization of animals. Conversely, the structure of social systems can influence the evolutionary trajectories of pathogens. While much attention has focused on the evolution of host sociality or pathogen virulence separately, few studies have looked at their coevolution. Here we use an agent-based simulation to explore hostu2013pathogen coevolution in social contact networks. Our results indicate that under certain conditions, both host sociality and pathogen virulence exhibit continuous cycling. The way pathogens move through the network (e.g., their interhost transmission and probability of superinfection) and the structure of the network can influence the existence and form of cycling.",
+        journal_volume: (
+    <div>
+    <span className="italics">Journal of Theoretical Biology</span>.
+    <span className="volume"> 261: 561-569, doi: 10.1016/j.jtbi.2009.08.022</span>
+    </div>
+    ),
+        html: "http://dx.doi.org/10.1016/j.jtbi.2009.08.022",
+        bibTex: (
+    <div>
+      @article&#123;Prado2009JTheorBiol,<br/>
+      ttitle=&#123;Coevolutionary cycling of host sociality and pathogen virulence in contact networks&#125;,<br/>
+      author=&#123;F. Prado and A. Sheih and J.D. West and B. Kerr&#125;,<br/>
+      journal=&#123;Journal of theoretical biology&#125;,<br/>
+      volume=&#123;261&#125;,<br/>
+      number=&#123;4&#125;,<br/>
+      pages=&#123;561--569&#125;,<br/>
+      year=&#123;2009&#125;,<br/>
+      publisher=&#123;Elsevier&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>F. Prado, A. Sheih, <span className="bold">J.D. West</span> and B. Kerr</div>,
+        pdf: Prado2009JTBPDF,
     },
     {
-      title: '',
-      authors: <div></div>,
-      journal_volume: (
-        <div>
-
-        </div>
-      ),
-      html: '',
-      pdf: '',
-      abstract: "",
-      bibTex: (
-        <div>
-
-        </div>
-      )
+        title: "Dynamics of stomatal patches for a single surface of Xanthium strumarium L. leaves observed with flourescence and thermal images (2005)",
+        abstract: "Fluorescence and thermal imaging were used to examine the dynamics of stomatal patches for a single surface of Xanthium strumarium L. leaves following a decrease in ambient humidity. Patches were not observed in all experiments, and in many experiments the patches were short lived. In some experiments, however, patches persisted for many hours and showed complex temporal and spatial patterns. Rapidly sampled fluorescence images showed that the measurable variations of these patches were sufficiently slow to be captured by fluorescence images taken at 3-min intervals using a saturating flash of light. Stomatal patchiness with saturating flashes of light was not demonstrably different from that without saturating flashes of light, suggesting that the regular flashes of light did not directly cause the phenomenon. Comparison of simultaneous fluorescence and thermal images showed that the fluorescence patterns were largely the result of stomatal conductance patterns, and both thermal and fluorescence images showed patches of stomatal conductance that propagated coherently across the leaf surface. These nondispersing patches often crossed a given region of the leaf repeatedly at regular intervals, resulting in oscillations in stomatal conductance for that region. The existence of these coherently propagating structures has implications for the mechanisms that cause patchy stomatal behaviour as well as for the physiological ramifications of this phenomenon.",
+        journal_volume: (
+    <div>
+    <span className="italics">Plant, Cell &amp; Environment</span>.
+    <span className="volume"> 28: 633-641, doi: 10.1111/j.1365-3040.2005.01309.x</span>
+    </div>
+    ),
+        html: "http://onlinelibrary.wiley.com/doi/10.1111/j.1365-3040.2005.01309.x/full",
+        bibTex: (
+    <div>
+      @article&#123;West2005PCE,<br/>
+      ttitle=&#123;Dynamics of stomatal patches for a single surface of Xanthium strumarium L. leaves observed with fluorescence and thermal images&#125;,<br/>
+      author=&#123;J.D. West and D. Peak and J.Q. Peterson and K.A. Mott&#125;,<br/>
+      journal=&#123;Plant, Cell &amp; Environment&#125;,<br/>
+      volume=&#123;28&#125;,<br/>
+      number=&#123;5&#125;,<br/>
+      pages=&#123;633--641&#125;,<br/>
+      year=&#123;2005&#125;,<br/>
+      publisher=&#123;Wiley Online Library&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span>, D. Peak, J. Peterson and K.A. Mott</div>,
+        pdf: West2005PCEPDF
     },
     {
-      title: '',
-      authors: <div></div>,
-      journal_volume: (
-        <div>
-
-        </div>
-      ),
-      html: '',
-      pdf: '',
-      abstract: "",
-      bibTex: (
-        <div>
-
-        </div>
-      )
-    },
-    {
-      title: '',
-      authors: <div></div>,
-      journal_volume: (
-        <div>
-
-        </div>
-      ),
-      html: '',
-      pdf: '',
-      abstract: "",
-      bibTex: (
-        <div>
-
-        </div>
-      )
+        title: "Evidence for complex, collective dynamics and emergent, distributed computation in plants (2004)",
+        abstract: "It has been suggested that some biological processes are equivalent to computation, but quantitative evidence for that view is weak. Plants must solve the problem of adjusting stomatal apertures to allow sufficient CO2 uptake for photosynthesis while preventing excessive water loss. Under some conditions, stomatal apertures become synchronized into patches that exhibit richly complicated dynamics, similar to behaviors found in cellular automata that perform computational tasks. Using sequences of chlorophyll fluorescence images from leaves of Xanthium strumarium L. (cocklebur), we quantified spatial and temporal correlations in stomatal dynamics. Our values are statistically indistinguishable from those of the same correlations found in the dynamics of automata that compute. These results are consistent with the proposition that a plant solves its optimal gas exchange problem through an emergent, distributed computation performed by its leaves.",
+        journal_volume: (
+    <div>
+    <span className="italics">Proceedings of the National Academy of Sciences USA</span>.
+    <span className="volume"> 101: 918-922</span>
+    </div>
+    ),
+        html: "http://www.pnas.org/content/101/4/918.abstract?sid=edd3f319-ecdc-4e1e-a814-7e6b59000999",
+        bibTex: (
+    <div>
+      @article&#123;Peak2004PNAS,<br/>
+      ttitle=&#123;Evidence for complex, collective dynamics and emergent, distributed computation in plants&#125;,<br/>
+      author=&#123;D.Peak and J.D. West and S. Messinger and K.A. Mott&#125;,<br/>
+      journal=&#123;Proceedings of the National Academy of Sciences of the United States of America&#125;,<br/>
+      volume=&#123;101&#125;,<br/>
+      number=&#123;4&#125;,<br/>
+      pages=&#123;918--922&#125;,<br/>
+      year=&#123;2004&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>D. Peak, <span className="bold">J.D. West</span>, S.M. Messinger, and K.A. Mott</div>,
+        pdf: Peak2004PNASPDF,
     },
   ],
 });
@@ -866,3 +876,23 @@ const bioData = Immutable.Map({
 });
 
 export {drawerLinks, homeData, researchData, publicationsData, bioData};
+
+/*
+{
+  title: '',
+  authors: <div></div>,
+  journal_volume: (
+    <div>
+
+    </div>
+  ),
+  html: '',
+  pdf: '',
+  abstract: "",
+  bibTex: (
+    <div>
+
+    </div>
+  )
+},
+*/
