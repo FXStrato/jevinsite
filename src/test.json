@@ -494,7 +494,7 @@ Year = &#123;2010&#125;&#125;<br/>
     pdf: "papers/Althouse2008JASIST.pdf"
 },
 {
-    title: "Coevolutionary cycling of host sociality and pathogen virulence in contact networks (2009),
+    title: "Coevolutionary cycling of host sociality and pathogen virulence in contact networks (2009)",
     abstract: "Infectious diseases may place strong selection on the social organization of animals. Conversely, the structure of social systems can influence the evolutionary trajectories of pathogens. While much attention has focused on the evolution of host sociality or pathogen virulence separately, few studies have looked at their coevolution. Here we use an agent-based simulation to explore hostu2013pathogen coevolution in social contact networks. Our results indicate that under certain conditions, both host sociality and pathogen virulence exhibit continuous cycling. The way pathogens move through the network (e.g., their interhost transmission and probability of superinfection) and the structure of the network can influence the existence and form of cycling.",
     journal_volume: (
 <div>
@@ -911,7 +911,7 @@ year = &#123;2016&#125;&#125;<br/>
     pdf: "papers/West2010JASIST-2.pdf"
 },
 {
-    title: "The EigenfactorTM Metrics: How does the Journal of Biological Chemistry stack up? (2009),
+    title: "The EigenfactorTM Metrics: How does the Journal of Biological Chemistry stack up? (2009)",
     abstract: "The scientific literature comprises a vast network of research papers, linked to one another by scholarly citations; this network traces the spread of ideas through the scientific community. At the Eigenfactor Project, we use the structure of this network to assess the influence of scholarly journals and to map out relations among scientific  fields.",
     journal_volume: (
 <div>
@@ -1334,7 +1334,7 @@ year = &#123;2016&#125;&#125;<br/>
     pdf: "presentations/West2015Coursector_Capstone.pdf"
 },
 {
-    title: "A Novel Method for Ranking the Quality of Cardiology Literature (2009),
+    title: "A Novel Method for Ranking the Quality of Cardiology Literature (2009)",
     abstract: "",
     journal_volume: (
 <div>
@@ -1350,7 +1350,7 @@ year = &#123;2016&#125;&#125;<br/>
     pdf: "presentations/Althouse2009Cardiology.pdf"
 },
 {
-    title: "Traversing Fitness Landscapes by Changing Environments (2009),
+    title: "Traversing Fitness Landscapes by Changing Environments (2009)",
     abstract: "",
     journal_volume: (
 <div>

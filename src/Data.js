@@ -21,6 +21,23 @@ import West2010CRLPDF from './papers/West2010CRL.pdf';
 import West2010JASISTPDF from './papers/West2010JASIST.pdf';
 import Althouse2008JASISTPDF from './papers/Althouse2008JASIST.pdf';
 import West2005PCEPDF from './papers/West2005PCE.pdf';
+import West2016JCDLPDF from './papers/West2016JCDL.pdf';
+import WesleySmith2016WWWPDF from './papers/WesleySmith2016WWW.pdf';
+import Lee2016WWWPDF from './papers/Lee2016WWW.pdf';
+import Portenoy2016WWWPDF from './papers/Portenoy2016WWW.pdf';
+import WesleySmith2016WSDMPDF from './papers/WesleySmith2016WSDM.pdf';
+import Larsen2014HICSSPDF from './papers/Larsen2014HICSS.pdf';
+import Brooks2013InteractPDF from './papers/Brooks2013Interact.pdf';
+import West2011complexleafPDF from './papers/West2011complexleaf.pdf';
+import West2016jicsPDF from './papers/West2016jics.pdf';
+import West2011SciencePDF from './papers/West2011Science.pdf';
+import West2010NaturePDF from './papers/West2010Nature.pdf';
+import West2010JASIST2PDF from './papers/West2010JASIST-2.pdf';
+import West2009ASBMBPDF from './papers/West2009ASBMB.pdf';
+import Bergstrom2008JneurosciPDF from './papers/Bergstrom2008Jneurosci.pdf';
+import Bergstrom2008NeurologyPDF from './papers/Bergstrom2008Neurology.pdf';
+import West2008FrontMatterPDF from './papers/West2008FrontMatter.pdf';
+
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -751,7 +768,7 @@ const publicationsData = Immutable.Map({
         bibTex: (
     <div>
       @article&#123;Prado2009JTheorBiol,<br/>
-      ttitle=&#123;Coevolutionary cycling of host sociality and pathogen virulence in contact networks&#125;,<br/>
+      title=&#123;Coevolutionary cycling of host sociality and pathogen virulence in contact networks&#125;,<br/>
       author=&#123;F. Prado and A. Sheih and J.D. West and B. Kerr&#125;,<br/>
       journal=&#123;Journal of theoretical biology&#125;,<br/>
       volume=&#123;261&#125;,<br/>
@@ -777,7 +794,7 @@ const publicationsData = Immutable.Map({
         bibTex: (
     <div>
       @article&#123;West2005PCE,<br/>
-      ttitle=&#123;Dynamics of stomatal patches for a single surface of Xanthium strumarium L. leaves observed with fluorescence and thermal images&#125;,<br/>
+      title=&#123;Dynamics of stomatal patches for a single surface of Xanthium strumarium L. leaves observed with fluorescence and thermal images&#125;,<br/>
       author=&#123;J.D. West and D. Peak and J.Q. Peterson and K.A. Mott&#125;,<br/>
       journal=&#123;Plant, Cell &amp; Environment&#125;,<br/>
       volume=&#123;28&#125;,<br/>
@@ -803,7 +820,7 @@ const publicationsData = Immutable.Map({
         bibTex: (
     <div>
       @article&#123;Peak2004PNAS,<br/>
-      ttitle=&#123;Evidence for complex, collective dynamics and emergent, distributed computation in plants&#125;,<br/>
+      title=&#123;Evidence for complex, collective dynamics and emergent, distributed computation in plants&#125;,<br/>
       author=&#123;D.Peak and J.D. West and S. Messinger and K.A. Mott&#125;,<br/>
       journal=&#123;Proceedings of the National Academy of Sciences of the United States of America&#125;,<br/>
       volume=&#123;101&#125;,<br/>
@@ -814,6 +831,546 @@ const publicationsData = Immutable.Map({
     ),
         authors: <div>D. Peak, <span className="bold">J.D. West</span>, S.M. Messinger, and K.A. Mott</div>,
         pdf: Peak2004PNASPDF,
+    },
+  ],
+  peerReviewConferences: [
+    {
+        title: "Delineating Fields Using Mathematical Jargon (2016)",
+        abstract: "Tracing ideas through the scientific literature is useful in understanding the origin of ideas and for generating new ones. Machines can be trained to do this at large scale, feeding search engines and recommendation algorithms. Citations and text are the features commonly used for these tasks. In this paper, we focus on a largely ignored facet of scholarly papersu2014the equations. Mathematical language varies from field to field but original formulae are maintained over generations (e.g., Shannonu2019s Entropy equation). Here we extract a common set of mathematical symbols from more than 250,000 LATEX source files in the arXiv repository. We compare the symbol distributions across different fields and calculate the jargon distance between fields. We find a greater difference between the experimental and theoretical disciplines than within these fields. This provides a first step at using equations as a bridge between disciplines that may not cite each other or may speak different natural languages but use a similar mathematical language.",
+        journal_volume: (
+    <div>
+    <span className="italics">Joint Conference on Digital Libraries (JCDL)</span>.
+    <span className="volume">Workshop on Bibliometric-enhanced Information Retrieval &amp; Natural Language Processing</span>
+    </div>
+    ),
+        html: "http://wing.comp.nus.edu.sg/birndl-jcdl2016/#p",
+        bibTex: (
+    <div>
+      @inproceedings &#123;West2016JCDL,<br/>
+      author = &#123;J.D. West and J. Portenoy&#125;,<br/>
+      title = &#123;Delineating Fields Using Mathematical Jargon&#125;,<br/>
+      booktitle=&#123;JCDL Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL)&#125;,<br/>
+      year = &#123;2016&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span>, J. Portenoy</div>,
+        pdf: West2016JCDLPDF
+    },
+    {
+        title: "Predicting Student Dropout in Higher Education (2016)",
+        abstract: "Each year, roughly 30% of first-year students at US baccalaureate institutions do not return for their second year and over $9 billion is spent educating these students. Yet, little quantitative research has analyzed the causes and possible remedies for student attrition. Here, we describe initial efforts to model student dropout using the largest known dataset on higher education attrition, which tracks over 32,500 students' demographics and transcript records at one of the nation's largest public universities. Our results highlight several early indicators of student attrition and show that dropout can be accurately predicted even when predictions are based on a single term of academic transcript data. These results highlight the potential for machine learning to have an impact on student retention and success while pointing to several promising directions for future work.",
+        journal_volume: (
+    <div>
+    <span className="italics">International Conference on Machine Learning (ICML)</span>.
+    <span className="volume">Workshop on Data4Good: Machine Learning in Social Good Applications</span>
+    </div>
+    ),
+        html: "https://sites.google.com/site/icml2016data4goodworkshop/technical-program",
+        bibTex: (
+    <div>
+      @inproceedings &#123;Aulck2016ICML,<br/>
+      author = &#123;L. Aulck and N. Velagapudi and J. Blumenstock and J.D. West&#125;,<br/>
+      title = &#123;Predicting Student Dropout in Higher Education&#125;,<br/>
+      booktitle=&#123;International Conference on Machine Learning (ICML). Workshop on Data4Good: Machine Learning in Social Good Applications&#125;,<br/>
+      url = &#123;https://arxiv.org/abs/1606.06364&#125;,<br/>
+      year = &#123;2016&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>L. Aulck, N. Velagapudi, J. Blumenstock, <span className="bold">J.D. West</span></div>,
+        pdf: Aulck2016ICMLPDF,
+    },
+    {
+        title: "Babel: A platform for research in scholarly article recommendation (2016)",
+        abstract: "The body of scientific literature is growing at an exponential rate. This expansion of scientific knowledge has increased the need for tools to help users find relevant articles. However, researchers developing new scholarly article recommendation algorithms face two substantial hurdles: acquiring high-quality, large-scale scholarly metadata and mechanisms for evaluating their recommendation algorithms. To address these problems we created Babelu2014an open-source web platform uniting publisher, researchers, and users. Babel includes tens of millions of scholarly articles, several content- based recommendation algorithms, and tools for integrating recommendations into publisher websites and other scholarly platforms.",
+        journal_volume: (
+    <div>
+    <span className="italics">World Wide Web Conference (WWW). </span>
+    <span className="volume">Worskhop on Big Scholarly Data</span>
+    </div>
+    ),
+        html: "http://msclab.org/bigscholar/2016/Program.htm",
+        bibTex: (
+    <div>
+      @inproceedings&#123;wesleysmith2016babel,<br/>
+      author = &#123;I. Wesley-Smith and J.D. West&#125;,<br/>
+      title = &#123;Babel: A platform for research in scholarly article recommendation&#125;,<br/>
+      booktitle = &#123;WWW Worskhop on Big Scholarly Data&#125;,<br/>
+      publisher = &#123;ACM&#125;,<br/>
+      year = &#123;2016&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>I. Wesley-Smith, <span className="bold">J.D. West</span></div>,
+        pdf: WesleySmith2016WWWPDF
+    },
+    {
+        title: "VizioMetrix: A Platform for Analyzing the Visual Information in Big Scholarly Data (2016)",
+        abstract: "We present VizioMetrix, a platform that extracts visual in- formation from the scientific literature and makes it avail- able for use in new information retrieval applications and for studies that look at patterns of visual information across millions of papers. New ideas are conveyed visually in the scientific literature through figures u2014 diagrams, photos, vi- sualizations, tables u2014 but these visual elements remain en- sconced in the surrounding paper and difficult to use directly to facilitate information discovery tasks or longitudinal an- alytics. Very few applications in information retrieval, aca- demic search, or bibliometrics make direct use of the figures, and none attempt to recognize and exploit the type of figure, which can be used to augment interactions with a large corpus of scholarly literature. The VizioMetrix platform processes a corpus of docu- ments, classifies the figures, organizes the results into a cloud- hosted databases, and drives three distinct applications to support bibliometric analysis and information retrieval. The first application supports information retrieval tasks by al- lowing rapid browsing of classified figures. The second ap- plication supports longitudinal analysis of visual patterns in the literature and facilitates data mining of these figures. The third application supports crowdsourced tagging of fig- ures to improve classification, augment search, and facilitate new kinds of analyses. Our initial corpus is the entirety of PubMed Central (PMC), and will be released to the public alongside this paper; we welcome other researchers to make use of these resources.",
+        journal_volume: (
+    <div>
+    <span className="italics">World Wide Web Conference (WWW). </span>
+    <span className="volume">Worskhop on Big Scholarly Data</span>
+    </div>
+    ),
+        html: "http://msclab.org/bigscholar/2016/Program.htm",
+        bibTex: (
+    <div>
+      @inproceedings&#123;Lee2016www,<br/>
+      author = &#123;P. Lee and J.D. West and B. Howe&#125;,<br/>
+      title = &#123;VizioMetrix: A Platform for Analyzing the Visual Information in Big Scholarly Data&#125;,<br/>
+      booktitle = &#123;WWW Worskhop on Big Scholarly Data&#125;,<br/>
+      publisher = &#123;ACM&#125;,<br/>
+      year = &#123;2016&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>P. Lee, <span className="bold">J.D. West</span>, B. Howe</div>,
+        pdf: Lee2016WWWPDF,
+
+    },
+    {
+        title: "Dynamic Visualization of Citation Networks Showing the Influence of Scholarly Fields Over Time (2016)",
+        abstract: "Citation graphs between scholarly papers can be used to learn about the structure and development of scholarship. We present a generalizable approach to visualizing scholarly influence over time, using a dynamic node-link diagram representing the citation patterns between groups of papers. We combine this approach with hierarchical clustering techniques that exploit the network structure to partition the graph into clusters representing fields and subfields. We use these methods to explore the influence that fields have had on other fields over time.",
+        journal_volume: (
+    <div>
+    <span className="italics">World Wide Web Conference (WWW). </span>
+    <span className="volume">Worskhop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data</span>
+    </div>
+    ),
+        html: "http://cs.unibo.it/save-sd/2016/accepted-papers.html",
+        bibTex: (
+    <div>
+      @inproceedings &#123;Portenoy2016www,<br/>
+      author = &#123;J. Portenoy and J.D. West&#125;,<br/>
+      title = &#123;Dynamic Visualization of Citation Networks Showing the Influence of Scholarly Fields Over Time&#125;,<br/>
+      booktitle=&#123;WWW Worskhop on Semantics, Analytics,<br/> Visualisation: Enhancing Scholarly Data&#125;,<br/>
+      year = &#123;2016&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>J. Portenoy, <span className="bold">J.D. West</span></div>,
+        pdf: Portenoy2016WWWPDF,
+
+    },
+    {
+        title: "Static Ranking of Scholarly Papers using Article-Level Eigenfactor (ALEF) (2016)",
+        abstract: "Microsoft Research hosted the 2016 WSDM Cup Challenge based on the Microsoft Academic Graph. The goal was to provide static rankings for the articles that make up the graph, with the rankings to be evaluated against those of human judges. While the Microsoft Academic Graph provided metadata about many aspects of each scholarly document, we focused more narrowly on citation data and used this contest as an opportunity to test the Article Level Eigenfactor (ALEF), a novel citation-based ranking algorithm, and evaluate its performance against competing algorithms that drew upon multiple facets of the data from a large, real world dataset (122M papers and 757M citations). Our final submission to this contest was scored at 0.676, earning second place.",
+        journal_volume: (
+    <div>
+    <span className="italics">WSDM Conference: Entity Ranking Challenge Workshop.</span>
+    <span className="volume"> arXiv:1606.08534 </span>
+    </div>
+    ),
+        html: "http://arxiv.org/abs/1606.08534",
+        bibTex: (
+    <div>
+      @inproceedings&#123;WesleySmith2016wsdm,<br/>
+      author = &#123;I. Wesley-Smith and C.T. Bergstrom and J.D. West&#125;,<br/>
+      title = &#123;Static Ranking of Scholarly Papers using Article-Level Eigenfactor (ALEF)&#125;,<br/>
+      booktitle=&#123;WSDM Conference: Entity Ranking Challenge Workshop&#125;,<br/>
+      url =&#123;http://arxiv.org/abs/1606.08534&#125;,<br/>
+      year = &#123;2016&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>I. Wesley-Smith, C.T. Bergstrom, <span className="bold">J.D. West</span></div>,
+        pdf: WesleySmith2016WSDMPDF,
+    },
+    {
+        title: "Theory Identity: A Machine-Learning Approach (2014)",
+        abstract: "Theory identity is a fundamental problem for researchers seeking to determine theory quality, create theory ontologies and taxonomies, or perform focused theory-specific reviews and meta-analyses. We demonstrate a novel machine-learning approach to theory identification based on citation data and article features. The multi-disciplinary ecosystem of articles which cite a theoryu2019s originating paper is created and refined into the network of papers predicted to contribute to, and thus identify, a specific theory. We provide a u2018proof-of-conceptu2019 for a highly-cited theory. Implications for cross disciplinary theory integration and the identification of theories for a rapidly expanding scientific literature are discussed.",
+        journal_volume: (
+    <div>
+    <span className="italics">Hawaii International Conference on System Sciences (HICSS). </span>
+    <span className="volume">4639-4648 (Best Paper Nomination)</span>
+    </div>
+    ),
+        html: "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6759171",
+        bibTex: (
+    <div>
+      @inproceedings&#123;Larsen2014HICSS,<br/>
+      title=&#123;Theory identity: A machine-learning approach, (Best Paper Nomination)&#125;,<br/>
+      author=&#123;K.R. Larsen and D. Hovorka and J.D. West and J. Birt and J.R. Pfaff and T.W. Chambers and Z.R. Sampedro and N. Zager and B. Vanstone&#125;,<br/>
+      booktitle=&#123;Hawaii International Conference on System Sciences&#125;,<br/>
+      pages=&#123;4639--4648&#125;,<br/>
+      year=&#123;2014&#125;,<br/>
+      publisher=&#123;IEEE&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>K.R. Larsen, D. Hovorka, <span className="bold">J.D. West</span>, J. Birt, J.R. Pfaff,T.W. Chambers, Z.R. Sampedro, N. Zager,B. Vanstone</div>,
+        pdf: Larsen2014HICSSPDF,
+    },
+    {
+        title: "Scalable Flow-Based Community Detection for Large-Scale Network Analysis (2013)",
+        abstract: "Community-detection is a powerful approach to uncover important structures in large networks. Since networks often describe flow of some entity, flow-based community-detection methods are particularly interesting. One such algorithm is called Infomap, which optimizes the objective function known as the map equation. While Infomap is known to be an effective algorithm, its serial implementation cannot take advantage of multicore processing in modern computers. In this paper, we propose a novel parallel generalization of Infomap called RelaxMap. This algorithm relaxes concurrency assumptions to avoid lock overhead, achieving 70% parallel efficiency in shared-memory multicore experiments while exhibiting similar convergence properties and finding similar community structures as the serial algorithm. We evaluate our approach on a variety of real graph datasets as well as synthetic graphs produced by a popular graph generator used for benchmarking community detection algorithms. We describe the algorithm, the experiments, and some emerging research directions in high-performance community detection on massive graphs.",
+        journal_volume: (
+    <div>
+    <span className="italics">Proceedings of IEEE International Conference on Data Mining Workshops (ICDMW). </span>
+    <span className="volume">303-310</span>
+    </div>
+    ),
+        html: "http://icdm2013.rutgers.edu/workshops",
+        bibTex: (
+    <div>
+      @inproceedings&#123;Bae2013IEEE,<br/>
+      title=&#123;Scalable flow-based community detection for large-scale network analysis&#125;,<br/>
+      author=&#123;S. Bae and D. Halperin and J.D. West and M. Rosvall and B. Howe&#125;,<br/>
+      booktitle=&#123;International Conference on Data Mining Workshops (ICDMW)&#125;,<br/>
+      pages=&#123;303--310&#125;,<br/>
+      year=&#123;2013&#125;,<br/>
+      publisher=&#123;IEEE&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>S. Bae, D. Halperin, <span className="bold">J.D. West</span>, M. Rosvall, B. Howe</div>,
+        pdf: ""
+    },
+    {
+        title: "Hoptrees: Branching History Navigation for Hierarchies (2013)",
+        abstract: "Designing software for exploring hierarchical data sets is challenging because users can easily become lost in large hierarchies. We present a novel interface, the hoptree, to assist users with navigating large hierarchies. The hoptree preserves navigational history and context and allows one-click naviga- tion to recently-visited locations. We describe the design of hoptrees and an im- plementation that we created for a tree exploration application. We discuss the potential for hoptrees to be used in a wide variety of hierarchy navigation sce- narios. Through a controlled experiment, we compared the effectiveness of hop- trees to a breadcrumb navigation interface. Study participants overwhelmingly preferred the hoptree, with improved time-on-task with no difference in error rates.",
+        journal_volume: (
+    <div>
+    <span className="italics">Proceedings of IEEE International Conference on Data Mining Workshops (ICDMW). </span>
+    <span className="volume">303-310. doi:10.1007/978-3-642-40477-1_20</span>
+    </div>
+    ),
+        html: "http://link.springer.com/chapter/10.1007/978-3-642-40477-1_20",
+        bibTex: (
+    <div>
+      @incollection&#123;Brooks2013Interact,
+      title=&#123;Hoptrees: branching history navigation for hierarchies&#125;,<br/>
+      author=&#123;M. Brooks and J.D. West and C.R. Aragon and C.T. Bergstrom&#125;,<br/>
+      booktitle=&#123;INTERACT&#125;,<br/>
+      pages=&#123;316-333&#125;,<br/>
+      year=&#123;2013&#125;,<br/>
+      publisher=&#123;Springer&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>M. Brooks, <span className="bold">J.D. West</span>, C. Aragon, C.T. Bergstrom</div>,
+        pdf: Brooks2013InteractPDF,
+    },
+    {
+        title: "Comparing the dynamics of stomatal networks to the problem-solving dynamics of cellular computers (2011)",
+        abstract: "Is the adaptive response to environmental stimuli of a biological system lacking a central nervous system a result of a formal computation? If so, these biological systems must conform to a different set of computational rules than those associated with central processing. To explore this idea, we examined the dynamics of stomatal patchiness in leaves. Stomatau2014tiny pores on the surface of a leafu2014are biological processing units that a plant uses to solve an optimization problemu2014maximize CO2 assimilation and minimize H2O loss. Under some conditions, groups of stomata coordinate in both space and time producing motile patches that can be visualized with chlorophyll fluorescence. These patches suggest that stomata are nonautonomous and that they form a network presumably engaged in the optimization task. In this study, we show that stomatal dynamics are statistically and qualitatively comparable to the emergent, collective, problem-solving dynamics of cellular computing systems.",
+        journal_volume: (
+    <div>
+    <span className="italics">Unifying Themes in Complex Systems: Proceedings of the Fifth International Conference on Complex Systems. </span>
+    <span className="volume">327-341. doi:10.1007/978-3-642-17635-7_40</span>
+    </div>
+    ),
+        html: "http://link.springer.com/chapter/10.1007/978-3-642-17635-7_40",
+        bibTex: (
+    <div>
+      @incollection&#123;West2011Complex,<br/>
+      title=&#123;Comparing the dynamics of stomatal networks to the problem-solving dynamics of cellular computers&#125;,<br/>
+      author=&#123;J.D. West and D. Peak and K.A. Mott and S. Messinger&#125;,<br/>
+      booktitle=&#123;Unifying Themes in Complex Systems: Proceedings of the Fifth International Conference on Complex Systems&#125;,<br/>
+      pages=&#123;327--341&#125;,<br/>
+      doi = &#123;10.1007/978-3-642-17635-7_40&#125;,<br/>
+      year=&#123;2011&#125;,<br/>
+      publisher=&#123;Springer&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott and S.M. Messinger</div>,
+        pdf: West2011complexleafPDF,
+    },
+  ],
+  journalsInvited: [
+    {
+        title: "The Science of Data Science (2016)",
+        abstract: "This report summarizes two talks that I gave at the Advanced Future Studies at Kyoto University in February of 2016. One talk was for the Global Partnership on Science Education through Engagement. In this talk I focused on an emerging educational trend in the United Statesu2014the rise of Data Science at both the undergraduate and graduate levelu2014and the effect it is having on research and industry. In the second talk, I spoke at the International Symposium on Advanced Future Studies symposium. In this talk, I provided an overview of an emerging research trendu2014the emergence of a new discipline called the Science of Science. In this new field, science is done at the level of millions of publications over many generations and disciplines using new tools from machine learning, computer vision, and network science. Both Data Science and the Science of Science require perspectives from multiple disciplines, which fit well with the general theme of both meetings in Kyoto.",
+        journal_volume: (
+    <div>
+    <span className="italics">Journal of Integrated Creative Studies. </span>
+    <span className="volume">No2016-010-e. doi: 10.14989/214432</span>
+    </div>
+    ),
+        html: "http://www2.yukawa.kyoto-u.ac.jp/~future/icis/wp/wp-content/uploads/2016/05/2016-010-e.pdf",
+        bibTex: (
+    <div>
+      @ARTICLE&#123;West2016jics,<br/>
+    author = &#123;J.D. West&#125;,<br/>
+    title = &#123;The Science of Data Science&#125;,<br/>
+    journal = &#123;Journal of Integrated Creative Studies&#125;,<br/>
+    volume = &#123;No.2016-010-e&#125;,<br/>
+    doi = &#123;10.14989/214432&#125;,<br/>
+    year = &#123;2016&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span></div>,
+        pdf: West2016jicsPDF,
+    },
+    {
+        title: "Can Ignorance Promote Democracy? (2011)",
+        abstract: "Ideas are like fire, observed Thomas Jefferson in 1813u2014information can be passed on without relinquishing it (1). Indeed, the ease and benefit of sharing information select for individuals to aggregate into groups, driving the buildup of complexity in the biological world (2, 3). Once the members of some collectiveu2014whether cells of a fruit fly or citizens of a democratic societyu2014have accumulated information, they must integrate that information and make decisions based upon it. When these members share a common interest, as do the stomata on the surface of a plant leaf (4), integrating distributed information may be a computational challenge. But when individuals do not have entirely coincident interests, strategic problems arise. Members of animal herds, for example, face a tension between aggregating information for the benefit of the herd as a whole, and avoiding manipulation by self-interested individuals in the herd. Which collective decision procedures are robust to manipulation by selfish players (5)? On page 1578 of this issue, Couzin et al. (6) show how the presence of uninformed agents can promote democratic outcomes in collective decision problems.",
+        journal_volume: (
+    <div>
+    <span className="italics">Science. </span>
+    <span className="volume">334(6062):1503-1504. doi:10.1126/science.1216124</span>
+    </div>
+    ),
+        html: "http://science.sciencemag.org/content/334/6062/1503",
+        bibTex: (
+    <div>
+      @article&#123;West2011Science,<br/>
+      ttitle=&#123;Can ignorance promote democracy?&#125;,<br/>
+      author=&#123;J.D. West and C.T. Bergstrom&#125;,<br/>
+      journal=&#123;Science&#125;,<br/>
+      volume=&#123;334&#125;,<br/>
+      number=&#123;6062&#125;,<br/>
+      number=&#123;1503--1504&#125;,<br/>
+      year=&#123;2011&#125;,<br/>
+      doi = &#123;10.1126/science.1216124&#125;,<br/>
+      issn = &#123;0036-8075&#125;,<br/>
+      publisher=&#123;American Association for the Advancement of Science&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span> and C.T Bergstrom</div>,
+        pdf: West2011SciencePDF,
+
+    },
+    {
+        title: "How to improve the use of metrics: Learn from Game Theory (2010)",
+        abstract: "Giving bad answers is not the worst thing a ranking system can do u2014 the worst thing is to encourage bad science. The next generation of scientific metrics needs to take this into account.When scientists order elements by molecular weight, the elements do not respond by trying to sneak higher up the order. But when administrators order scientists by prestige, the scientists tend to be less passive. There is a powerful feedback between the ranking systems used to assess scientific productivity and the actions of scientists trying to further their careers via these ranking systems.",
+        journal_volume: (
+    <div>
+    <span className="italics">Nature. </span>
+    <span className="volume">465:870-872. doi:10.1038/465870a</span>
+    </div>
+    ),
+        html: "http://dx.doi.org/10.1038/465870a",
+        bibTex: (
+    <div>
+      @article&#123;West2010Nature,<br/>
+      Author = &#123;J.D. West&#125;,<br/>
+      Journal = &#123;Nature&#125;,<br/>
+      Pages = &#123;870-872&#125;,<br/>
+      Ttitle = &#123;How to improve the use of metrics: Learn from Game Theory&#125;,<br/>
+      Volume = &#123;465&#125;,<br/>
+      Year = &#123;2010&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span></div>,
+        pdf: West2010NaturePDF,
+    },
+    {
+        title: 'Response to "Big Macs and Eigenfactor Scores: The Correlation Conundrum" (2010)',
+        abstract: "As we pointed out in our original article (West,Bergstrom, & Bergstrom, in press), currency denominations generate a spurious correlation in the Big Mac data. The high correlation between wage rates and Big Mac prices denominated in local currency might lead a careless reader to believe that in all countries it takes a laborer about the same amount of time to earn a Big Mac. By rescaling currencies in a few of the countries, Prathap (in press) shows that this is not the case. Of course. Any competent statistician would do something like this. For example, when The Economist publishes their Big Mac index, they convert all prices into US dollars at prevailing currency exchange rates. That was the point of our analogyu2014to pick a case where the source of spurious correlation was so obvious that anyone could recognize the problem.",
+        journal_volume: (
+    <div>
+    <span className="italics">Journal of the American Society for Information Science &amp; Technology. </span>
+    <span className="volume">61(12):2592 doi: 10.1002/asi.21408</span>
+    </div>
+    ),
+        html: "http://dx.doi.org/10.1002/asi.21408",
+        bibTex: (
+    <div>
+      @article&#123;West2010JASIST-2,<br/>
+      ttitle=&#123;Response to u201cBig Macs and Eigenfactor scores: The correlation conundrumu201d&#125;,<br/>
+      author=&#123;J.D. West and T.C. Bergstrom and C.T. Bergstrom&#125;,<br/>
+      journal=&#123;Journal of the American Society for Information Science and Technology&#125;,<br/>
+      volume=&#123;61&#125;,<br/>
+      number=&#123;12&#125;,<br/>
+      pages=&#123;2592--2592&#125;,<br/>
+      year=&#123;2010&#125;,<br/>
+      issn = &#123;1532-2890&#125;,<br/>
+      doi = &#123;10.1002/asi.21408&#125;,<br/>
+      publisher=&#123;Wiley Online Library&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span>, T.C. Bergstrom and C. T. Bergstrom</div>,
+        pdf: West2010JASIST2PDF,
+    },
+    {
+        title: "The EigenfactorTM Metrics: How does the Journal of Biological Chemistry stack up? (2009)",
+        abstract: "The scientific literature comprises a vast network of research papers, linked to one another by scholarly citations; this network traces the spread of ideas through the scientific community. At the Eigenfactor Project, we use the structure of this network to assess the influence of scholarly journals and to map out relations among scientific  fields.",
+        journal_volume: (
+    <div>
+    <span className="italics">The American Society for Biochemistry and Molecular Biology (ASBMB Today). </span>
+    <span className="volume">April: p. 20-21</span>
+    </div>
+    ),
+        html: "http://www.asbmb.org/uploadedFiles/ASBMBToday/Content/Archive/ASBMBToday-April-2009.pdf",
+        bibTex: (
+    <div>
+      @ARTICLE&#123;West2009AmSocBiochem,<br/>
+      author = &#123;J.D. West and M. Stefaner and C.T. Bergstrom&#125;,<br/>
+      ttitle = &#123;The Eigenfactor Metrics: How does the Journal of Biological Chemistry stack up?&#125;,<br/>
+      journal = &#123;The American Society for Biochemistry and Molecular Biology (ASBMB Today)&#125;,<br/>
+      volume = &#123;April&#125;,<br/>
+      pages = &#123;20--21&#125;,<br/>
+      year = &#123;2009&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span>, M. Stefaner and C. T. Bergstrom</div>,
+        pdf: West2009ASBMBPDF,
+    },
+    {
+        title: "The EigenfactorTM Metrics (2008)",
+        abstract: "Quantitative metrics are poor choices for assessing the research output of an individual scholar. Summing impact factors, counting citations, tallying an h-index, or looking at Eigenfactoru2122 Scores (described below)u2014none of these methods are adequate compared with what should be the gold standard: reading the scholar's publications and talking to experts about her work. But many scholars, librarians, historians of science, editors, and other individuals are also interested in larger-scale questions that require assessing hundreds or thousands of scholarly articles by hundreds or thousands of authors. u201cGiven that my library can afford only one more subscription, should I subscribe to journal x or journal y?u201d u201cHow often do physicists cite Biology journals, and do biologists pay equal attention to the physics literature?u201d u201cHas the increase in size of my journal caused a corresponding decline in average quality?u201d To answer questions such as these, aggregate bibliometric statistics can be very useful.",
+        journal_volume: (
+    <div>
+    <span className="italics">Journal of Neuroscience. </span>
+    <span className="volume">28(45):11433-11434. doi:10.1523/JNEUROSCI.0003-08.2008</span>
+    </div>
+    ),
+        html: "http://www.jneurosci.org/content/28/45/11433.short",
+        bibTex: (
+    <div>
+      @article&#123;Bergstrom2008JNeuroscience,<br/>
+      ttitle=&#123;The Eigenfacto metrics&#125;,<br/>
+      author=&#123;C.T. Bergstrom and J.D. West and M. Wiseman&#125;,<br/>
+      journal=&#123;The Journal of Neuroscience&#125;,<br/>
+      volume=&#123;28&#125;,<br/>
+      number=&#123;45&#125;,<br/>
+      pages=&#123;11433--11434&#125;,<br/>
+      doi = &#123;10.1523/JNEUROSCI.0003-08.2008&#125;,<br/>
+      url = &#123;http://www.jneurosci.org/content/28/45/11433.short&#125;,<br/>
+      year=&#123;2008&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>C.T. Bergstrom, <span className="bold">J.D. West</span>, and M. A. Wiseman</div>,
+        pdf: Bergstrom2008JneurosciPDF,
+    },
+    {
+        title: "Assessing Citations with the EigenfactorTM Metrics (2008)",
+        abstract: "For more than 80 years, researchers and administrators alike have evaluated the prestige and productivity of researchers, institutions, journals, and even nations by counting citations. For the past half  century, the impact factor has been the most prominent of these citation metrics. Impact factor is essentially a measure of the average number of citations that a journalu2019s articles receive over the two calendar years following publication. As a citation metric, impact factor has a number of virtues, not the least of which are that it is simple to describe and easy to calculate.",
+        journal_volume: (
+    <div>
+    <span className="italics">Neurology. </span>
+    <span className="volume">71(23):1850-1851. doi:10.1212/01.wnl.0000338904.37585.66</span>
+    </div>
+    ),
+        html: "http://www.neurology.org/content/71/23/1850.short",
+        bibTex: (
+    <div>
+      @article&#123;Bergstrom2008Neurology,<br/>
+      ttitle=&#123;Assessing citations with the Eigenfactor Metrics&#125;,<br/>
+      author=&#123;C.T. Bergstrom and J.D. West&#125;,<br/>
+      journal=&#123;Neurology&#125;,<br/>
+      volume=&#123;71&#125;,<br/>
+      number=&#123;23&#125;,<br/>
+      pages=&#123;1850--1851&#125;,<br/>
+      year=&#123;2008&#125;,<br/>
+      doi = &#123;10.1212/01.wnl.0000338904.37585.66&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>C.T. Bergstrom and <span className="bold">J.D. West</span></div>,
+        pdf: Bergstrom2008NeurologyPDF,
+    },
+    {
+        title: "Eigenfactor - The Google Approach to Bibliometrics (2008)",
+        abstract: "Not all citations are created equal. This is one of the core ideas behind Eigenfactor. Citations from more prestigious journals (such as Science and Nature) are worth more than citations from less important journals (such as the Journal of Obscurity). This meritocratic approach to bibliometrics is very similar to the philosophy behind Googleu2019s PageRank algorithm, which is at u201cthe heart of [its] softwareu201d. Receiving a hyperlink from a highly reputable website means more than a hyperlink from a neighborhood blog. Both Google and Eigenfactor utilize the wealth of information inherent in the structure of their respective networks. For Google, that information can be found in the topology of the web, and for Eigenfactor, the information can be found in the citation structure of the scholarly literature. The success of Google's search engine illustrates the power of this approach to ranking. Part of the success behind PageRank can actually be traced back to prior work in the field of bibliometrics. With the advent of scholarly measures like Eigenfactor, this relationship has come full circle.",
+        journal_volume: (
+    <div>
+    <span className="italics">Front Matter. </span>
+    <span className="volume">4:7</span>
+    </div>
+    ),
+        html: "https://appocsite2com.files.wordpress.com/2016/03/frontmatter-04.pdf",
+        bibTex: (
+    <div>
+      @ARTICLE&#123;West2008FrontMatter,<br/>
+      author = &#123;J.D. West&#125;,<br/>
+      ttitle = &#123;Eigenfactor - The Google Approach to Bibliometrics&#125;,<br/>
+      volume = &#123;4&#125;,<br/>
+      pages = &#123;7&#125;,<br/>
+      journal = &#123;FrontMatter&#125;,<br/>
+      year = &#123;2008&#125;,<br/>
+      publisher = &#123;Allen Press&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span></div>,
+        pdf: West2008FrontMatterPDF,
+    },
+  ],
+  bookChapters: [
+    {
+        title: "The Cambrian Explosion in Patent Informatics (2017)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span className="italics">Legal Informatics.</span> <span className="volume">Cambridge University Press (in prep)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: (
+        ""
+    ),
+        authors: <div>A.W. Torrance  and <span className="bold">J.D. West</span></div>,
+        pdf: ""
+    },
+    {
+        title: "The Data Gold Rush in Higher Education (2016)",
+        abstract: "The enthusiasm for all things big data and data science is more alive now than ever. It can be seen in the frequency of big data articles published in major newspapers and in the venture capitalists betting on its economic impact. Governments and foundations are calling for grant proposals, and big companies are reorganizing in response to this new commodity. Another, often-overlooked vitality indicator of data science comes from education. Students are knocking down the doors at universities, massive open online courses (MOOCs), and workshops. The demand for data science skills is at an all-time high, and universities are responding.",
+        journal_volume: (
+    <div>
+    <span className="italics">Big Data is Not a Monolith. </span>
+    <span className="volume">chpt. 10, MIT Press (in press)</span>
+    </div>
+    ),
+        html: "https://mitpress.mit.edu/books/big-data-not-monolith",
+        bibTex: (
+    <div>
+            @INCOLLECTION&#123;West2016goldrush,<br/>
+                  author = &#123;J.D. West and J. Portenoy&#125;,<br/>
+                  ttitle = &#123;The Data Gold Rush in Higher Education&#125;,<br/>
+                  bookttitle = &#123;Big Data is Not a Monolith&#125;,<br/>
+                  publisher = &#123;MIT Press&#125;,<br/>
+                  year = &#123;2016&#125;,<br/>
+                  chapter = &#123;10&#125;,<br/>
+                  editor = &#123;Sugimoto, C.R. and Ekbia, H. and Mattioli, M.&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span>, J. Portenoy</div>,
+        pdf: ""
+    },
+    {
+        title: "A Network Approach to Scholarly Evaluation (2013)",
+        abstract: "As Derek de Solla Price famously noted in 1965, the scientific literature forms a vast network. The nodes of this network are the millions of published articles, and the edges are the citations between them. There is a wealth of information u2014 not only within the content of these nodes (the text) - but also within the structure connecting these nodes (the network topology). In fact, the network topology by itself provides clues about the quality of the content. This is similar to how Googleu2019s PageRank algorithm harnesses the hyperlink structure of the web to evaluate web pages.",
+        journal_volume: (
+    <div>
+    <span className="italics">Beyond Bibliometrics: Harnessing Multidimensional Indicators of Scholarly Impact. </span>
+    <span className="volume">chpt. 8: 151-166, MIT Press</span>
+    </div>
+    ),
+        html: "https://mitpress.mit.edu/books/beyond-bibliometrics",
+        bibTex: (
+    <div>
+            @INCOLLECTION&#123;West2014BeyondBiblio,<br/>
+                  author = &#123;J.D. West and D. Vilhena&#125;,<br/>
+                  ttitle = &#123;A Network Approach to Scholarly Evaluation&#125;,<br/>
+                  bookttitle = &#123;Beyond Bibliometrics: Harnessing Multidimensional Indicators of Scholarly Impact&#125;,<br/>
+                  publisher = &#123;MIT Press&#125;,<br/>
+                  chapter = &#123;8&#125;,<br/>
+                  pages = &#123;151-166&#125;,<br/>
+                  editor = &#123;&#123;B. Cronin&#125; and &#123;C.R. Sugimoto&#125;&#125;,<br/>
+                  year = &#123;2014&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span>, D. Vilhena</div>,
+        pdf: ""
+    },
+    {
+        title: "Bacteriophages: models for exploring basic principles of ecology (2008)",
+        abstract: "A virus depends intimately upon its host in order to reproduce, which makes the host organism a crucial part of the virus' environment. This basic facet of viral existence means that ecology, the scientific field focusing on how organisms interact with each other and their environment, is particularly relevant to the study of viruses. In this chapter we explore some of the ways in which the principles of ecology apply to viruses that infect bacteriau2014the bacteriophages (or \"phages\" for short). In turn, we also discuss how the study of phage and their bacterial hosts has contributed to different subfields of ecology.",
+        journal_volume: (
+    <div>
+    <span className="italics">Bacteriophage Ecology: Population Growth, Evolution, and Impact of Bacterial Viruses.</span>
+    <span className="volume">chpt. 2: 31-63, University Press, Cambridge, U.K.</span>
+    </div>
+    ),
+        html: "http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521858458",
+        bibTex: (
+    <div>
+            @INCOLLECTION&#123;Kerr2008Bacteriophages,<br/>
+                  author = &#123;B. Kerr and J.D. West and B. Bohannan&#125;,<br/>
+                  ttitle = &#123;Bacteriophages: models for exploring basic principles of ecology&#125;,<br/>
+                  chapter = &#123;2&#125;,<br/>
+                  pages = &#123;31-63&#125;,<br/>
+                  bookttitle = &#123;Bacteriophage Ecology: Population Growth, Evolution, and Impact of Bacterial Viruses&#125;,<br/>
+                  publisher = &#123;Cambridge Univerity Press&#125;,<br/>
+                  editor = &#123;&#123;S.T. Abedon&#125;&#125;,<br/>
+                  year = &#123;2008&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>B. Kerr, <span className="bold">J.D. West</span> and B.J.M Bohannan</div>,
+        pdf: ""
     },
   ],
 });
