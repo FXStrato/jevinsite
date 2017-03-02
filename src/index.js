@@ -1,5 +1,5 @@
 /*eslint no-unused-vars: "off"*/ //don't show warnings for unused
-import {Router, Route, browserHistory, IndexRoute} from 'react-router';
+import {Router, Route, hashHistory, IndexRoute} from 'react-router';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -19,7 +19,7 @@ import '../node_modules/materialize-css/dist/css/materialize.min.css';
 injectTapEventPlugin();
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="bio" component={Bio}/>
