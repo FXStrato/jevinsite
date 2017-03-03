@@ -37,6 +37,25 @@ import West2009ASBMBPDF from './papers/West2009ASBMB.pdf';
 import Bergstrom2008JneurosciPDF from './papers/Bergstrom2008Jneurosci.pdf';
 import Bergstrom2008NeurologyPDF from './papers/Bergstrom2008Neurology.pdf';
 import West2008FrontMatterPDF from './papers/West2008FrontMatter.pdf';
+import West2008AuthorEFPDF from './papers/West2008AuthorEF.pdf';
+import Bergstrom2008efcodePDF from './papers/Bergstrom2008efcode.pdf';
+import West2008JournalEFPDF from './papers/West2008JournalEF.pdf';
+import West2010DissertationPDF from './papers/West2010Dissertation.pdf';
+import West2004ThesisPDF from './papers/West2004Thesis.pdf';
+import US20140337280A1PDF from './papers/US20140337280A1.pdf';
+import Chow2016FisheriesPDF from './presentations/Chow2016Fisheries.pdf';
+import Portenoy2016iConferencePDF from './presentations/Portenoy2016iConference.pdf';
+import Walls2016CapstonePDF from './presentations/Walls2016Capstone.pdf';
+import West2015Coursector_CapstonePDF from './presentations/West2015Coursector_Capstone.pdf';
+import Hong2014metaphorPDF from './presentations/Hong2014metaphor.pdf';
+import Althouse2009CardiologyPDF from './presentations/Althouse2009Cardiology.pdf';
+import Nahum2009GordonConferencePDF from './presentations/Nahum2009GordonConference.pdf';
+import West2007GordonConferencePDF from './presentations/West2007GordonConference.pdf';
+import West2007EigenfactorPDF from './presentations/West2007Eigenfactor.pdf';
+import West2006evowiboPDF from './presentations/West2006evowibo.pdf';
+import West2005plantneurobiologyPDF from './presentations/West2005plantneurobiology.pdf';
+import West2004StomatalNetworksPDF from './presentations/West2004StomatalNetworks.pdf';
+import West2003PlantComputationPDF from './presentations/West2003PlantComputation.pdf';
 
 
 //Images used
@@ -1371,6 +1390,380 @@ const publicationsData = Immutable.Map({
     ),
         authors: <div>B. Kerr, <span className="bold">J.D. West</span> and B.J.M Bohannan</div>,
         pdf: ""
+    },
+  ],
+  pseudocode: [
+    {
+        title: "Calculating Author-Level Eigenfactors (2008)",
+        abstract: "The following pseudocode can be used to calculate author-level Eigenfactors for scholars in the Social Science Research Network (SSRN). Eigenfactor measures the number of times that authors in the SSRN provide citations to other authors in the SSRN since the inception of this scholarly community.",
+        journal_volume: (
+    <div>
+    <span className="italics">Eigenfactor.org</span>
+    </div>
+    ),
+        html: "",
+        bibTex: (
+    <div>
+            @MISC&#123;West2008pseudocodeAuthors,<br/>
+                  author = &#123;J.D. West and C.T. Bergstrom&#125;,<br/>
+                  ttitle = &#123;Calculating Author-Level Eigenfactor Metrics&#125;,<br/>
+                  howpublished = &#123;Eigenfactor.org&#125;,<br/>
+                  year = &#123;2008&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span> and C.T. Bergstrom</div>,
+        pdf: West2008AuthorEFPDF
+    },
+    {
+        title: "Compressed Source Code for the Eigenfactor Calculation (2008)",
+        abstract: "Mathematica code for calculating Journal Eigenfactor scores.",
+        journal_volume: (
+    <div>
+    <span className="italics">Eigenfactor.org</span>
+    </div>
+    ),
+        html: "",
+        bibTex: (
+    <div>
+            @MISC&#123;Bergstrom2008pseudocodeJournals,<br/>
+                author = &#123;C.T. Bergstrom and J.D. West&#125;,<br/>
+                ttitle = &#123;Compressed Source Code for the Eigenfactor Calculation&#125;,<br/>
+                howpublished = &#123;Eigenfactor.org&#125;,<br/>
+                year = &#123;2008&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>C.T. Bergstrom and <span className="bold">J.D. West</span></div>,
+        pdf: Bergstrom2008efcodePDF
+    },
+    {
+        title: "Calculating Journal-Level Eigenfactors (2008)",
+        abstract: "Pseudocode for calculating Jorunal-level Eigenfactor Scores and ArticleInfluence Scores.",
+        journal_volume: (
+    <div>
+    <span className="italics">Eigenfactor.org</span>
+    </div>
+    ),
+        html: "",
+        bibTex: (
+    <div>
+            @MISC&#123;West2008pseudocodeJournals,<br/>
+                  author = &#123;J.D. West and C.T. Bergstrom&#125;,<br/>
+                  ttitle = &#123;Calculating Journal-Level Eigenfactor Metrics&#125;,<br/>
+                  howpublished = &#123;Eigenfactor.org&#125;,<br/>
+                  year = &#123;2008&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>C.T. Bergstrom and <span className="bold">J.D. West</span></div>,
+        pdf: West2008JournalEFPDF
+    },
+  ],
+  theses: [
+    {
+        title: "Eigenfactor: ranking and mapping scientific knowledge (2010)",
+        abstract: "Each year, tens of thousands of scholarly journals publish hundreds of thousands of scholarly papers, collectively containing tens of millions of citations. As De Solla Price recognized in 1965, these citations form a vast network linking up the collective research output of the scholarly community. These well-defined and well-preserved networks are model systems well suited for studying communication networks and the flow of information on these networks. In this dissertation, I explain how I used citation networks to develop an algorithm that I call 'Eigenfactor.' The goal of Eigenfactor is to mine the wealth of information contained within the full structure of the scholarly web, in order to identify the important nodes in these networks. This is dif-ferent from the conventional approach to scholarly evaluation. Metrics like impact factor ignore the network when ranking scholarly journals and only count incoming links. Eigenfactor not only counts citations but takes into account the source of those citations. By considering the whole network, I claim that Eigenfactor is a more information rich statistic. Librarians, publishers, editors and scholars around the world are now using Eigenfactor alongside impact factor to evaluate their journal collections. This dissertation consists of a collection of papers that provide an overview of Eigenfactor - what it is, what it measures and how it can be used to better evaluate and navigate the ever-expanding scholarly literature.",
+        journal_volume: (
+    <div>
+    <span className="italics">Doctoral Dissertation, University of Washington, Department of Biology</span>
+    </div>
+    ),
+        html: "",
+        bibTex: (
+    <div>
+            @PHDTHESIS&#123;West2010Phd,<br/>
+                  author = &#123;J.D. West&#125;,<br/>
+                  ttitle = &#123;Eigenfactor: ranking and mapping scientific knowledge&#125;,<br/>
+                  school = &#123;University of Washington, Department of Biology&#125;,<br/>
+                  year = &#123;2010&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span></div>,
+        pdf: West2010DissertationPDF
+    },
+    {
+        title: "Investigations into the spatial and temporal dynamics of stomatal networks to determine whether plants perform emergent, distributed computation (2004)",
+        abstract: "This research studies the spatial and temporal dynamics of stomatal patchiness in order to investigate the possibility that plants solve their problem of adjusting stomatal aperture in order to maximize CO2 uptake while minimizing H2O loss through an emergent, distributed computation. An extensive study is done on qualitative and quantitative characteristics of stomatal patchiness, and improved imaging techniques are developed to more fully capture the dynamics. In doing so, soliton-like structures were discovered. Sequences of chlorophyll fluorescence images of Xanthium strumarium leaves were then compared to image sequences of cellular computer simulations that solve problems via emergent, distributed computation. Statistical analyses revealed that the spatial and temporal correlations of the patchy dynamics for the two types of images were indistinguishable.",
+        journal_volume: (
+    <div>
+    <span className="italics">Masters Thesis, Utah State University, Department of Biology</span>
+    </div>
+    ),
+        html: "",
+        bibTex: (
+    <div>
+            @MASTERSTHESIS&#123;West2004Masters,<br/>
+                  author = &#123;J.D. West&#125;,<br/>
+                  ttitle = &#123;Investigations into the spatial and temporal dynamics of stomatal networks to determine whether plants perform emergent,<br/> distributed computation&#125;,<br/>
+                  school = &#123;Utah State University, Department of Biology&#125;,<br/>
+                  year = &#123;2004&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div><span className="bold">J.D. West</span></div>,
+        pdf: West2004ThesisPDF
+    },
+  ],
+  patents: [
+    {
+        title: "Systems and Methods for Data Analysis (2013)",
+        abstract: "Described herein are methods and systems for hierarchically mapping, ranking, and labeling data sets automatically. Also provided are methods for browsing and navigating a hierarchically mapped data set, and START identifying changes in network structure over time. An example method may involve receiving document data indicating a corpus of documents and references between documents within the corpus. Based on the document data, a network comprising two or more nodes and at least one directed edge may be determined. Also, a hierarchical partition of the documents may be determined based on the directed edges of the network. The hierarchical partition may define a plurality of nested modules, and each module in the plurality of nested modules may be associated with one or more respective documents within the corpus. The method may additionally include causing a graphical display to provide a visual indication of one or more of the plurality of nested modules.",
+        journal_volume: (
+    <div>
+    <span className="italics">US Patent Application: US20140337280A1</span>
+    </div>
+    ),
+        html: "http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&amp;Sect2=HITOFF&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&amp;r=2&amp;f=G&amp;l=50&amp;co1=AND&amp;d=PG01&amp;s1=Jevin.IN.&amp;OS=IN/Jevin&amp;RS=IN/Jevin",
+        bibTex: (
+    <div>
+            @MISC&#123;West2013Patent,<br/>
+                  author = &#123;C.T. Bergstrom and M. Rosvall and D. Vilhena and J.D. West and A. Torrance&#125;,<br/>
+                  ttitle = &#123;Systems and Methods for Data Analysis&#125;,<br/>
+                  institution = &#123;University of Washington&#125;,<br/>
+                  year = &#123;2013&#125;,<br/>
+                  journal = &#123;US20140337280A1&#125;,<br/>
+                  note = &#123;PCT Application Filed on Feb. 1, 2013&#125;&#125;<br/>
+    </div>
+    ),
+        authors: <div>C.T. Bergstrom and M. Rosvall and D. Vilhena and <span className="bold">J.D. West</span> and A. Torrance</div>,
+        pdf: US20140337280A1PDF
+    },
+  ],
+  posters: [
+    {
+        title: "Examining Gender Authorship in Aquaculture Journals (2016)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster">Asian Fisheries and Aquaculture Forum.</span>
+    <span className="volume"> Bangkok, Thailand (Aug. 3-7)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div>M. Chow, <span className="bold">J.D. West</span>, S. Bodman, H. Egna</div>,
+        pdf: Chow2016FisheriesPDF
+    },
+    {
+        title: "Visualizing Scholarly Influence Over Time (2016)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://ischools.org/news/cfp-iconference-2016-partnership-with-society/">iSchool Conference</a>.</span>
+    <span className="volume"> Philadelphia, PA (March. 20-21)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div>J. Portenoy, <span className="bold">J.D. West</span></div>,
+        pdf: Portenoy2016iConferencePDF
+    },
+    {
+        title: "Surveying Usage of Academic Research in Journalism (2016)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
+    <span className="volume"> University of Washington (June)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div>L. Walls, I. Edwards, T. Ho <span className="bold">J.D. West</span>, Emma Spiro</div>,
+        pdf: Walls2016CapstonePDF,
+    },
+    {
+        title: "Coursector (2015)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><b>Audience Choice Award</b>, <a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
+    <span className="volume"> University of Washington (June)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div>C. Greene, M. Kelly, P. Pradhan, N. Sinha <span className="bold">J.D. West</span></div>,
+        pdf: West2015Coursector_CapstonePDF
+    },
+    {
+        title: "Using Visual Metaphor in Interactive Visualization to Improve Navigation of Complex Data Sets (2014)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="https://ischool.uw.edu/events/research-fair-2014">UW iSchool Research Fair</a>.</span>
+    <span className="volume"> University of Washington (November)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div>R. Hong, Y. Kim, A. Hiniker, N. Chen, C. Aragon, <span className="bold">J.D. West</span></div>,
+        pdf: Hong2014metaphorPDF
+    },
+    {
+        title: "Course Connect (2014)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
+    <span className="volume"> University of Washington (June)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div> <span className="bold">J.D. West</span></div>,
+        pdf: West2015Coursector_CapstonePDF
+    },
+    {
+        title: "A Novel Method for Ranking the Quality of Cardiology Literature (2009)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="https://forums.aws.amazon.com/message.jspa?messageID=326076">American College of Cardiology Scientiufb01c Sessions</a>.</span>
+    <span className="volume"> Orlando, FL (March)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div>B.M. Althouse, C.T. Bergstrom, <span className="bold">J.D. West</span></div>,
+        pdf: Althouse2009CardiologyPDF
+    },
+    {
+        title: "Traversing Fitness Landscapes by Changing Environments (2009)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><b>Best Poster Award</b>, <a href="http://www.grc.org/programs.aspx?year=2009&amp;program=micrpop">Gordon Research Conference</a>. </span>
+    <span className="volume"> Proctor Academy, NH (July 20-24)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div>J. Nahum, B.M. Althouse, <span className="bold">J.D. West</span>, C. Ofria, B. Kerr</div>,
+        pdf: Nahum2009GordonConferencePDF
+    },
+    {
+        title: "A Top-Down Approach to Discriminate Adaptive Landscape Topology (2007)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://www.grc.org/programs.aspx?year=2007&amp;program=micrpop">Gordon Research Conference</a>. </span>
+    <span className="volume"> Proctor Academy, NH (July 22-27)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, J. Nahum, C. Levy, B. Kerr</div>,
+        pdf: West2007GordonConferencePDF
+    },
+    {
+        title: "Ranking and Mapping Scholarly Literature (2007)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://www.grc.org/programs.aspx?year=2007&amp;program=micrpop">Gordon Research Conference</a>. </span>
+    <span className="volume"> Proctor Academy, NH (July 22-27)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, M. Rosvall, B.M. Althouse, C.T. Bergstrom</div>,
+        pdf: West2007EigenfactorPDF
+    },
+    {
+        title: "The Missing Link (2007)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://depts.washington.edu/sotl/index.html">UW Scholarship of Teaching and Learning Symposium</a>. </span>
+    <span className="volume"> University of Washington (April)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, K. Hall</div>,
+        pdf: West2007EigenfactorPDF
+    },
+    {
+        title: "The evolution of a 'Tragedy of the Commons' in a Host-Pathogen Metapopulation (2006)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://www.zoology.ubc.ca/evo-wibo/index.html">EVO-WIBO</a>.</span>
+    <span className="volume"> Port Townsend, WA (April)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, A. Dean, C. Neuhauser, B. Bohannan, B. Kerr</div>,
+        pdf: West2006evowiboPDF
+    },
+    {
+        title: "Sophisticated Information Processing in Plants (2005)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://ds9.botanik.uni-bonn.de/zellbio/AG-Baluska-Volkmann/plantneuro/">Symposium on Plant Neurobiology</a>.</span>
+    <span className="volume"> Universitatbonn, Florence, Italy (May 17-20)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott</div>,
+        pdf: West2005plantneurobiologyPDF
+    },
+    {
+        title: "Problem Solving Dynamics of Stomatal Networks (2004)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://www.jevinwest.org/Documents/AAAS_Conference.pdf">American Association for the Advancement of Science</a>.</span>
+    <span className="volume"> Utah State University (June)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, S.M. Mesinger, D. Peak, K.A. Mott</div>,
+        pdf: West2005plantneurobiologyPDF
+    },
+    {
+        title: "Stomatal Networks and Cellular Computation (2004)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://necsi.org/events/iccs/iccscover.html">International Conference on Complex Systems</a>.</span>
+    <span className="volume"> Boston, MA (May 17)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott, S.M. Messinger</div>,
+        pdf: West2004StomatalNetworksPDF
+    },
+    {
+        title: "The Game of Leaf: Evidence that Stomatal Networks are Cellular Computers (2003)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://necsi.org/events/iccs/iccscover.html">Networks: Structure, Dynamics and Function</a>.</span>
+    <span className="volume"> Santa Fe, NM (May)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, S.M. Messinger, D. Peak, K.A. Mott</div>,
+        pdf: West2003PlantComputationPDF
+    },
+    {
+        title: "Can Stomata Respond as a Reaction Diffusion Model? (2001)",
+        abstract: "",
+        journal_volume: (
+    <div>
+    <span class="journal-poster"><a href="http://www.biology.usu.edu/undergrad/researchsymposium/symposium.htm" target="u00d3_blanku00d3">Utah State University Student Research Symposium</a>.</span>
+    <span className="volume"> Logan, UT (April)</span>
+    </div>
+    ),
+        html: "",
+        bibTex: '',
+        authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott</div>,
+        pdf: West2003PlantComputationPDF
     },
   ],
 });

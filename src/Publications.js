@@ -11,8 +11,8 @@ class Publications extends Component {
     scroll.scrollToTop({duration: 0});
   }
 
-  getArticles = parameter => {
-    return _.map(publicationsData.get(parameter), (elem, index) => {
+  getArticles = (title, parameter) => {
+    let temp =  _.map(publicationsData.get(parameter), (elem, index) => {
       return (
         <li key={parameter + '-' + index} style={{marginBottom: 10}}>
           <span className="bold">{elem.title}</span><br/>
@@ -33,21 +33,36 @@ class Publications extends Component {
             :
             ''
           }
-          <Collapsible>
-            {elem.abstract &&
-              <CollapsibleItem header="Abstract">
-                {elem.abstract}
-              </CollapsibleItem>
-            }
-            {elem.bibTex &&
-              <CollapsibleItem header="BibTex">
-                {elem.bibTex}
-              </CollapsibleItem>
-            }
-          </Collapsible>
+          {elem.abstract && elem.bibTex ?
+            <Collapsible>
+              {elem.abstract &&
+                <CollapsibleItem header="Abstract">
+                  {elem.abstract}
+                </CollapsibleItem>
+              }
+              {elem.bibTex &&
+                <CollapsibleItem header="BibTex">
+                  {elem.bibTex}
+                </CollapsibleItem>
+              }
+            </Collapsible>
+          :
+          <div></div>
+        }
         </li>
       )
     });
+    return (
+      <Row>
+        <Col s={12}>
+          <h2 className="bold">{title}</h2>
+          <hr/>
+          <ul>
+            {temp}
+          </ul>
+        </Col>
+      </Row>
+    );
   }
 
   render() {
@@ -62,13 +77,6 @@ class Publications extends Component {
       );
     })
 
-    let prePrints = this.getArticles('prePrints');
-    let peerJournals = this.getArticles('peerJournals');
-    let peerReviewConferences = this.getArticles('peerReviewConferences');
-    let journalsInvited = this.getArticles('journalsInvited');
-    let bookChapters = this.getArticles('bookChapters');
-
-
     return (
       <section className="container extra-padding">
         <Row>
@@ -80,51 +88,15 @@ class Publications extends Component {
             </ul>
           </Col>
         </Row>
-        <Row>
-          <Col s={12}>
-            <h2 className="bold">Pre-Prints</h2>
-            <hr/>
-            <ul>
-              {prePrints}
-            </ul>
-          </Col>
-        </Row>
-        <Row>
-          <Col s={12}>
-            <h2 className="bold">Peer-Review Journals</h2>
-            <hr/>
-            <ul>
-              {peerJournals}
-            </ul>
-          </Col>
-        </Row>
-        <Row>
-          <Col s={12}>
-            <h2 className="bold">Peer-Review Conferences</h2>
-            <hr/>
-            <ul>
-              {peerReviewConferences}
-            </ul>
-          </Col>
-        </Row>
-        <Row>
-          <Col s={12}>
-            <h2 className="bold">Journals, Invited</h2>
-            <hr/>
-            <ul>
-              {journalsInvited}
-            </ul>
-          </Col>
-        </Row>
-        <Row>
-          <Col s={12}>
-            <h2 className="bold">Book Chapters</h2>
-            <hr/>
-            <ul>
-              {bookChapters}
-            </ul>
-          </Col>
-        </Row>
+        {this.getArticles('Pre-Prints', 'prePrints')}
+        {this.getArticles('Peer-Review Journals', 'peerJournals')}
+        {this.getArticles('Peer-Review Conferences', 'peerReviewConferences')}
+        {this.getArticles('Journals, Invited', 'journalsInvited')}
+        {this.getArticles('Book Chapters', 'bookChapters')}
+        {this.getArticles('Pseudocode', 'pseudocode')}
+        {this.getArticles('Theses', 'theses')}
+        {this.getArticles('Patents', 'patents')}
+        {this.getArticles('Posters', 'posters')}
       </section>
     );
   }
