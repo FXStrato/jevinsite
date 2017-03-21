@@ -56,7 +56,8 @@ import West2006evowiboPDF from './presentations/West2006evowibo.pdf';
 import West2005plantneurobiologyPDF from './presentations/West2005plantneurobiology.pdf';
 import West2004StomatalNetworksPDF from './presentations/West2004StomatalNetworks.pdf';
 import West2003PlantComputationPDF from './presentations/West2003PlantComputation.pdf';
-
+import Ying2017iconferencePDF from './papers/Ying2017iconference.pdf';
+import Adler2013asistPDF from './papers/Adler2013asist.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -1765,6 +1766,54 @@ const publicationsData = Immutable.Map({
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott</div>,
         pdf: West2003PlantComputationPDF
     },
+  ],
+  workshops: [
+    {
+        title: "Data-Driven Discovery: A New Era of Exploiting the Literature and Data (2017)",
+        abstract: "",
+        journal_volume: (
+          <div>
+          <span className="italics">iConference</span>
+          </div>
+    ),
+        html: "",
+        bibTex: (
+
+    ),
+        authors: <div>Y. Ding, <span className="bold">J.D. West</span>, M. Song, G. Meng, Q. Yu, S. Bodman, H. Egna</div>,
+        pdf: Ying2017iconferencePDF
+    },
+    {
+        title: "The Temporal Dimension in the Study of Knowledge Bases: Approaches to Understanding Knowledge Creation and Representation Over Time (2013)",
+        abstract: "",
+        journal_volume: (
+          <div>
+          <span className="italics">Proceedings of the American Society for Information Science and Technology</span>
+          <span className="volume"> 50.1 (2013): 1-3</span>
+          </div>
+    ),
+        html: "",
+        bibTex: (
+          <div></div>
+    ),
+        authors: <div>M. Adler, J.T. Tennis, S. Milojevic, S. van Hooland, C. Rogers, <span className="bold">J.D. West</span></div>,
+        pdf: Adler2013asistPDF
+    },
+  ],
+  blogposts: [
+    {
+        title: "Comparing Impact Factor and Scopus CiteScore (2016)",
+        abstract: "",
+        journal_volume: (
+        <div></div>
+    ),
+        html: "http://www.eigenfactor.org/projects/posts/citescore.php",
+        bibTex: (
+          <div></div>
+    ),
+        authors: <div>C.T. Bergstrom, <span className="bold">J.D. West</span> (Dec. 8)</div>,
+        pdf: ""
+    }
   ],
 });
 
