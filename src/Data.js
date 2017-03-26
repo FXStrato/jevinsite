@@ -58,6 +58,7 @@ import West2004StomatalNetworksPDF from './presentations/West2004StomatalNetwork
 import West2003PlantComputationPDF from './presentations/West2003PlantComputation.pdf';
 import Ying2017iconferencePDF from './papers/Ying2017iconference.pdf';
 import Adler2013asistPDF from './papers/Adler2013asist.pdf';
+import West2016nsfPDF from './presentations/West2016nsf.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -1533,7 +1534,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster">Asian Fisheries and Aquaculture Forum.</span>
+    <span className="journal-poster">Asian Fisheries and Aquaculture Forum.</span>
     <span className="volume"> Bangkok, Thailand (Aug. 3-7)</span>
     </div>
     ),
@@ -1547,7 +1548,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://ischools.org/news/cfp-iconference-2016-partnership-with-society/">iSchool Conference</a>.</span>
+    <span className="journal-poster"><a href="http://ischools.org/news/cfp-iconference-2016-partnership-with-society/">iSchool Conference</a>.</span>
     <span className="volume"> Philadelphia, PA (March. 20-21)</span>
     </div>
     ),
@@ -1561,7 +1562,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
+    <span className="journal-poster"><a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
     <span className="volume"> University of Washington (June)</span>
     </div>
     ),
@@ -1575,7 +1576,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><b>Audience Choice Award</b>, <a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
+    <span className="journal-poster"><b>Audience Choice Award</b>, <a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
     <span className="volume"> University of Washington (June)</span>
     </div>
     ),
@@ -1589,7 +1590,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="https://ischool.uw.edu/events/research-fair-2014">UW iSchool Research Fair</a>.</span>
+    <span className="journal-poster"><a href="https://ischool.uw.edu/events/research-fair-2014">UW iSchool Research Fair</a>.</span>
     <span className="volume"> University of Washington (November)</span>
     </div>
     ),
@@ -1603,7 +1604,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
+    <span className="journal-poster"><a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool">UW iSchool Capstone</a>.</span>
     <span className="volume"> University of Washington (June)</span>
     </div>
     ),
@@ -1617,7 +1618,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="https://forums.aws.amazon.com/message.jspa?messageID=326076">American College of Cardiology Scientiufb01c Sessions</a>.</span>
+    <span className="journal-poster"><a href="https://forums.aws.amazon.com/message.jspa?messageID=326076">American College of Cardiology Scientiufb01c Sessions</a>.</span>
     <span className="volume"> Orlando, FL (March)</span>
     </div>
     ),
@@ -1631,7 +1632,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><b>Best Poster Award</b>, <a href="http://www.grc.org/programs.aspx?year=2009&amp;program=micrpop">Gordon Research Conference</a>. </span>
+    <span className="journal-poster"><b>Best Poster Award</b>, <a href="http://www.grc.org/programs.aspx?year=2009&amp;program=micrpop">Gordon Research Conference</a>. </span>
     <span className="volume"> Proctor Academy, NH (July 20-24)</span>
     </div>
     ),
@@ -1645,7 +1646,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://www.grc.org/programs.aspx?year=2007&amp;program=micrpop">Gordon Research Conference</a>. </span>
+    <span className="journal-poster"><a href="http://www.grc.org/programs.aspx?year=2007&amp;program=micrpop">Gordon Research Conference</a>. </span>
     <span className="volume"> Proctor Academy, NH (July 22-27)</span>
     </div>
     ),
@@ -1659,7 +1660,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://www.grc.org/programs.aspx?year=2007&amp;program=micrpop">Gordon Research Conference</a>. </span>
+    <span className="journal-poster"><a href="http://www.grc.org/programs.aspx?year=2007&amp;program=micrpop">Gordon Research Conference</a>. </span>
     <span className="volume"> Proctor Academy, NH (July 22-27)</span>
     </div>
     ),
@@ -1673,7 +1674,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://depts.washington.edu/sotl/index.html">UW Scholarship of Teaching and Learning Symposium</a>. </span>
+    <span className="journal-poster"><a href="http://depts.washington.edu/sotl/index.html">UW Scholarship of Teaching and Learning Symposium</a>. </span>
     <span className="volume"> University of Washington (April)</span>
     </div>
     ),
@@ -1687,7 +1688,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://www.zoology.ubc.ca/evo-wibo/index.html">EVO-WIBO</a>.</span>
+    <span className="journal-poster"><a href="http://www.zoology.ubc.ca/evo-wibo/index.html">EVO-WIBO</a>.</span>
     <span className="volume"> Port Townsend, WA (April)</span>
     </div>
     ),
@@ -1701,7 +1702,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://ds9.botanik.uni-bonn.de/zellbio/AG-Baluska-Volkmann/plantneuro/">Symposium on Plant Neurobiology</a>.</span>
+    <span className="journal-poster"><a href="http://ds9.botanik.uni-bonn.de/zellbio/AG-Baluska-Volkmann/plantneuro/">Symposium on Plant Neurobiology</a>.</span>
     <span className="volume"> Universitatbonn, Florence, Italy (May 17-20)</span>
     </div>
     ),
@@ -1715,7 +1716,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://www.jevinwest.org/Documents/AAAS_Conference.pdf">American Association for the Advancement of Science</a>.</span>
+    <span className="journal-poster"><a href="http://www.jevinwest.org/Documents/AAAS_Conference.pdf">American Association for the Advancement of Science</a>.</span>
     <span className="volume"> Utah State University (June)</span>
     </div>
     ),
@@ -1729,7 +1730,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://necsi.org/events/iccs/iccscover.html">International Conference on Complex Systems</a>.</span>
+    <span className="journal-poster"><a href="http://necsi.org/events/iccs/iccscover.html">International Conference on Complex Systems</a>.</span>
     <span className="volume"> Boston, MA (May 17)</span>
     </div>
     ),
@@ -1743,7 +1744,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://necsi.org/events/iccs/iccscover.html">Networks: Structure, Dynamics and Function</a>.</span>
+    <span className="journal-poster"><a href="http://necsi.org/events/iccs/iccscover.html">Networks: Structure, Dynamics and Function</a>.</span>
     <span className="volume"> Santa Fe, NM (May)</span>
     </div>
     ),
@@ -1757,7 +1758,7 @@ const publicationsData = Immutable.Map({
         abstract: "",
         journal_volume: (
     <div>
-    <span class="journal-poster"><a href="http://www.biology.usu.edu/undergrad/researchsymposium/symposium.htm" target="u00d3_blanku00d3">Utah State University Student Research Symposium</a>.</span>
+    <span className="journal-poster"><a href="http://www.biology.usu.edu/undergrad/researchsymposium/symposium.htm" target="u00d3_blanku00d3">Utah State University Student Research Symposium</a>.</span>
     <span className="volume"> Logan, UT (April)</span>
     </div>
     ),
@@ -1778,7 +1779,7 @@ const publicationsData = Immutable.Map({
     ),
         html: "",
         bibTex: (
-
+        <div></div>
     ),
         authors: <div>Y. Ding, <span className="bold">J.D. West</span>, M. Song, G. Meng, Q. Yu, S. Bodman, H. Egna</div>,
         pdf: Ying2017iconferencePDF
@@ -1815,6 +1816,101 @@ const publicationsData = Immutable.Map({
         pdf: ""
     }
   ],
+});
+
+const presentationData = Immutable.OrderedMap({
+  invitedtalks: {
+    2017: [
+      {
+          location: <div><a href="https://depts.washington.edu/womengs/wordpress/" target="_blank">PAE Reform Symposium,</a> Stanford University, Palo Alto, CA</div>,
+          title: <div className="bold">Are Trolls Good (At Choosing Valuable Patents)? (May 7)</div>
+      },
+      {
+          location: <div><a href="http://knowescape.org/venue-knowescape-2017/" target="_blank">Fourth Annual KnoweScape Conference</a>, Sofia, Bulgaria</div>,
+          title: <div className="bold">[Keynote] From measuring science to facilitating science (Feb. 23)</div>
+      },
+    ],
+    2016: [
+      {
+          location: <div><a href="https://depts.washington.edu/womengs/wordpress/" target="_blank">NSF Workshop: Can Network Measures Serve as Indicators of Knowledge Creation and Flow?</a> George Washington University, Washington, D.C.</div>,
+          title: <div className="bold">Visualizing Knowledge Flows (Nov. 7) <a href={West2016nsfPDF}>PDF</a></div>
+      },
+      {
+          location: <div><a href="https://depts.washington.edu/womengs/wordpress/" target="_blank">Women in Genome Sciences.</a> University of Washington, Seattle, WA</div>,
+          title: <div className="bold">Gender and self-citation across fields and over time (Nov. 7)</div>
+      },
+      {
+          location: <div><a href="https://library.osu.edu/projects-initiatives/knowledge-bank/open-access-publishing/osu-journal-editors-group/" target="_blank">Ohio State University Libraries Public Lecture.</a> Columbus, OH</div>,
+          title: <div className="bold">Diversity and Gender in Scholarly Publishing (Nov. 3) <a href="presentations/West2016OhioState.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="http://www.fredhutch.org/en/labs/basic-sciences.html" target="_blank">Fred Hutchinson Cancer Research Center Annual Retreat.</a> Grand Hyatt, Seattle, WA</div>,
+          title: <div className="bold">[Plenary] The Science of Science (Sept. 12) <a href="presentations/West2016FredHutch.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="https://www.healthra.org" target="_blank">Data Science Conference</a>. National Library, Beijing, China</div>,
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (June 20) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="https://www.healthra.org" target="_blank">Lab, Wuhan University</a>. Shanghai, China</div>,
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 17) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="https://www.healthra.org" target="_blank">Lab, Tsinghua University</a>. Beijing, China</div>,
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 16) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="https://www.healthra.org" target="_blank">Lab, Shangai Jao University</a>. Shanghai, China</div>,
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 15) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="https://www.healthra.org" target="_blank">Health Research Alliance Annual Meeting</a>. New York, NY</div>,
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (April 1) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="https://learn.heart.org/activity/4323627/detail.aspx" target="_blank">American Heart Association Research Leaders Academy</a>. San Antonio, TX</div>,
+          title: <div className="bold">Mapping the AHA Community (July 26) <a href="presentations/West2016AHA.pdf">PDF</a></div>
+      },
+      {
+          location: <div><a href="http://www2.yukawa.kyoto-u.ac.jp/~future/IS20160212/index.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
+          title: <div className="bold">[Plenary] Mapping the Emergence of Scientific Disciplines <a href="presentations/mapping_science_kyoto_jevin_west.pdf">PDF</a> (Feb. 12)</div>
+      },
+      {
+          location: <div><a href="http://www.gsee-kyoto.kier.kyoto-u.ac.jp/GSEEKyoto2016_Program.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
+          title: <div className="bold">The Data Gold Rush in Science Education <a href="presentations/data_gold_rush_jevin_west.pdf">PDF</a> (Feb. 11)</div>
+      },
+      {
+          location: <div><a href="http://allenai.org" target="_blank">Allen Institute for Artificial Intelligence</a>. Seattle, WA</div>,
+          title: <div className="bold">Facilitating discovery with zoomable maps <a href="presentations/AI2_jevin_west.pdf">PDF</a> (Feb. 4)</div>
+      },
+    ],
+    2015: [
+      {
+          location: <div><a href="http://machinelearning.duke.edu/education/seminar-series" target="_blank">Duke University Machine Learning Seminar Series</a>. Duke University, NC</div>,
+          title: <div className="bold">Mapping Knowledge Networks (Nov. 11)</div>
+      },
+      {
+          location: <div><a href="http://machinelearning.duke.edu/education/seminar-series" target="_blank">Pew Biomedical Scholars Conference</a>. Grand Cayman, West Indies</div>,
+          title: <div className="bold">Mapping the citation influence of the Pew Biomedical Scholars Program (Nov. 5)</div>
+      },
+      {
+          location: <div><a href="http://machinelearning.duke.edu/education/seminar-series" target="_blank">Social-Personality Psychology Seminar</a>. University of Washington</div>,
+          title: <div className="bold">Gender Differences in Scholarly Self Citation <a href="presentations/West2015UW_psychology.pdf">PDF</a> (Oct. 22)</div>
+      },
+      {
+          location: <div><a href="http://escience.washington.edu/data-science-environment-summit-2015/" target="_blank">Moore-Sloan Data Science Environment Summit</a>. Cle Elem, WA</div>,
+          title: <div className="bold">Plenary. Loosing sleep in a data-driven dream <a href="presentations/DSE-2_jevin_west.pdf">PDF</a> (Oct. 5)</div>
+      },
+      {
+          location: <div>SKKU Library &amp; Information Science <a href="http://cihe.skku.edu/en/feature/ischool03.do">Distinguished Lecture Series</a>. Sungkyunkwan Univ., South Korea</div>,
+          title: <div className="bold">Data Cartography: Managing Knowledge Networks (July 16)</div>
+      },
+      {
+          location: <div><a href="http://www.santafe.edu/gevent/?start=2015-03-01" target="_blank">Santa Fe Institute Speaker Series</a>. Santa Fe Institute, NM</div>,
+          title: <div className="bold">The Jargon Barriers of Science <a href="presentations/SFI_jevin_west.pdf">PDF</a> (March 17)</div>
+      },
+    ],
+  }
 });
 
 const bioData = Immutable.Map({
@@ -1874,7 +1970,7 @@ const bioData = Immutable.Map({
   )
 });
 
-export {drawerLinks, homeData, researchData, publicationsData, bioData};
+export {drawerLinks, homeData, researchData, publicationsData, presentationData, bioData};
 
 /*
 {

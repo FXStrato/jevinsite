@@ -72,7 +72,12 @@ a:hover {
 }
 
 .hidden {
-  display: none;
+    display: none;
+}
+
+.presentation-info a {
+    text-decoration: none;
+    font-weight: normal;
 }
 
 #navbar-appbar>button>div>svg {
@@ -93,7 +98,7 @@ a:hover {
         font-size: 1.25rem;
     }
     .home-intro {
-      height: 175px !important;
+        height: 175px !important;
     }
 }
 
@@ -116,7 +121,7 @@ a:hover {
         margin: 8px 8px 0px -66px !important;
     }
     .home-intro {
-      height: 200px !important;
+        height: 200px !important;
     }
 }
 
@@ -128,6 +133,6 @@ a:hover {
         font-size: 2.25rem;
     }
     .home-intro {
-      height: 225px !important;
+        height: 225px !important;
     }
 }
