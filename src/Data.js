@@ -59,6 +59,22 @@ import West2003PlantComputationPDF from './presentations/West2003PlantComputatio
 import Ying2017iconferencePDF from './papers/Ying2017iconference.pdf';
 import Adler2013asistPDF from './papers/Adler2013asist.pdf';
 import West2016nsfPDF from './presentations/West2016nsf.pdf';
+import West2016OhioStatePDF from './presentations/West2016OhioState.pdf';
+import West2016FredHutchPDF from './presentations/West2016FredHutch.pdf';
+import West2016HRAPDF from './presentations/West2016HRA.pdf';
+import mapping_science_kyoto_jevin_westPDF from './presentations/mapping_science_kyoto_jevin_west.pdf';
+import data_gold_rush_jevin_westPDF from './presentations/data_gold_rush_jevin_west.pdf';
+import AI2_jevin_westPDF from './presentations/AI2_jevin_west.pdf';
+import West2015UW_psychologyPDF from './presentations/West2015UW_psychology.pdf';
+import DSE2_jevin_westPDF from './presentations/DSE-2_jevin_west.pdf';
+import SFI_jevin_westPDF from './presentations/SFI_jevin_west.pdf';
+import Nordita_Networks_2011PDF from './documents/Nordita_Networks_2011.pdf';
+import West2016siamPDF from './presentations/West2016siam.pdf';
+import West2016wwwbigscholarPDF from './presentations/West2016wwwbigscholar.pdf';
+import West2016wwwsemanticsPDF from './presentations/West2016wwwsemantics.pdf';
+import West2016ScienceOfSciencePDF from './presentations/West2016ScienceOfScience.pdf';
+import Portenoy2016ScienceOfSciencePDF from './presentations/Portenoy2016ScienceOfScience.pdf';
+import wsdm_west_wesley_smithPDF from './presentations/wsdm_west_wesley-smith.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -1841,47 +1857,47 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="https://library.osu.edu/projects-initiatives/knowledge-bank/open-access-publishing/osu-journal-editors-group/" target="_blank">Ohio State University Libraries Public Lecture.</a> Columbus, OH</div>,
-          title: <div className="bold">Diversity and Gender in Scholarly Publishing (Nov. 3) <a href="presentations/West2016OhioState.pdf">PDF</a></div>
+          title: <div className="bold">Diversity and Gender in Scholarly Publishing (Nov. 3) <a href={West2016OhioStatePDF}>PDF</a></div>
       },
       {
           location: <div><a href="http://www.fredhutch.org/en/labs/basic-sciences.html" target="_blank">Fred Hutchinson Cancer Research Center Annual Retreat.</a> Grand Hyatt, Seattle, WA</div>,
-          title: <div className="bold">[Plenary] The Science of Science (Sept. 12) <a href="presentations/West2016FredHutch.pdf">PDF</a></div>
+          title: <div className="bold">[Plenary] The Science of Science (Sept. 12) <a href={West2016FredHutchPDF}>PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Data Science Conference</a>. National Library, Beijing, China</div>,
-          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (June 20) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (June 20) <a href={West2016HRAPDF}>PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Wuhan University</a>. Shanghai, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 17) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 17) <a href={West2016HRAPDF}>PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Tsinghua University</a>. Beijing, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 16) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 16) <a href={West2016HRAPDF}>PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Shangai Jao University</a>. Shanghai, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 15) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 15) <a href={West2016HRAPDF}>PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Health Research Alliance Annual Meeting</a>. New York, NY</div>,
-          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (April 1) <a href="presentations/West2016HRA.pdf">PDF</a></div>
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (April 1) <a href={West2016HRAPDF}>PDF</a></div>
       },
       {
           location: <div><a href="https://learn.heart.org/activity/4323627/detail.aspx" target="_blank">American Heart Association Research Leaders Academy</a>. San Antonio, TX</div>,
-          title: <div className="bold">Mapping the AHA Community (July 26) <a href="presentations/West2016AHA.pdf">PDF</a></div>
+          title: <div className="bold">Mapping the AHA Community (July 26) <a href={West2016HRAPDF}>PDF</a></div>
       },
       {
           location: <div><a href="http://www2.yukawa.kyoto-u.ac.jp/~future/IS20160212/index.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
-          title: <div className="bold">[Plenary] Mapping the Emergence of Scientific Disciplines <a href="presentations/mapping_science_kyoto_jevin_west.pdf">PDF</a> (Feb. 12)</div>
+          title: <div className="bold">[Plenary] Mapping the Emergence of Scientific Disciplines <a href={mapping_science_kyoto_jevin_westPDF}>PDF</a> (Feb. 12)</div>
       },
       {
           location: <div><a href="http://www.gsee-kyoto.kier.kyoto-u.ac.jp/GSEEKyoto2016_Program.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
-          title: <div className="bold">The Data Gold Rush in Science Education <a href="presentations/data_gold_rush_jevin_west.pdf">PDF</a> (Feb. 11)</div>
+          title: <div className="bold">The Data Gold Rush in Science Education <a href={data_gold_rush_jevin_westPDF}>PDF</a> (Feb. 11)</div>
       },
       {
           location: <div><a href="http://allenai.org" target="_blank">Allen Institute for Artificial Intelligence</a>. Seattle, WA</div>,
-          title: <div className="bold">Facilitating discovery with zoomable maps <a href="presentations/AI2_jevin_west.pdf">PDF</a> (Feb. 4)</div>
+          title: <div className="bold">Facilitating discovery with zoomable maps <a href={AI2_jevin_westPDF}>PDF</a> (Feb. 4)</div>
       },
     ],
     2015: [
@@ -1895,11 +1911,11 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="http://machinelearning.duke.edu/education/seminar-series" target="_blank">Social-Personality Psychology Seminar</a>. University of Washington</div>,
-          title: <div className="bold">Gender Differences in Scholarly Self Citation <a href="presentations/West2015UW_psychology.pdf">PDF</a> (Oct. 22)</div>
+          title: <div className="bold">Gender Differences in Scholarly Self Citation <a href={West2015UW_psychologyPDF}>PDF</a> (Oct. 22)</div>
       },
       {
           location: <div><a href="http://escience.washington.edu/data-science-environment-summit-2015/" target="_blank">Moore-Sloan Data Science Environment Summit</a>. Cle Elem, WA</div>,
-          title: <div className="bold">Plenary. Loosing sleep in a data-driven dream <a href="presentations/DSE-2_jevin_west.pdf">PDF</a> (Oct. 5)</div>
+          title: <div className="bold">Plenary. Loosing sleep in a data-driven dream <a href={DSE2_jevin_westPDF}>PDF</a> (Oct. 5)</div>
       },
       {
           location: <div>SKKU Library &amp; Information Science <a href="http://cihe.skku.edu/en/feature/ischool03.do">Distinguished Lecture Series</a>. Sungkyunkwan Univ., South Korea</div>,
@@ -1907,8 +1923,336 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="http://www.santafe.edu/gevent/?start=2015-03-01" target="_blank">Santa Fe Institute Speaker Series</a>. Santa Fe Institute, NM</div>,
-          title: <div className="bold">The Jargon Barriers of Science <a href="presentations/SFI_jevin_west.pdf">PDF</a> (March 17)</div>
+          title: <div className="bold">The Jargon Barriers of Science <a href={SFI_jevin_westPDF}>PDF</a> (March 17)</div>
       },
+    ],
+    2014: [
+      {
+          location: <div><a href="https://www.csss.washington.edu/Seminars/" target="_blank">The UW Center for Statistics and the Social Sciences</a>, Seattle, WA</div>,
+          title: <div className="bold"><em>Finding Cultural Holes: How Structure and Culture Diverge in Networks</em> (Oct. 15, 2014)</div>
+      },
+      {
+          location: <div><a href="http://www.grc.org/programs.aspx?year=2014&amp;program=scipolicy" target="_blank">Gordon Research Conference on Science and Technology Policy</a>, Waterville Valley, NH</div>,
+          title: <div className="bold"><em>Mapping Institutional Impact</em> (Aug. 13, 2014)</div>
+      },
+      {
+          location: <div><a href="http://www.uspto.gov" target="_blank">United States Patent and Trademark Office</a>, Washington, DC</div>,
+          title: <div className="bold"><em>Evaluating patents from large open data sets</em> (Aug. 4, 2014)</div>
+      },
+      {
+          location: <div><a href="http://research.microsoft.com/en-us/events/fs2014/ancillaryevents.aspx#ischools" target="_blank">Microsoft Faculty Summit, iSchools Summit</a>, Redmond, WA</div>,
+          title: <div className="bold"><em>DataLab: developing a student-centered data science lab</em> (July 16, 2014)</div>
+      },
+      {
+          location: <div><a href="http://www.gruterinstitute.org/Home.html" target="_blank">Gruter Institute For Law &amp; Behavioral Research</a>, Squaw Valley, CA</div>,
+          title: <div className="bold"><em>Innovation in Science</em> (May 21, 2014)</div>
+      },
+      {
+          location: <div><a href="http://www.biology.washington.edu" target="_blank">University of Washington, Department of Biology Annual Awards Banquet</a>, Seattle, WA</div>,
+          title: <div className="bold"><em>Biology and Data Science</em> (April 8, 2014)</div>
+      },
+    ],
+    2013: [
+      {
+          location: <div><a href="http://article-level-metrics.plos.org/alm-workshop-2013/" target="_blank">PLoS Article-level Metrics Workshop</a>, San Francisco, CA</div>,
+          title: <div className="bold"><em>Article-Level Navigators</em> (Oct. 11)</div>
+      },
+      {
+          location: <div><a href="http://ils.indiana.edu" target="_blank">The Indiana School of Library and Information Science</a>, Indiana University, Bloomington, IN</div>,
+          title: <div className="bold"><em>Data Cartography</em> (Nov. 18)</div>
+      },
+      {
+          location: <div><a href="http://c.ymcdn.com/sites/www.ismte.org/resource/resmgr/conference_material/2013_na_conference.pdf" target="_blank">International Society of Managing and Technical Editors (ISMTE)</a>, Washington, DC</div>,
+          title: <div className="bold"><em>The Eigenfactor Metrics</em> (Nov. 18)</div>
+      },
+      {
+          location: <div><a href="http://www.gs.washington.edu" target="_blank">Genome Sciences Seminar, University of Washington</a>, Washington, DC</div>,
+          title: <div className="bold"><em>The role of gender in Scholarly Authorship</em> (Nov. 12)</div>
+      },
+      {
+          location: <div><a href="http://research.microsoft.com/en-us/events/fs2013/agenda_collapsed.aspx" target="_blank">Microsoft Faculty Summit</a>, Redmond, WA</div>,
+          title: <div className="bold"><em>Publishing and Perishing in the Twenty-First Century</em> (July 15)</div>
+      },
+      {
+          location: <div><a href="http://www.sesync.org/sesync-seminar-eigenfactor-measuring-and-mapping-scientific-knowledge" target="_blank">National Socio-Environmental Synthesis Center (SESYNC)</a>, University of Maryland, Annapolis, MD</div>,
+          title: <div className="bold"><em>Using Maps to Navigate Knowledge Networks</em> (April 9)</div>
+      },
+      {
+          location: <div><a href="http://fish.washington.edu/quantsem/" target="_blank">Aquatic and Fishery Sciences Quantitative Seminar</a>, University of Washington, Seattle, Wa</div>,
+          title: <div className="bold"><em>Eigenfactor: measuring and mapping scientific knowledge</em> (March 22)</div>
+      },
+    ],
+    2012: [
+      {
+          location: <div><a href="http://www.gruterinstitute.org/Home.html" target="_blank">Gruter Institute For Law &amp; Behavioral Research</a>, Stanford University, Palo Alto, CA</div>,
+          title: <div className="bold"><em>Growth of growth economics</em> (Oct. 12)</div>
+      },
+      {
+          location: <div><a href="http://www.digital-science.com" target="_blank">Digital Science</a>, London, UK</div>,
+          title: <div className="bold"><em>Ranking and Mapping</em> (June 14)</div>
+      },
+      {
+          location: <div><a href="http://www.iel.carloalberto.org/Research-and-Pubblication/Conferences.aspx" target="_blank">International Conference on Academia and Publishing</a>, Torino, Italy</div>,
+          title: <div className="bold"><em>The role of gender in scholarly authorship</em> (May 31)</div>
+      },
+      {
+          location: <div><a href="http://www.gruterinstitute.org/Home.html" target="_blank">Gruter Institute For Law &amp; Behavioral Research</a>, Squaw Valley, CA</div>,
+          title: <div className="bold"><em>Can Ignorance Promote Democracy</em> (May 21)</div>
+      },
+    ],
+    2011: [
+      {
+          location: <div><a href="https://www.cs.washington.edu/htbin-post/mvis/mvis?ID=1101" target="_blank">Computer Science and Engineering</a>, University of Washington, Seattle, WA </div>,
+          title: <div className="bold"><em>Document Discovery: Advancing Research with Large Knowledge Networks</em> (Dec. 1)</div>
+      },
+      {
+          location: <div><a href="http://www.lis.illinois.edu/" target="_blank">Graduate School of Library and Information Science</a>, University of Illinois, Champaign-Urbana, IL </div>,
+          title: <div className="bold"><em>Eigenfactor</em> (Nov. 11)</div>
+      },
+      {
+          location: <div><a href="http://www.cs.colorado.edu/events/colloquia/2011-2012/" target="_blank">Department of Computer Science</a>, University of Colorado, Boulder, CO </div>,
+          title: <div className="bold"><em>Document Discovery: Advancing Research with Large Knowledge Networks</em> (Nov. 3)</div>
+      },
+      {
+          location: <div><a href="http://ebio.colorado.edu/" target="_blank">Department of Ecology and Evolutionary Biology</a>, University of Colorado, Boulder, CO </div>,
+          title: <div className="bold"><em>Traversing Fitness Landscapes by Changing Environments</em> (Nov. 2)</div>
+      },
+      {
+          location: <div><a href="http://research.microsoft.com/apps/video/default.aspx?id=155991" target="_blank">Harvard eScience Workshop</a>, Harvard University, Boston, MA </div>,
+          title: <div className="bold"><em>Future of Scholarly Communication</em> (Oct. 24)</div>
+      },
+      {
+          location: <div><a href="http://www.crkn.ca/communications/events" target="_blank">Canadian Research Knowledge Network Annual Conference 2011</a>  Ottawa, Canada </div>,
+          title: <div className="bold"><em>TBA</em> (Oct. 5)</div>
+      },
+      {
+          location: <div><a href="http://research.microsoft.com/en-us/events/fs2011/" target="_blank">Microsoft Faculty Summit 2011</a>  Redmond, WA </div>,
+          title: <div className="bold"><em>Eigenfactor: ranking and mapping scientific knowledge</em> (July 20)</div>
+      },
+      {
+          location: <div><a href="https://conferences.tdl.org/or/index.php/OR2011/OR2011main" target="_blank">Open Repositories</a>  University of Texas, Austin </div>,
+          title: <div className="bold"><em>Eigenfactor and Microsoft Academic Search</em> (June 7)</div>
+      },
+      {
+          location: <div><a href="https://www.resourcenter.net/Scripts/4Disapi2.dll/4DCGI/events/220.html?Action=Conference_Detail&amp;ConfID_W=220&amp;" target="_blank">Society for Scholarly Publishing</a>  Boston, MA </div>,
+          title: <div className="bold"><em>The Eigenfactor Metrics: a network approach to assessing scholarly journals</em> (June 1)</div>
+      },
+      {
+          location: <div><a href="http://www.gruterinstitute.org/Home.html" target="_blank">Law and Human Behavior - Innovation and Economic Growth</a>  Gruter Institute, Squaw Valley, CA </div>,
+          title: <div className="bold"><em>Measuring Interdisciplinarity in Science</em> (May 26)</div>
+      },
+      {
+          location: <div><a href="http://mail.elsevier-alerts.com/go.asp?/bECU001/mEHKGH2F/uG5PEF1F/x57DPH2F" target="_blank">Mapping and Measuring Scientific Output</a>  Santa Fe, NM </div>,
+          title: <div className="bold"><em>The Eigenfactor Metrics: a network approach to assessing scholarly journals</em> (May 10, 2011)</div>
+      },
+      {
+          location: <div><a href="http://cmol.nbi.dk/" target="_blank">Center for Models of Life</a>  Niels Bohr Institute, Copenhagen, Denmark </div>,
+          title: <div className="bold"><em>Mapping the network ecology of science at the article level</em> (April 19, 2011)</div>
+      },
+      {
+          location: <div><a href={Nordita_Networks_2011PDF} target="_blank">Applications of Network Theory - The Conference </a> NORDITA, Stockholm, Sweden</div>,
+          title: <div className="bold"><em>Mapping the network ecology of science at the article level</em> (April 8, 2011)</div>
+      },
+    ],
+    2010: [
+      {
+          location: <div><a href="http://mcgillpolisci.wordpress.com/2010/11/13/colloquium/" target="_blank">The Changing Face of Scientific Research </a> McGill University, Montreal, Canada</div>,
+          title: <div className="bold"><em>Eigenfactor:  ranking and mapping scientific knowledge</em> (Dec. 1, 2010)</div>
+      },
+      {
+          location: <div><a href="http://www.nfais.org/page/305-assessing-value-and-usage-of-scholarly-and-scientific-output" target="_blank">Assessing The Usage and Value of Scholarly and Scientific Output </a> Philadelphia, PA</div>,
+          title: <div className="bold"><em>Eigenfactor:  ranking and mapping scientific knowledge</em> (Nov 10, 2010)</div>
+      },
+      {
+          location: <div><a href="http://mediazone.brighttalk.com/event/ReedElsevier/beda24c1e1-4296-intro" target="_blank">Impact and Productivity Measurements in a Changing Research Environment </a> Washington, DC</div>,
+          title: <div className="bold"><em>Eigenfactor:  harnessing the power of networks to better navigate the scholarly...</em> (Oct 27, 2010)</div>
+      },
+      {
+          location: <div><a href="http://www.ithaka.org/about-ithaka/events/ithaka-sustainable-scholarship-conference-2010-day-two-discovering-scholarly-content" target="_blank">ITHAKA Sustainable Scholarship 2010: Discovering Scholarly Content </a> New York, NY</div>,
+          title: <div className="bold"><em>Eigenfactor:  harnessing the power of networks to better navigate the scholarly...</em> (Sept 28, 2010)</div>
+      },
+      {
+          location: <div><a href="https://www.sspnet.org/Events/Meetings_and_Seminars/2010_Annual_Meeting_Information/spage.aspx" target="_blank">Society for Scholarly Publishing 32nd Annual Meeting</a> San Francisco, CA</div>,
+          title: <div className="bold"><em>New Developments in Defining Impact</em> (June 4, 2010)</div>
+      },
+      {
+          location: <div><a href="http://portal.acs.org/portal/acs/corg/content?_nfpb=true&amp;_pageLabel=PP_TRANSITIONMAIN&amp;node_id=2060&amp;use_sec=false&amp;sec_url_var=region1&amp;__uuid=cc789b9d-e02f-417d-9340-1b25cd561e42" target="_blank">American Chemistry Society National Meeting</a> San Francisco, CA</div>,
+          title: <div className="bold"><em>Eigenfactor and the Future of Scholarly Communication</em> (March 24, 2010)</div>
+      },
+    ],
+    2009: [
+      {
+          location: <div><a href="http://informatics.indiana.edu/scholmet09/announcement.html" target="_blank">NSF Workshop on "Scholarly Evaluation Metrics: Opportunities and Challenges"</a> Washington, DC</div>,
+          title: <div className="bold"><em>The Eigenfactor Metrics </em> (Dec. 16, 2009)</div>
+      },
+      {
+          location: <div><a href="http://www2.yukawa.kyoto-u.ac.jp/~ev2009/index.html" target="_blank">International Workshop on "What is Evolution?"</a> Kyoto University, Japan</div>,
+          title: <div className="bold"><em>Traversing Fitness Landscapes by Changing Environments </em> (Oct. 17, 2009)</div>
+      },
+      {
+          location: <div><a href="http://www.tp.umu.se/" target="_blank">Complex Networks</a>, Department of Theoretical Physics, Umea University, Sweden</div>,
+          title: <div className="bold"><em>The networks of bibliometrics </em> (Oct. 2, 2009)</div>
+      },
+      {
+          location: <div><a href="http://www.alpsp.org/ngen_public/default.asp?ID=393" target="_blank">2009 ALPSP International Conference</a> Oxford, UK</div>,
+          title: <div className="bold"><em>The Eigenfactor Metrics: tools for navigating the scholarly literature </em> (Sept. 10, 2009)</div>
+      },
+      {
+          location: <div><a href="http://www.councilscienceeditors.org/events/annualmeeting09/index.cfm" target="_blank">2009 Council of Science Editors Annual Meeting</a> Pittsburgh, PA</div>,
+          title: <div className="bold"><em>The Eigenfactor 'Ac-count' of Scholarly Evaluation </em> (May 3, 2009)</div>
+      },
+      {
+          location: <div><a href="http://www.lib.pdx.edu/copyright/spring_symposium_2009.php" target="_blank">PSU Digital Research Symposium</a> Portland State University, Portland, OR</div>,
+          title: <div className="bold"><em>The Economics and Structure of Scholarly Publishing </em> (April 29, 2009)</div>
+      },
+      {
+          location: <div><a href="http://www.bioone.org/page/about/meetings/past" target="_blank">BioOne Publishers and Partners Meeting</a> Washington, DC</div>,
+          title: <div className="bold"><em>The Economics and Structure of Scholarly Publishing </em> (April 17, 2009)</div>
+      },
+      {
+          location: <div><a href="http://www.electroniclibrarian.org/ocs/index.php/erl/2009" target="_blank">Electronic Resources and Libraries Conference</a> University of California, Los Angeles, CA</div>,
+          title: <div className="bold"><em>Eigenfactor: ranking and mapping the scholarly literature</em> (Feb. 11, 2009)</div>
+      },
+    ],
+    2008: [
+      {
+          location: <div><a href="http://www.nii.ac.jp/sparc/event/2008/20081125.html" target="_blank">National Institute of Informatics (SPARC)</a> Tokyo, Japan</div>,
+          title: <div className="bold"><em>Eigenfactor: ranking and mapping the scholarly literature</em> (Nov. 25, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.nims.go.jp/eng/" target="_blank">National Institute for Materials Science</a> Tsukuba, Japan</div>,
+          title: <div className="bold"><em>Eigenfactor and Materials Science Journals</em> (Nov. 24, 2008)</div>
+      },
+      {
+          location: <div><a href="http://labs.library.yale.edu/245/2008/10/eigenfactors_and_impact_factor.html" target="_blank">Yale Library and Faculty</a> Yale University, New Haven, CT</div>,
+          title: <div className="bold"><em>Eigenfactor: ranking and mapping scientific knowledge</em> (Nov. 3, 2008)</div>
+      },
+      {
+          location: <div><a href="http://scholcomm.columbia.edu/multimedia" target="_blank">Center for Digital Research and Scholarship</a> Columbia University, New York City, NY</div>,
+          title: <div className="bold"><em>Alternatives to Impact Factor in Evaluating Scholarly Literature</em> (Oct. 30, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.kier.kyoto-u.ac.jp/ICAM/complexity/conference08.html" target="_blank">What is Creativity? \ufffd Emergent Phenomena in Complex Adaptive Systems</a></div>,
+          title: <div className="bold"><em>Measuring Interdisciplinarity: A Flow Cite-ometry Approach</em> (Oct. 21, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.jhc.org/" target="_blank">Journal of Histochemistry and Cytochemistry</a> (Annual Editors Meeting) Seattle, WA</div>,
+          title: <div className="bold"><em>Eigenfactor as a tool for journal editors</em> (Oct. 15, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.libraryassessment.org/" target="_blank">Library Assessment Conference</a> University of Washington, Seattle, WA</div>,
+          title: <div className="bold"><em>An Introduction to Eigenfactor</em> (Aug. 6, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.ala.org/ala/eventsandconferencesb/annual/2008a/home.cfm" target="_blank">American Library Association Annual Conference</a> JSTOR Participants\ufffd Meeting,  Anaheim, CA </div>,
+          title: <div className="bold"><em>Applying Eigenfactor Metrics to JSTOR Data</em> (June 29, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.sla.org/content/Events/conference/ac2008/index.cfm" target="_blank">Special Libraries Association Annual International Conference</a>  Seattle, WA </div>,
+          title: <div className="bold"><em>Using bibliometrics to make purchasing decisions  </em> (June 16, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.councilscienceeditors.org/events/annualmeeting08/vancouver.cfm" target="_blank">Annual Meeting of the Council of Science Editors</a>  Vancouver, BC </div>,
+          title: <div className="bold"><em>Eigenfactor: ranking and mapping the scientific knowledge</em> (May 19, 2008)</div>
+      },
+      {
+          location: <div><a href="http://highwire.stanford.edu/" target="_blank">HighWire Press Publishers\ufffd Meeting</a>  Stanford University, Palo Alto, CA</div>,
+          title: <div className="bold"><em>Journal-Quality Metrics \ufffd The Eigenfactor</em> (May 6, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www2.library.ucla.edu/special/11894.cfm" target="_blank">Assessing Research Performance and Value</a>  University of California, Los Angeles, CA</div>,
+          title: <div className="bold"><em>The Academic Perspective on Research Evaluation</em> (May 5, 2008)</div>
+      },
+      {
+          location: <div><a href="https://timssnet.allenpress.com/ECOMAPSEMINAR//timssnet/common/SpeakerInfo.cfm" target="_blank">Emerging Trends in Scholarly Publishing</a>  National Press Club, Washington, DC</div>,
+          title: <div className="bold"><em>Eigenfactor\u2014The Google Approach to Bibliometrics</em> (April 17, 2008)</div>
+      },
+      {
+          location: <div><a href="http://www.nasonline.org/site/PageServer" target="_blank">National Academy of Sciences E-Journal Summit</a>  Washington, DC</div>,
+          title: <div className="bold"><em>    Eigenfactor, a new approach to assessing journal quality  </em> (March 18, 2008)</div>
+      },
+    ],
+    2007: [
+      {
+          location: <div><a href="http://www.esf.org/activities/esf-meetings.html?year=2007&amp;domain=" target="_blank">European Science Foundation ERIH Stakeholder Meeting</a>  University of Granada, Spain</div>,
+          title: <div className="bold"><em>Metrics for the Humanities</em> (November 19, 2007)</div>
+      },
+      {
+          location: <div><a href="http://www.arcsfoundation.org/" target="_blank">29th Annual ARCS Luncheon</a>  Westin Hotel, Seattle, WA</div>,
+          title: <div className="bold"><em>Networks, Disease and Maps</em> (Nov. 13, 2007)</div>
+      },
+      {
+          location: <div><a href="http://www.arcsfoundation.org/Seattle/ARCS_1.asp" target="_blank">ARCS Auction Dinner</a>  Conibear Shellhouse, University of Washington, Seattle, WA</div>,
+          title: <div className="bold"><em>From antibiotic resistance to the bird flu</em> (June 23, 2007)</div>
+      },
+    ],
+    2006: [
+      {
+          location: <div><a href="http://www.gruterinstitute.org/" target="_blank">Building Economic &amp; Civic Insitutions in Digital Environments</a>   Cambridge, MA</div>,
+          title: <div className="bold"><em>Academic Reputation: Democracy vs Meriotocracy</em> (May 4, 2006)</div>
+      },
+    ]
+  },
+  conferencetalks: {
+    2016: [
+      {
+          location: <div><a href="http://www.siam.org/meetings/an16/">Society for Industrial and Applied Mathematics.</a> Boston, MA.</div>,
+          title: <div className="bold">Mapping Knowledge Networks. (July 12) <a href={West2016siamPDF}>PDF</a></div>
+      },
+      {
+          location: <div><a href="http://msclab.org/bigscholar/2016/">WWW Workshop on Big Scholarly Data</a>. Montreal, Canada.</div>,
+          title: <div className="bold">Babel: Platform for Scholarly Recommendation. (April 12) <a href={West2016wwwbigscholarPDF}>PDF</a></div>
+      },
+      {
+          location: <div><a href="http://cs.unibo.it/save-sd/2016/program.html">WWW Workshop on Semantics, Analytics, Visualisation.</a> Montreal, Canada</div>,
+          title: <div className="bold">Visualizing Scholarly Influence. (April 11) <a href={West2016wwwsemanticsPDF}>PDF</a></div>
+      },
+      {
+          location: <div><a href="http://icss.ist.psu.edu/program.html">International Symposium on Science of Science</a>. Washington, DC</div>,
+          title: <div className="bold">Science of Science? (March 22) <a href={West2016ScienceOfSciencePDF}>PDF</a></div>
+      },
+      {
+          location: <div><a href="http://icss.ist.psu.edu/program.html">International Symposium on Science of Science</a>. Washington, DC</div>,
+          title: <div className="bold">Assessing the Impact of Research Funding. w/Jason Portenoy. (March 22) <a href={Portenoy2016ScienceOfSciencePDF}>PDF</a></div>
+      },
+      {
+          location: <div><a href="https://wsdmcupchallenge.azurewebsites.net/Home/Workshop" target="_blank">Static Ranking of Scholarly Papers using Article-Level Eignefactor (ALEF)</a>. San Francisco, CA</div>,
+          title: <div className="bold">WSDM Cup 2016 - Entity Ranking Challenge Workshop. <a href={wsdm_west_wesley_smithPDF}>PDF</a> (Feb. 22)</div>
+      },
+    ],
+    2014: [
+      {
+          location: <div><a href="https://www.asis.org/asist2013/" target="_blank">Association for Information Science and Technology Annual Conference</a>, Montreal, Canada</div>,
+          title: <div className="bold"><em>The genesis of scientific disciplines</em> (Nov. 5, 2013)</div>
+      },
+    ]
+  },
+  workshops: {
+    2016: [
+      {
+          location: <div><b>NSF NCSES Workshop on Network Indicators.</b></div>,
+          title: <div className="bold">George Washington University, Washington, DC (Dec. 14)</div>
+      },
+      {
+          location: <div><a href="http://cns.iu.edu/workshops/event/161114.html" target="_blank">Web of Science as a Research Dataset</a>.</div>,
+          title: <div className="bold">Indiana University, Bloomington, IN (Nov. 14)</div>
+      },
+      {
+          location: <div><a href="https://library.osu.edu/projects-initiatives/knowledge-bank/open-access-publishing/osu-journal-editors-group/" target="_blank">Ohio State University Libraries Editors' Meeting.</a></div>,
+          title: <div className="bold">Ohio State University, Columbus, OH (Nov. 3)</div>
+      },
+      {
+          location: <div><a href="http://msdse.org/summit/" target="_blank">Moore-Sloan Data Science Environments Annual Summit.</a></div>,
+          title: <div className="bold">Mohonk Mountain House, New Paltz, NY (Oct. 23-26)</div>
+      },
+      {
+          location: <div><a href="http://labs.jstor.org" target="_blank">JSTOR Labs: Reimagining the Monograph.</a></div>,
+          title: <div className="bold">Columbia University Butler Library, New York, NY (Oct. 13)</div>
+      },
+      {
+          location: <div><a href="http://www.knowledgelab.org/people/leadership/" target="_blank">Metaknowledge Network Annual Meeting.</a></div>,
+          title: <div className="bold">University of Chicago, Hyde Park, IL (March 13-15)</div>
+      }
     ],
   }
 });

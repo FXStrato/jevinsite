@@ -34,7 +34,7 @@ class Publications extends Component {
             ''
           }
           {elem.abstract && elem.bibTex ?
-            <Collapsible>
+            <Collapsible popout={true}>
               {elem.abstract &&
                 <CollapsibleItem header="Abstract">
                   {elem.abstract}
@@ -97,6 +97,8 @@ class Publications extends Component {
         {this.getArticles('Theses', 'theses')}
         {this.getArticles('Patents', 'patents')}
         {this.getArticles('Posters', 'posters')}
+        {this.getArticles('Conference Workshops', 'workshops')}
+        {this.getArticles('Blog Posts', 'blogposts')}
       </section>
     );
   }

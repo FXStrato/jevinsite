@@ -20,7 +20,7 @@ a {
     text-decoration: none;
     color: #9C27B0 !important;
     animation: a-color-back 0.25s;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 a:hover {
@@ -43,6 +43,37 @@ a:hover {
     }
     to {
         color: #9C27B0;
+    }
+}
+
+.presentation-info a {
+    text-decoration: none;
+    color: #006064 !important;
+    animation: presentation-color-back 0.25s;
+    font-weight: bold;
+}
+
+.presentation-info a:hover {
+    animation: presentation-color 0.25s;
+    color: #F57C00 !important;
+    font-weight: bold;
+}
+
+@keyframes presentation-color {
+    from {
+        color: #006064;
+    }
+    to {
+        color: #F57C00;
+    }
+}
+
+@keyframes presentation-color-back {
+    from {
+        color: #F57C00;
+    }
+    to {
+        color: #006064;
     }
 }
 
@@ -75,9 +106,8 @@ a:hover {
     display: none;
 }
 
-.presentation-info a {
-    text-decoration: none;
-    font-weight: normal;
+.presentation-year {
+  color: #00838F;
 }
 
 #navbar-appbar>button>div>svg {
