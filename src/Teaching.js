@@ -57,15 +57,7 @@ class Teaching extends Component {
             </Table>
           </Col>
         </Row>
-        <Row className="reduce-bot-margin">
-          <Col s={12}>
-            <h2>Data Science</h2>
-            <hr/>
-          </Col>
-          <Col s={12}>
-            {teachingData.get('datascience')}
-          </Col>
-        </Row>
+        {teachingData.get('mainbody')}
       </section>
     );
   }

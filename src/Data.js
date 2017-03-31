@@ -1,6 +1,6 @@
 import Immutable from 'immutable';
 import React from 'react';
-import {Row, Col} from 'react-materialize';
+import {Row, Col, Table} from 'react-materialize';
 import {Link} from 'react-router';
 
 //PDF's used
@@ -77,6 +77,7 @@ import Portenoy2016ScienceOfSciencePDF from './presentations/Portenoy2016Science
 import wsdm_west_wesley_smithPDF from './presentations/wsdm_west_wesley-smith.pdf';
 import info370PDF from './documents/INFO370.pdf';
 import infx575PDF from './documents/INFX575.pdf';
+import JevinWest_Huckabay_ProposalPDF from './papers/JevinWest_Huckabay_Proposal.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -94,6 +95,8 @@ import dataProvImg from './img/data_providers.png';
 import fundersImg from './img/funders.png';
 import science_flowImg from './img/science_flow.png';
 import snow_mountainsImg from './img/snow_mountains.png';
+import calling_bullshit_courseImg from './img/calling_bullshit_course.png';
+import FieldTripMishap02Img from './img/FieldTripMishap02.jpg';
 
 //Drawer/tab links navlinks
 const drawerLinks = Immutable.List([{link: '/', body: 'Home'}, {link: '/research', body: 'Research'}, {link: '/publications', body: 'Publications'}, {link: '/teaching', body: 'Teaching'}, {link: '/presentations', body: 'Presentations'}, {link: '/bio', body: 'Bio'}, {link: '/cv', body: 'CV'},{link: '/news', body: 'News'}]);
@@ -2329,19 +2332,155 @@ const teachingData = Immutable.OrderedMap({
       title: 'Research Methods (Fall 2013)',
     },
   ],
-  datascience: (
+  mainbody: (
     <div>
-      <p>
-        I teach, mentor and design curricula in Data Science at the University of Washington. I am currently teaching <a href="https://www.washington.edu/students/crscat/info.html" target="_blank">INFO 370/371</a> and <a href="https://www.washington.edu/students/crscat/infx.html" target="_blank">INFX 574/575</a>. I co-developed, with <a href="http://www.jblumenstock.com/" target="_blank">Josh Blumenstock</a> and <a href="http://faculty.washington.edu/espiro/" target="_blank">Emma Spiro</a>, the Data Science series for the graduate and undergraduate programs in the <a href="https://ischool.uw.edu/" target="_blank">iSchool</a>. This includes our core sequences for the <a href="https://ischool.uw.edu/academics/msim" target="_blank">MSIM</a> and <a href="https://ischool.uw.edu/academics/mlis" target="_blank">MLIS</a> programs (INFX 572/573/574/575) and <a href="https://ischool.uw.edu/academics/informatics" target="_blank">Informatics</a> programs (INFO 370/371). We are currently designing new electives to build upon this core sequence.
-      </p>
-      <p>
-        I am actively involved in the Education Group at the <a href="http://escience.washington.edu" target="_blank">eScience Institute</a>. In collaboration with <a href="http://www.cs.washington.edu/people/faculty/magda" target="_blank">Magda Balazinska</a> and department chairs across campus, we have developed a <a href="http://escience.washington.edu/education/undergraduate/" target="_blank">transcriptable option in Data Science</a>. The idea is to (1) make data science courses available to any major and student on campus, (2) recognize students that have specialized in data science, and (3) leverage the strengths of our various departments at UW. Departments can design their own sequence of courses, depending on their needs and domain questions, but can leverage other courses and opportunities across campus. Currently, we have university approval or pending approval for the data science option in the following schools and departments: the <a href="https://ischool.uw.edu/current/informatics/degree-plan/options" target="_blank">iSchool</a>, <a href="https://www.math.washington.edu/acms/programoptions9.html" target="_blank">ACMS</a>, <a href="https://www.cs.washington.edu/students/ugrad/datascience">Computer Science & Engineering</a>, HCDE and Statistics. We are looking to add additional departments in subsequent years.
-      </p>
-      <p>
-        I am also on the steering committee for the new <a href="https://www.datasciencemasters.uw.edu/details/leadership/" target="_blank">Masters Program in Data Science</a> at UW. This is another multi-departmental data science program at UW. The committee has been in charge of developing the program, admissions and ongoing advisement for the program. We recently hired our new director of the program, Deborah Alterman, and enrolled our first class in the Fall of 2016. In addition, I have written a chapter with Jason Portenoy on the 'gold rush' in data science education across the country.
-      </p>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Data Science</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>
+            I teach, mentor and design curricula in Data Science at the University of Washington. I am currently teaching <a href="https://www.washington.edu/students/crscat/info.html" target="_blank">INFO 370/371</a> and <a href="https://www.washington.edu/students/crscat/infx.html" target="_blank">INFX 574/575</a>. I co-developed, with <a href="http://www.jblumenstock.com/" target="_blank">Josh Blumenstock</a> and <a href="http://faculty.washington.edu/espiro/" target="_blank">Emma Spiro</a>, the Data Science series for the graduate and undergraduate programs in the <a href="https://ischool.uw.edu/" target="_blank">iSchool</a>. This includes our core sequences for the <a href="https://ischool.uw.edu/academics/msim" target="_blank">MSIM</a> and <a href="https://ischool.uw.edu/academics/mlis" target="_blank">MLIS</a> programs (INFX 572/573/574/575) and <a href="https://ischool.uw.edu/academics/informatics" target="_blank">Informatics</a> programs (INFO 370/371). We are currently designing new electives to build upon this core sequence.
+          </p>
+          <p>
+            I am actively involved in the Education Group at the <a href="http://escience.washington.edu" target="_blank">eScience Institute</a>. In collaboration with <a href="http://www.cs.washington.edu/people/faculty/magda" target="_blank">Magda Balazinska</a> and department chairs across campus, we have developed a <a href="http://escience.washington.edu/education/undergraduate/" target="_blank">transcriptable option in Data Science</a>. The idea is to (1) make data science courses available to any major and student on campus, (2) recognize students that have specialized in data science, and (3) leverage the strengths of our various departments at UW. Departments can design their own sequence of courses, depending on their needs and domain questions, but can leverage other courses and opportunities across campus. Currently, we have university approval or pending approval for the data science option in the following schools and departments: the <a href="https://ischool.uw.edu/current/informatics/degree-plan/options" target="_blank">iSchool</a>, <a href="https://www.math.washington.edu/acms/programoptions9.html" target="_blank">ACMS</a>, <a href="https://www.cs.washington.edu/students/ugrad/datascience">Computer Science & Engineering</a>, HCDE and Statistics. We are looking to add additional departments in subsequent years.
+          </p>
+          <p>
+            I am also on the steering committee for the new <a href="https://www.datasciencemasters.uw.edu/details/leadership/" target="_blank">Masters Program in Data Science</a> at UW. This is another multi-departmental data science program at UW. The committee has been in charge of developing the program, admissions and ongoing advisement for the program. We recently hired our new director of the program, Deborah Alterman, and enrolled our first class in the Fall of 2016. In addition, I have written a chapter with Jason Portenoy on the 'gold rush' in data science education across the country.
+          </p>
+        </Col>
+      </Row>
+      <Row className="">
+        <Col s={12}>
+          <h2>Calling Bullshit in the Age of New Data</h2>
+          <hr/>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12} className="center-align">
+          <img src={calling_bullshit_courseImg} alt="Calling Bullshit Banner" className="boxed responsive-img" style={{marginBottom: 10}}/>
+        </Col>
+        <Col s={12}>
+          <a href="http://octavia.zoology.washington.edu" target="_blank">Carl Bergstrom</a> and I have designed a <a href="http://callingbullshit.org/" target="_blank">new course</a> that focuses on data reasoning. It is in response to the increased BS ('bad science') that we are seeing in academic discourse, especially in this new age of big data. The course will be initially aimed at first-year undergraduates, but our goal is to make the contents of the course freely available to anyone and everyone, inside and outside the university.  We enourage you to visit our <a href="http://callingbullshit.org/" target="_blank">course website</a> for more details.
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Curriculum Development</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <ul className="browser-default">
+            <li>Undergraduate Data Science Option, eScience Education Working Group (2014 - present)</li>
+            <li>Masters in Data Science, Profession &amp; Continuing Education (2015 - present</li>
+            <li>Data Science Track, MSIM Program, Information School (2013 - present)</li>
+            <li><a href={JevinWest_Huckabay_ProposalPDF} target="_blank">Huckabay Fellowship</a>, Center for Instructional Development and Research (2006 - 2007)</li>
+            <li>Summer Teaching Institute, Seattle School District (Summer 2008)</li>
+            <li>Howard Hughes RA for developing Experimental Evolutionary Ecology Lab (Summer 2006)</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Mentoring</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>I advise post-docs, PhD students, Masters students and undergraduates working on projects in Data Science. Below are current and former students that have or are working on projects in big scholarly data, community detection, network analytics, and related areas. If you are interested in a project related to the Science of Science or Data Science, please feel free to <a href="mailto:jevinw@uw.edu" target="_blank">contact me</a>.</p>
+
+          <h3>PhD Students (primary advisor):</h3>
+
+          <ul className="browser-default">
+            <li>Jason Portenoy, iSchool (2014 - present) Scholarly Evaluation, Information Visualization</li>
+            <li><a href="http://students.washington.edu/laulck/" target="_blank">Lavi Aulck</a>, iSchool (2013 - present) Education Analytics, Machine Learning</li>
+            <li><a href="https://ischool.uw.edu/people/phd/iwsmith" target="_blank">Ian Wesley-Smith</a>, iSchool (2015 - present) Scholarly Recommendation, Big Scholarly Data</li>
+          </ul>
+
+          <h3>PhD Students (co-advisor):</h3>
+
+          <ul className="browser-default">
+            <li><a href="http://escience.washington.edu/people/ryan-mcgee/" target="_blank">Ryan McGee</a>, Department of Biology (2015 - present)</li>
+            <li><a href="http://students.washington.edu/yeaseul1/" target="_blank">Yeaseul Kim</a>, iSchool (2016 - present)</li>
+            <li><a href="http://rayhong.net" target="_blank">Ray Hong</a>, iSchool (2013 - present)</li>
+            <li>Guanghua Chi (University of Berkeley, iSchool), iSchool (2015 - 2016)</li>
+            <li>Amit Misra (Microsoft), Department of Astronomy (2013 - 2014)</li>
+          </ul>
+
+          <h3>PhD Students (GSR):</h3>
+
+          <ul className="browser-default">
+            <li>Marco Tulio, Computer Science & Engineering (2016 - present)</li>
+            <li>Cyrus Rashtchian, Computer Science & Engineering (2016 - present)</li>
+            <li>Kyungdahm Yun, School of Environment & Forest Services (2016 - present)</li>
+            <li>Brandon Holt, Computer Science & Engineering (2015 - present)</li>
+            <li>Taylor Scott, HCDE (2014 - present)</li>
+            <li>Kristi Morton, Computer Science & Engineering (2015 - 2016)</li>
+            <li>Michael Brooks, HCDE (2014 - 2015)</li>
+            <li>Emad Soroush, Computer Science & Engineering (2014 - 2014)</li>
+          </ul>
+
+          <h3>Masters Students:</h3>
+
+          <ul className="browser-default">
+            <li>Capstone Project: <a href="https://ischool.uw.edu/capstone/projects/2015/coursector-uw-course-discovery-and-comparison-tool" target="_blank">Coursector</a> (Audience Choice Award) | Nishant Sinha, Prerak Pradham, Mike Kelly, Colin Greene (2014 - 2015)</li>
+          </ul>
+
+          <h3>Undergraduate Students:</h3>
+
+          <ul className="browser-default">
+            <li>Husky Data Science Club (Ashlyn Opgrande, Arvind Krishnamoorthy), Faculty Advisor (2016 - present)</li>
+            <li>Lia Kazakova, Informatics and Computer Science & Engineering (2016 - present)</li>
+            <li>Patrick Spieker, Computer Science & Engineering (2016 - present)</li>
+            <li>Capstone Project: Academic Journalism | Logan Walls, Isabelle Edwards, Tin Ho (2016)</li>
+            <li>Capstone Project: <a href="https://ischool.uw.edu/capstone/projects/2014/courseconnect" target="_blank">CourseConnect</a> | Jeff Giorgi, Ashley Dillinger, Evelyn Carlson, Natalie Wittenbrook, Narish Silpaki (2013 - 2014)</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12}>
+          <h2>Teaching Philosophy</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>The internet is dramatically changing the world of Education. Students can easily access unlimited education resources&mdash;from online courses to freely available tutorials, books and lectures. In my field, especially, students can learn about data science, programming, and statistics without ever stepping foot in a formal classroom. So what does a formal education at a formal university provide nowadays? This is a question that drives my teaching philosophy.</p>
+
+          <p><span className="bold">I want to be as human a teacher as possible.</span> In class, I can read students confusion, excitement or reticence. These cues can be used to engage the students in discourse, no matter how big the class. Whenever possible, I try to flip the classroom&mdash;provide students with the content and questions before class and then solve the problems together in class. I include examples that are current and relevant to the given classroom. I initiate group discussions and project-based learning and give immediate, real-time feedback.</p>
+
+          <p>I stive to build in-person classes that are worth attending by leveraging the human interaction element that online education has not replaced (at least yet). Online education is a great resource for students. I don't want to replace it; I complement it.</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12}>
+          <h2>Student Teacher</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>I reside on a campus because of teaching. It allows me to be the eternal student. Teaching is the ultimate show and tell, but it is not just from teacher to student. There exists a reciprocity of mentorship that only the unencumbered minds can offer. Who I am and where I am today is a reflection of my teachers, mentors and now my students. In some of my favorite classes, it was difficult to tell who was having more fun&#8212;the teacher or the students. I will continue to teach as long as this is true for me.</p>
+        </Col>
+        <Col s={12} className="center-align">
+          <img src={FieldTripMishap02Img} alt="Field Trip With Students" className="boxed responsive-img"/>
+        </Col>
+      </Row>
+      <Row>
+        <Col s={12}>
+          <h2>Teaching Awards</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <ul className="browser-default">
+          	<li>
+              <a href="http://www.grad.washington.edu/students/fa/huckabay/index.shtml" target="_blank">Huckabay Fellowship</a>, UW Graduate School (Winter 2007 - Summer 2007)
+            </li>
+            <li>
+              Nominated for <a href="http://monera.biology.washington.edu/Graduate/Scholarships" target="_blank">Ingrith Deyrup-Olsen</a> Teaching Award (Spring 2007)
+            </li>
+          </ul>
+        </Col>
+      </Row>
     </div>
-  )
+  ),
+
 });
 
 const bioData = Immutable.Map({
