@@ -2437,7 +2437,7 @@ const teachingData = Immutable.OrderedMap({
           </ul>
         </Col>
       </Row>
-      <Row>
+      <Row className="reduce-bot-margin">
         <Col s={12}>
           <h2>Teaching Philosophy</h2>
           <hr/>
@@ -2450,7 +2450,7 @@ const teachingData = Immutable.OrderedMap({
           <p>I stive to build in-person classes that are worth attending by leveraging the human interaction element that online education has not replaced (at least yet). Online education is a great resource for students. I don't want to replace it; I complement it.</p>
         </Col>
       </Row>
-      <Row>
+      <Row className="reduce-bot-margin">
         <Col s={12}>
           <h2>Student Teacher</h2>
           <hr/>
@@ -2462,7 +2462,7 @@ const teachingData = Immutable.OrderedMap({
           <img src={FieldTripMishap02Img} alt="Field Trip With Students" className="boxed responsive-img"/>
         </Col>
       </Row>
-      <Row>
+      <Row className="reduce-bot-margin">
         <Col s={12}>
           <h2>Teaching Awards</h2>
           <hr/>
@@ -2478,7 +2478,7 @@ const teachingData = Immutable.OrderedMap({
           </ul>
         </Col>
       </Row>
-      <Row>
+      <Row className="reduce-bot-margin">
         <Col s={12}>
           <h2>Guest Lectures</h2>
           <hr/>
@@ -2576,6 +2576,127 @@ const teachingData = Immutable.OrderedMap({
               </tr>
             </tbody>
           </Table>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Independent Study</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <h3>Masters Students:</h3>
+          <ul className="browser-default">
+            <li>Maria George, MSIM (Fall, 2016), Spark in the Cloud</li>
+            <li>Chaofan Han, MSIM (Fall, 2016) Machine Learning</li>
+            <li>Wen Qin, MSIM (Fall, 2016) Machine Learning</li>
+            <li>Elizabeth MacCready, MSIM (Summer 2016) Network Data</li>
+            <li>Aditya Gandhi, MSIM (Spring 2016, Fall 2015) WSDM Data Competition</li>
+            <li>Kyle Estlick, Mid-Career MSIM (Winter, Spring 2016) Chrome Extensions</li>
+            <li>Mainak Ghosh, MSIM (Fall 2015) Author Disambiguation</li>
+            <li>Aoron Yang, MSIM (Fall, 2015), Distributed Computing</li>
+            <li>Teng Sun, MSIM (Fall, 2015), Distributed Computing</li>
+            <li>Deepa Rao, MSIM (Spring 2015), Interactive Visualization</li>
+            <li>Kelly Toskey, MLIS (Fall, 2014), Information Visualization in D3</li>
+            <li>Terri Northcut, MLIS (Winter, 2014), Mapping Academic Migration</li>
+            <li>Anne Nguyen, MLIS (Winter, 2014), Mapping Academic Migration</li>
+          </ul>
+          <h3>Undergraduate Students</h3>
+          <ul className="browser-default">
+            <li>Olga (Lia) Kazakova, Informatics (Fall Quarter, 2016)</li>
+            <li>Katherine Zhu, Informatics (Spring, 2016)</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Teaching Assistantships (TA)</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <Table>
+            <tbody>
+              <tr>
+                <td>BIOL 354</td>
+                <td>Foundations in Evolution and Systematics (Spring 2009)</td>
+              </tr>
+              <tr>
+                <td>BIOL 463</td>
+                <td>Advanced Animal Physiology Lab (Fall 2008)</td>
+              </tr>
+              <tr>
+                <td>BIOL 481</td>
+                <td>Experimental Evolutionary Ecology Lab (Fall 2006)</td>
+              </tr>
+              <tr>
+                <td>BIOL 463</td>
+                <td>Advanced Animal Physiology Lab (Fall 2005)</td>
+              </tr>
+              <tr>
+                <td>BIOL 180</td>
+                <td>Biodiversity Field Trips (2005 - 2009)</td>
+              </tr>
+              <tr>
+                <td>BIOL 4400</td>
+                <td>Plant Physiology, USU (Fall 2004)</td>
+              </tr>
+              <tr>
+                <td>BIOL 2010</td>
+                <td>Human Anatomy, USU (Spring 2004)</td>
+              </tr>
+              <tr>
+                <td>BIOL 4400</td>
+                <td>Plant Physiology, USU (Fall 2003)</td>
+              </tr>
+              <tr>
+                <td>BIOL 2010</td>
+                <td>Human Anatomy, USU (Spring 2003)</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Tutoring and Outreach</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <ul className="browser-default">
+          	<li>UW Center for Learning and Undergraduate Enrichment (Winter 2008)</li>
+            <li>CIDR Conference Instructor (Fall 2006, Fall 2007)</li>
+            <li>Huckabay Panel Member (Feb. 21, 2007)</li>
+            <li>Greenhouse Tour Guide (Winter 2006 - 2009)</li>
+            <li>Medicinal Herb Garden Docent (Fall 2006 - 2009)</li>
+            <li>High School Biology (Spring 2006)</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Coaching</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>
+            I spent several years teaching tennis. I was the Assistant Coach for Utah State University Men's and Women's Tennis team from 2000 - 2002. During that same time, I instructed players of all ages and abilites in community programs or local tennis clubs. Although not the typical classroom with books and papers, the tennis court provided a different kind of medium in which to develop my teaching and mentoring skills. I have found these skills to be paticularly useful in the actual classroom—most notably, in tailoring drills to a student's specific needs. Students have different strengths, different backgrounds and different perspectives. The challenge at a big university is scaling classes while at the same time preserving customized learning.
+          </p>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Scholarship of Teaching</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>
+            <div><a href="http://www.washington.edu/teaching/programs/faculty-fellows-program/" target="_blank">Faculty Fellows</a>, UW Center for Teaching and Learning (Sept. 9-12, 2013)</div>
+          </p>
+          <p>
+            <div><a href="http://depts.washington.edu/sotl/index.html" target="_blank">Scholarship of Teaching and Learning Symposium.</a> University of Washington, Seattle, WA</div>
+            <div><span className="italics">The Missing Link</span> <a href={West2007EigenfactorPDF} target="_blank">PDF</a>(April 2007)</div>
+            <div>J.D. West, K. Hall</div>
+          </p>
+
         </Col>
       </Row>
     </div>
