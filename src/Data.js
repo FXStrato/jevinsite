@@ -2478,6 +2478,106 @@ const teachingData = Immutable.OrderedMap({
           </ul>
         </Col>
       </Row>
+      <Row>
+        <Col s={12}>
+          <h2>Guest Lectures</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <Table>
+            <tbody>
+              <tr>
+                <td><a href="http://courses.cs.washington.edu/courses/cse491/" target="_blank">CSE 491</a></td>
+                <td>Data Science and Society Seminar (Jan. 26, 2017)</td>
+              </tr>
+              <tr>
+                <td>IMT 500</td>
+                <td>MSIM Foundations (Oct. 21 2016; Oct. 17, 2016)</td>
+              </tr>
+              <tr>
+                <td>INFO 371</td>
+                <td>Core Methods in Data Science (May 9, 2016)</td>
+              </tr>
+              <tr>
+                <td>INFX 561</td>
+                <td>Visualization Design (April 25, 2016)</td>
+              </tr>
+              <tr>
+                <td>INFX 372</td>
+                <td>Introduction to Data Science (Dec. 2, 2015)</td>
+              </tr>
+              <tr>
+                <td>INFO 200</td>
+                <td>Intellectual Foundations of Informatics (Oct. 28, 2015; Nov. 21, 2013)</td>
+              </tr>
+              <tr>
+                <td>INSC 570</td>
+                <td>Research Methods (Oct. 23, 2015)</td>
+              </tr>
+              <tr>
+                <td>SKKU Workshop</td>
+                <td>Introduction to R (July 22, 2015)</td>
+              </tr>
+              <tr>
+                <td>SKKU Course</td>
+                <td>Introduction to R (July 22, 2015)</td>
+              </tr>
+              <tr>
+                <td>UW Workshop</td>
+                <td>Data Science Workshop for SKKU (Feb. 9, 2015; Aug. 19, 2014)</td>
+              </tr>
+              <tr>
+                <td>iSchool Preview Day</td>
+                <td>Data Science program overview for MSIM and MLIS (Nov. 15, 2014)</td>
+              </tr>
+              <tr>
+                <td>University of Colorado</td>
+                <td>Introduction to Networks, Leeds School of Business (Nov. 7, 2014)</td>
+              </tr>
+              <tr>
+                <td>INFO 470</td>
+                <td>Research Methods in Informatics (Oct. 28, 2014)</td>
+              </tr>
+              <tr>
+                <td>Panel Discussant</td>
+                <td>Mid-Career MSIM round-table discussion on data science (April 25, 2014)</td>
+              </tr>
+              <tr>
+                <td>UW Prospectives</td>
+                <td>Big Data lecture to UW prospective students and partents (April 17, 2014)</td>
+              </tr>
+              <tr>
+                <td>HCDE 548</td>
+                <td>Advanced Topics in Information Visualization (March 14, 2014)</td>
+              </tr>
+              <tr>
+                <td>HCDE 411</td>
+                <td>Information Visualization (Feb. 26, 2013; Jan. 31, 2012)</td>
+              </tr>
+              <tr>
+                <td>BIS 232</td>
+                <td>Visualizing Quantitative Data, UW Bothell (Feb. 25, 2009)</td>
+              </tr>
+              <tr>
+                <td>BIOL 492</td>
+                <td>The Teaching of Biology (Spring 2007)</td>
+              </tr>
+              <tr>
+                <td>BIOL 429</td>
+                <td>Models in Biology - Stochastic Processes (Dec. 6, 2006)</td>
+              </tr>
+              <tr>
+                <td>BIOL 510</td>
+                <td>Seminar in Mathematical Biology (May 11, 2006)</td>
+              </tr>
+              <tr>
+                <td>AP Calculus</td>
+                <td>Logan High School (May 5, 2004)</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
     </div>
   ),
 
