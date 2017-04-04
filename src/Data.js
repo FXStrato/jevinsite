@@ -78,6 +78,7 @@ import wsdm_west_wesley_smithPDF from './presentations/wsdm_west_wesley-smith.pd
 import info370PDF from './documents/INFO370.pdf';
 import infx575PDF from './documents/INFX575.pdf';
 import JevinWest_Huckabay_ProposalPDF from './papers/JevinWest_Huckabay_Proposal.pdf';
+import JevinWest_CVPDF from './papers/JevinWest_CV.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -878,7 +879,7 @@ const publicationsData = Immutable.Map({
   peerReviewConferences: [
     {
         title: "Delineating Fields Using Mathematical Jargon (2016)",
-        abstract: "Tracing ideas through the scientific literature is useful in understanding the origin of ideas and for generating new ones. Machines can be trained to do this at large scale, feeding search engines and recommendation algorithms. Citations and text are the features commonly used for these tasks. In this paper, we focus on a largely ignored facet of scholarly papersu2014the equations. Mathematical language varies from field to field but original formulae are maintained over generations (e.g., Shannonu2019s Entropy equation). Here we extract a common set of mathematical symbols from more than 250,000 LATEX source files in the arXiv repository. We compare the symbol distributions across different fields and calculate the jargon distance between fields. We find a greater difference between the experimental and theoretical disciplines than within these fields. This provides a first step at using equations as a bridge between disciplines that may not cite each other or may speak different natural languages but use a similar mathematical language.",
+        abstract: "Tracing ideas through the scientific literature is useful in understanding the origin of ideas and for generating new ones. Machines can be trained to do this at large scale, feeding search engines and recommendation algorithms. Citations and text are the features commonly used for these tasks. In this paper, we focus on a largely ignored facet of scholarly papers—the equations. Mathematical language varies from field to field but original formulae are maintained over generations (e.g., Shannon's Entropy equation). Here we extract a common set of mathematical symbols from more than 250,000 LATEX source files in the arXiv repository. We compare the symbol distributions across different fields and calculate the jargon distance between fields. We find a greater difference between the experimental and theoretical disciplines than within these fields. This provides a first step at using equations as a bridge between disciplines that may not cite each other or may speak different natural languages but use a similar mathematical language.",
         journal_volume: (
     <div>
     <span className="italics">Joint Conference on Digital Libraries (JCDL)</span>.
@@ -923,7 +924,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Babel: A platform for research in scholarly article recommendation (2016)",
-        abstract: "The body of scientific literature is growing at an exponential rate. This expansion of scientific knowledge has increased the need for tools to help users find relevant articles. However, researchers developing new scholarly article recommendation algorithms face two substantial hurdles: acquiring high-quality, large-scale scholarly metadata and mechanisms for evaluating their recommendation algorithms. To address these problems we created Babelu2014an open-source web platform uniting publisher, researchers, and users. Babel includes tens of millions of scholarly articles, several content- based recommendation algorithms, and tools for integrating recommendations into publisher websites and other scholarly platforms.",
+        abstract: "The body of scientific literature is growing at an exponential rate. This expansion of scientific knowledge has increased the need for tools to help users find relevant articles. However, researchers developing new scholarly article recommendation algorithms face two substantial hurdles: acquiring high-quality, large-scale scholarly metadata and mechanisms for evaluating their recommendation algorithms. To address these problems we created Babel; an open-source web platform uniting publisher, researchers, and users. Babel includes tens of millions of scholarly articles, several content- based recommendation algorithms, and tools for integrating recommendations into publisher websites and other scholarly platforms.",
         journal_volume: (
     <div>
     <span className="italics">World Wide Web Conference (WWW). </span>
@@ -946,7 +947,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "VizioMetrix: A Platform for Analyzing the Visual Information in Big Scholarly Data (2016)",
-        abstract: "We present VizioMetrix, a platform that extracts visual in- formation from the scientific literature and makes it avail- able for use in new information retrieval applications and for studies that look at patterns of visual information across millions of papers. New ideas are conveyed visually in the scientific literature through figures u2014 diagrams, photos, vi- sualizations, tables u2014 but these visual elements remain en- sconced in the surrounding paper and difficult to use directly to facilitate information discovery tasks or longitudinal an- alytics. Very few applications in information retrieval, aca- demic search, or bibliometrics make direct use of the figures, and none attempt to recognize and exploit the type of figure, which can be used to augment interactions with a large corpus of scholarly literature. The VizioMetrix platform processes a corpus of docu- ments, classifies the figures, organizes the results into a cloud- hosted databases, and drives three distinct applications to support bibliometric analysis and information retrieval. The first application supports information retrieval tasks by al- lowing rapid browsing of classified figures. The second ap- plication supports longitudinal analysis of visual patterns in the literature and facilitates data mining of these figures. The third application supports crowdsourced tagging of fig- ures to improve classification, augment search, and facilitate new kinds of analyses. Our initial corpus is the entirety of PubMed Central (PMC), and will be released to the public alongside this paper; we welcome other researchers to make use of these resources.",
+        abstract: "We present VizioMetrix, a platform that extracts visual information from the scientific literature and makes it avail- able for use in new information retrieval applications and for studies that look at patterns of visual information across millions of papers. New ideas are conveyed visually in the scientific literature through figures — diagrams, photos, visualizations, tables — but these visual elements remain en- sconced in the surrounding paper and difficult to use directly to facilitate information discovery tasks or longitudinal analytics. Very few applications in information retrieval, aca- demic search, or bibliometrics make direct use of the figures, and none attempt to recognize and exploit the type of figure, which can be used to augment interactions with a large corpus of scholarly literature. The VizioMetrix platform processes a corpus of documents, classifies the figures, organizes the results into a cloud- hosted databases, and drives three distinct applications to support bibliometric analysis and information retrieval. The first application supports information retrieval tasks by allowing rapid browsing of classified figures. The second application supports longitudinal analysis of visual patterns in the literature and facilitates data mining of these figures. The third application supports crowdsourced tagging of figures to improve classification, augment search, and facilitate new kinds of analyses. Our initial corpus is the entirety of PubMed Central (PMC), and will be released to the public alongside this paper; we welcome other researchers to make use of these resources.",
         journal_volume: (
     <div>
     <span className="italics">World Wide Web Conference (WWW). </span>
@@ -1016,7 +1017,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Theory Identity: A Machine-Learning Approach (2014)",
-        abstract: "Theory identity is a fundamental problem for researchers seeking to determine theory quality, create theory ontologies and taxonomies, or perform focused theory-specific reviews and meta-analyses. We demonstrate a novel machine-learning approach to theory identification based on citation data and article features. The multi-disciplinary ecosystem of articles which cite a theoryu2019s originating paper is created and refined into the network of papers predicted to contribute to, and thus identify, a specific theory. We provide a u2018proof-of-conceptu2019 for a highly-cited theory. Implications for cross disciplinary theory integration and the identification of theories for a rapidly expanding scientific literature are discussed.",
+        abstract: "Theory identity is a fundamental problem for researchers seeking to determine theory quality, create theory ontologies and taxonomies, or perform focused theory-specific reviews and meta-analyses. We demonstrate a novel machine-learning approach to theory identification based on citation data and article features. The multi-disciplinary ecosystem of articles which cite a theory's originating paper is created and refined into the network of papers predicted to contribute to, and thus identify, a specific theory. We provide a \"proof-of-concept\" for a highly-cited theory. Implications for cross disciplinary theory integration and the identification of theories for a rapidly expanding scientific literature are discussed.",
         journal_volume: (
     <div>
     <span className="italics">Hawaii International Conference on System Sciences (HICSS). </span>
@@ -1088,7 +1089,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Comparing the dynamics of stomatal networks to the problem-solving dynamics of cellular computers (2011)",
-        abstract: "Is the adaptive response to environmental stimuli of a biological system lacking a central nervous system a result of a formal computation? If so, these biological systems must conform to a different set of computational rules than those associated with central processing. To explore this idea, we examined the dynamics of stomatal patchiness in leaves. Stomatau2014tiny pores on the surface of a leafu2014are biological processing units that a plant uses to solve an optimization problemu2014maximize CO2 assimilation and minimize H2O loss. Under some conditions, groups of stomata coordinate in both space and time producing motile patches that can be visualized with chlorophyll fluorescence. These patches suggest that stomata are nonautonomous and that they form a network presumably engaged in the optimization task. In this study, we show that stomatal dynamics are statistically and qualitatively comparable to the emergent, collective, problem-solving dynamics of cellular computing systems.",
+        abstract: "Is the adaptive response to environmental stimuli of a biological system lacking a central nervous system a result of a formal computation? If so, these biological systems must conform to a different set of computational rules than those associated with central processing. To explore this idea, we examined the dynamics of stomatal patchiness in leaves. Stomata—tiny pores on the surface of a leaf—are biological processing units that a plant uses to solve an optimization problem—maximize CO2 assimilation and minimize H2O loss. Under some conditions, groups of stomata coordinate in both space and time producing motile patches that can be visualized with chlorophyll fluorescence. These patches suggest that stomata are nonautonomous and that they form a network presumably engaged in the optimization task. In this study, we show that stomatal dynamics are statistically and qualitatively comparable to the emergent, collective, problem-solving dynamics of cellular computing systems.",
         journal_volume: (
     <div>
     <span className="italics">Unifying Themes in Complex Systems: Proceedings of the Fifth International Conference on Complex Systems. </span>
@@ -1115,7 +1116,7 @@ const publicationsData = Immutable.Map({
   journalsInvited: [
     {
         title: "The Science of Data Science (2016)",
-        abstract: "This report summarizes two talks that I gave at the Advanced Future Studies at Kyoto University in February of 2016. One talk was for the Global Partnership on Science Education through Engagement. In this talk I focused on an emerging educational trend in the United Statesu2014the rise of Data Science at both the undergraduate and graduate levelu2014and the effect it is having on research and industry. In the second talk, I spoke at the International Symposium on Advanced Future Studies symposium. In this talk, I provided an overview of an emerging research trendu2014the emergence of a new discipline called the Science of Science. In this new field, science is done at the level of millions of publications over many generations and disciplines using new tools from machine learning, computer vision, and network science. Both Data Science and the Science of Science require perspectives from multiple disciplines, which fit well with the general theme of both meetings in Kyoto.",
+        abstract: "This report summarizes two talks that I gave at the Advanced Future Studies at Kyoto University in February of 2016. One talk was for the Global Partnership on Science Education through Engagement. In this talk I focused on an emerging educational trend in the United States—the rise of Data Science at both the undergraduate and graduate level—and the effect it is having on research and industry. In the second talk, I spoke at the International Symposium on Advanced Future Studies symposium. In this talk, I provided an overview of an emerging research trend—the emergence of a new discipline called the Science of Science. In this new field, science is done at the level of millions of publications over many generations and disciplines using new tools from machine learning, computer vision, and network science. Both Data Science and the Science of Science require perspectives from multiple disciplines, which fit well with the general theme of both meetings in Kyoto.",
         journal_volume: (
     <div>
     <span className="italics">Journal of Integrated Creative Studies. </span>
@@ -1139,7 +1140,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Can Ignorance Promote Democracy? (2011)",
-        abstract: "Ideas are like fire, observed Thomas Jefferson in 1813u2014information can be passed on without relinquishing it (1). Indeed, the ease and benefit of sharing information select for individuals to aggregate into groups, driving the buildup of complexity in the biological world (2, 3). Once the members of some collectiveu2014whether cells of a fruit fly or citizens of a democratic societyu2014have accumulated information, they must integrate that information and make decisions based upon it. When these members share a common interest, as do the stomata on the surface of a plant leaf (4), integrating distributed information may be a computational challenge. But when individuals do not have entirely coincident interests, strategic problems arise. Members of animal herds, for example, face a tension between aggregating information for the benefit of the herd as a whole, and avoiding manipulation by self-interested individuals in the herd. Which collective decision procedures are robust to manipulation by selfish players (5)? On page 1578 of this issue, Couzin et al. (6) show how the presence of uninformed agents can promote democratic outcomes in collective decision problems.",
+        abstract: "Ideas are like fire, observed Thomas Jefferson in 1813—information can be passed on without relinquishing it (1). Indeed, the ease and benefit of sharing information select for individuals to aggregate into groups, driving the buildup of complexity in the biological world (2, 3). Once the members of some collective—whether cells of a fruit fly or citizens of a democratic society—have accumulated information, they must integrate that information and make decisions based upon it. When these members share a common interest, as do the stomata on the surface of a plant leaf (4), integrating distributed information may be a computational challenge. But when individuals do not have entirely coincident interests, strategic problems arise. Members of animal herds, for example, face a tension between aggregating information for the benefit of the herd as a whole, and avoiding manipulation by self-interested individuals in the herd. Which collective decision procedures are robust to manipulation by selfish players (5)? On page 1578 of this issue, Couzin et al. (6) show how the presence of uninformed agents can promote democratic outcomes in collective decision problems.",
         journal_volume: (
     <div>
     <span className="italics">Science. </span>
@@ -1168,7 +1169,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "How to improve the use of metrics: Learn from Game Theory (2010)",
-        abstract: "Giving bad answers is not the worst thing a ranking system can do u2014 the worst thing is to encourage bad science. The next generation of scientific metrics needs to take this into account.When scientists order elements by molecular weight, the elements do not respond by trying to sneak higher up the order. But when administrators order scientists by prestige, the scientists tend to be less passive. There is a powerful feedback between the ranking systems used to assess scientific productivity and the actions of scientists trying to further their careers via these ranking systems.",
+        abstract: "Giving bad answers is not the worst thing a ranking system can do — the worst thing is to encourage bad science. The next generation of scientific metrics needs to take this into account.When scientists order elements by molecular weight, the elements do not respond by trying to sneak higher up the order. But when administrators order scientists by prestige, the scientists tend to be less passive. There is a powerful feedback between the ranking systems used to assess scientific productivity and the actions of scientists trying to further their careers via these ranking systems.",
         journal_volume: (
     <div>
     <span className="italics">Nature. </span>
@@ -1192,7 +1193,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: 'Response to "Big Macs and Eigenfactor Scores: The Correlation Conundrum" (2010)',
-        abstract: "As we pointed out in our original article (West,Bergstrom, & Bergstrom, in press), currency denominations generate a spurious correlation in the Big Mac data. The high correlation between wage rates and Big Mac prices denominated in local currency might lead a careless reader to believe that in all countries it takes a laborer about the same amount of time to earn a Big Mac. By rescaling currencies in a few of the countries, Prathap (in press) shows that this is not the case. Of course. Any competent statistician would do something like this. For example, when The Economist publishes their Big Mac index, they convert all prices into US dollars at prevailing currency exchange rates. That was the point of our analogyu2014to pick a case where the source of spurious correlation was so obvious that anyone could recognize the problem.",
+        abstract: "As we pointed out in our original article (West,Bergstrom, & Bergstrom, in press), currency denominations generate a spurious correlation in the Big Mac data. The high correlation between wage rates and Big Mac prices denominated in local currency might lead a careless reader to believe that in all countries it takes a laborer about the same amount of time to earn a Big Mac. By rescaling currencies in a few of the countries, Prathap (in press) shows that this is not the case. Of course. Any competent statistician would do something like this. For example, when The Economist publishes their Big Mac index, they convert all prices into US dollars at prevailing currency exchange rates. That was the point of our analogy—to pick a case where the source of spurious correlation was so obvious that anyone could recognize the problem.",
         journal_volume: (
     <div>
     <span className="italics">Journal of the American Society for Information Science &amp; Technology. </span>
@@ -1244,7 +1245,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "The EigenfactorTM Metrics (2008)",
-        abstract: "Quantitative metrics are poor choices for assessing the research output of an individual scholar. Summing impact factors, counting citations, tallying an h-index, or looking at Eigenfactoru2122 Scores (described below)u2014none of these methods are adequate compared with what should be the gold standard: reading the scholar's publications and talking to experts about her work. But many scholars, librarians, historians of science, editors, and other individuals are also interested in larger-scale questions that require assessing hundreds or thousands of scholarly articles by hundreds or thousands of authors. u201cGiven that my library can afford only one more subscription, should I subscribe to journal x or journal y?u201d u201cHow often do physicists cite Biology journals, and do biologists pay equal attention to the physics literature?u201d u201cHas the increase in size of my journal caused a corresponding decline in average quality?u201d To answer questions such as these, aggregate bibliometric statistics can be very useful.",
+        abstract: "Quantitative metrics are poor choices for assessing the research output of an individual scholar. Summing impact factors, counting citations, tallying an h-index, or looking at Eigenfactoru2122 Scores (described below)—none of these methods are adequate compared with what should be the gold standard: reading the scholar's publications and talking to experts about her work. But many scholars, librarians, historians of science, editors, and other individuals are also interested in larger-scale questions that require assessing hundreds or thousands of scholarly articles by hundreds or thousands of authors. u201cGiven that my library can afford only one more subscription, should I subscribe to journal x or journal y?u201d u201cHow often do physicists cite Biology journals, and do biologists pay equal attention to the physics literature?u201d u201cHas the increase in size of my journal caused a corresponding decline in average quality?u201d To answer questions such as these, aggregate bibliometric statistics can be very useful.",
         journal_volume: (
     <div>
     <span className="italics">Journal of Neuroscience. </span>
@@ -1271,7 +1272,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Assessing Citations with the EigenfactorTM Metrics (2008)",
-        abstract: "For more than 80 years, researchers and administrators alike have evaluated the prestige and productivity of researchers, institutions, journals, and even nations by counting citations. For the past half  century, the impact factor has been the most prominent of these citation metrics. Impact factor is essentially a measure of the average number of citations that a journalu2019s articles receive over the two calendar years following publication. As a citation metric, impact factor has a number of virtues, not the least of which are that it is simple to describe and easy to calculate.",
+        abstract: "For more than 80 years, researchers and administrators alike have evaluated the prestige and productivity of researchers, institutions, journals, and even nations by counting citations. For the past half  century, the impact factor has been the most prominent of these citation metrics. Impact factor is essentially a measure of the average number of citations that a journal's articles receive over the two calendar years following publication. As a citation metric, impact factor has a number of virtues, not the least of which are that it is simple to describe and easy to calculate.",
         journal_volume: (
     <div>
     <span className="italics">Neurology. </span>
@@ -1297,7 +1298,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Eigenfactor - The Google Approach to Bibliometrics (2008)",
-        abstract: "Not all citations are created equal. This is one of the core ideas behind Eigenfactor. Citations from more prestigious journals (such as Science and Nature) are worth more than citations from less important journals (such as the Journal of Obscurity). This meritocratic approach to bibliometrics is very similar to the philosophy behind Googleu2019s PageRank algorithm, which is at u201cthe heart of [its] softwareu201d. Receiving a hyperlink from a highly reputable website means more than a hyperlink from a neighborhood blog. Both Google and Eigenfactor utilize the wealth of information inherent in the structure of their respective networks. For Google, that information can be found in the topology of the web, and for Eigenfactor, the information can be found in the citation structure of the scholarly literature. The success of Google's search engine illustrates the power of this approach to ranking. Part of the success behind PageRank can actually be traced back to prior work in the field of bibliometrics. With the advent of scholarly measures like Eigenfactor, this relationship has come full circle.",
+        abstract: "Not all citations are created equal. This is one of the core ideas behind Eigenfactor. Citations from more prestigious journals (such as Science and Nature) are worth more than citations from less important journals (such as the Journal of Obscurity). This meritocratic approach to bibliometrics is very similar to the philosophy behind Google's PageRank algorithm, which is at u201cthe heart of [its] softwareu201d. Receiving a hyperlink from a highly reputable website means more than a hyperlink from a neighborhood blog. Both Google and Eigenfactor utilize the wealth of information inherent in the structure of their respective networks. For Google, that information can be found in the topology of the web, and for Eigenfactor, the information can be found in the citation structure of the scholarly literature. The success of Google's search engine illustrates the power of this approach to ranking. Part of the success behind PageRank can actually be traced back to prior work in the field of bibliometrics. With the advent of scholarly measures like Eigenfactor, this relationship has come full circle.",
         journal_volume: (
     <div>
     <span className="italics">Front Matter. </span>
@@ -1364,7 +1365,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "A Network Approach to Scholarly Evaluation (2013)",
-        abstract: "As Derek de Solla Price famously noted in 1965, the scientific literature forms a vast network. The nodes of this network are the millions of published articles, and the edges are the citations between them. There is a wealth of information u2014 not only within the content of these nodes (the text) - but also within the structure connecting these nodes (the network topology). In fact, the network topology by itself provides clues about the quality of the content. This is similar to how Googleu2019s PageRank algorithm harnesses the hyperlink structure of the web to evaluate web pages.",
+        abstract: "As Derek de Solla Price famously noted in 1965, the scientific literature forms a vast network. The nodes of this network are the millions of published articles, and the edges are the citations between them. There is a wealth of information — not only within the content of these nodes (the text) - but also within the structure connecting these nodes (the network topology). In fact, the network topology by itself provides clues about the quality of the content. This is similar to how Google's PageRank algorithm harnesses the hyperlink structure of the web to evaluate web pages.",
         journal_volume: (
     <div>
     <span className="italics">Beyond Bibliometrics: Harnessing Multidimensional Indicators of Scholarly Impact. </span>
@@ -1390,7 +1391,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Bacteriophages: models for exploring basic principles of ecology (2008)",
-        abstract: "A virus depends intimately upon its host in order to reproduce, which makes the host organism a crucial part of the virus' environment. This basic facet of viral existence means that ecology, the scientific field focusing on how organisms interact with each other and their environment, is particularly relevant to the study of viruses. In this chapter we explore some of the ways in which the principles of ecology apply to viruses that infect bacteriau2014the bacteriophages (or \"phages\" for short). In turn, we also discuss how the study of phage and their bacterial hosts has contributed to different subfields of ecology.",
+        abstract: "A virus depends intimately upon its host in order to reproduce, which makes the host organism a crucial part of the virus' environment. This basic facet of viral existence means that ecology, the scientific field focusing on how organisms interact with each other and their environment, is particularly relevant to the study of viruses. In this chapter we explore some of the ways in which the principles of ecology apply to viruses that infect bacteria—the bacteriophages (or \"phages\" for short). In turn, we also discuss how the study of phage and their bacterial hosts has contributed to different subfields of ecology.",
         journal_volume: (
     <div>
     <span className="italics">Bacteriophage Ecology: Population Growth, Evolution, and Impact of Bacterial Viruses.</span>
@@ -2701,7 +2702,422 @@ const teachingData = Immutable.OrderedMap({
       </Row>
     </div>
   ),
+});
 
+const cvData = Immutable.Map({
+  data: (
+    <div>
+      <h1 className="hidden">CV</h1>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Contact</h2>
+          <hr/>
+        </Col>
+        <Col s={12} m={6}>
+          <div>Jevin D. West</div>
+          <div>Assistant Professor</div>
+          <div><a href="https://ischool.uw.edu" target="_blank">Information School</a></div>
+          <div>University of Washington</div>
+          <div>Box 352840, Seattle, WA, 98195, USA</div>
+        </Col>
+        <Col s={12} m={6}>
+          <div>Email: <a href="mailto:jevinw@uw.edu" target="_blank">jevinw@uw.edu</a></div>
+          <div>Twitter: <a href="https://twitter.com/jevinwest" target="_blank">@jevinwest</a></div>
+          <div>Web: <a href="jevinwest.org" target="_blank">jevinwest.org</a></div>
+          <div>Lab: <a href="https://datalab.ischool.uw.edu/" target="_blank">datalab.ischool.uw.edu</a></div>
+          <div>Phone: 206-905-9244</div>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Curriculum Vitae</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <ul className="browser-default">
+            <li><a href={JevinWest_CVPDF} target="_blank">Full CV (PDF)</a></li>
+            <li>NSF Biosketch (PDF)</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Academic Positions</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <Table>
+            <tbody>
+              <tr>
+                <td>2013 -- </td>
+                <td>Assistant Professor, <a href="https://ischool.uw.edu" target="_blank">Information School</a>, University of Washington</td>
+              </tr>
+              <tr>
+                <td>2014 -- </td>
+                <td><a href="http://escience.washington.edu/about-us/people/" target="_blank">Data Science Fellow</a>, eScience Institute, University of Washington</td>
+              </tr>
+              <tr>
+                <td>2014 -- </td>
+                <td>Affiliate Faculty, <a href="https://www.csss.washington.edu/people/affiliate-faculty?page=5" target="_blank">Center for Statistics & Social Sciences</a>, University of Washington</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Education</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <Table>
+            <tbody>
+              <tr>
+                <td>2011 - 2012 </td>
+                <td>Postdoc, <a href="http://www.org.umu.se/icelab/english/" target="_blank">IceLab</a>, Department of Physics, <a href="http://www.umu.se/english/" target="_blank">Umea University</a>, Sweden</td>
+              </tr>
+              <tr>
+                <td>2005 - 2010</td>
+                <td>PhD, <a href="https://www.biology.washington.edu" target="_blank">Department of Biology</a>, University of Washington</td>
+              </tr>
+              <tr>
+                <td>1996 - 2004</td>
+                <td>B.S., M.S., <a href="http://www.biology.usu.edu" target="_blank">Department of Biology</a>, Utah State University</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Service</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <ul className="browser-default">
+            <li>Faculty Hiring, Co-Chair <a href="https://ischool.uw.edu/about/jobs/faculty" target="_blank">Data Science Lecturer/Senior Lecturer</a> (2016 - present)</li>
+            <li>Informatics Program Committee (2013 - 2014, 2015 - present)</li>
+            <li>Faculty Hiring, Information Assurance & Cybersecurity Lecturer/Senior Lecturer (2015 - 2016)</li>
+            <li>PhD Admissions Committee (2014 - 2015)</li>
+            <li>Informatics Admission Committee (2013 - 2014)</li>
+          </ul>
+          <h3>University of Washington:</h3>
+          <ul className="browser-default">
+            <li><a href="https://www.datasciencemasters.uw.edu" target="_blank">Masters in Data Science (MSDS)</a> Executive Committee (2015 - present)</li>
+            <li><a href="http://escience.washington.edu" target="_blank">eScience Institute</a> Steering Committee (2014 - present)</li>
+            <li><a href="http://www.washington.edu/faculty/councils/fcul/" target="_blank">Faculty Council on University Libraries</a> (2014 - present)</li>
+            <li>co-founded <a href="http://data.uw.edu/seminar/" target="_blank">Data Science Seminar</a>, Committee Member (2014 - present)</li>
+            <li><a href="http://escience.washington.edu/events/education-working-group-2/" target="_blank">eScience Education</a> Working Group (2014 - present</li>
+            <li><a href="https://www.datasciencemasters.uw.edu" target="_blank">MSDS</a> Admissions Committee (2016 - present)</li>
+            <li><a href="https://www.datasciencemasters.uw.edu" target="_blank">MSDS</a> Hiring Committee (2016 - 2016)</li>
+          </ul>
+          <h3>Professional:</h3>
+          <ul className="browser-default">
+              <li>Open Academic Society (2016 - present)</li>
+          </ul>
+          <h3>Journal Review:</h3>
+          <ul className="browser-default">
+            <li><a href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291532-2890/homepage/EditorialBoard.html" target="_blank">JASIST Editorial Board</a>, Journal of the Assoc. for Information Science & Technology (4) (2015 - 2016)</li>
+            <li>Editorial Board, Journal of Informetrics (2017 - 2018) (1) (2017)</li>
+            <li>Journal of the Assoc. for Information Science &amp; Technology, reviewer (14) (2012 - 2016)</li>
+            <li>Science (2) (2016)</li>
+            <li>Data Mining & Knowledge Discovery (1) (2016)</li>
+            <li>Science Advances (2) (2015 - 2016)</li>
+            <li>Journal of Informetrics (3) (2014 - 2016)</li>
+            <li>PLoS One (8) (2010 - 2016)</li>
+            <li>IEEE Transactions on Big Data (2) (2016)</li>
+            <li>eLife (1) (2015)</li>
+            <li>New England Journal of Medicine (1) (2016)</li>
+            <li>PLoS Biology (2) (2016)</li>
+            <li>co-review, Journal of Pain (1) (2016)</li>
+            <li>Scientometrics (3) (2014 - 2016)</li>
+            <li>Sociological Science (2016)</li>
+            <li>Journal of Information Technology (1) (2015)</li>
+            <li>PeerJ (2) (2015 - 2016)</li>
+            <li>Economic Inquiry (2) (2013 - 2015)</li>
+            <li>Journal of Data and Information Science, editorial board (2016)</li>
+            <li>R Journal (1) (2016)</li>
+            <li>Knowledge-Bases Systems (1) (2013)</li>
+            <li>BioScience (1) (2015)</li>
+            <li>PLoS Computational Biology (1) (2008)</li>
+            <li>Journal of Librarianship & Scholarly Communication (1) (2012)</li>
+            <li>Faculty 1000 (1) (2010)</li>
+            <li>Harvard Review of Psychiatry (1) (2010)</li>
+            <li>Plant, Cell &amp; Environment (1) (2012)</li>
+            <li>Information Management (1) (2009)</li>
+          </ul>
+          <h3>Conference Review:</h3>
+          <ul className="browser-default">
+            <li><a href="http://ischools.org/the-iconference/organizers/" target="_blank">iConference Paper Co-Chair</a> (2016 - 2017)</li>
+            <li><a href="http://netsci2017.net" target="_blank">Netsci Program Committee</a></li>
+            <li><a href="http://chi2016.acm.org/wp/" target="_blank">SIGCHI</a> (2) (2016)</li>
+            <li><a href="http://www.issi2017.org/aboutissi.html" target="_blank">International Society for Scientometrics and Informetrics</a>, (2016)</li>
+            <li><a href="http://www2016.ca" target="_blank">WWW</a> (3) (2016 - 2017)</li>
+            <li><a href="https://www.asist.org/events/annual-meeting/annual-meeting-2016/" target="_blank">ASIS&T</a>, Meta Reviewer (4) (2014)</li>
+          </ul>
+          <h3>Proposal Review:</h3>
+          <ul className="browser-default">
+            <li>National Science Founation, SciSIP (1) (2015)</li>
+            <li>Sloan Foundation (2) (2014 - 2016)</li>
+          </ul>
+          <h3>Book Review:</h3>
+          <ul className="browser-default">
+            <li>Cambridge University Press (1) (2015)</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Funding</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <div className="grant">
+            <div className="bold">Improving market function in Open Access publishing through transparent comparison of journal price and quality (2016 - 2017)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI), T.C. Bergstrom (co-PI), C.T. Bergstrom (co-PI)</div>
+              <div className="citation">
+              <span className="italics">Sloan Foundation.</span>
+              <span>$127,245</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Diversification dynamics of scientific ideas using small clustering for community detection (2016 - 2016)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Metaknowledge Network, Templeton Foundation.</span>
+              <span>$35,000</span>
+              </div>
+          </div>
+
+
+          <div className="grant">
+            <div className="bold">Inferring the hierarchical structure of citation networks to improve semantic search of the scholarly literature (2014 - 2016)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI), C.T. Bergstrom (co-PI)</div>
+              <div className="citation">
+              <span className="italics">Metaknowledge Network, Templeton Foundation.</span>
+              <span>$109,172</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Employing Data Science at the University of Washington (2016 - 2017)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">UW Royalty Research Fund.</span>
+              <span>$39,404</span>
+              </div>
+          </div>
+
+
+          <div className="grant">
+            <div className="bold">CCE STEM: Collaborative: Learning from Ethics Self-Regulation in InfoSec Research (2016 - 2020)</div>
+            <div className="authors">M. Finn (PI), K Shilton (co-PI), <span className="bold">J.D. West</span> (collaborator), F. Roesner (collaborator)</div>
+              <div className="citation">
+              <span className="italics">National Science Foundation (NSF).</span>
+              <span>$336,058</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Improving Scholarly Navigation (2016 - 2017)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">JSTOR</span>
+              <span> Gift. $110,000</span>
+              </div>
+          </div>
+          <div className="grant">
+            <div className="bold">Measuring Scholarly Influence (2015 - 2017)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Chemical Heritage Foundation and Pew Charitable Trust.</span>
+              <span>$43,073</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Fundamental Mathematical Models for Human Interactions (2016 - 2017)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Pacific Northwest National Laboratory (PNNL).</span>
+              <span>$88,516</span>
+              </div>
+          </div>
+
+
+          <div className="grant">
+            <div className="bold">Open Data Literacy (2016 - 2019)</div>
+            <div className="authors">C.L. Palmer (PI), N. Weber (co-PI), <span className="bold">J.D. West</span> (collaborator)</div>
+              <div className="citation">
+              <span className="italics">Institute of Museum and Librar Services (IMLS).</span>
+              <span>$690,858</span>
+              </div>
+          </div>
+
+
+          <div className="grant">
+            <div className="bold">Eigenfactor Recommends (2013 - 2014)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Public Library of Science (PLoS)</span>
+              <span>$24,000</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Evaluating Kauffman Foundation Research (2013 - 2014)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Kauffman Foundation</span>
+              <span>$18,000</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">DataLab Formation (2014 - 2018)</div>
+            <div className="authors">J. Blumenstock, <span className="bold">J.D. West</span>, E. Spiro</div>
+              <div className="citation">
+              <span className="italics">Costco</span>
+              <span> Gift. $60,000</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Semantic Scholar Recommendation (2015 - 2016)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (collaborator)</div>
+              <div className="citation">
+              <span className="italics">Allen Institute for Artificial Intelligence</span>
+              <span> Gift. $29,126 (RA)</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Measuring Interdisciplinarity (2014 - 2014)</div>
+            <div className="authors">C.T. Bergstrom (PI), <span className="bold">J.D. West</span> (collaborator)</div>
+              <div className="citation">
+              <span className="italics">Metaknowledge Network, Templeton Foundation</span>
+              <span>$15,015</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Mapping Student Trajectories (2014 - 2014)</div>
+            <div className="authors"><span className="bold">J.D. West</span></div>
+              <div className="citation">
+              <span className="italics">UW Graduate School</span>
+              <span>$13,580 (RA)</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">DataLab (2015 - 2015)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Cisco</span>
+              <span> Gift. $2,000</span>
+              </div>
+          </div>
+          <div className="grant">
+            <div className="bold">Cloud Computing (2016 - 2017)</div>
+            <div className="authors"><span className="bold">J.D. West</span></div>
+              <div className="citation">
+              <span className="italics">Microsoft Azure.</span>
+              <span>$20,000</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Cloud Computing (2015 - 2016)</div>
+            <div className="authors"><span className="bold">J.D. West</span></div>
+              <div className="citation">
+              <span className="italics">Amazon Web Services (AWS).</span>
+              <span>$5,000</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">DataLab Projects (2015 - 2015)</div>
+            <div className="authors"><span className="bold">J.D. West</span>, E. Spiro, J. Blumenstock</div>
+              <div className="citation">
+              <span className="italics"></span>
+              <span>$50,000</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">DataLab (2015 - 2015)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Tony Hey</span>
+              <span> Gift. $2,000</span>
+              </div>
+          </div>
+
+
+          <div className="grant">
+            <div className="bold">Auto-classifying scholary content using large citation networks (2013 - 2015)</div>
+            <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
+              <div className="citation">
+              <span className="italics">Microsoft Research</span>
+              <span> Gift. $40,000</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Eigenfactor (2011 - 2012)</div>
+            <div className="authors"><span className="bold">J.D. West</span>, C.T. Bergstrom</div>
+              <div className="citation">
+              <span className="italics">UW Co-Motion</span>
+              <span>$35,000 (Post-doc)</span>
+              </div>
+          </div>
+
+          <div className="grant">
+            <div className="bold">Improving Scholarly Navigation (2010 - 2011)</div>
+            <div className="authors"><span className="bold">J.D. West</span>, C.T. Bergstrom</div>
+              <div className="citation">
+              <span className="italics">JSTOR</span>
+              <span> Gift. $90,000</span>
+              </div>
+          </div>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Tech Transfer</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <ul className="browser-default">
+            <li><a href="http://patentvector.com/" target="_blank">PatentVector.com</a>, Co-Founder (2015 - present)</li>
+            <li><a href="https://www.bioz.com/advisors" target="_blank">Bioz</a>, Board of Advisors (2015 - present)</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Collaborations</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <ul className="browser-default">
+           <li><a href="http://octavia.zoology.washington.edu" target="_blank">Carl Bergstrom</a>, Department of Biology, UW</li>
+           <li><a href="http://www.tp.umu.se/~rosvall/" target="_blank">Martin Rosvall</a>, Department of Physics, Umea University, Sweden</li>
+           <li><a href="http://jenniferjacquet.com" target="_blank">Jennifer Jacquet</a>, Environmental Studies, New York University, New York</li>
+           <li><a href="http://www.knowledgelab.org/people/researchers/" target="_blank">Metaknowledge Network</a>, University of Chicago</li>
+           <li><a href="http://homes.cs.washington.edu/~billhowe/" target="_blank">Bill Howe</a>, iSchool, UW</li>
+           <li><a href="http://faculty.washington.edu/aragon/" target="_blank">Cecilia Aragon</a>, Human Centered Design & Engineering, UW</li>
+           <li><a href="http://www.law.ku.edu/torrance" target="_blank">Andrew Torrance</a>, School of Law, University of Kansas</li>
+           <li><a href="http://www.econ.ucsb.edu/~tedb/" target="_blank">Ted Bergstrom</a>, Department of Economics, University of California, Santa Barbara</li>
+           <li><a href="http://www.mollymking.com" target="_blank">Molly King</a>, Department of Sociology, Stanford University</li>
+           <li><a href="https://sociology.stanford.edu/people/shelley-correll" target="_blank">Shelley Correll</a>, Department of Sociology, Stanford University</li>
+           <li><a href="http://www.people.hbs.edu/mjensen/index.html" target="_blank">Michael Jensen</a>, Business School, Harvard University</li>
+          </ul>
+        </Col>
+      </Row>
+    </div>
+  ),
 });
 
 const bioData = Immutable.Map({
@@ -2761,4 +3177,4 @@ const bioData = Immutable.Map({
   )
 });
 
-export {drawerLinks, homeData, researchData, publicationsData, presentationData, teachingData, bioData};
+export {drawerLinks, homeData, researchData, publicationsData, presentationData, teachingData, cvData, bioData};
