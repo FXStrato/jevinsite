@@ -19,9 +19,9 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #9C27B0 !important;
+    color: #6A1B9A !important;
     animation: a-color-back 0.25s;
-    font-weight: 500;
+    font-weight: medium;
 }
 
 a:hover {
@@ -31,7 +31,7 @@ a:hover {
 
 @keyframes a-color {
     from {
-        color: #9C27B0;
+        color: #6A1B9A;
     }
     to {
         color: #F57C00;
@@ -43,7 +43,7 @@ a:hover {
         color: #F57C00;
     }
     to {
-        color: #9C27B0;
+        color: #6A1B9A;
     }
 }
 
@@ -60,7 +60,7 @@ a:hover {
     font-weight: bold;
 }
 
-.grant {
+.bottom-spacer {
   margin-bottom: 15px;
 }
 

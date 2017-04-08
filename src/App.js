@@ -109,7 +109,7 @@ class App extends Component {
                 docked={false}
                 onRequestChange={(open) => this.setState({open})}
               >
-                <div style={{height: 64, backgroundColor: '#000'}}></div>
+                <div style={{height: 64, backgroundColor: '#4A148C'}}></div>
                 {drawerlinks}
               </Drawer>
             </MuiThemeProvider>

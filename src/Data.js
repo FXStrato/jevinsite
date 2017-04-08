@@ -79,6 +79,9 @@ import info370PDF from './documents/INFO370.pdf';
 import infx575PDF from './documents/INFX575.pdf';
 import JevinWest_Huckabay_ProposalPDF from './papers/JevinWest_Huckabay_Proposal.pdf';
 import JevinWest_CVPDF from './papers/JevinWest_CV.pdf';
+import JBC_coverPDF from './documents/JBC_cover.pdf';
+import Science2009EvoMapPDF from './papers/Science2009EvoMap.pdf';
+import LeafComputation_ScienceNews2004PDF from './documents/LeafComputation_ScienceNews2004.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -2872,7 +2875,7 @@ const cvData = Immutable.Map({
           <hr/>
         </Col>
         <Col s={12}>
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Improving market function in Open Access publishing through transparent comparison of journal price and quality (2016 - 2017)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI), T.C. Bergstrom (co-PI), C.T. Bergstrom (co-PI)</div>
               <div className="citation">
@@ -2881,7 +2884,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Diversification dynamics of scientific ideas using small clustering for community detection (2016 - 2016)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -2891,7 +2894,7 @@ const cvData = Immutable.Map({
           </div>
 
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Inferring the hierarchical structure of citation networks to improve semantic search of the scholarly literature (2014 - 2016)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI), C.T. Bergstrom (co-PI)</div>
               <div className="citation">
@@ -2900,7 +2903,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Employing Data Science at the University of Washington (2016 - 2017)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -2910,7 +2913,7 @@ const cvData = Immutable.Map({
           </div>
 
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">CCE STEM: Collaborative: Learning from Ethics Self-Regulation in InfoSec Research (2016 - 2020)</div>
             <div className="authors">M. Finn (PI), K Shilton (co-PI), <span className="bold">J.D. West</span> (collaborator), F. Roesner (collaborator)</div>
               <div className="citation">
@@ -2919,7 +2922,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Improving Scholarly Navigation (2016 - 2017)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -2927,7 +2930,7 @@ const cvData = Immutable.Map({
               <span> Gift. $110,000</span>
               </div>
           </div>
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Measuring Scholarly Influence (2015 - 2017)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -2936,7 +2939,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Fundamental Mathematical Models for Human Interactions (2016 - 2017)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -2946,7 +2949,7 @@ const cvData = Immutable.Map({
           </div>
 
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Open Data Literacy (2016 - 2019)</div>
             <div className="authors">C.L. Palmer (PI), N. Weber (co-PI), <span className="bold">J.D. West</span> (collaborator)</div>
               <div className="citation">
@@ -2956,7 +2959,7 @@ const cvData = Immutable.Map({
           </div>
 
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Eigenfactor Recommends (2013 - 2014)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -2965,7 +2968,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Evaluating Kauffman Foundation Research (2013 - 2014)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -2974,7 +2977,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">DataLab Formation (2014 - 2018)</div>
             <div className="authors">J. Blumenstock, <span className="bold">J.D. West</span>, E. Spiro</div>
               <div className="citation">
@@ -2983,7 +2986,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Semantic Scholar Recommendation (2015 - 2016)</div>
             <div className="authors"><span className="bold">J.D. West</span> (collaborator)</div>
               <div className="citation">
@@ -2992,7 +2995,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Measuring Interdisciplinarity (2014 - 2014)</div>
             <div className="authors">C.T. Bergstrom (PI), <span className="bold">J.D. West</span> (collaborator)</div>
               <div className="citation">
@@ -3001,7 +3004,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Mapping Student Trajectories (2014 - 2014)</div>
             <div className="authors"><span className="bold">J.D. West</span></div>
               <div className="citation">
@@ -3010,7 +3013,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">DataLab (2015 - 2015)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -3018,7 +3021,7 @@ const cvData = Immutable.Map({
               <span> Gift. $2,000</span>
               </div>
           </div>
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Cloud Computing (2016 - 2017)</div>
             <div className="authors"><span className="bold">J.D. West</span></div>
               <div className="citation">
@@ -3027,7 +3030,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Cloud Computing (2015 - 2016)</div>
             <div className="authors"><span className="bold">J.D. West</span></div>
               <div className="citation">
@@ -3036,7 +3039,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">DataLab Projects (2015 - 2015)</div>
             <div className="authors"><span className="bold">J.D. West</span>, E. Spiro, J. Blumenstock</div>
               <div className="citation">
@@ -3045,7 +3048,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">DataLab (2015 - 2015)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -3055,7 +3058,7 @@ const cvData = Immutable.Map({
           </div>
 
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Auto-classifying scholary content using large citation networks (2013 - 2015)</div>
             <div className="authors"><span className="bold">J.D. West</span> (PI)</div>
               <div className="citation">
@@ -3064,7 +3067,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Eigenfactor (2011 - 2012)</div>
             <div className="authors"><span className="bold">J.D. West</span>, C.T. Bergstrom</div>
               <div className="citation">
@@ -3073,7 +3076,7 @@ const cvData = Immutable.Map({
               </div>
           </div>
 
-          <div className="grant">
+          <div className="bottom-spacer">
             <div className="bold">Improving Scholarly Navigation (2010 - 2011)</div>
             <div className="authors"><span className="bold">J.D. West</span>, C.T. Bergstrom</div>
               <div className="citation">
@@ -3166,9 +3169,7 @@ const bioData = Immutable.Map({
 
           <p>During my post-doc, I was fortunate to continue thinking about networks and applying community detection methods to large, citation networks. I worked with <a target="_blank" href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a> in the <a target="_blank" href="http://www.org.umu.se/icelab/english/">IceLab</a> at <a target="_blank" href="http://www.umu.se/english/">Umea University</a> (Sweden). One of the primary research projects from the IceLab is <a target="_blank" href="http://www.mapequation.org">mapequation.org</a>. The algorithms from this project form the basis for much of the work we do in our lab around the mapping of scientific literature.</p>
 
-
           <p>I have been lucky in my research journey so far.  I have worked with collaborators and students as passionate about science as me. I have had mentors that are both good researchers and good people. And I have worked in departments and universities that encourage the crossing of disciplinary boundaries.</p>
-
 
           <p style={{float: 'right'}}>"<span className="italics">The whole is the sum of the parts <span className="bold">plus</span> the interactions...</span>" -Martin Rosvall</p>
         </Col>
@@ -3177,4 +3178,453 @@ const bioData = Immutable.Map({
   )
 });
 
-export {drawerLinks, homeData, researchData, publicationsData, presentationData, teachingData, cvData, bioData};
+const newsData = Immutable.Map({
+  data: (
+    <div>
+      <h1 className="hidden">News</h1>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Recent Announcments</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <p>The new course on <a href="callingbullshit.org" target="_blank">Calling Bullshit in the Age of Big Data</a> is now alive. (Jan. 12, 2017)</p>
+          <p>I am always looking for good students and postdocs to join the lab. Please feel free to <a href="mailto:jevinw@uw.edu">email me</a> and we can discuss open positions.</p>
+          <p>We are hiring in the UW iSchool: <a href="https://ischool.uw.edu/about/jobs/faculty">Data Science Lecture/Senior Lecturer in Data Science</a></p>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Research in the News</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.seattletimes.com/seattle-news/education/uw-class-on-how-to-spot-fake-data-goes-viral-within-hours/">UW class on how to spot fake data goes viral within hours</a></div>
+            <div class="conf2">Seattle Times (Jan. 28, 2017)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.npr.org/2017/01/23/511165485/its-getting-harder-to-sort-out-truth-from-fiction">It's Getting Harder To Sort Out Truth From Fiction</a></div>
+            <div class="conf2">NPR, Morning Edition (Jan. 23, 2017)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://komonews.com/news/local/univeristy-of-washington-course-could-be-lesson-in-bs-literally">University of Washington could offer course in 'BS'</a></div>
+            <div class="conf2">KOMO News (Jan. 20, 2017)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.chronicle.com/article/The-Fine-Art-of-Sniffing-Out/238907">The Fine Art of Sniffing Out Crappy Science</a></div>
+            <div class="conf2">The Chronicle of Higher Education (Jan. 16, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="https://www.insidehighered.com/news/2016/12/14/exploring-citescore-elseviers-new-journal-impact-metrics">How to Measure Impact</a></div>
+            <div class="conf2">Inside Higher Ed (Dec. 14, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.nature.com/news/controversial-impact-factor-gets-a-heavyweight-rival-1.21131?WT.ec_id=NATURE-20161215&spMailingID=52992218&spUserID=MjA1NjA1MTczMQS2&spJobID=1062902411&spReportId=MTA2MjkwMjQxMQS2">Controversial impact factor gets a heavyweight rival</a></div>
+            <div class="conf2">Nature (Dec. 8, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.reuters.com/article/us-health-research-women-scientists-idUSKBN1343JZ">Female researchers underrepresented, but collaborate widely</a></div>
+            <div class="conf2">Reuters News (Nov. 9, 2016)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="https://www.washingtonpost.com/news/wonk/wp/2016/08/01/new-study-finds-that-men-are-often-their-own-favorite-experts-on-any-given-subject/?tid=sm_tw">New study finds that men are often their own favorite experts on any given subject</a></div>
+            <div class="conf2">Washington Post (Aug. 1, 2016)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://motherboard.vice.com/read/manciting-study-finds-men-cite-their-own-science-papers-more-than-women">Study Finds Men Are More Likely Than Women to Cite Their Own Science Papers</a></div>
+            <div class="conf2">Vice Media's Motherboard (July 22, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.thetimes.co.uk/article/women-academics-trail-men-at-shameless-self-citation-xhb8gmzfs">Women academics trail men (at shameless self-citation)</a></div>
+            <div class="conf2">The London Times (July 16, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.nature.com/news/men-cite-themselves-more-than-women-do-1.20176?WT.mc_id=TWT_NatureNews">Men cite themselves more than women do</a></div>
+            <div class="conf2">Nature (July 5, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.economist.com/news/science-and-technology/21700617-scientific-study-importance-diagrams-science-graphic-details">A scientific study of the importance of diagrams to science</a></div>
+            <div class="conf2">The Economist (June 18, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="https://www.technologyreview.com/s/601589/the-first-visual-search-engine-for-scientific-diagrams/">The First Visual Search Engine for Scientific Diagrams</a></div>
+            <div class="conf2">MIT Technology Review (May 27, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://chronicle.com/article/As-an-Open-Access-Megajournal/234890/?key=V9WzHg4QbDkFuXONne07CiwpC5cgiOVgA5_Vr92e1bNrUktRMEhhLXpCT3hONUR3VHN1VWdLUk5ZdFVJUENKVFNWdkpscWJvWmFn">As an Open-Access Megajournal Cedes Some Ground, a Movement Gathers Steam</a></div>
+            <div class="conf2">Chronicle of Higher Education (Jan. 13, 2016)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://escience.washington.edu/uw-research-science-team-takes-2nd-in-wsdm-cup/">UW Research Science Team Takes 2nd in WSDM Cup</a></div>
+            <div class="conf2">UW eScience (Dec. 1, 2015)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.bna.com/patents-womenbetter-life-b57982063501/">Patents by women-better in the life sciences?</a></div>
+            <div class="conf2">Bloomberg News (Nov. 12, 2015)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="https://www.insidehighered.com/news/2015/08/25/study-finds-men-are-more-likely-women-engage-self-citation">Men Who Admire Their Own Work</a></div>
+            <div class="conf2">Inside Higher Ed (Aug. 25, 2015)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://fivethirtyeight.com/features/in-science-it-matters-that-women-come-last/">In Science, It Matters That Women Come Last</a></div>
+            <div class="conf2">FiveThirtyEight (Aug. 5, 2015)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.nature.com/nature/journal/v510/n7506/full/510470a.html?message-global=remove">Bibliometrics: The citation game</a></div>
+            <div class="conf2">Nature (June. 25, 2014)</div>
+          </div>
+
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.popsci.com/article/science/life-cycle-ideas">The Life Cycle of Ideas: How scientific concepts rise and fall</a></div>
+            <div class="conf2">Popular Science Magazine (April 17, 2014)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://chronicle.com/article/New-Gender-Gap-in-Scholarship/145311/">Lowered Cites</a></div>
+            <div class="conf2">The Chronicle of Higher Education (March 17, 2014)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.nature.com/news/open-access-the-true-cost-of-science-publishing-1.12676">Open access: The true cost of science publishing</a></div>
+            <div class="conf2">Nature (March 27, 2013)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.wired.com/wiredscience/2013/02/finding-bang-for-your-buck-in-the-world-of-open-access/">Finding Bang for Your Buck in the World of Open Access</a></div>
+            <div class="conf2">Wired (Feb. 7, 2013)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.the-scientist.com//?articles.view/articleNo/34097/title/Cheap-Impact-/">Cheap Impact?</a></div>
+            <div class="conf2">The Scientist (Jan. 23, 2013)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.nature.com/news/price-doesn-t-always-buy-prestige-in-open-access-1.12259">Price doesn't always buy prestige in open access</a></div>
+            <div class="conf2">Nature News (Jan. 22, 2013)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://chronicle.com/article/The-Hard-Numbers-Behind/135236/">Scholarly Publishing's Gender Gap</a></div>
+            <div class="conf2">The Chronicle of Higher Education (Oct. 22, 2012)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://chronicle.com/article/The-Marketplace-in-Your-Brain/134524/">The Marketplace in Your Brain</a></div>
+            <div class="conf2">The Chronicle of Higher Education (Sept. 24, 2012)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://the-scientist.com/2012/09/12/predicting-publishing-futures/">Predicting Publishing Futures</a></div>
+            <div class="conf2">The Scientist (Sept. 12, 2012)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.sciencemag.org/news/2012/04/live-chat-science-decision-making">Live Chat: The Science of Decision-Making</a></div>
+            <div class="conf2">Science (April 11, 2012)</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="conf"><a target="_blank" href="http://www.sciencemag.org/news/2012/04/live-chat-science-decision-making">Live Chat: The Science of Decision-Making</a></div>
+            <div class="conf2">College of Science Letters (Jan. 10, 2012)</div>
+          </div>
+        </Col>
+      </Row>
+      <Row className="reduce-bot-margin">
+        <Col s={12}>
+          <h2>Older News</h2>
+          <hr/>
+        </Col>
+        <Col s={12}>
+          <div className="bottom-spacer">
+            <div class="newsdate">01/10/12</div>
+            <div class="newslink"><a target="_blank" href="http://www.iit.edu/csl/newsletter/index.shtml">College of Science Letters</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">12/15/11</div>
+            <div class="newslink"><a target="_blank" href="http://www.sciencenews.org/view/generic/id/336953/title/Uncommitted_newbies_can_foil_forceful_few">Science News</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">12/15/11</div>
+            <div class="newslink"><a target="_blank" href="http://www.msnbc.msn.com/id/45688354/ns/technology_and_science-science/#.Tup5oEpJ_tg">MSNBC</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">11/08/11</div>
+            <div class="newslink"><a target="_blank" href="http://chronicle.com/article/The-Anatomy-of-Influence/129688/">Chronicle of Higher Education</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/05/11</div>
+            <div class="newslink"><a target="_blank" href="http://www.boston.com/bostonglobe/ideas/brainiac/2011/10/academic_influe.html">The Boston Globe</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/01/11</div>
+            <div class="newslink"><a target="_blank" href="http://www.ams.org/news/math-in-the-media/mathdigest-index#201110-eigen">Math in the Media</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">09/11/11</div>
+            <div class="newslink"><a target="_blank" href="http://chronicle.com/article/Maps-of-Citations-Uncover-New/128938/">Chronicle of Higher Education</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">08/02/11</div>
+            <div class="newslink"><a target="_blank" href="http://www.nature.com/news/2011/110802/full/476018a.html">Nature</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">05/26/11</div>
+            <div class="newslink"><a target="_blank" href="http://www.economist.com/node/18744177">The Economist</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">03/02/11</div>
+            <div class="newslink"><a target="_blank" href="http://ftalphaville.ft.com/blog/2011/03/02/502806/mr-contagion-1989-2009/">Financial Times</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/06/10</div>
+            <div class="newslink"><a target="_blank" href="http://abovethelaw.com/2010/10/ranking-the-law-reviews/">Above the Law</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/05/10</div>
+            <div class="newslink"><a target="_blank" href="http://www.concurringopinions.com/archives/2010/10/the-top-law-reviews-eigenfactor.html">Concurring Opinions</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/05/10</div>
+            <div class="newslink"><a target="_blank" href="http://www.concurringopinions.com/archives/2010/10/the-top-law-reviews-eigenfactor.html">Concurring Opinions</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">09/30/10</div>
+            <div class="newslink"><a target="_blank" href="http://chronicle.com/article/Conference-Explores-How-to/124665/">The Chronicle of Higher Education</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">06/22/10</div>
+            <div class="newslink"><a target="_blank" href="http://www.galileonet.it/news/12866/scienziati-vs-criteri-quantitativi">Galileo</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">06/17/10</div>
+            <div class="newslink"><a target="_blank" href="http://www.nature.com/nature/journal/v465/n7300/">Nature</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">03/26/10</div>
+            <div class="newslink"><a target="_blank" href="http://www.nature.com/nature/journal/v464/n7288/full/464488a.html">Nature</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/28/10</div>
+            <div class="newslink"><a target="_blank" href="http://www.the-scientist.com/blog/display/57123/">The Scientist</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/27/10</div>
+            <div class="newslink"><a target="_blank" href="http://www.kuow.org/#tabNPR">NPR's "All Things Considered"</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">12/18/09</div>
+            <div class="newslink"><a target="_blank" href="http://chronicle.com/article/Scholars-Seek-Better-Metrics/62618/?sid=at&utm_
+          source=at&utm_medium=en">The Chronicle of Higher Education</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">11/24/09</div>
+            <div class="newslink">David Peak named Utah's 2009 <a target="_blank" href="http://www.usu.edu/ust/index.cfm?article=40748">Carnegie Professor of the Year!</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">05/22/09</div>
+            <div class="newslink"><a target="_blank" href="http://www.wired.com/culture/geekipedia/magazine/17-06/mf_impactfactor">Wired Magazine</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">05/15/09</div>
+            <div class="newslink">Journal of Biological Chemistry Cover May 9, 2009; 284(19) <a target="_blank" href={JBC_coverPDF}>[PDF]</a> <a target="_blank" href="http://www.jbc.org/content/vol284/issue19/">[HTML]</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">04/08/09</div>
+            <div class="newslink">Proceedings of the National Academy of Sciences (USA), 106(17): 6883-6884 <a target="_blank" href="http://www.pnas.org/content/106/17/6883.full?sid=fa4909f4-1664-40dd-aaba-d5e3c693b09d">[HTML]</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">04/08/09</div>
+            <div class="newslink">Science Magazine 324(5924): 162 - 163 <a target="_blank" href={Science2009EvoMapPDF}>[PDF]</a> <a target="_blank" href="http://www.sciencemag.org/cgi/content/full/sci;324/5924/162a?maxtoshow=&HITS=10&hits=10&RESULTFORMAT=&fulltext=darwin+applies+to+medical+school&searchid=1&FIRSTINDEX=0&resourcetype=HWCIT">[HTML]</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">04/05/09</div>
+            <div class="newslink">The American Society for Biochemistry and Molecular Biology <a target="_blank" href="http://www.asbmb.org/audio.aspx">[JBC News March 2009]</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">03/20/09</div>
+            <div class="newslink"><a target="_blank" href="http://seedmagazine.com/content/article/knowledge_in_real-time/">Seed Magazine</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">03/16/09</div>
+            <div class="newslink"><a target="_blank" href="http://www.nytimes.com/2009/03/16/science/16visuals.html?_r=1&ref=science">New York Times</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">03/09/09</div>
+            <div class="newslink"><a target="_blank" href="http://www.nature.com/news/5509/090309/full/458135a.html">Nature News</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">02/20/09</div>
+            <div class="newslink"><a target="_blank" href="http://www.visualcomplexity.com/vc/project.cfm?id=650">Visual Complexity</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/29/09</div>
+            <div class="newslink"><a target="_blank" href="http://blogs.nature.com/news/thegreatbeyond/2009/01/imaging_the_eigenfactor.html">Nature blog</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/28/09</div>
+            <div class="newslink"><a target="_blank" href="http://www.datavisualization.ch/projects/cuttingedge/benjamin/well-formed-eigenfactor-org">Datavisualization</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/21/09</div>
+            <div class="newslink"><a target="_blank" href="http://www.thomsonreuters.com/content/press_room/sci/350008">Thomson Reuters Press Release</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/30/08</div>
+            <div class="newslink"><a target="_blank" href="http://scholcomm.columbia.edu/multimedia">Columbia University Libraries Scholarly Communication Program</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/27/08</div>
+            <div class="newslink"><a target="_blank" href="http://www.info.scopus.com/researchtrends/archive/RT8/exp_op_8.html">Scopus Research Trends</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/13/08</div>
+            <div class="newslink"><a target="_blank" href="http://labs.library.yale.edu/245/2008/10/eigenfactors_and_impact_factor.html">Yale University Libraries</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">10/01/08</div>
+            <div class="newslink"><a target="_blank" href="http://revminds.seedmagazine.com/revminds/member/carl_bergstrom/">Seed Magazine</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">09/28/08</div>
+            <div class="newslink"><a target="_blank" href="Documents/UW_CampaignNewsletter_2008.pdf">University of Washington Newsletter (Fall 2008)</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">08/07/08</div>
+            <div class="newslink"><a target="_blank" href="http://mulibraries.missouri.edu/guides/rankings/journalranking.htm">MU Libraries</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">07/22/08</div>
+            <div class="newslink"><a target="_blank" href="http://blogs.nature.com/news/thegreatbeyond/2008/07/exploring_the_eigenfactor_1.html">Nature blog</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">06/01/07</div>
+            <div class="newslink">Ted and Carl Bergstrom receive <a target="_blank" href="http://www.arl.org/sparc/innovator/bergstroms.shtml">SPARC Innovator Award</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">03/20/07</div>
+            <div class="newslink"><a target="_blank" href="http://www.cscs.umich.edu/~crshalizi/weblog/479.html">Three-Toed Sloth</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/01/06</div>
+            <div class="newslink">The Mathematics Calendar 2006 by Theoni Pappas</div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">02/21/04</div>
+            <div class="newslink"><a target="_blank" href="http://www.nature.com/news/2004/040121/full/news040119-5.html">Nature News</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">02/21/04</div>
+            <div class="newslink">Science News, 165(8): 123-124 <a target="_blank" href={LeafComputation_ScienceNews2004PDF}>[PDF]</a> <a target="_blank" href="http://www.sciencenews.org/view/feature/id/4755/title/Computations_New_Leaf">[HTML]</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">02/20/04</div>
+            <div class="newslink"><a target="_blank" href="http://bioweb.usu.edu/kmott/Complexity_Web_Page/HJArticle.htm">Herald Journal</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">02/12/04</div>
+            <div class="newslink"><a target="_blank" href="http://www1.usu.edu/utahstatetoday/archives/february%202004/2-13-04/newsreleases-2-13-04.cfm#1">USU Today</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/22/04</div>
+            <div class="newslink"><a target="_blank" href="http://science.slashdot.org/article.pl?sid=04/01/22/2327208&mode=thread&tid=">Slashdot.com</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/22/04</div>
+            <div class="newslink"><a target="_blank" href="http://radio.weblogs.com/0105910/2004/01/22.html">Roland Piquepaille's Technology Trends</a></div>
+          </div>
+
+          <div className="bottom-spacer">
+            <div class="newsdate">01/21/04</div>
+            <div class="newslink"><a target="_blank" href="http://www.cscs.umich.edu/~crshalizi/weblog/000164.html">Three-Toed Sloth</a></div>
+          </div>
+        </Col>
+      </Row>
+    </div>
+  )
+});
+
+export {drawerLinks, homeData, researchData, publicationsData, presentationData, teachingData, cvData, bioData, newsData};
