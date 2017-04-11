@@ -5,9 +5,10 @@ import {AppBar, Drawer, MenuItem, Tabs, Tab} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import _ from 'lodash';
-import {purple500, blueGrey100} from 'material-ui/styles/colors';
+import {purple500, deepPurple300} from 'material-ui/styles/colors';
 import {drawerLinks} from './Data';
 import JWBanner from './img/jw.png';
+import twitterIcon from './img/twitter.jpg';
 
 
 //Put navigation here if a constant menu is wanted
@@ -49,17 +50,22 @@ class App extends Component {
     let path = hashHistory.getCurrentLocation().pathname;
     if(path === link) {
       if(hashHistory.getCurrentLocation().pathname !== '/' && link === '/') return {color: '#000'};
-      return {backgroundColor: blueGrey100, color: '#000'};
+      return {backgroundColor: deepPurple300, color: '#000'};
     } else {
       return {color: '#000'};
     }
   }
 
   render() {
-    const tabStyle = {
+    const regularTabStyle = {
       backgroundColor: '#fff',
-      color: '#000'
+      color: '#000',
     };
+
+    const activeTabStyle = {
+      backgroundColor: deepPurple300,
+      color: '#000'
+    }
 
     let drawerlinks = _.map(drawerLinks.toArray(), (elem, index) => {
       let activeStyle = this.handleActiveLink(elem.link);
@@ -70,8 +76,11 @@ class App extends Component {
 
     let tablinks = _.map(drawerLinks.toArray(), (elem, index) => {
       let value = elem.body.toLowerCase();
+      let tabStyle;
+      if(this.handleActiveLink(elem.link).backgroundColor) tabStyle = activeTabStyle;
+      else tabStyle = regularTabStyle;
       return (
-        <Tab key={'tablink-' + index} style={tabStyle} value={value} onActive={() => this.handleActive(elem.link)} data-route={elem.link} label={elem.body} />
+        <Tab key={'tablink-' + index} style={tabStyle} className="tab-header" value={value} onActive={() => this.handleActive(elem.link)} data-route={elem.link} label={elem.body} />
       )
     });
     return (
@@ -94,7 +103,7 @@ class App extends Component {
                 <MuiThemeProvider muiTheme={getMuiTheme()}>
                   <Tabs className="hide-on-med-and-down"
                     id="nav-tabs"
-                    inkBarStyle={{backgroundColor: purple500}}
+                    inkBarStyle={{backgroundColor: purple500, display: 'none'}}
                     style={{border: 'solid 2px grey'}}
                     value={this.state.activeTab}>
                     {tablinks}
@@ -109,7 +118,7 @@ class App extends Component {
                 docked={false}
                 onRequestChange={(open) => this.setState({open})}
               >
-                <div style={{height: 64, backgroundColor: '#4A148C'}}></div>
+                <div style={{height: 61, backgroundColor: '#4A148C'}}></div>
                 {drawerlinks}
               </Drawer>
             </MuiThemeProvider>
@@ -118,8 +127,15 @@ class App extends Component {
         <main>
           {this.props.children}
         </main>
-        <footer>
-
+        <footer className="center-align">
+          <div className="footer-copyright">
+            <div className="container">
+              <span className="footer-separator">© 2017 Jevin. D. West.</span>
+              <span className="footer-separator">Last Modified April 11th 2017.</span>
+              <span className="footer-separator"><a href="mailto:jevinw@uw.edu">jevinw@uw.edu</a></span>
+              <span className="footer-separator"><a href="https://twitter.com/jevinwest" target="_blank"><img src={twitterIcon} alt="twitter: @jevinwest" title="twitter: @jevinwest" className="responsive-img" style={{height: 20}}/></a></span>
+            </div>
+          </div>
         </footer>
       </div>
     );

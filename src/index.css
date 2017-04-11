@@ -3,6 +3,18 @@ body {
     padding: 0;
     font-family: sans-serif;
     font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -64,6 +76,10 @@ a:hover {
   margin-bottom: 15px;
 }
 
+.footer-separator {
+  margin-right: 15px;
+}
+
 @keyframes presentation-color {
     from {
         color: #006064;
@@ -117,6 +133,14 @@ a:hover {
 
 #navbar-appbar>button>div>svg {
     fill: black !important;
+}
+
+.tab-header>div {
+  font-size: 0.85rem !important;
+}
+
+.collapsible-header {
+  border-bottom: none !important;
 }
 
 @media only screen and (max-width: 992px) {

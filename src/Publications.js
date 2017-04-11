@@ -34,14 +34,14 @@ class Publications extends Component {
             ''
           }
           {elem.abstract && elem.bibTex ?
-            <Collapsible popout={true}>
+            <Collapsible popout={true} className="collapsible-remove-border">
               {elem.abstract &&
-                <CollapsibleItem header="Abstract">
+                <CollapsibleItem header="Abstract" className="z-depth-0">
                   {elem.abstract}
                 </CollapsibleItem>
               }
               {elem.bibTex &&
-                <CollapsibleItem header="BibTex">
+                <CollapsibleItem header="BibTex" className="z-depth-0">
                   {elem.bibTex}
                 </CollapsibleItem>
               }
