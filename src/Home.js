@@ -17,17 +17,6 @@ class Home extends Component {
         <li className="collection-li" key={'announcementsitem-' + index}>{elem.body}</li>
       );
     })
-
-    // let announcements = _.map(homeData.get('announcements'), (elem, index) => {
-    //   return (
-    //     <TableRow key={"announcement-" + index}>
-    //       <TableRowColumn style={{whiteSpace: 'normal !important'}}>
-    //         {elem.body}
-    //       </TableRowColumn>
-    //     </TableRow>
-    //   );
-    // })
-
     let news = _.map(homeData.get('news'), (elem, index) => {
       return (
         <li className="collection-li" key={'newsitem-' + index}>{elem.body}</li>
@@ -47,8 +36,8 @@ class Home extends Component {
     })
 
     return (
-      <div className="container extra-padding">
-        <h1 style={{display: 'none'}}>Home Page</h1>
+      <div className="container extra-padding" style={{backgroundColor: 'white'}}>
+        <h1 className="hidden">Home</h1>
         <section>{homeData.get('summary')}</section>
         <br/><hr/>
         <section>{homeData.get('projects')}</section>
@@ -60,7 +49,7 @@ class Home extends Component {
             </Col>
             <Col s={12} m={8}>
               <Collection>
-                <CollectionItem>
+                <CollectionItem className="home-panel">
                   <ul style={{marginLeft: 10, fontSize: 14}}>
                     {announcements}
                   </ul>
@@ -76,7 +65,7 @@ class Home extends Component {
             </Col>
             <Col s={12} m={8}>
               <Collection>
-                <CollectionItem>
+                <CollectionItem className="home-panel">
                   <ul style={{marginLeft: 10, fontSize: 14}}>
                     {news}
                   </ul>
@@ -92,7 +81,7 @@ class Home extends Component {
             </Col>
             <Col s={12} m={8}>
               <Collection>
-                <CollectionItem>
+                <CollectionItem className="home-panel">
                   <ul style={{marginLeft: 10, fontSize: 14}}>
                     {publications}
                   </ul>
@@ -108,7 +97,7 @@ class Home extends Component {
             </Col>
             <Col s={12} m={8}>
               <Collection>
-                <CollectionItem>
+                <CollectionItem className="home-panel">
                   <ul style={{marginLeft: 10, fontSize: 14}}>
                     {presentations}
                   </ul>

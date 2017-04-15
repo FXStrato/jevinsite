@@ -30,7 +30,7 @@ class Teaching extends Component {
     let priorcourses = this.getList('priorcourses');
 
     return (
-      <section className="container">
+      <section className="container extra-padding">
         <Row className="reduce-bot-margin">
           <Col s={12}>
             <h2>Current Courses</h2>

@@ -59,43 +59,12 @@ a:hover {
     }
 }
 
-.presentation-info a {
-    text-decoration: none;
-    color: #006064 !important;
-    animation: presentation-color-back 0.25s;
-    font-weight: bold;
-}
-
-.presentation-info a:hover {
-    animation: presentation-color 0.25s;
-    color: #F57C00 !important;
-    font-weight: bold;
-}
-
 .bottom-spacer {
   margin-bottom: 15px;
 }
 
 .footer-separator {
   margin-right: 15px;
-}
-
-@keyframes presentation-color {
-    from {
-        color: #006064;
-    }
-    to {
-        color: #F57C00;
-    }
-}
-
-@keyframes presentation-color-back {
-    from {
-        color: #F57C00;
-    }
-    to {
-        color: #006064;
-    }
 }
 
 .collection-li {
@@ -128,11 +97,20 @@ a:hover {
 }
 
 .presentation-year {
-  color: #9C27B0;
+  color: #00838F;
+}
+
+.home-panel {
+  background: #F5F5F5 !important;
+  border: 1px solid #EEEEEE;
 }
 
 #navbar-appbar>button>div>svg {
     fill: black !important;
+}
+
+#navbar-title {
+  font-weight: normal;
 }
 
 .tab-header>div {
@@ -181,6 +159,10 @@ a:hover {
     }
     .home-intro {
         height: 200px !important;
+    }
+    #navbar-title {
+      font-weight: normal;
+      font-size: 2.5rem;
     }
 }
 

@@ -13,7 +13,7 @@ class Research extends Component {
   render() {
 
     return (
-      <section className="container">
+      <section className="container extra-padding">
         <Row>
           {researchData.get('header')}
         </Row>

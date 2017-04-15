@@ -4,7 +4,7 @@ import { newsData } from './Data';
 class News extends Component {
   render() {
     return (
-      <section className="container">
+      <section className="container extra-padding">
         {newsData.get('data')}
       </section>
     );
