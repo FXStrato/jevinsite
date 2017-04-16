@@ -92,7 +92,7 @@ class App extends Component {
                   style={{backgroundColor: '#fff !important', height: 60}}
                   title={<span id="navbar-title" style={{color: '#000'}}>Jevin D. West</span>}
                   onLeftIconButtonTouchTap={this.handleToggle}
-                  iconElementRight={<img src={JWBanner} style={{marginTop: -8}} alt="Jevin West Banner"/>}
+                  iconElementRight={<img src={JWBanner} style={{ height: 61, marginRight: -8, marginTop: -8}} alt="Jevin West Banner"/>}
                 />
               </MuiThemeProvider>
           </Row>

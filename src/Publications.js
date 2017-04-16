@@ -22,13 +22,7 @@ class Publications extends Component {
     if(elem.style.display === 'none') {
       elem.style.display = 'inline';
       icon.innerText = 'keyboard_arrow_up';
-      // elem.className = "animated fadeIn";
     } else {
-      // elem.className = "animated fadeOut";
-      // setTimeout(() => {
-      //   elem.style.display = 'none';
-      //   elem.className="";
-      // }, 800)
       elem.style.display = 'none';
       icon.innerText = 'keyboard_arrow_down';
     }
@@ -47,32 +41,28 @@ class Publications extends Component {
           <span className="bold">{elem.title}</span><br/>
           {elem.authors}
           {elem.journal_volume}
-          {elem.html && elem.pdf ?
-            <span style={{marginRight: 10}}>[<a href={elem.html} target="_blank">HTML</a> | <a href={elem.pdf} target="_blank">PDF</a>]</span>
+          {elem.html || elem.pdf || elem.abstract || elem.bibTex ? <span>[</span> : ''}
+          {elem.html ?
+            <span style={{marginRight: 10}}><a href={elem.html} target="_blank">HTML</a></span>
             :
             ''
           }
-          {elem.html && !elem.pdf ?
-            <span style={{marginRight: 10}}>[<a href={elem.html} target="_blank">HTML</a>]</span>
-            :
-            ''
-          }
-          {!elem.html && elem.pdf ?
-            <span style={{marginRight: 10}}>[<a href={elem.pdf} target="_blank">PDF</a>]</span>
+          {elem.pdf ?
+            <span style={{marginRight: 10}}><a href={elem.pdf} target="_blank">PDF</a></span>
             :
             ''
           }
           {elem.abstract ?
-            <a href="" onClick={(e) => {this.handleTouchTap(e, parameter + '-abstract-' + index)}}>Abstract <i id={parameter + '-abstract-' + index + '-icon'} className="material-icons tiny">keyboard_arrow_down</i></a>
+            <a style={{marginRight: 10}} href="" onClick={(e) => {this.handleTouchTap(e, parameter + '-abstract-' + index)}}>Abstract <i id={parameter + '-abstract-' + index + '-icon'} className="material-icons tiny">keyboard_arrow_down</i></a>
           :
           ''
           }
-          {elem.abstract && elem.bibTex ? <span style={{marginLeft: 10}}></span> : ''}
           {elem.bibTex ?
-            <a href="" onClick={(e) => {this.handleTouchTap(e, parameter + '-bibTex-' + index)}}>bibTex <i id={parameter + '-bibTex-' + index + '-icon'} className="material-icons tiny">keyboard_arrow_down</i></a>
+            <a style={{marginRight: 10}} href="" onClick={(e) => {this.handleTouchTap(e, parameter + '-bibTex-' + index)}}>bibTex <i id={parameter + '-bibTex-' + index + '-icon'} className="material-icons tiny">keyboard_arrow_down</i></a>
           :
           ''
           }
+          {elem.html || elem.pdf || elem.abstract || elem.bibTex ? <span style={{marginLeft: -10}}>]</span> : ''}
           <br/>
           {elem.abstract ?
             <div id={parameter + '-abstract-' + index} className="animated" style={{display: 'none'}}>
