@@ -77,10 +77,20 @@ class App extends Component {
     let tablinks = _.map(drawerLinks.toArray(), (elem, index) => {
       let value = elem.body.toLowerCase();
       let tabStyle;
-      if(this.handleActiveLink(elem.link).backgroundColor) tabStyle = activeTabStyle;
-      else tabStyle = regularTabStyle;
+      let buttonStyle;
+      if(this.handleActiveLink(elem.link).backgroundColor)  {
+        tabStyle = activeTabStyle;
+        buttonStyle = {
+          color: '#fff'
+        };
+      } else {
+        tabStyle = regularTabStyle;
+        buttonStyle = {
+          color: '#000'
+        };
+      }
       return (
-        <Tab key={'tablink-' + index} style={tabStyle} className="tab-header" value={value} onActive={() => this.handleActive(elem.link)} data-route={elem.link} label={elem.body} />
+        <Tab key={'tablink-' + index} style={tabStyle} className="tab-header" value={value} onActive={() => this.handleActive(elem.link)} buttonStyle={buttonStyle}  data-route={elem.link} label={elem.body} />
       )
     });
     return (
