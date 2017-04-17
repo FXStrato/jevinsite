@@ -21,14 +21,15 @@ class App extends Component {
 
   componentWillMount = () => {
   let path = browserHistory.getCurrentLocation().pathname;
-  let currentTab = path.split('/').pop();
+  if(path.indexOf('.html') !== -1) browserHistory.push(path.replace('.html', ''));
+  let currentTab = path.split('/').pop().replace('.html', '');
   this.setState({ activeTab: currentTab || 'home' });
   }
 
   componentDidUpdate = () => {
     //Should handle in-site page changes and reflect it on the Tab Navigation.
     //Might not actually handle going from a page back to home, prob add something to handle that later down the line.
-    let newTab = browserHistory.getCurrentLocation().pathname.split('/').pop();
+    let newTab = browserHistory.getCurrentLocation().pathname.split('/').pop().replace('.html', '');
     if(newTab !== this.state.activeTab) {
       if(newTab) {
         this.setState({ activeTab: newTab });
@@ -38,7 +39,7 @@ class App extends Component {
 
   //Function handles setting current active tab, and then navigating to passed in path
   handleActive = (path) => {
-    let currentTab = path.split('/').pop();
+    let currentTab = path.split('/').pop().replace('.html', '');
     this.setState({ activeTab: currentTab || 'home' , open: false});
     if(browserHistory.getCurrentLocation().pathname !== path) browserHistory.push(path);
   }
@@ -50,7 +51,7 @@ class App extends Component {
 
   //Handles adding background color to active tab
   handleActiveLink = (link) => {
-    let path = browserHistory.getCurrentLocation().pathname;
+    let path = browserHistory.getCurrentLocation().pathname.replace('.html', '');
     if(path === link) {
       if(browserHistory.getCurrentLocation().pathname !== '/' && link === '/') return {color: '#000'};
       return {backgroundColor: deepPurple300, color: '#000'};
