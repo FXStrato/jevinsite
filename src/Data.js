@@ -3,6 +3,10 @@ import React from 'react';
 import {Row, Col, Table} from 'react-materialize';
 import {Link} from 'react-router';
 
+/*This file contains all the data to be displayed across the site. Any files/images are imported above, and each page has its own
+  set of data wrapped in an Immutable Map. Some of the data is used as json, and other bits is straight React HTML. 
+*/
+
 //PDF's used
 import Aulck2016ICMLPDF from './papers/Aulck2016ICML.pdf';
 import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';
@@ -127,15 +131,15 @@ const homeData = Immutable.Map({
       </Col>
       <Col s={12} m={4}>
         <h3>Eigenfactor</h3>
-        <a href="http://www.eigenfactor.org" target="_blank"><div className="hoverable" style={{border: 'solid 1px grey'}}><img style={{height: 159}} src={eigenfactorImg} alt="Eigenfactor Project" title="Eigenfactor Project"/></div></a>
+        <a href="http://www.eigenfactor.org" target="_blank"><div className="hoverable" style={{border: 'solid 1px grey'}}><img style={{height: 159}} src={eigenfactorImg} alt="Eigenfactor Project" title="Eigenfactor Project" className="responsive-img" /></div></a>
       </Col>
       <Col s={12} m={4}>
         <h3>DataLab</h3>
-        <a href="https://datalab.ischool.uw.edu" target="_blank"><div className="hoverable" style={{border: 'solid 1px grey'}}><img style={{height: 159}} src={datalabImg} alt="UW DataLab" title="UW DataLab"/></div></a>
+        <a href="https://datalab.ischool.uw.edu" target="_blank"><div className="hoverable responsive-img" style={{border: 'solid 1px grey'}}><img style={{height: 159}} src={datalabImg} alt="UW DataLab" title="UW DataLab" className="responsive-img"/></div></a>
       </Col>
       <Col s={12} m={4}>
         <h3>Viziometrics</h3>
-        <a href="http://viziometrics.org" target="_blank"><div className="hoverable" style={{border: 'solid 1px grey'}}><img src={viziometricsImg} alt="Viziometrics Project" title="Viziometrics Project"/></div></a>
+        <a href="http://viziometrics.org" target="_blank"><div className="hoverable" style={{border: 'solid 1px grey'}}><img src={viziometricsImg} alt="Viziometrics Project" title="Viziometrics Project" className="responsive-img" style={{height: 159}} /></div></a>
       </Col>
     </Row>
   ),
@@ -807,7 +811,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Coevolutionary cycling of host sociality and pathogen virulence in contact networks (2009)",
-        abstract: "Infectious diseases may place strong selection on the social organization of animals. Conversely, the structure of social systems can influence the evolutionary trajectories of pathogens. While much attention has focused on the evolution of host sociality or pathogen virulence separately, few studies have looked at their coevolution. Here we use an agent-based simulation to explore hostu2013pathogen coevolution in social contact networks. Our results indicate that under certain conditions, both host sociality and pathogen virulence exhibit continuous cycling. The way pathogens move through the network (e.g., their interhost transmission and probability of superinfection) and the structure of the network can influence the existence and form of cycling.",
+        abstract: "Infectious diseases may place strong selection on the social organization of animals. Conversely, the structure of social systems can influence the evolutionary trajectories of pathogens. While much attention has focused on the evolution of host sociality or pathogen virulence separately, few studies have looked at their coevolution. Here we use an agent-based simulation to explore host-pathogen coevolution in social contact networks. Our results indicate that under certain conditions, both host sociality and pathogen virulence exhibit continuous cycling. The way pathogens move through the network (e.g., their interhost transmission and probability of superinfection) and the structure of the network can influence the existence and form of cycling.",
         journal_volume: (
     <div>
     <span className="italics">Journal of Theoretical Biology</span>.
@@ -1211,7 +1215,7 @@ const publicationsData = Immutable.Map({
         bibTex: (
     <div>
       @article&#123;West2010JASIST-2,<br/>
-      title=&#123;Response to u201cBig Macs and Eigenfactor scores: The correlation conundrumu201d&#125;,<br/>
+      title=&#123;Response to &quot;Big Macs and Eigenfactor scores: The correlation conundrum&quot;&#125;,<br/>
       author=&#123;J.D. West and T.C. Bergstrom and C.T. Bergstrom&#125;,<br/>
       journal=&#123;Journal of the American Society for Information Science and Technology&#125;,<br/>
       volume=&#123;61&#125;,<br/>
@@ -1252,7 +1256,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "The EigenfactorTM Metrics (2008)",
-        abstract: "Quantitative metrics are poor choices for assessing the research output of an individual scholar. Summing impact factors, counting citations, tallying an h-index, or looking at Eigenfactoru2122 Scores (described below)—none of these methods are adequate compared with what should be the gold standard: reading the scholar's publications and talking to experts about her work. But many scholars, librarians, historians of science, editors, and other individuals are also interested in larger-scale questions that require assessing hundreds or thousands of scholarly articles by hundreds or thousands of authors. u201cGiven that my library can afford only one more subscription, should I subscribe to journal x or journal y?u201d u201cHow often do physicists cite Biology journals, and do biologists pay equal attention to the physics literature?u201d u201cHas the increase in size of my journal caused a corresponding decline in average quality?u201d To answer questions such as these, aggregate bibliometric statistics can be very useful.",
+        abstract: "Quantitative metrics are poor choices for assessing the research output of an individual scholar. Summing impact factors, counting citations, tallying an h-index, or looking at Eigenfactor™ Scores (described below)—none of these methods are adequate compared with what should be the gold standard: reading the scholar's publications and talking to experts about her work. But many scholars, librarians, historians of science, editors, and other individuals are also interested in larger-scale questions that require assessing hundreds or thousands of scholarly articles by hundreds or thousands of authors. \"Given that my library can afford only one more subscription, should I subscribe to journal x or journal y?\" \"How often do physicists cite Biology journals, and do biologists pay equal attention to the physics literature?\" \"Has the increase in size of my journal caused a corresponding decline in average quality?\" To answer questions such as these, aggregate bibliometric statistics can be very useful.",
         journal_volume: (
     <div>
     <span className="italics">Journal of Neuroscience. </span>
@@ -1305,7 +1309,7 @@ const publicationsData = Immutable.Map({
     },
     {
         title: "Eigenfactor - The Google Approach to Bibliometrics (2008)",
-        abstract: "Not all citations are created equal. This is one of the core ideas behind Eigenfactor. Citations from more prestigious journals (such as Science and Nature) are worth more than citations from less important journals (such as the Journal of Obscurity). This meritocratic approach to bibliometrics is very similar to the philosophy behind Google's PageRank algorithm, which is at u201cthe heart of [its] softwareu201d. Receiving a hyperlink from a highly reputable website means more than a hyperlink from a neighborhood blog. Both Google and Eigenfactor utilize the wealth of information inherent in the structure of their respective networks. For Google, that information can be found in the topology of the web, and for Eigenfactor, the information can be found in the citation structure of the scholarly literature. The success of Google's search engine illustrates the power of this approach to ranking. Part of the success behind PageRank can actually be traced back to prior work in the field of bibliometrics. With the advent of scholarly measures like Eigenfactor, this relationship has come full circle.",
+        abstract: "Not all citations are created equal. This is one of the core ideas behind Eigenfactor. Citations from more prestigious journals (such as Science and Nature) are worth more than citations from less important journals (such as the Journal of Obscurity). This meritocratic approach to bibliometrics is very similar to the philosophy behind Google's PageRank algorithm, which is at \"the heart of [its] software\". Receiving a hyperlink from a highly reputable website means more than a hyperlink from a neighborhood blog. Both Google and Eigenfactor utilize the wealth of information inherent in the structure of their respective networks. For Google, that information can be found in the topology of the web, and for Eigenfactor, the information can be found in the citation structure of the scholarly literature. The success of Google's search engine illustrates the power of this approach to ranking. Part of the success behind PageRank can actually be traced back to prior work in the field of bibliometrics. With the advent of scholarly measures like Eigenfactor, this relationship has come full circle.",
         journal_volume: (
     <div>
     <span className="italics">Front Matter. </span>
@@ -1807,9 +1811,7 @@ const publicationsData = Immutable.Map({
           </div>
     ),
         html: "",
-        bibTex: (
-        <div></div>
-    ),
+        bibTex: '',
         authors: <div>Y. Ding, <span className="bold">J.D. West</span>, M. Song, G. Meng, Q. Yu, S. Bodman, H. Egna</div>,
         pdf: Ying2017iconferencePDF
     },
@@ -1823,9 +1825,7 @@ const publicationsData = Immutable.Map({
           </div>
     ),
         html: "",
-        bibTex: (
-          <div></div>
-    ),
+        bibTex: '',
         authors: <div>M. Adler, J.T. Tennis, S. Milojevic, S. van Hooland, C. Rogers, <span className="bold">J.D. West</span></div>,
         pdf: Adler2013asistPDF
     },
@@ -1835,12 +1835,10 @@ const publicationsData = Immutable.Map({
         title: "Comparing Impact Factor and Scopus CiteScore (2016)",
         abstract: "",
         journal_volume: (
-        <div></div>
-    ),
-        html: "http://www.eigenfactor.org/projects/posts/citescore.php",
-        bibTex: (
           <div></div>
-    ),
+        ),
+        html: "http://www.eigenfactor.org/projects/posts/citescore.php",
+        bibTex: '',
         authors: <div>C.T. Bergstrom, <span className="bold">J.D. West</span> (Dec. 8)</div>,
         pdf: ""
     }

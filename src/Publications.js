@@ -1,16 +1,35 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import {Row, Col, Collapsible, CollapsibleItem} from 'react-materialize';
+import {Row, Col} from 'react-materialize';
 import {publicationsData} from './Data';
 import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
 
+/*This file handles display of the publications page*/
+
+
 class Publications extends Component {
+
   componentDidMount = () => {
     scroll.scrollToTop({duration: 0});
   }
 
+  //Handles clicking of abstract or bibTex dropdowns. Will reveal or hide content.
+  handleTouchTap = (event, id) => {
+    event.preventDefault();
+    let elem = document.getElementById(id);
+    let icon = document.getElementById(id+'-icon');
+    if(elem.style.display === 'none') {
+      elem.style.display = 'inline';
+      icon.innerText = 'keyboard_arrow_up';
+    } else {
+      elem.style.display = 'none';
+      icon.innerText = 'keyboard_arrow_down';
+    }
+ };
+
+  //Returns formatted view of each list element
   getArticles = (title, parameter) => {
     let temp =  _.map(publicationsData.get(parameter), (elem, index) => {
       return (
@@ -18,37 +37,47 @@ class Publications extends Component {
           <span className="bold">{elem.title}</span><br/>
           {elem.authors}
           {elem.journal_volume}
-          {elem.html && elem.pdf ?
-            <span>[<a href={elem.html} target="_blank">HTML</a> | <a href={elem.pdf} target="_blank">PDF</a>]</span>
+          {elem.html || elem.pdf || elem.abstract || elem.bibTex ? <span>[</span> : ''}
+          {elem.html ?
+            <span style={{marginRight: 10}}><a href={elem.html} target="_blank">HTML</a></span>
             :
             ''
           }
-          {elem.html && !elem.pdf ?
-            <span>[<a href={elem.html} target="_blank">HTML</a>]</span>
+          {elem.pdf ?
+            <span style={{marginRight: 10}}><a href={elem.pdf} target="_blank">PDF</a></span>
             :
             ''
           }
-          {!elem.html && elem.pdf ?
-            <span>[<a href={elem.pdf} target="_blank">PDF</a>]</span>
-            :
-            ''
-          }
-          {elem.abstract && elem.bibTex ?
-            <Collapsible popout={true} className="collapsible-remove-border">
-              {elem.abstract &&
-                <CollapsibleItem header="Abstract" className="z-depth-0">
-                  {elem.abstract}
-                </CollapsibleItem>
-              }
-              {elem.bibTex &&
-                <CollapsibleItem header="BibTex" className="z-depth-0">
-                  {elem.bibTex}
-                </CollapsibleItem>
-              }
-            </Collapsible>
+          {elem.abstract ?
+            <a style={{marginRight: 10}} href="" onClick={(e) => {this.handleTouchTap(e, parameter + '-abstract-' + index)}}>Abstract <i id={parameter + '-abstract-' + index + '-icon'} className="material-icons tiny">keyboard_arrow_down</i></a>
           :
-          <div></div>
-        }
+          ''
+          }
+          {elem.bibTex ?
+            <a style={{marginRight: 10}} href="" onClick={(e) => {this.handleTouchTap(e, parameter + '-bibTex-' + index)}}>bibTex <i id={parameter + '-bibTex-' + index + '-icon'} className="material-icons tiny">keyboard_arrow_down</i></a>
+          :
+          ''
+          }
+          {elem.html || elem.pdf || elem.abstract || elem.bibTex ? <span style={{marginLeft: -10}}>]</span> : ''}
+          <br/>
+          {elem.abstract ?
+            <div id={parameter + '-abstract-' + index} className="animated" style={{display: 'none'}}>
+              <hr/>
+              <h3 style={{marginBottom: 5, marginTop: 8}}>Abstract</h3>
+              {elem.abstract}
+            </div>
+          :
+          ''
+          }
+          {elem.bibTex ?
+            <div id={parameter + '-bibTex-' + index} className="animated" style={{display: 'none'}}>
+              <hr/>
+              <h3 style={{marginBottom: 5, marginTop: 8}}>bibTex</h3>
+              {elem.bibTex}
+            </div>
+          :
+          ''
+          }
         </li>
       )
     });
@@ -105,3 +134,20 @@ class Publications extends Component {
 }
 
 export default Publications;
+
+// {elem.abstract && elem.bibTex ?
+//   <Collapsible popout={true} className="collapsible-remove-border">
+//     {elem.abstract &&
+//       <CollapsibleItem header="Abstract" className="z-depth-0">
+//         {elem.abstract}
+//       </CollapsibleItem>
+//     }
+//     {elem.bibTex &&
+//       <CollapsibleItem header="BibTex" className="z-depth-0">
+//         {elem.bibTex}
+//       </CollapsibleItem>
+//     }
+//   </Collapsible>
+// :
+// <div></div>
+// }

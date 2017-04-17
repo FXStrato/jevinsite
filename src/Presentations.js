@@ -3,6 +3,8 @@ import {Row, Col} from 'react-materialize';
 import {presentationData} from './Data';
 import _ from 'lodash';
 
+/*This file handles display of the presentations page*/
+
 class Presentations extends Component {
 
   //Need to pull each year separately, and then add the info that goes under each year
@@ -16,7 +18,7 @@ class Presentations extends Component {
               <Col s={12} m={2} className="center-align flow-text presentation-year">
                 {index === 0 && year}
               </Col>
-              <Col s={12} m={10} className="presentation-info">
+              <Col s={12} m={10}>
                 {elem.title}
                 {elem.location}
               </Col>
@@ -36,7 +38,7 @@ class Presentations extends Component {
     let workshops = this.getData(presentationData.get('workshops'));
 
     return (
-      <section className="container">
+      <section className="container extra-padding">
         <Row>
           <Col s={12}>
             <h2>Invited Talks</h2>

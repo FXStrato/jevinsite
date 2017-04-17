@@ -3,8 +3,11 @@ import {Row, Col, Table} from 'react-materialize';
 import {teachingData} from './Data';
 import _ from 'lodash';
 
+/*This file handles display of the teaching page*/
+
 class Teaching extends Component {
 
+  //Function returnsa formatted Table body
   getList = (data) => {
     return _.map(teachingData.get(data), (elem, index) => {
       return (
@@ -30,7 +33,7 @@ class Teaching extends Component {
     let priorcourses = this.getList('priorcourses');
 
     return (
-      <section className="container">
+      <section className="container extra-padding">
         <Row className="reduce-bot-margin">
           <Col s={12}>
             <h2>Current Courses</h2>

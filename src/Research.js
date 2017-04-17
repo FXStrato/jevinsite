@@ -6,6 +6,8 @@ import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
 
+/*This file handles display of the research page*/
+
 class Research extends Component {
   componentDidMount = () => {
     scroll.scrollToTop({duration: 0});
@@ -13,7 +15,7 @@ class Research extends Component {
   render() {
 
     return (
-      <section className="container">
+      <section className="container extra-padding">
         <Row>
           {researchData.get('header')}
         </Row>

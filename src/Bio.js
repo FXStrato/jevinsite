@@ -4,6 +4,8 @@ import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
 
+/*This class handles display of the bio page*/
+
 class Bio extends Component {
   componentDidMount = () => {
     scroll.scrollToTop({duration: 0});

@@ -9,9 +9,10 @@ import {purple500, deepPurple300} from 'material-ui/styles/colors';
 import {drawerLinks} from './Data';
 import JWBanner from './img/jw.png';
 import twitterIcon from './img/twitter.jpg';
+import drawerBanner from './img/favicon.png';
 
+/* This file handles generation of navigation. Any navigational changes will occur here, including footer */
 
-//Put navigation here if a constant menu is wanted
 class App extends Component {
   state = {
     activeTab: '',
@@ -21,7 +22,6 @@ class App extends Component {
   componentWillMount = () => {
   let path = hashHistory.getCurrentLocation().pathname;
   let currentTab = path.split('/').pop();
-  // you can add more validations here
   this.setState({ activeTab: currentTab || 'home' });
   }
 
@@ -36,16 +36,19 @@ class App extends Component {
     }
   }
 
+  //Function handles setting current active tab, and then navigating to passed in path
   handleActive = (path) => {
     let currentTab = path.split('/').pop();
     this.setState({ activeTab: currentTab || 'home' , open: false});
     if(hashHistory.getCurrentLocation().pathname !== path) hashHistory.push(path);
   }
 
+  //Function toggles this.state.open to open drawer
   handleToggle = () => {
     this.setState({open: !this.state.open});
   }
 
+  //Handles adding background color to active tab
   handleActiveLink = (link) => {
     let path = hashHistory.getCurrentLocation().pathname;
     if(path === link) {
@@ -101,14 +104,14 @@ class App extends Component {
                 <AppBar
                   id="navbar-appbar"
                   style={{backgroundColor: '#fff !important', height: 60}}
-                  title={<span style={{color: '#000'}}>Jevin D. West</span>}
+                  title={<span id="navbar-title" style={{color: '#000'}}>Jevin D. West</span>}
                   onLeftIconButtonTouchTap={this.handleToggle}
-                  iconElementRight={<img src={JWBanner} style={{marginTop: -8}} alt="Jevin West Banner"/>}
+                  iconElementRight={<img src={JWBanner} style={{ height: 61, marginRight: -8, marginTop: -8}} alt="Jevin West Banner"/>}
                 />
               </MuiThemeProvider>
           </Row>
           <div className="container">
-            <Row>
+            <Row style={{marginBottom: '0 !important'}}>
               <Col s={12}>
                 <MuiThemeProvider muiTheme={getMuiTheme()}>
                   <Tabs className="hide-on-med-and-down"
@@ -128,7 +131,7 @@ class App extends Component {
                 docked={false}
                 onRequestChange={(open) => this.setState({open})}
               >
-                <div style={{height: 61, backgroundColor: '#4A148C'}}></div>
+                <div style={{height: 61, backgroundColor: '#6A1B9A'}}><img src={drawerBanner} style={{height: 61}} className="responsive-img" alt="Jevin West Banner"/></div>
                 {drawerlinks}
               </Drawer>
             </MuiThemeProvider>
