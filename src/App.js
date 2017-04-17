@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Row, Col} from 'react-materialize';
-import {hashHistory} from 'react-router';
+import {browserHistory} from 'react-router';
 import {AppBar, Drawer, MenuItem, Tabs, Tab} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   componentWillMount = () => {
-  let path = hashHistory.getCurrentLocation().pathname;
+  let path = browserHistory.getCurrentLocation().pathname;
   let currentTab = path.split('/').pop();
   this.setState({ activeTab: currentTab || 'home' });
   }
@@ -28,7 +28,7 @@ class App extends Component {
   componentDidUpdate = () => {
     //Should handle in-site page changes and reflect it on the Tab Navigation.
     //Might not actually handle going from a page back to home, prob add something to handle that later down the line.
-    let newTab = hashHistory.getCurrentLocation().pathname.split('/').pop();
+    let newTab = browserHistory.getCurrentLocation().pathname.split('/').pop();
     if(newTab !== this.state.activeTab) {
       if(newTab) {
         this.setState({ activeTab: newTab });
@@ -40,7 +40,7 @@ class App extends Component {
   handleActive = (path) => {
     let currentTab = path.split('/').pop();
     this.setState({ activeTab: currentTab || 'home' , open: false});
-    if(hashHistory.getCurrentLocation().pathname !== path) hashHistory.push(path);
+    if(browserHistory.getCurrentLocation().pathname !== path) browserHistory.push(path);
   }
 
   //Function toggles this.state.open to open drawer
@@ -50,9 +50,9 @@ class App extends Component {
 
   //Handles adding background color to active tab
   handleActiveLink = (link) => {
-    let path = hashHistory.getCurrentLocation().pathname;
+    let path = browserHistory.getCurrentLocation().pathname;
     if(path === link) {
-      if(hashHistory.getCurrentLocation().pathname !== '/' && link === '/') return {color: '#000'};
+      if(browserHistory.getCurrentLocation().pathname !== '/' && link === '/') return {color: '#000'};
       return {backgroundColor: deepPurple300, color: '#000'};
     } else {
       return {color: '#000'};
