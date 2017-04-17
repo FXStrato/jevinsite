@@ -1,5 +1,5 @@
 /*eslint no-unused-vars: "off"*/ //don't show warnings for unused
-import {Router, Route, hashHistory, IndexRoute} from 'react-router';
+import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -21,7 +21,7 @@ injectTapEventPlugin();
 /*This file handles routing*/
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="bio" component={Bio}/>
