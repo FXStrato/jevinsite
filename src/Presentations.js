@@ -3,6 +3,8 @@ import {Row, Col} from 'react-materialize';
 import {presentationData} from './Data';
 import _ from 'lodash';
 
+/*This file handles display of the presentations page*/
+
 class Presentations extends Component {
 
   //Need to pull each year separately, and then add the info that goes under each year

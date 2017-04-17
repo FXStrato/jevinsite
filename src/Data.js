@@ -3,6 +3,10 @@ import React from 'react';
 import {Row, Col, Table} from 'react-materialize';
 import {Link} from 'react-router';
 
+/*This file contains all the data to be displayed across the site. Any files/images are imported above, and each page has its own
+  set of data wrapped in an Immutable Map. Some of the data is used as json, and other bits is straight React HTML. 
+*/
+
 //PDF's used
 import Aulck2016ICMLPDF from './papers/Aulck2016ICML.pdf';
 import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';

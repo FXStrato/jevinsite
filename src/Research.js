@@ -6,6 +6,8 @@ import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
 
+/*This file handles display of the research page*/
+
 class Research extends Component {
   componentDidMount = () => {
     scroll.scrollToTop({duration: 0});

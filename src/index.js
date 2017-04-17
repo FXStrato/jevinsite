@@ -18,6 +18,8 @@ import '../node_modules/materialize-css/dist/css/materialize.min.css';
 // Needed for onTouchTap
 injectTapEventPlugin();
 
+/*This file handles routing*/
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>

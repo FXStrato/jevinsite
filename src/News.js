@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { newsData } from './Data';
 
+/*This class handles display of the news page*/
+
 class News extends Component {
   render() {
     return (

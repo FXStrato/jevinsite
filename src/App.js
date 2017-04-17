@@ -11,6 +11,7 @@ import JWBanner from './img/jw.png';
 import twitterIcon from './img/twitter.jpg';
 import drawerBanner from './img/favicon.png';
 
+/* This file handles generation of navigation. Any navigational changes will occur here, including footer */
 
 class App extends Component {
   state = {
@@ -35,16 +36,19 @@ class App extends Component {
     }
   }
 
+  //Function handles setting current active tab, and then navigating to passed in path
   handleActive = (path) => {
     let currentTab = path.split('/').pop();
     this.setState({ activeTab: currentTab || 'home' , open: false});
     if(hashHistory.getCurrentLocation().pathname !== path) hashHistory.push(path);
   }
 
+  //Function toggles this.state.open to open drawer
   handleToggle = () => {
     this.setState({open: !this.state.open});
   }
 
+  //Handles adding background color to active tab
   handleActiveLink = (link) => {
     let path = hashHistory.getCurrentLocation().pathname;
     if(path === link) {

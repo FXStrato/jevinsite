@@ -6,15 +6,16 @@ import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
 
+/*This file handles display of the publications page*/
+
+
 class Publications extends Component {
-  state = {
-    open: false,
-  }
 
   componentDidMount = () => {
     scroll.scrollToTop({duration: 0});
   }
 
+  //Handles clicking of abstract or bibTex dropdowns. Will reveal or hide content.
   handleTouchTap = (event, id) => {
     event.preventDefault();
     let elem = document.getElementById(id);
@@ -28,12 +29,7 @@ class Publications extends Component {
     }
  };
 
- handleRequestClose = () => {
-   this.setState({
-     open: false,
-   });
- };
-
+  //Returns formatted view of each list element
   getArticles = (title, parameter) => {
     let temp =  _.map(publicationsData.get(parameter), (elem, index) => {
       return (

@@ -3,8 +3,11 @@ import {Row, Col, Table} from 'react-materialize';
 import {teachingData} from './Data';
 import _ from 'lodash';
 
+/*This file handles display of the teaching page*/
+
 class Teaching extends Component {
 
+  //Function returnsa formatted Table body
   getList = (data) => {
     return _.map(teachingData.get(data), (elem, index) => {
       return (

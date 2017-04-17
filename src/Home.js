@@ -6,6 +6,8 @@ import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
 
+/*This file displays the default landing page when you navigate to the site*/
+
 class Home extends Component {
   componentDidMount = () => {
     scroll.scrollToTop({duration: 0});
