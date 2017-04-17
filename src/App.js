@@ -62,18 +62,30 @@ class App extends Component {
   render() {
     const regularTabStyle = {
       backgroundColor: '#fff',
-      color: '#000',
     };
 
     const activeTabStyle = {
       backgroundColor: deepPurple300,
+    }
+
+    const regularText = {
       color: '#000'
+    }
+
+    const activeText = {
+      color: '#fff'
     }
 
     let drawerlinks = _.map(drawerLinks.toArray(), (elem, index) => {
       let activeStyle = this.handleActiveLink(elem.link);
+      let textStyle;
+      if(activeStyle.backgroundColor)  {
+        textStyle = activeText;
+      } else {
+        textStyle = regularText;
+      }
       return (
-        <MenuItem  style={activeStyle} key={'drawerlink-' + index} onTouchTap={() => this.handleActive(elem.link)}>{elem.body}</MenuItem>
+        <MenuItem style={activeStyle} key={'drawerlink-' + index} onTouchTap={() => this.handleActive(elem.link)}><span style={textStyle}>{elem.body}</span></MenuItem>
       )
     });
 
