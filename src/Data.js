@@ -150,7 +150,7 @@ const homeData = Immutable.Map({
     },
     {
       title: '',
-      body: <p>I am always looking for good students and postdocs to join the lab. Please feel free to <a href="mailto:jevinw@uw.edu">email me</a> and we can discuss open positions.</p>
+      body: <p>I am always looking for good students and postdocs to join the lab. Please feel free to <a href="mailto:jevinw@uw.edu" target="_blank">email me</a> and we can discuss open positions.</p>
     },
 
     {

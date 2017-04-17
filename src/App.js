@@ -62,28 +62,50 @@ class App extends Component {
   render() {
     const regularTabStyle = {
       backgroundColor: '#fff',
-      color: '#000',
     };
 
     const activeTabStyle = {
       backgroundColor: deepPurple300,
+    }
+
+    const regularText = {
       color: '#000'
+    }
+
+    const activeText = {
+      color: '#fff'
     }
 
     let drawerlinks = _.map(drawerLinks.toArray(), (elem, index) => {
       let activeStyle = this.handleActiveLink(elem.link);
+      let textStyle;
+      if(activeStyle.backgroundColor)  {
+        textStyle = activeText;
+      } else {
+        textStyle = regularText;
+      }
       return (
-        <MenuItem  style={activeStyle} key={'drawerlink-' + index} onTouchTap={() => this.handleActive(elem.link)}>{elem.body}</MenuItem>
+        <MenuItem style={activeStyle} key={'drawerlink-' + index} onTouchTap={() => this.handleActive(elem.link)}><span style={textStyle}>{elem.body}</span></MenuItem>
       )
     });
 
     let tablinks = _.map(drawerLinks.toArray(), (elem, index) => {
       let value = elem.body.toLowerCase();
       let tabStyle;
-      if(this.handleActiveLink(elem.link).backgroundColor) tabStyle = activeTabStyle;
-      else tabStyle = regularTabStyle;
+      let buttonStyle;
+      if(this.handleActiveLink(elem.link).backgroundColor)  {
+        tabStyle = activeTabStyle;
+        buttonStyle = {
+          color: '#fff'
+        };
+      } else {
+        tabStyle = regularTabStyle;
+        buttonStyle = {
+          color: '#000'
+        };
+      }
       return (
-        <Tab key={'tablink-' + index} style={tabStyle} className="tab-header" value={value} onActive={() => this.handleActive(elem.link)} data-route={elem.link} label={elem.body} />
+        <Tab key={'tablink-' + index} style={tabStyle} className="tab-header" value={value} onActive={() => this.handleActive(elem.link)} buttonStyle={buttonStyle}  data-route={elem.link} label={elem.body} />
       )
     });
     return (
