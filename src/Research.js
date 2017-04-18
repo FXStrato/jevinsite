@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import {Row} from 'react-materialize';
 import {researchData} from './Data';
+import ScrollButton from './ScrollButton';
 import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
@@ -16,6 +17,7 @@ class Research extends Component {
 
     return (
       <section className="container extra-padding">
+        <ScrollButton/>
         <Row>
           {researchData.get('header')}
         </Row>

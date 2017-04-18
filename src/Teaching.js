@@ -14,7 +14,7 @@ class Teaching extends Component {
         <tr key={data + '-' + index}>
           <td>
             {elem.courselink ?
-            <a href={elem.courselink}>{elem.course}</a>
+            <a href={elem.courselink} target="_blank">{elem.course}</a>
             :
             elem.course
             }

@@ -13,6 +13,7 @@ import Presentations from './Presentations';
 import Publications from './Publications';
 import Research from './Research';
 import Teaching from './Teaching';
+import NotFound from './NotFound';
 import './index.css';
 import '../node_modules/materialize-css/dist/css/materialize.min.css';
 
@@ -42,6 +43,7 @@ ReactDOM.render(
       <Route path="research.html" component={Research}/>
       <Route path="teaching" component={Teaching}/>
       <Route path="teaching.html" component={Teaching}/>
+      <Route path="*" component={NotFound} />
     </Route>
   </Router>,
   document.getElementById('root')

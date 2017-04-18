@@ -1,12 +1,6 @@
-## React Redesign for jevinsite.org
+# React Redesign for jevinsite.org
 
-Start with `yarnpkg start`
-
-List of todos:
-- Fix minor css
-- Rearrange layout for better visibility
-
-Completed:
-- Add mobile responsive menu
-- Navigation
-- Added all data
+## Running Locally
+1. Begin by cloning down the repo: `git clone https://github.com/FXStrato/jevinsite.git`
+1. Install node modules and dev dependencies: `npm i` and `npm --only=dev`
+1. Start the server with `npm start`

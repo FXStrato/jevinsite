@@ -4,88 +4,90 @@ import {Row, Col, Table} from 'react-materialize';
 import {Link} from 'react-router';
 
 /*This file contains all the data to be displayed across the site. Any files/images are imported above, and each page has its own
-  set of data wrapped in an Immutable Map. Some of the data is used as json, and other bits is straight React HTML. 
+  set of data wrapped in an Immutable Map. Some of the data is used as json, and other bits is straight React HTML.
 */
 
+let public_URL = process.env.PUBLIC_URL;
+
 //PDF's used
-import Aulck2016ICMLPDF from './papers/Aulck2016ICML.pdf';
-import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';
-import king2016arxivPDF from './papers/King2016arxiv.pdf';
-import Portenoy2016arxivPDF from './papers/Portenoy2016arxiv.pdf';
-import Bae2016tkddPDF from './papers/Bae2016tkdd.pdf';
-import West2016IEEEPDF from './papers/West2016IEEE.pdf';
-import Sugimoto2015PLoSOnePDF from './papers/Sugimoto2015PLoSOne.pdf';
-import Rosvall2014NatureComPDF from './papers/Rosvall2014NatureCom.pdf';
-import Vilhena2014SocSciencePDF from './papers/Vilhena2014SocScience.pdf';
-import West2013PLoSOnePDF from './papers/West2013PLoSOne.pdf';
-import Peak2004PNASPDF from './papers/Peak2004PNAS.pdf';
-import Prado2009JTBPDF from './papers/Prado2009JTB.pdf';
-import West2013JASISTPDF from './papers/West2013JASIST.pdf';
-import West2010CRLPDF from './papers/West2010CRL.pdf';
-import West2010JASISTPDF from './papers/West2010JASIST.pdf';
-import Althouse2008JASISTPDF from './papers/Althouse2008JASIST.pdf';
-import West2005PCEPDF from './papers/West2005PCE.pdf';
-import West2016JCDLPDF from './papers/West2016JCDL.pdf';
-import WesleySmith2016WWWPDF from './papers/WesleySmith2016WWW.pdf';
-import Lee2016WWWPDF from './papers/Lee2016WWW.pdf';
-import Portenoy2016WWWPDF from './papers/Portenoy2016WWW.pdf';
-import WesleySmith2016WSDMPDF from './papers/WesleySmith2016WSDM.pdf';
-import Larsen2014HICSSPDF from './papers/Larsen2014HICSS.pdf';
-import Brooks2013InteractPDF from './papers/Brooks2013Interact.pdf';
-import West2011complexleafPDF from './papers/West2011complexleaf.pdf';
-import West2016jicsPDF from './papers/West2016jics.pdf';
-import West2011SciencePDF from './papers/West2011Science.pdf';
-import West2010NaturePDF from './papers/West2010Nature.pdf';
-import West2010JASIST2PDF from './papers/West2010JASIST-2.pdf';
-import West2009ASBMBPDF from './papers/West2009ASBMB.pdf';
-import Bergstrom2008JneurosciPDF from './papers/Bergstrom2008Jneurosci.pdf';
-import Bergstrom2008NeurologyPDF from './papers/Bergstrom2008Neurology.pdf';
-import West2008FrontMatterPDF from './papers/West2008FrontMatter.pdf';
-import West2008AuthorEFPDF from './papers/West2008AuthorEF.pdf';
-import Bergstrom2008efcodePDF from './papers/Bergstrom2008efcode.pdf';
-import West2008JournalEFPDF from './papers/West2008JournalEF.pdf';
-import West2010DissertationPDF from './papers/West2010Dissertation.pdf';
-import West2004ThesisPDF from './papers/West2004Thesis.pdf';
-import US20140337280A1PDF from './papers/US20140337280A1.pdf';
-import Chow2016FisheriesPDF from './presentations/Chow2016Fisheries.pdf';
-import Portenoy2016iConferencePDF from './presentations/Portenoy2016iConference.pdf';
-import Walls2016CapstonePDF from './presentations/Walls2016Capstone.pdf';
-import West2015Coursector_CapstonePDF from './presentations/West2015Coursector_Capstone.pdf';
-import Hong2014metaphorPDF from './presentations/Hong2014metaphor.pdf';
-import Althouse2009CardiologyPDF from './presentations/Althouse2009Cardiology.pdf';
-import Nahum2009GordonConferencePDF from './presentations/Nahum2009GordonConference.pdf';
-import West2007GordonConferencePDF from './presentations/West2007GordonConference.pdf';
-import West2007EigenfactorPDF from './presentations/West2007Eigenfactor.pdf';
-import West2006evowiboPDF from './presentations/West2006evowibo.pdf';
-import West2005plantneurobiologyPDF from './presentations/West2005plantneurobiology.pdf';
-import West2004StomatalNetworksPDF from './presentations/West2004StomatalNetworks.pdf';
-import West2003PlantComputationPDF from './presentations/West2003PlantComputation.pdf';
-import Ying2017iconferencePDF from './papers/Ying2017iconference.pdf';
-import Adler2013asistPDF from './papers/Adler2013asist.pdf';
-import West2016nsfPDF from './presentations/West2016nsf.pdf';
-import West2016OhioStatePDF from './presentations/West2016OhioState.pdf';
-import West2016FredHutchPDF from './presentations/West2016FredHutch.pdf';
-import West2016HRAPDF from './presentations/West2016HRA.pdf';
-import mapping_science_kyoto_jevin_westPDF from './presentations/mapping_science_kyoto_jevin_west.pdf';
-import data_gold_rush_jevin_westPDF from './presentations/data_gold_rush_jevin_west.pdf';
-import AI2_jevin_westPDF from './presentations/AI2_jevin_west.pdf';
-import West2015UW_psychologyPDF from './presentations/West2015UW_psychology.pdf';
-import DSE2_jevin_westPDF from './presentations/DSE-2_jevin_west.pdf';
-import SFI_jevin_westPDF from './presentations/SFI_jevin_west.pdf';
-import Nordita_Networks_2011PDF from './documents/Nordita_Networks_2011.pdf';
-import West2016siamPDF from './presentations/West2016siam.pdf';
-import West2016wwwbigscholarPDF from './presentations/West2016wwwbigscholar.pdf';
-import West2016wwwsemanticsPDF from './presentations/West2016wwwsemantics.pdf';
-import West2016ScienceOfSciencePDF from './presentations/West2016ScienceOfScience.pdf';
-import Portenoy2016ScienceOfSciencePDF from './presentations/Portenoy2016ScienceOfScience.pdf';
-import wsdm_west_wesley_smithPDF from './presentations/wsdm_west_wesley-smith.pdf';
-import info370PDF from './documents/INFO370.pdf';
-import infx575PDF from './documents/INFX575.pdf';
-import JevinWest_Huckabay_ProposalPDF from './papers/JevinWest_Huckabay_Proposal.pdf';
-import JevinWest_CVPDF from './papers/JevinWest_CV.pdf';
-import JBC_coverPDF from './documents/JBC_cover.pdf';
-import Science2009EvoMapPDF from './papers/Science2009EvoMap.pdf';
-import LeafComputation_ScienceNews2004PDF from './documents/LeafComputation_ScienceNews2004.pdf';
+// import Aulck2016ICMLPDF from './papers/Aulck2016ICML.pdf';
+// import West2014EconInquiryPDF from './papers/West2014EconInquiry.pdf';
+// import king2016arxivPDF from './papers/King2016arxiv.pdf';
+// import Portenoy2016arxivPDF from './papers/Portenoy2016arxiv.pdf';
+// import Bae2016tkddPDF from './papers/Bae2016tkdd.pdf';
+// import West2016IEEEPDF from './papers/West2016IEEE.pdf';
+// import Sugimoto2015PLoSOnePDF from './papers/Sugimoto2015PLoSOne.pdf';
+// import Rosvall2014NatureComPDF from './papers/Rosvall2014NatureCom.pdf';
+// import Vilhena2014SocSciencePDF from './papers/Vilhena2014SocScience.pdf';
+// import West2013PLoSOnePDF from './papers/West2013PLoSOne.pdf';
+// import Peak2004PNASPDF from './papers/Peak2004PNAS.pdf';
+// import Prado2009JTBPDF from './papers/Prado2009JTB.pdf';
+// import West2013JASISTPDF from './papers/West2013JASIST.pdf';
+// import West2010CRLPDF from './papers/West2010CRL.pdf';
+// import West2010JASISTPDF from './papers/West2010JASIST.pdf';
+// import Althouse2008JASISTPDF from './papers/Althouse2008JASIST.pdf';
+// import West2005PCEPDF from './papers/West2005PCE.pdf';
+// import West2016JCDLPDF from './papers/West2016JCDL.pdf';
+// import WesleySmith2016WWWPDF from './papers/WesleySmith2016WWW.pdf';
+// import Lee2016WWWPDF from './papers/Lee2016WWW.pdf';
+// import Portenoy2016WWWPDF from './papers/Portenoy2016WWW.pdf';
+// import WesleySmith2016WSDMPDF from './papers/WesleySmith2016WSDM.pdf';
+// import Larsen2014HICSSPDF from './papers/Larsen2014HICSS.pdf';
+// import Brooks2013InteractPDF from './papers/Brooks2013Interact.pdf';
+// import West2011complexleafPDF from './papers/West2011complexleaf.pdf';
+// import West2016jicsPDF from './papers/West2016jics.pdf';
+// import West2011SciencePDF from './papers/West2011Science.pdf';
+// import West2010NaturePDF from './papers/West2010Nature.pdf';
+// import West2010JASIST2PDF from './papers/West2010JASIST-2.pdf';
+// import West2009ASBMBPDF from './papers/West2009ASBMB.pdf';
+// import Bergstrom2008JneurosciPDF from './papers/Bergstrom2008Jneurosci.pdf';
+// import Bergstrom2008NeurologyPDF from './papers/Bergstrom2008Neurology.pdf';
+// import West2008FrontMatterPDF from './papers/West2008FrontMatter.pdf';
+// import West2008AuthorEFPDF from './papers/West2008AuthorEF.pdf';
+// import Bergstrom2008efcodePDF from './papers/Bergstrom2008efcode.pdf';
+// import West2008JournalEFPDF from './papers/West2008JournalEF.pdf';
+// import West2010DissertationPDF from './papers/West2010Dissertation.pdf';
+// import West2004ThesisPDF from './papers/West2004Thesis.pdf';
+// import US20140337280A1PDF from './papers/US20140337280A1.pdf';
+// import Science2009EvoMapPDF from './papers/Science2009EvoMap.pdf';
+// import Ying2017iconferencePDF from './papers/Ying2017iconference.pdf';
+// import Adler2013asistPDF from './papers/Adler2013asist.pdf';
+// import JevinWest_Huckabay_ProposalPDF from './papers/JevinWest_Huckabay_Proposal.pdf';
+// import JevinWest_CVPDF from './papers/JevinWest_CV.pdf';
+// import Chow2016FisheriesPDF from './presentations/Chow2016Fisheries.pdf';
+// import Portenoy2016iConferencePDF from './presentations/Portenoy2016iConference.pdf';
+// import Walls2016CapstonePDF from './presentations/Walls2016Capstone.pdf';
+// import West2015Coursector_CapstonePDF from './presentations/West2015Coursector_Capstone.pdf';
+// import Hong2014metaphorPDF from './presentations/Hong2014metaphor.pdf';
+// import Althouse2009CardiologyPDF from './presentations/Althouse2009Cardiology.pdf';
+// import Nahum2009GordonConferencePDF from './presentations/Nahum2009GordonConference.pdf';
+// import West2007GordonConferencePDF from './presentations/West2007GordonConference.pdf';
+// import West2007EigenfactorPDF from './presentations/West2007Eigenfactor.pdf';
+// import West2006evowiboPDF from './presentations/West2006evowibo.pdf';
+// import West2005plantneurobiologyPDF from './presentations/West2005plantneurobiology.pdf';
+// import West2004StomatalNetworksPDF from './presentations/West2004StomatalNetworks.pdf';
+// import West2003PlantComputationPDF from './presentations/West2003PlantComputation.pdf';
+// import West2016nsfPDF from './presentations/West2016nsf.pdf';
+// import West2016OhioStatePDF from './presentations/West2016OhioState.pdf';
+// import West2016FredHutchPDF from './presentations/West2016FredHutch.pdf';
+// import West2016HRAPDF from './presentations/West2016HRA.pdf';
+// import mapping_science_kyoto_jevin_westPDF from './presentations/mapping_science_kyoto_jevin_west.pdf';
+// import data_gold_rush_jevin_westPDF from './presentations/data_gold_rush_jevin_west.pdf';
+// import AI2_jevin_westPDF from './presentations/AI2_jevin_west.pdf';
+// import West2015UW_psychologyPDF from './presentations/West2015UW_psychology.pdf';
+// import DSE2_jevin_westPDF from './presentations/DSE-2_jevin_west.pdf';
+// import SFI_jevin_westPDF from './presentations/SFI_jevin_west.pdf';
+// import Nordita_Networks_2011PDF from './documents/Nordita_Networks_2011.pdf';
+// import West2016siamPDF from './presentations/West2016siam.pdf';
+// import West2016wwwbigscholarPDF from './presentations/West2016wwwbigscholar.pdf';
+// import West2016wwwsemanticsPDF from './presentations/West2016wwwsemantics.pdf';
+// import West2016ScienceOfSciencePDF from './presentations/West2016ScienceOfScience.pdf';
+// import Portenoy2016ScienceOfSciencePDF from './presentations/Portenoy2016ScienceOfScience.pdf';
+// import wsdm_west_wesley_smithPDF from './presentations/wsdm_west_wesley-smith.pdf';
+// import info370PDF from './documents/INFO370.pdf';
+// import infx575PDF from './documents/INFX575.pdf';
+// import JBC_coverPDF from './documents/JBC_cover.pdf';
+// import LeafComputation_ScienceNews2004PDF from './documents/LeafComputation_ScienceNews2004.pdf';
 
 //Images used
 import jevinJPG from './img/jevinWest.jpg';
@@ -342,7 +344,7 @@ const researchData = Immutable.Map({
           <a href="http://www.coursector.org/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={coursectorImg} alt="Coursector Project" title="Coursector Project"/></a>
         </Col>
         <Col s={12} m={9}>
-          <p>UW is becoming a hub for data-driven research and teaching. However, its ability to apply data science tools to its own administrative data is underdeveloped - a general problem for higher education. We have several projects applying data science to university data. <a href="http://www.coursector.org/" target="_blank">Coursector.org</a> is one example. We are developing techniques for predicting <a href={Aulck2016ICMLPDF} target="_blank">[1]</a> and understanding student attrition, evaluating program performance, and building course recommenders. Other examples include mapping UW's global imprint and examining library journal holdings, usage and costs.
+          <p>UW is becoming a hub for data-driven research and teaching. However, its ability to apply data science tools to its own administrative data is underdeveloped - a general problem for higher education. We have several projects applying data science to university data. <a href="http://www.coursector.org/" target="_blank">Coursector.org</a> is one example. We are developing techniques for predicting <a href={public_URL + '/papers/Aulck2016ICML.pdf'} target="_blank">[1]</a> and understanding student attrition, evaluating program performance, and building course recommenders. Other examples include mapping UW's global imprint and examining library journal holdings, usage and costs.
         </p>
         </Col>
       </Row>
@@ -351,7 +353,7 @@ const researchData = Immutable.Map({
           <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank"><img className="hoverable z-depth-2 responsive-img" src={openAccessImg} alt="Cost Effectiveness" title="Cost Effectiveness"/></a>
         </Col>
         <Col s={12} m={9}>
-          <p>The <a href="https://en.wikipedia.org/wiki/Open_access" target="_blank">open access</a> movement has made great strides. There has been a significant increase in Open Access journals over the last ten years and many large foundations now <a href="http://www.gatesfoundation.org/How-We-Work/General-Information/Open-Access-Policy" target="_blank">require OA</a>. Unfortunately, during the same time, there has been a signficiant increase in exploitative, <a href="https://en.wikipedia.org/wiki/Predatory_open_access_publishing" target="_blank">predatory publishers</a>, which charge authors to publish with little or no peer review, editorial services or authentic certifiation. We are developing a <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank">cost effectiveness </a> tool that will create an open journal market of prices and influence scores where these kinds of journals can be objectively identified <a href={West2014EconInquiryPDF} target="_blank">[2]</a>.</p>
+          <p>The <a href="https://en.wikipedia.org/wiki/Open_access" target="_blank">open access</a> movement has made great strides. There has been a significant increase in Open Access journals over the last ten years and many large foundations now <a href="http://www.gatesfoundation.org/How-We-Work/General-Information/Open-Access-Policy" target="_blank">require OA</a>. Unfortunately, during the same time, there has been a signficiant increase in exploitative, <a href="https://en.wikipedia.org/wiki/Predatory_open_access_publishing" target="_blank">predatory publishers</a>, which charge authors to publish with little or no peer review, editorial services or authentic certifiation. We are developing a <a href="http://www.eigenfactor.org/projects/openAccess/" target="_blank">cost effectiveness </a> tool that will create an open journal market of prices and influence scores where these kinds of journals can be objectively identified <a href={public_URL + '/papers/West2014EconInquiry.pdf'} target="_blank">[2]</a>.</p>
         </Col>
       </Row>
     </div>
@@ -434,7 +436,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'https://arxiv.org/abs/1607.00376',
-      pdf: king2016arxivPDF,
+      pdf: public_URL + '/papers/King2016arxiv.pdf',
       abstract: "How common is self-citation in scholarly publication and does the practice vary by gender? Using novel methods and a dataset of 1.5 million research papers in the scholarly database JSTOR published between 1779-2011, we find that nearly 10% of references are self-citations by a paper's authors. We further find that over the years between 1779-2011, men cite their own papers 56% more than women do. In the last two decades of our data, men self-cite 70% more than women. Women are also more than ten percentage points more likely than men to not cite their own previous work at all. Despite increased representation of women in academia, this gender gap in self-citation rates has remained stable over the last 50 years. We break down self-citation patterns by academic field and number of authors, and comment on potential mechanisms behind these observations. These findings have important implications for scholarly visibility and likely consequences for academic careers.",
       bibTex: (
         <div>
@@ -456,7 +458,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'https://arxiv.org/abs/1611.07135',
-      pdf: Portenoy2016arxivPDF,
+      pdf: public_URL + '/papers/Portenoy2016arxiv.pdf',
       abstract: "Assessing the influence of a scholar's work is an important task for funding organizations, academic departments, and researchers. Common methods, such as measures of citation counts, can ignore much of the nuance and multidimensionality of scholarly influence. We present an approach for generating dynamic narrative visualizations of scholars' careers. This approach uses an animated node-link diagram showing the citation network accumulated around the researcher over the course of the career in concert with key indicators, highlighting influence both within and across fields. We developed our design in collaboration with one funding organization—the Pew Biomedical Scholars program—but the methods are generalizable to visualizations of scholarly influence in general. We applied the design method to the Microsoft Academic Graph, which includes more than 120 million publications. We validate our abstractions throughout the process through collaboration with the Pew Biomedical Scholars program officers and summative evaluations with their scholars.",
       bibTex: (
         <div>
@@ -526,7 +528,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: '',
-      pdf: Bae2016tkddPDF,
+      pdf: public_URL + '/papers/Bae2016tkdd.pdf',
       abstract: "Community detection is a powerful approach to uncover important structures in large networks. For real networks that often describe the flow of some entity, flow-based community detection methods are particularly important. Infomap is a flow-based community detection algorithm that optimizes the objective function known as the map equation. Third-party benchmarks have found that Infomap is the most effective algorithm for identifying clusters in large graphs. Unfortunately, though Infomap works well, it is an inherently serial algorithm and thus cannot take advantage of multi-core processing in modern computers, limiting its use for analyzing large graphs quickly. In this paper, we propose a novel algorithm to optimize the map equation called RelaxMap. RelaxMap provides two important improvements over Infomap: parallelization, so that the map equation can be optimized over much larger graphs, and prioritization, so that the most important work occurs first, iterations take less time, and the algorithm converges faster. We implement these techniques using OpenMP on shared-memory multicore systems, and evaluate our approach on a variety of graphs from standard graph clustering benchmarks as well as real graph datasets. Our evaluation shows that both techniques are effective: RelaxMap achieves 70% parallel efficiency on 8 cores, and prioritization improves algorithm performance by an additional 20%–50% in average, depending on the graph properties. Additionally, RelaxMap converges in the similar number of iterations and provides solutions of equivalent quality as the serial Infomap implementation.",
       bibTex: (
         <div>
@@ -550,7 +552,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://doi.ieeecomputersociety.org/10.1109/TBDATA.2016.2541167',
-      pdf: West2016IEEEPDF,
+      pdf: public_URL + '/papers/West2016IEEE.pdf',
       abstract: "To better understand the flows of ideas or information through social and biological systems, researchers develop maps that reveal important patterns in network flows. In practice, network flow models have implied memoryless first-order Markov chains, but recently researchers have introduced higher-order Markov chain models with memory to capture patterns in multi-step pathways. Higher-order models are particularly important for effectively revealing actual, overlapping community structure, but higher-order Markov chain models suffer from the curse of dimensionality: their vast parameter spaces require exponentially increasing data to avoid overfitting and therefore make mapping inefficient already for moderate-sized systems. To overcome this problem, we introduce an efficient cross-validated mapping approach based on network flows modeled by sparse Markov chains. To illustrate our approach, we present a map of citation flows in science with research fields that overlap in multidisciplinary journals. Compared with currently used categories in science of science studies, the research fields form better units of analysis because the map more effectively captures how ideas flow through science.",
       bibTex: (
         <div>
@@ -577,7 +579,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128000',
-      pdf: Sugimoto2015PLoSOnePDF,
+      pdf: public_URL + '/papers/Sugimoto2015PLoSOne.pdf',
       abstract: "We analyzed gender disparities in patenting by country, technological area, and type of as- signee using the 4.6 million utility patents issued between 1976 and 2013 by the United States Patent and Trade Office (USPTO). Our analyses of fractionalized inventorships dem- onstrate that women’s rate of patenting has increased from 2.7% of total patenting activity to 10.8% over the nearly 40-year period. Our results show that, in every technological area, female patenting is proportionally more likely to occur in academic institutions than in corpo- rate or government environments. However, women’s patents have a lower technological impact than that of men, and that gap is wider in the case of academic patents. We also pro- vide evidence that patents to which women—and in particular academic women—contribut- ed are associated with a higher number of International Patent Classification (IPC) codes and co-inventors than men. The policy implications of these disparities and academic set- ting advantages are discussed.",
       bibTex: (
         <div>
@@ -606,7 +608,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://www.nature.com/articles/ncomms5630',
-      pdf: Rosvall2014NatureComPDF,
+      pdf: public_URL + '/papers/Rosvall2014NatureCom.pdf',
       abstract: "Random walks on networks is the standard tool for modelling spreading processes in social and biological systems. This first-order Markov approach is used in conventional community detection, ranking and spreading analysis, although it ignores a potentially important feature of the dynamics: where flow moves to may depend on where it comes from. Here we analyse pathways from different systems, and although we only observe marginal consequences for disease spreading, we show that ignoring the effects of second-order Markov dynamics has important consequences for community detection, ranking and information spreading. For example, capturing dynamics with a second-order Markov model allows us to reveal actual travel patterns in air traffic and to uncover multidisciplinary journals in scientific communication. These findings were achieved only by using more available data and making no additional assumptions, and therefore suggest that accounting for higher-order memory in network flows can help us better understand how real systems are organized and function.",
       bibTex: (
         <div>
@@ -631,7 +633,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://onlinelibrary.wiley.com/doi/10.1111/ecin.12117/abstract',
-      pdf: West2014EconInquiryPDF,
+      pdf: public_URL + '/papers/West2014EconInquiry.pdf',
       abstract: "Open access publishing has been proposed as one possible solution to the serials crisis—the rapidly growing subscription prices in scholarly journal publishing. However, open access publishing can present economic pitfalls as well, such as excessive article processing charges. We discuss the decision that an author faces when choosing to submit to an open access journal. We develop an interactive tool to help authors compare among alternative open access venues and thereby get the most for their article processing charges.",
       bibTex: (
         <div>
@@ -660,7 +662,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://www.sociologicalscience.com/articles-vol1-15-221/',
-      pdf: Vilhena2014SocSciencePDF,
+      pdf: public_URL + '/papers/Vilhena2014SocScience.pdf',
       abstract: "Divergent interests, expertise, and language form cultural barriers to communication. No formalism has been available to characterize these “cultural holes.” Here we use information theory to measure cultural holes and demonstrate our formalism in the context of scientific communication using papers from JSTOR. We extract scientific fields from the structure of citation flows and infer field-specific cultures by cataloging phrase frequencies in full text and measuring the relative efficiency of between-field communication. We then combine citation and cultural information in a novel topographic map of science, mapping citations to geographic distance and cultural holes to topography. By analyzing the full citation network, we find that communicative efficiency decays with citation distance in a field-specific way. These decay rates reveal hidden patterns of cohesion and fragmentation. For example, the ecological sciences are balkanized by jargon, whereas the social sciences are relatively integrated. Our results highlight the importance of enriching structural analyses with cultural data.",
       bibTex: (
         <div>
@@ -687,7 +689,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066212',
-      pdf: West2013PLoSOnePDF,
+      pdf: public_URL + '/papers/West2013PLoSOne.pdf',
       abstract: "Gender disparities appear to be decreasing in academia according to a number of metrics, such as grant funding, hiring, acceptance at scholarly journals, and productivity, and it might be tempting to think that gender inequity will soon be a problem of the past. However, a large-scale analysis based on over eight million papers across the natural sciences, social sciences, and humanities reveals a number of understated and persistent ways in which gender inequities remain. For instance, even where raw publication counts seem to be equal between genders, close inspection reveals that, in certain fields, men predominate in the prestigious first and last author positions. Moreover, women are significantly underrepresented as authors of single-authored papers. Academics should be aware of the subtle ways that gender disparities can occur in scholarly authorship.",
       bibTex: (
         <div>
@@ -714,7 +716,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://onlinelibrary.wiley.com/doi/10.1002/asi.22790/full',
-      pdf: West2013JASISTPDF,
+      pdf: public_URL + '/papers/West2013JASIST.pdf',
       abstract: "In this article, we show how the Eigenfactor score, originally designed for ranking scholarly journals, can be adapted to rank the scholarly output of authors, institutions, and countries based on author-level citation data. Using the methods described in this article, we provide Eigenfactor rankings for 84,808 disambiguated authors of 240,804 papers in the Social Science Research Network (SSRN)â€”a preprint and postprint archive devoted to the rapid dissemination of scholarly research in the social sciences and humanities. As an additive metric, the Eigenfactor scores are readily computed for collectives such as departments or institutions as well. We show that a collectiveâ€™s Eigenfactor score can be computed either by summing the Eigenfactor scores of its members or by working directly with a collective-level cross-citation matrix. We provide Eigenfactor rankings for institutions and countries in the SSRN repository. With a network-wide comparison of Eigenfactor scores and download tallies, we demonstrate that Eigenfactor scores provide information that is both different from and complementary to that provided by download counts. We see author-level ranking as one filter for navigating the scholarly literature, and note that such rankings generate incentives for more open scholarship, because authors are rewarded for making their work available to the community as early as pos- sible and before formal publication.",
       bibTex: (
         <div>
@@ -742,7 +744,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://crl.acrl.org/content/71/3/236.abstract?sid=c0cbbecd-9526-4ebf-8dba-9c28c6892ca6',
-      pdf: West2010CRLPDF,
+      pdf: public_URL + '/papers/West2010CRL.pdf',
       abstract: "Limited time and budgets have created a legitimate need for quantitative measures of scholarly work. The well-known journal impact factor is the leading measure of this sort; here we describe an alternative approach based on the full structure of the scholarly citation network. The Eigenfaclor Metrics-Eigenfactor Score and Article Influence Score-use an iterative ranking scheme similar to Google's PageRank algorithm. By this approach, citations from top journals are weighted more heavily than citations from lower-tier publications. Here we describe these metrics and the rankings that they provide.",
       bibTex: (
         <div>
@@ -767,7 +769,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://onlinelibrary.wiley.com/doi/10.1002/asi.21374/full',
-      pdf: West2010JASISTPDF,
+      pdf: public_URL + '/papers/West2010JASIST.pdf',
       abstract: "The Eigenfactor Metrics provide an alternative way of evaluating scholarly journals based on an iterative ranking procedure analogous to Googleâ€™s PageRank algorithm. These metrics have recently been adopted by Thomson Reuters and are listed alongside the Impact Factor in the Journal Citation Reports. But do these metrics differ sufficiently so as to be a useful addition to the bibliometric toolbox? Davis (2008) has argued that they do not, based on his finding of a 0.95 correlation coefficient between Eigenfactor score and Total Citations for a sample of journals in the field of medicine. This conclusion is mistaken; in this article, we illustrate the basic statistical fallacy to which Davis succumbed. We provide a complete analysis of the 2006 Journal Citation Reports and demonstrate that there are statistically and economically significant differences between the information provided by the Eigenfactor Metrics and that provided by Impact Factor and Total Citations.",
       bibTex: (
         <div>
@@ -793,7 +795,7 @@ const publicationsData = Immutable.Map({
         </div>
       ),
       html: 'http://onlinelibrary.wiley.com/doi/10.1002/asi.20936/full',
-      pdf: Althouse2008JASISTPDF,
+      pdf: public_URL + '/papers/Althouse2008JASIST.pdf',
       abstract: "The bibliometric measure impact factor is a leading indicator of journal influence, and impact factors are routinely used in making decisions ranging from selecting journal subscriptions to allocating research funding to deciding tenure cases. Yet journal impact factors have increased gradually over time, and moreover impact factors vary widely across academic disciplines. Here we quantify inflation over time and differences across fields in impact factor scores and determine the sources of these differences. We find that the average number of citations in reference lists has increased gradually, and this is the predominant factor responsible for the inflation of impact factor scores over time. Field-specific variation in the fraction of citations to literature indexed by Thomson Scientificâ€™s Journal Citation Reports is the single greatest contributor to differences among the impact factors of journals in different fields. The growth rate of the scientific literature as a whole, and cross-field differences in net size and growth rate of individual fields, have had very little influence on impact factor inflation or on cross-field differences in impact factor.",
       bibTex: (
         <div>
@@ -833,7 +835,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>F. Prado, A. Sheih, <span className="bold">J.D. West</span> and B. Kerr</div>,
-        pdf: Prado2009JTBPDF,
+        pdf: public_URL + '/papers/Prado2009JTB.pdf',
     },
     {
         title: "Dynamics of stomatal patches for a single surface of Xanthium strumarium L. leaves observed with flourescence and thermal images (2005)",
@@ -859,7 +861,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span>, D. Peak, J. Peterson and K.A. Mott</div>,
-        pdf: West2005PCEPDF
+        pdf: public_URL + '/papers/West2005PCE.pdf'
     },
     {
         title: "Evidence for complex, collective dynamics and emergent, distributed computation in plants (2004)",
@@ -884,7 +886,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>D. Peak, <span className="bold">J.D. West</span>, S.M. Messinger, and K.A. Mott</div>,
-        pdf: Peak2004PNASPDF,
+        pdf: public_URL + '/papers/Peak2004PNAS.pdf',
     },
   ],
   peerReviewConferences: [
@@ -908,7 +910,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span>, J. Portenoy</div>,
-        pdf: West2016JCDLPDF
+        pdf: public_URL + '/papers/West2016JCDL.pdf'
     },
     {
         title: "Predicting Student Dropout in Higher Education (2016)",
@@ -931,7 +933,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>L. Aulck, N. Velagapudi, J. Blumenstock, <span className="bold">J.D. West</span></div>,
-        pdf: Aulck2016ICMLPDF,
+        pdf: public_URL + '/papers/Aulck2016ICML.pdf',
     },
     {
         title: "Babel: A platform for research in scholarly article recommendation (2016)",
@@ -954,7 +956,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>I. Wesley-Smith, <span className="bold">J.D. West</span></div>,
-        pdf: WesleySmith2016WWWPDF
+        pdf: public_URL + '/papers/WesleySmith2016WWW.pdf'
     },
     {
         title: "VizioMetrix: A Platform for Analyzing the Visual Information in Big Scholarly Data (2016)",
@@ -977,7 +979,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>P. Lee, <span className="bold">J.D. West</span>, B. Howe</div>,
-        pdf: Lee2016WWWPDF,
+        pdf: public_URL + '/papers/Lee2016WWW.pdf',
 
     },
     {
@@ -1000,7 +1002,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>J. Portenoy, <span className="bold">J.D. West</span></div>,
-        pdf: Portenoy2016WWWPDF,
+        pdf: public_URL + '/papers/Portenoy2016WWW.pdf',
 
     },
     {
@@ -1024,7 +1026,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>I. Wesley-Smith, C.T. Bergstrom, <span className="bold">J.D. West</span></div>,
-        pdf: WesleySmith2016WSDMPDF,
+        pdf: public_URL + '/papers/WesleySmith2016WSDM.pdf',
     },
     {
         title: "Theory Identity: A Machine-Learning Approach (2014)",
@@ -1048,7 +1050,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>K.R. Larsen, D. Hovorka, <span className="bold">J.D. West</span>, J. Birt, J.R. Pfaff,T.W. Chambers, Z.R. Sampedro, N. Zager,B. Vanstone</div>,
-        pdf: Larsen2014HICSSPDF,
+        pdf: public_URL + '/papers/Larsen2014HICSS.pdf',
     },
     {
         title: "Scalable Flow-Based Community Detection for Large-Scale Network Analysis (2013)",
@@ -1096,7 +1098,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>M. Brooks, <span className="bold">J.D. West</span>, C. Aragon, C.T. Bergstrom</div>,
-        pdf: Brooks2013InteractPDF,
+        pdf: public_URL + '/papers/Brooks2013Interact.pdf',
     },
     {
         title: "Comparing the dynamics of stomatal networks to the problem-solving dynamics of cellular computers (2011)",
@@ -1121,7 +1123,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott and S.M. Messinger</div>,
-        pdf: West2011complexleafPDF,
+        pdf: public_URL + '/papers/West2011complexleaf.pdf',
     },
   ],
   journalsInvited: [
@@ -1147,7 +1149,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span></div>,
-        pdf: West2016jicsPDF,
+        pdf: public_URL + '/papers/West2016jics.pdf',
     },
     {
         title: "Can Ignorance Promote Democracy? (2011)",
@@ -1175,7 +1177,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span> and C.T Bergstrom</div>,
-        pdf: West2011SciencePDF,
+        pdf: public_URL + '/papers/West2011Science.pdf',
 
     },
     {
@@ -1200,7 +1202,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span></div>,
-        pdf: West2010NaturePDF,
+        pdf: public_URL + '/papers/West2010Nature.pdf',
     },
     {
         title: 'Response to "Big Macs and Eigenfactor Scores: The Correlation Conundrum" (2010)',
@@ -1228,7 +1230,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span>, T.C. Bergstrom and C. T. Bergstrom</div>,
-        pdf: West2010JASIST2PDF,
+        pdf: public_URL + '/papers/West2010JASIST-2.pdf',
     },
     {
         title: "The EigenfactorTM Metrics: How does the Journal of Biological Chemistry stack up? (2009)",
@@ -1252,7 +1254,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span>, M. Stefaner and C. T. Bergstrom</div>,
-        pdf: West2009ASBMBPDF,
+        pdf: public_URL + '/papers/West2009ASBMB.pdf',
     },
     {
         title: "The EigenfactorTM Metrics (2008)",
@@ -1279,7 +1281,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>C.T. Bergstrom, <span className="bold">J.D. West</span>, and M. A. Wiseman</div>,
-        pdf: Bergstrom2008JneurosciPDF,
+        pdf: public_URL + '/papers/Bergstrom2008Jneurosci.pdf',
     },
     {
         title: "Assessing Citations with the EigenfactorTM Metrics (2008)",
@@ -1305,7 +1307,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>C.T. Bergstrom and <span className="bold">J.D. West</span></div>,
-        pdf: Bergstrom2008NeurologyPDF,
+        pdf: public_URL + '/papers/Bergstrom2008Neurology.pdf',
     },
     {
         title: "Eigenfactor - The Google Approach to Bibliometrics (2008)",
@@ -1330,7 +1332,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span></div>,
-        pdf: West2008FrontMatterPDF,
+        pdf: public_URL + '/papers/West2008FrontMatter.pdf',
     },
   ],
   bookChapters: [
@@ -1447,7 +1449,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span> and C.T. Bergstrom</div>,
-        pdf: West2008AuthorEFPDF
+        pdf: public_URL + '/papers/West2008AuthorEF.pdf'
     },
     {
         title: "Compressed Source Code for the Eigenfactor Calculation (2008)",
@@ -1468,7 +1470,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>C.T. Bergstrom and <span className="bold">J.D. West</span></div>,
-        pdf: Bergstrom2008efcodePDF
+        pdf: public_URL + '/papers/Bergstrom2008efcode.pdf'
     },
     {
         title: "Calculating Journal-Level Eigenfactors (2008)",
@@ -1489,7 +1491,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>C.T. Bergstrom and <span className="bold">J.D. West</span></div>,
-        pdf: West2008JournalEFPDF
+        pdf: public_URL + '/papers/West2008JournalEF.pdf'
     },
   ],
   theses: [
@@ -1512,7 +1514,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span></div>,
-        pdf: West2010DissertationPDF
+        pdf: public_URL + '/papers/West2010Dissertation.pdf'
     },
     {
         title: "Investigations into the spatial and temporal dynamics of stomatal networks to determine whether plants perform emergent, distributed computation (2004)",
@@ -1533,7 +1535,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div><span className="bold">J.D. West</span></div>,
-        pdf: West2004ThesisPDF
+        pdf: public_URL + '/papers/West2004Thesis.pdf'
     },
   ],
   patents: [
@@ -1558,7 +1560,7 @@ const publicationsData = Immutable.Map({
     </div>
     ),
         authors: <div>C.T. Bergstrom and M. Rosvall and D. Vilhena and <span className="bold">J.D. West</span> and A. Torrance</div>,
-        pdf: US20140337280A1PDF
+        pdf: public_URL + '/papers/US20140337280A1.pdf'
     },
   ],
   posters: [
@@ -1574,7 +1576,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>M. Chow, <span className="bold">J.D. West</span>, S. Bodman, H. Egna</div>,
-        pdf: Chow2016FisheriesPDF
+        pdf: public_URL + '/papers/Chow2016Fisheries.pdf'
     },
     {
         title: "Visualizing Scholarly Influence Over Time (2016)",
@@ -1588,7 +1590,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>J. Portenoy, <span className="bold">J.D. West</span></div>,
-        pdf: Portenoy2016iConferencePDF
+        pdf: public_URL + '/papers/Portenoy2016iConference.pdf'
     },
     {
         title: "Surveying Usage of Academic Research in Journalism (2016)",
@@ -1602,7 +1604,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>L. Walls, I. Edwards, T. Ho <span className="bold">J.D. West</span>, Emma Spiro</div>,
-        pdf: Walls2016CapstonePDF,
+        pdf: public_URL + '/submissions/Walls2016Capstone.pdf',
     },
     {
         title: "Coursector (2015)",
@@ -1616,7 +1618,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>C. Greene, M. Kelly, P. Pradhan, N. Sinha <span className="bold">J.D. West</span></div>,
-        pdf: West2015Coursector_CapstonePDF
+        pdf: public_URL + '/submissions/West2015Coursector_Capstone.pdf'
     },
     {
         title: "Using Visual Metaphor in Interactive Visualization to Improve Navigation of Complex Data Sets (2014)",
@@ -1630,7 +1632,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>R. Hong, Y. Kim, A. Hiniker, N. Chen, C. Aragon, <span className="bold">J.D. West</span></div>,
-        pdf: Hong2014metaphorPDF
+        pdf: public_URL + '/submissions/Hong2014metaphor.pdf'
     },
     {
         title: "Course Connect (2014)",
@@ -1644,7 +1646,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div> <span className="bold">J.D. West</span></div>,
-        pdf: West2015Coursector_CapstonePDF
+        pdf: public_URL + '/submissions/West2015Coursector_Capstone.pdf'
     },
     {
         title: "A Novel Method for Ranking the Quality of Cardiology Literature (2009)",
@@ -1658,7 +1660,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>B.M. Althouse, C.T. Bergstrom, <span className="bold">J.D. West</span></div>,
-        pdf: Althouse2009CardiologyPDF
+        pdf: public_URL + '/submissions/Althouse2009Cardiology.pdf'
     },
     {
         title: "Traversing Fitness Landscapes by Changing Environments (2009)",
@@ -1672,7 +1674,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>J. Nahum, B.M. Althouse, <span className="bold">J.D. West</span>, C. Ofria, B. Kerr</div>,
-        pdf: Nahum2009GordonConferencePDF
+        pdf: public_URL + '/submissions/Nahum2009GordonConference.pdf'
     },
     {
         title: "A Top-Down Approach to Discriminate Adaptive Landscape Topology (2007)",
@@ -1686,7 +1688,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, J. Nahum, C. Levy, B. Kerr</div>,
-        pdf: West2007GordonConferencePDF
+        pdf: public_URL + '/submissions/West2007GordonConference.pdf'
     },
     {
         title: "Ranking and Mapping Scholarly Literature (2007)",
@@ -1700,7 +1702,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, M. Rosvall, B.M. Althouse, C.T. Bergstrom</div>,
-        pdf: West2007EigenfactorPDF
+        pdf: public_URL + '/submissions/West2007Eigenfactor.pdf'
     },
     {
         title: "The Missing Link (2007)",
@@ -1714,7 +1716,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, K. Hall</div>,
-        pdf: West2007EigenfactorPDF
+        pdf: public_URL + '/submissions/West2007Eigenfactor.pdf'
     },
     {
         title: "The evolution of a 'Tragedy of the Commons' in a Host-Pathogen Metapopulation (2006)",
@@ -1728,7 +1730,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, A. Dean, C. Neuhauser, B. Bohannan, B. Kerr</div>,
-        pdf: West2006evowiboPDF
+        pdf: public_URL + '/submissions/West2006evowibo.pdf'
     },
     {
         title: "Sophisticated Information Processing in Plants (2005)",
@@ -1742,7 +1744,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott</div>,
-        pdf: West2005plantneurobiologyPDF
+        pdf: public_URL + '/submissions/West2005plantneurobiology.pdf'
     },
     {
         title: "Problem Solving Dynamics of Stomatal Networks (2004)",
@@ -1756,7 +1758,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, S.M. Mesinger, D. Peak, K.A. Mott</div>,
-        pdf: West2005plantneurobiologyPDF
+        pdf: public_URL + '/submissions/West2005plantneurobiology.pdf'
     },
     {
         title: "Stomatal Networks and Cellular Computation (2004)",
@@ -1770,7 +1772,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott, S.M. Messinger</div>,
-        pdf: West2004StomatalNetworksPDF
+        pdf: public_URL + '/submissions/West2004StomatalNetworks.pdf'
     },
     {
         title: "The Game of Leaf: Evidence that Stomatal Networks are Cellular Computers (2003)",
@@ -1784,7 +1786,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, S.M. Messinger, D. Peak, K.A. Mott</div>,
-        pdf: West2003PlantComputationPDF
+        pdf: public_URL + '/submissions/West2003PlantComputation.pdf'
     },
     {
         title: "Can Stomata Respond as a Reaction Diffusion Model? (2001)",
@@ -1798,7 +1800,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott</div>,
-        pdf: West2003PlantComputationPDF
+        pdf: public_URL + '/submissions/West2003PlantComputation.pdf'
     },
   ],
   workshops: [
@@ -1813,7 +1815,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>Y. Ding, <span className="bold">J.D. West</span>, M. Song, G. Meng, Q. Yu, S. Bodman, H. Egna</div>,
-        pdf: Ying2017iconferencePDF
+        pdf: public_URL + '/papers/Ying2017iconference.pdf'
     },
     {
         title: "The Temporal Dimension in the Study of Knowledge Bases: Approaches to Understanding Knowledge Creation and Representation Over Time (2013)",
@@ -1827,7 +1829,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>M. Adler, J.T. Tennis, S. Milojevic, S. van Hooland, C. Rogers, <span className="bold">J.D. West</span></div>,
-        pdf: Adler2013asistPDF
+        pdf: public_URL + '/papers/Adler2013asist.pdf'
     },
   ],
   blogposts: [
@@ -1861,7 +1863,7 @@ const presentationData = Immutable.OrderedMap({
     2016: [
       {
           location: <div><a href="https://depts.washington.edu/womengs/wordpress/" target="_blank">NSF Workshop: Can Network Measures Serve as Indicators of Knowledge Creation and Flow?</a> George Washington University, Washington, D.C.</div>,
-          title: <div className="bold">Visualizing Knowledge Flows (Nov. 7) <a href={West2016nsfPDF}>PDF</a></div>
+          title: <div className="bold">Visualizing Knowledge Flows (Nov. 7) <a href={public_URL + '/submissions/West2016nsf.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://depts.washington.edu/womengs/wordpress/" target="_blank">Women in Genome Sciences.</a> University of Washington, Seattle, WA</div>,
@@ -1869,47 +1871,47 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="https://library.osu.edu/projects-initiatives/knowledge-bank/open-access-publishing/osu-journal-editors-group/" target="_blank">Ohio State University Libraries Public Lecture.</a> Columbus, OH</div>,
-          title: <div className="bold">Diversity and Gender in Scholarly Publishing (Nov. 3) <a href={West2016OhioStatePDF}>PDF</a></div>
+          title: <div className="bold">Diversity and Gender in Scholarly Publishing (Nov. 3) <a href={public_URL + '/submissions/West2016OhioState.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://www.fredhutch.org/en/labs/basic-sciences.html" target="_blank">Fred Hutchinson Cancer Research Center Annual Retreat.</a> Grand Hyatt, Seattle, WA</div>,
-          title: <div className="bold">[Plenary] The Science of Science (Sept. 12) <a href={West2016FredHutchPDF}>PDF</a></div>
+          title: <div className="bold">[Plenary] The Science of Science (Sept. 12) <a href={public_URL + '/submissions/West2016FredHutch.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Data Science Conference</a>. National Library, Beijing, China</div>,
-          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (June 20) <a href={West2016HRAPDF}>PDF</a></div>
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (June 20) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Wuhan University</a>. Shanghai, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 17) <a href={West2016HRAPDF}>PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 17) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Tsinghua University</a>. Beijing, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 16) <a href={West2016HRAPDF}>PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 16) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Shangai Jao University</a>. Shanghai, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 15) <a href={West2016HRAPDF}>PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 15) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Health Research Alliance Annual Meeting</a>. New York, NY</div>,
-          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (April 1) <a href={West2016HRAPDF}>PDF</a></div>
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (April 1) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://learn.heart.org/activity/4323627/detail.aspx" target="_blank">American Heart Association Research Leaders Academy</a>. San Antonio, TX</div>,
-          title: <div className="bold">Mapping the AHA Community (July 26) <a href={West2016HRAPDF}>PDF</a></div>
+          title: <div className="bold">Mapping the AHA Community (July 26) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://www2.yukawa.kyoto-u.ac.jp/~future/IS20160212/index.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
-          title: <div className="bold">[Plenary] Mapping the Emergence of Scientific Disciplines <a href={mapping_science_kyoto_jevin_westPDF}>PDF</a> (Feb. 12)</div>
+          title: <div className="bold">[Plenary] Mapping the Emergence of Scientific Disciplines <a href={public_URL + '/submissions/mapping_science_kyoto_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 12)</div>
       },
       {
           location: <div><a href="http://www.gsee-kyoto.kier.kyoto-u.ac.jp/GSEEKyoto2016_Program.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
-          title: <div className="bold">The Data Gold Rush in Science Education <a href={data_gold_rush_jevin_westPDF}>PDF</a> (Feb. 11)</div>
+          title: <div className="bold">The Data Gold Rush in Science Education <a href={public_URL + '/submissions/data_gold_rush_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 11)</div>
       },
       {
           location: <div><a href="http://allenai.org" target="_blank">Allen Institute for Artificial Intelligence</a>. Seattle, WA</div>,
-          title: <div className="bold">Facilitating discovery with zoomable maps <a href={AI2_jevin_westPDF}>PDF</a> (Feb. 4)</div>
+          title: <div className="bold">Facilitating discovery with zoomable maps <a href={public_URL + '/submissions/AI2_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 4)</div>
       },
     ],
     2015: [
@@ -1923,11 +1925,11 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="http://machinelearning.duke.edu/education/seminar-series" target="_blank">Social-Personality Psychology Seminar</a>. University of Washington</div>,
-          title: <div className="bold">Gender Differences in Scholarly Self Citation <a href={West2015UW_psychologyPDF}>PDF</a> (Oct. 22)</div>
+          title: <div className="bold">Gender Differences in Scholarly Self Citation <a href={public_URL + '/submissions/West2015UW_psychology.pdf'} target="_blank">PDF</a> (Oct. 22)</div>
       },
       {
           location: <div><a href="http://escience.washington.edu/data-science-environment-summit-2015/" target="_blank">Moore-Sloan Data Science Environment Summit</a>. Cle Elem, WA</div>,
-          title: <div className="bold">Plenary. Loosing sleep in a data-driven dream <a href={DSE2_jevin_westPDF}>PDF</a> (Oct. 5)</div>
+          title: <div className="bold">Plenary. Loosing sleep in a data-driven dream <a href={public_URL + '/submissions/DSE-2_jevin_west.pdf'} target="_blank">PDF</a> (Oct. 5)</div>
       },
       {
           location: <div>SKKU Library &amp; Information Science <a href="http://cihe.skku.edu/en/feature/ischool03.do">Distinguished Lecture Series</a>. Sungkyunkwan Univ., South Korea</div>,
@@ -1935,7 +1937,7 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="http://www.santafe.edu/gevent/?start=2015-03-01" target="_blank">Santa Fe Institute Speaker Series</a>. Santa Fe Institute, NM</div>,
-          title: <div className="bold">The Jargon Barriers of Science <a href={SFI_jevin_westPDF}>PDF</a> (March 17)</div>
+          title: <div className="bold">The Jargon Barriers of Science <a href={public_URL + '/submissions/SFI_jevin_west.pdf'} target="_blank">PDF</a> (March 17)</div>
       },
     ],
     2014: [
@@ -2062,7 +2064,7 @@ const presentationData = Immutable.OrderedMap({
           title: <div className="bold"><span className="italics">Mapping the network ecology of science at the article level</span> (April 19, 2011)</div>
       },
       {
-          location: <div><a href={Nordita_Networks_2011PDF} target="_blank">Applications of Network Theory - The Conference </a> NORDITA, Stockholm, Sweden</div>,
+          location: <div><a href={public_URL + '/documents/Nordita_Networks_2011.pdf'} target="_blank">Applications of Network Theory - The Conference </a> NORDITA, Stockholm, Sweden</div>,
           title: <div className="bold"><span className="italics">Mapping the network ecology of science at the article level</span> (April 8, 2011)</div>
       },
     ],
@@ -2209,27 +2211,27 @@ const presentationData = Immutable.OrderedMap({
     2016: [
       {
           location: <div><a href="http://www.siam.org/meetings/an16/">Society for Industrial and Applied Mathematics.</a> Boston, MA.</div>,
-          title: <div className="bold">Mapping Knowledge Networks. (July 12) <a href={West2016siamPDF}>PDF</a></div>
+          title: <div className="bold">Mapping Knowledge Networks. (July 12) <a href={public_URL + '/submissions/West2016siam.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://msclab.org/bigscholar/2016/">WWW Workshop on Big Scholarly Data</a>. Montreal, Canada.</div>,
-          title: <div className="bold">Babel: Platform for Scholarly Recommendation. (April 12) <a href={West2016wwwbigscholarPDF}>PDF</a></div>
+          title: <div className="bold">Babel: Platform for Scholarly Recommendation. (April 12) <a href={public_URL + '/submissions/West2016wwwbigscholar.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://cs.unibo.it/save-sd/2016/program.html">WWW Workshop on Semantics, Analytics, Visualisation.</a> Montreal, Canada</div>,
-          title: <div className="bold">Visualizing Scholarly Influence. (April 11) <a href={West2016wwwsemanticsPDF}>PDF</a></div>
+          title: <div className="bold">Visualizing Scholarly Influence. (April 11) <a href={public_URL + '/submissions/West2016wwwsemantics.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://icss.ist.psu.edu/program.html">International Symposium on Science of Science</a>. Washington, DC</div>,
-          title: <div className="bold">Science of Science? (March 22) <a href={West2016ScienceOfSciencePDF}>PDF</a></div>
+          title: <div className="bold">Science of Science? (March 22) <a href={public_URL + '/submissions/West2016ScienceOfScience.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://icss.ist.psu.edu/program.html">International Symposium on Science of Science</a>. Washington, DC</div>,
-          title: <div className="bold">Assessing the Impact of Research Funding. w/Jason Portenoy. (March 22) <a href={Portenoy2016ScienceOfSciencePDF}>PDF</a></div>
+          title: <div className="bold">Assessing the Impact of Research Funding. w/Jason Portenoy. (March 22) <a href={public_URL + '/submissions/Portenoy2016ScienceOfScience.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://wsdmcupchallenge.azurewebsites.net/Home/Workshop" target="_blank">Static Ranking of Scholarly Papers using Article-Level Eignefactor (ALEF)</a>. San Francisco, CA</div>,
-          title: <div className="bold">WSDM Cup 2016 - Entity Ranking Challenge Workshop. <a href={wsdm_west_wesley_smithPDF}>PDF</a> (Feb. 22)</div>
+          title: <div className="bold">WSDM Cup 2016 - Entity Ranking Challenge Workshop. <a href={public_URL + '/submissions/wsdm_west_wesley-smith.pdf'} target="_blank">PDF</a> (Feb. 22)</div>
       },
     ],
     2014: [
@@ -2285,14 +2287,14 @@ const teachingData = Immutable.OrderedMap({
     },
     {
       course: 'INFO 370',
-      courselink: info370PDF,
+      courselink: public_URL + '/documents/INFO370.pdf',
       title: 'Introduction to Data Science (Fall 2016)',
     },
   ],
   priorcourses: [
     {
       course: 'INFX 575',
-      courselink: infx575PDF,
+      courselink: public_URL + '/documents/infx575.pdf',
       title: 'Data Scaling, Applications and Ethics (Spring 2016)',
     },
     {
@@ -2384,7 +2386,7 @@ const teachingData = Immutable.OrderedMap({
             <li>Undergraduate Data Science Option, eScience Education Working Group (2014 - present)</li>
             <li>Masters in Data Science, Profession &amp; Continuing Education (2015 - present</li>
             <li>Data Science Track, MSIM Program, Information School (2013 - present)</li>
-            <li><a href={JevinWest_Huckabay_ProposalPDF} target="_blank">Huckabay Fellowship</a>, Center for Instructional Development and Research (2006 - 2007)</li>
+            <li><a href={public_URL + '/papers/JevinWest_Huckabay_Proposal.pdf'} target="_blank">Huckabay Fellowship</a>, Center for Instructional Development and Research (2006 - 2007)</li>
             <li>Summer Teaching Institute, Seattle School District (Summer 2008)</li>
             <li>Howard Hughes RA for developing Experimental Evolutionary Ecology Lab (Summer 2006)</li>
           </ul>
@@ -2702,7 +2704,7 @@ const teachingData = Immutable.OrderedMap({
           </p>
           <p>
             <a href="http://depts.washington.edu/sotl/index.html" target="_blank">Scholarship of Teaching and Learning Symposium.</a> University of Washington, Seattle, WA <br/>
-            <span className="italics">The Missing Link</span> <a href={West2007EigenfactorPDF} target="_blank">PDF</a>(April 2007) <br/>
+            <span className="italics">The Missing Link</span> <a href={public_URL + '/submissions/West2007Eigenfactor.pdf'} target="_blank">PDF</a>(April 2007) <br/>
             J.D. West, K. Hall
           </p>
         </Col>
@@ -2744,7 +2746,7 @@ const cvData = Immutable.Map({
         </Col>
         <Col s={12}>
           <ul className="browser-default">
-            <li><a href={JevinWest_CVPDF} target="_blank">Full CV (PDF)</a></li>
+            <li><a href={public_URL + '/papers/JevinWest_CV.pdf'} target="_blank">Full CV (PDF)</a></li>
             <li>NSF Biosketch (PDF)</li>
           </ul>
         </Col>
@@ -3152,7 +3154,7 @@ const bioData = Immutable.Map({
         <Col s={12}>
           <p>I am an Assistant Professor in the <a target="_blank" href="https://ischool.uw.edu">Information School</a> at the <a target="_blank" href="http://www.washington.edu">University of Washington</a> (UW). I co-direct the <a target="_blank" href="https://datalab.ischool.uw.edu/">DataLab</a>, study the <Link to="Research.html">Science of Science</Link>, and coordinate Data Science education at UW and the <a target="_blank" href="http://escience.washington.edu">eScience Institute</a>.</p>
 
-          <p>I see information as a central unifying them in society, biology and our physical world. I spend much of my time developing methods for mapping large citation networks in order to understand the evolution of scholarly ideas; however, network thinking is useful for understanding the movement of <a target="_blank" href={Peak2004PNASPDF}>[1]</a> water molecules in stomatal networks, <a target="_blank" href={Prado2009JTBPDF}>[2]</a> infectious disease in human contact networks, and <a target="_blank" href={Rosvall2014NatureComPDF}>[3]</a> passengers in airline transportation networks. I co-founded several <Link to="/research#research_projects">research projects</Link> in the Science of Science including <a target="_blank" href="http://www.eigenfactor.org">Eigenfactor.org</a> and <a target="_blank" href="http://www.viziometrics.org">Viziometrics.org</a>.</p>
+          <p>I see information as a central unifying them in society, biology and our physical world. I spend much of my time developing methods for mapping large citation networks in order to understand the evolution of scholarly ideas; however, network thinking is useful for understanding the movement of <a target="_blank" href={public_URL + '/papers/Peak2004PNAS.pdf'}>[1]</a> water molecules in stomatal networks, <a target="_blank" href={public_URL + '/papers/Prado2009JTB.pdf'}>[2]</a> infectious disease in human contact networks, and <a target="_blank" href={public_URL + '/papers/Rosvall2014NatureCom.pdf'}>[3]</a> passengers in airline transportation networks. I co-founded several <Link to="/research#research_projects">research projects</Link> in the Science of Science including <a target="_blank" href="http://www.eigenfactor.org">Eigenfactor.org</a> and <a target="_blank" href="http://www.viziometrics.org">Viziometrics.org</a>.</p>
 
           <p>In my lifetime, I have seen the advent of the home computer, the internet, email, and google. This revolution in technology, though, has produced more than just convenient forms of communication.  The information age has delivered new data, new questions and new metaphors to a whole new generation of scientists. My vocabulary as a biologist includes words like code, compression and computation; my microscope consists of cellular automata, network models and genetic algorithms. This para-discipline of science - where economists talk like biologists and biologists talk like computer scientists - is where I think the some of the most interesting questions lie.</p>
 
@@ -3491,7 +3493,7 @@ const newsData = Immutable.Map({
 
           <div className="bottom-spacer">
             <div className="newsdate">05/15/09</div>
-            <div className="newslink">Journal of Biological Chemistry Cover May 9, 2009; 284(19) <a target="_blank" href={JBC_coverPDF}>[PDF]</a> <a target="_blank" href="http://www.jbc.org/content/vol284/issue19/">[HTML]</a></div>
+            <div className="newslink">Journal of Biological Chemistry Cover May 9, 2009; 284(19) <a target="_blank" href={public_URL + '/documents/JBC_cover.pdf'}>[PDF]</a> <a target="_blank" href="http://www.jbc.org/content/vol284/issue19/">[HTML]</a></div>
           </div>
 
           <div className="bottom-spacer">
@@ -3501,7 +3503,7 @@ const newsData = Immutable.Map({
 
           <div className="bottom-spacer">
             <div className="newsdate">04/08/09</div>
-            <div className="newslink">Science Magazine 324(5924): 162 - 163 <a target="_blank" href={Science2009EvoMapPDF}>[PDF]</a> <a target="_blank" href="http://www.sciencemag.org/cgi/content/full/sci;324/5924/162a?maxtoshow=&HITS=10&hits=10&RESULTFORMAT=&fulltext=darwin+applies+to+medical+school&searchid=1&FIRSTINDEX=0&resourcetype=HWCIT">[HTML]</a></div>
+            <div className="newslink">Science Magazine 324(5924): 162 - 163 <a target="_blank" href={public_URL + '/papers/Science2009EvoMap.pdf'}>[PDF]</a> <a target="_blank" href="http://www.sciencemag.org/cgi/content/full/sci;324/5924/162a?maxtoshow=&HITS=10&hits=10&RESULTFORMAT=&fulltext=darwin+applies+to+medical+school&searchid=1&FIRSTINDEX=0&resourcetype=HWCIT">[HTML]</a></div>
           </div>
 
           <div className="bottom-spacer">
@@ -3601,7 +3603,7 @@ const newsData = Immutable.Map({
 
           <div className="bottom-spacer">
             <div className="newsdate">02/21/04</div>
-            <div className="newslink">Science News, 165(8): 123-124 <a target="_blank" href={LeafComputation_ScienceNews2004PDF}>[PDF]</a> <a target="_blank" href="http://www.sciencenews.org/view/feature/id/4755/title/Computations_New_Leaf">[HTML]</a></div>
+            <div className="newslink">Science News, 165(8): 123-124 <a target="_blank" href={public_URL + '/documents/LeafComputation_ScienceNews2004.pdf'}>[PDF]</a> <a target="_blank" href="http://www.sciencenews.org/view/feature/id/4755/title/Computations_New_Leaf">[HTML]</a></div>
           </div>
 
           <div className="bottom-spacer">

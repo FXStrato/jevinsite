@@ -10,6 +10,7 @@ import {drawerLinks} from './Data';
 import JWBanner from './img/jw.png';
 import twitterIcon from './img/twitter.jpg';
 import drawerBanner from './img/favicon.png';
+import ScrollButton from './ScrollButton';
 
 /* This file handles generation of navigation. Any navigational changes will occur here, including footer */
 
@@ -152,14 +153,23 @@ class App extends Component {
         </header>
         <main>
           {this.props.children}
+          <ScrollButton/>
         </main>
         <footer className="center-align">
           <div className="footer-copyright">
             <div className="container">
-              <span className="footer-separator">© 2017 Jevin. D. West.</span>
-              <span className="footer-separator">Last Modified April 11th 2017.</span>
-              <span className="footer-separator"><a href="mailto:jevinw@uw.edu">jevinw@uw.edu</a></span>
-              <span className="footer-separator"><a href="https://twitter.com/jevinwest" target="_blank"><img src={twitterIcon} alt="twitter: @jevinwest" title="twitter: @jevinwest" className="responsive-img" style={{height: 20}}/></a></span>
+              <div className="hide-on-med-and-down">
+                <span className="footer-separator">© 2017 Jevin. D. West.</span>
+                <span className="footer-separator">Last Modified April 11th 2017.</span>
+                <span className="footer-separator"><a href="mailto:jevinw@uw.edu">jevinw@uw.edu</a></span>
+                <span className="footer-separator"><a href="https://twitter.com/jevinwest" target="_blank"><img src={twitterIcon} alt="twitter: @jevinwest" title="twitter: @jevinwest" className="responsive-img" style={{height: 20}}/></a></span>
+              </div>
+              <div className="hide-on-large-only">
+                <span className="footer-separator">© 2017 Jevin. D. West.</span> <br/>
+                <span className="footer-separator">Last Modified April 11th 2017.</span> <br/>
+                <span className="footer-separator"><a href="mailto:jevinw@uw.edu">jevinw@uw.edu</a></span>
+                <span className="footer-separator"><a href="https://twitter.com/jevinwest" target="_blank"><img src={twitterIcon} alt="twitter: @jevinwest" title="twitter: @jevinwest" className="responsive-img" style={{height: 20}}/></a></span>
+              </div>
             </div>
           </div>
         </footer>
