@@ -1604,7 +1604,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>L. Walls, I. Edwards, T. Ho <span className="bold">J.D. West</span>, Emma Spiro</div>,
-        pdf: public_URL + '/submissions/Walls2016Capstone.pdf',
+        pdf: public_URL + '/papers/Walls2016Capstone.pdf',
     },
     {
         title: "Coursector (2015)",
@@ -1618,7 +1618,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>C. Greene, M. Kelly, P. Pradhan, N. Sinha <span className="bold">J.D. West</span></div>,
-        pdf: public_URL + '/submissions/West2015Coursector_Capstone.pdf'
+        pdf: public_URL + '/papers/West2015Coursector_Capstone.pdf'
     },
     {
         title: "Using Visual Metaphor in Interactive Visualization to Improve Navigation of Complex Data Sets (2014)",
@@ -1632,7 +1632,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>R. Hong, Y. Kim, A. Hiniker, N. Chen, C. Aragon, <span className="bold">J.D. West</span></div>,
-        pdf: public_URL + '/submissions/Hong2014metaphor.pdf'
+        pdf: public_URL + '/papers/Hong2014metaphor.pdf'
     },
     {
         title: "Course Connect (2014)",
@@ -1646,7 +1646,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div> <span className="bold">J.D. West</span></div>,
-        pdf: public_URL + '/submissions/West2015Coursector_Capstone.pdf'
+        pdf: public_URL + '/papers/West2015Coursector_Capstone.pdf'
     },
     {
         title: "A Novel Method for Ranking the Quality of Cardiology Literature (2009)",
@@ -1660,7 +1660,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>B.M. Althouse, C.T. Bergstrom, <span className="bold">J.D. West</span></div>,
-        pdf: public_URL + '/submissions/Althouse2009Cardiology.pdf'
+        pdf: public_URL + '/papers/Althouse2009Cardiology.pdf'
     },
     {
         title: "Traversing Fitness Landscapes by Changing Environments (2009)",
@@ -1674,7 +1674,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div>J. Nahum, B.M. Althouse, <span className="bold">J.D. West</span>, C. Ofria, B. Kerr</div>,
-        pdf: public_URL + '/submissions/Nahum2009GordonConference.pdf'
+        pdf: public_URL + '/papers/Nahum2009GordonConference.pdf'
     },
     {
         title: "A Top-Down Approach to Discriminate Adaptive Landscape Topology (2007)",
@@ -1688,7 +1688,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, J. Nahum, C. Levy, B. Kerr</div>,
-        pdf: public_URL + '/submissions/West2007GordonConference.pdf'
+        pdf: public_URL + '/papers/West2007GordonConference.pdf'
     },
     {
         title: "Ranking and Mapping Scholarly Literature (2007)",
@@ -1702,7 +1702,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, M. Rosvall, B.M. Althouse, C.T. Bergstrom</div>,
-        pdf: public_URL + '/submissions/West2007Eigenfactor.pdf'
+        pdf: public_URL + '/papers/West2007Eigenfactor.pdf'
     },
     {
         title: "The Missing Link (2007)",
@@ -1716,7 +1716,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, K. Hall</div>,
-        pdf: public_URL + '/submissions/West2007Eigenfactor.pdf'
+        pdf: public_URL + '/papers/West2007Eigenfactor.pdf'
     },
     {
         title: "The evolution of a 'Tragedy of the Commons' in a Host-Pathogen Metapopulation (2006)",
@@ -1730,7 +1730,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, A. Dean, C. Neuhauser, B. Bohannan, B. Kerr</div>,
-        pdf: public_URL + '/submissions/West2006evowibo.pdf'
+        pdf: public_URL + '/papers/West2006evowibo.pdf'
     },
     {
         title: "Sophisticated Information Processing in Plants (2005)",
@@ -1744,7 +1744,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott</div>,
-        pdf: public_URL + '/submissions/West2005plantneurobiology.pdf'
+        pdf: public_URL + '/papers/West2005plantneurobiology.pdf'
     },
     {
         title: "Problem Solving Dynamics of Stomatal Networks (2004)",
@@ -1758,7 +1758,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, S.M. Mesinger, D. Peak, K.A. Mott</div>,
-        pdf: public_URL + '/submissions/West2005plantneurobiology.pdf'
+        pdf: public_URL + '/papers/West2005plantneurobiology.pdf'
     },
     {
         title: "Stomatal Networks and Cellular Computation (2004)",
@@ -1772,7 +1772,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott, S.M. Messinger</div>,
-        pdf: public_URL + '/submissions/West2004StomatalNetworks.pdf'
+        pdf: public_URL + '/papers/West2004StomatalNetworks.pdf'
     },
     {
         title: "The Game of Leaf: Evidence that Stomatal Networks are Cellular Computers (2003)",
@@ -1786,7 +1786,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, S.M. Messinger, D. Peak, K.A. Mott</div>,
-        pdf: public_URL + '/submissions/West2003PlantComputation.pdf'
+        pdf: public_URL + '/papers/West2003PlantComputation.pdf'
     },
     {
         title: "Can Stomata Respond as a Reaction Diffusion Model? (2001)",
@@ -1800,7 +1800,7 @@ const publicationsData = Immutable.Map({
         html: "",
         bibTex: '',
         authors: <div><span className="bold">J.D. West</span>, D. Peak, K.A. Mott</div>,
-        pdf: public_URL + '/submissions/West2003PlantComputation.pdf'
+        pdf: public_URL + '/papers/West2003PlantComputation.pdf'
     },
   ],
   workshops: [
@@ -1863,7 +1863,7 @@ const presentationData = Immutable.OrderedMap({
     2016: [
       {
           location: <div><a href="https://depts.washington.edu/womengs/wordpress/" target="_blank">NSF Workshop: Can Network Measures Serve as Indicators of Knowledge Creation and Flow?</a> George Washington University, Washington, D.C.</div>,
-          title: <div className="bold">Visualizing Knowledge Flows (Nov. 7) <a href={public_URL + '/submissions/West2016nsf.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Visualizing Knowledge Flows (Nov. 7) <a href={public_URL + '/papers/West2016nsf.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://depts.washington.edu/womengs/wordpress/" target="_blank">Women in Genome Sciences.</a> University of Washington, Seattle, WA</div>,
@@ -1871,47 +1871,47 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="https://library.osu.edu/projects-initiatives/knowledge-bank/open-access-publishing/osu-journal-editors-group/" target="_blank">Ohio State University Libraries Public Lecture.</a> Columbus, OH</div>,
-          title: <div className="bold">Diversity and Gender in Scholarly Publishing (Nov. 3) <a href={public_URL + '/submissions/West2016OhioState.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Diversity and Gender in Scholarly Publishing (Nov. 3) <a href={public_URL + '/papers/West2016OhioState.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://www.fredhutch.org/en/labs/basic-sciences.html" target="_blank">Fred Hutchinson Cancer Research Center Annual Retreat.</a> Grand Hyatt, Seattle, WA</div>,
-          title: <div className="bold">[Plenary] The Science of Science (Sept. 12) <a href={public_URL + '/submissions/West2016FredHutch.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">[Plenary] The Science of Science (Sept. 12) <a href={public_URL + '/papers/West2016FredHutch.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Data Science Conference</a>. National Library, Beijing, China</div>,
-          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (June 20) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (June 20) <a href={public_URL + '/papers/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Wuhan University</a>. Shanghai, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 17) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 17) <a href={public_URL + '/papers/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Tsinghua University</a>. Beijing, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 16) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 16) <a href={public_URL + '/papers/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Lab, Shangai Jao University</a>. Shanghai, China</div>,
-          title: <div className="bold">Measuring and Messaging Research Outcomes (June 15) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Measuring and Messaging Research Outcomes (June 15) <a href={public_URL + '/papers/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://www.healthra.org" target="_blank">Health Research Alliance Annual Meeting</a>. New York, NY</div>,
-          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (April 1) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">[Plenary] Measuring and Messaging Research Outcomes (April 1) <a href={public_URL + '/papers/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://learn.heart.org/activity/4323627/detail.aspx" target="_blank">American Heart Association Research Leaders Academy</a>. San Antonio, TX</div>,
-          title: <div className="bold">Mapping the AHA Community (July 26) <a href={public_URL + '/submissions/West2016HRA.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Mapping the AHA Community (July 26) <a href={public_URL + '/papers/West2016HRA.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://www2.yukawa.kyoto-u.ac.jp/~future/IS20160212/index.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
-          title: <div className="bold">[Plenary] Mapping the Emergence of Scientific Disciplines <a href={public_URL + '/submissions/mapping_science_kyoto_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 12)</div>
+          title: <div className="bold">[Plenary] Mapping the Emergence of Scientific Disciplines <a href={public_URL + '/papers/mapping_science_kyoto_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 12)</div>
       },
       {
           location: <div><a href="http://www.gsee-kyoto.kier.kyoto-u.ac.jp/GSEEKyoto2016_Program.html" target="_blank">International Symposium on Advanced Future Studies</a>. Kyoto University, Japan</div>,
-          title: <div className="bold">The Data Gold Rush in Science Education <a href={public_URL + '/submissions/data_gold_rush_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 11)</div>
+          title: <div className="bold">The Data Gold Rush in Science Education <a href={public_URL + '/papers/data_gold_rush_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 11)</div>
       },
       {
           location: <div><a href="http://allenai.org" target="_blank">Allen Institute for Artificial Intelligence</a>. Seattle, WA</div>,
-          title: <div className="bold">Facilitating discovery with zoomable maps <a href={public_URL + '/submissions/AI2_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 4)</div>
+          title: <div className="bold">Facilitating discovery with zoomable maps <a href={public_URL + '/papers/AI2_jevin_west.pdf'} target="_blank">PDF</a> (Feb. 4)</div>
       },
     ],
     2015: [
@@ -1925,11 +1925,11 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="http://machinelearning.duke.edu/education/seminar-series" target="_blank">Social-Personality Psychology Seminar</a>. University of Washington</div>,
-          title: <div className="bold">Gender Differences in Scholarly Self Citation <a href={public_URL + '/submissions/West2015UW_psychology.pdf'} target="_blank">PDF</a> (Oct. 22)</div>
+          title: <div className="bold">Gender Differences in Scholarly Self Citation <a href={public_URL + '/papers/West2015UW_psychology.pdf'} target="_blank">PDF</a> (Oct. 22)</div>
       },
       {
           location: <div><a href="http://escience.washington.edu/data-science-environment-summit-2015/" target="_blank">Moore-Sloan Data Science Environment Summit</a>. Cle Elem, WA</div>,
-          title: <div className="bold">Plenary. Loosing sleep in a data-driven dream <a href={public_URL + '/submissions/DSE-2_jevin_west.pdf'} target="_blank">PDF</a> (Oct. 5)</div>
+          title: <div className="bold">Plenary. Loosing sleep in a data-driven dream <a href={public_URL + '/papers/DSE-2_jevin_west.pdf'} target="_blank">PDF</a> (Oct. 5)</div>
       },
       {
           location: <div>SKKU Library &amp; Information Science <a href="http://cihe.skku.edu/en/feature/ischool03.do">Distinguished Lecture Series</a>. Sungkyunkwan Univ., South Korea</div>,
@@ -1937,7 +1937,7 @@ const presentationData = Immutable.OrderedMap({
       },
       {
           location: <div><a href="http://www.santafe.edu/gevent/?start=2015-03-01" target="_blank">Santa Fe Institute Speaker Series</a>. Santa Fe Institute, NM</div>,
-          title: <div className="bold">The Jargon Barriers of Science <a href={public_URL + '/submissions/SFI_jevin_west.pdf'} target="_blank">PDF</a> (March 17)</div>
+          title: <div className="bold">The Jargon Barriers of Science <a href={public_URL + '/papers/SFI_jevin_west.pdf'} target="_blank">PDF</a> (March 17)</div>
       },
     ],
     2014: [
@@ -2211,27 +2211,27 @@ const presentationData = Immutable.OrderedMap({
     2016: [
       {
           location: <div><a href="http://www.siam.org/meetings/an16/">Society for Industrial and Applied Mathematics.</a> Boston, MA.</div>,
-          title: <div className="bold">Mapping Knowledge Networks. (July 12) <a href={public_URL + '/submissions/West2016siam.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Mapping Knowledge Networks. (July 12) <a href={public_URL + '/papers/West2016siam.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://msclab.org/bigscholar/2016/">WWW Workshop on Big Scholarly Data</a>. Montreal, Canada.</div>,
-          title: <div className="bold">Babel: Platform for Scholarly Recommendation. (April 12) <a href={public_URL + '/submissions/West2016wwwbigscholar.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Babel: Platform for Scholarly Recommendation. (April 12) <a href={public_URL + '/papers/West2016wwwbigscholar.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://cs.unibo.it/save-sd/2016/program.html">WWW Workshop on Semantics, Analytics, Visualisation.</a> Montreal, Canada</div>,
-          title: <div className="bold">Visualizing Scholarly Influence. (April 11) <a href={public_URL + '/submissions/West2016wwwsemantics.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Visualizing Scholarly Influence. (April 11) <a href={public_URL + '/papers/West2016wwwsemantics.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://icss.ist.psu.edu/program.html">International Symposium on Science of Science</a>. Washington, DC</div>,
-          title: <div className="bold">Science of Science? (March 22) <a href={public_URL + '/submissions/West2016ScienceOfScience.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Science of Science? (March 22) <a href={public_URL + '/papers/West2016ScienceOfScience.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="http://icss.ist.psu.edu/program.html">International Symposium on Science of Science</a>. Washington, DC</div>,
-          title: <div className="bold">Assessing the Impact of Research Funding. w/Jason Portenoy. (March 22) <a href={public_URL + '/submissions/Portenoy2016ScienceOfScience.pdf'} target="_blank">PDF</a></div>
+          title: <div className="bold">Assessing the Impact of Research Funding. w/Jason Portenoy. (March 22) <a href={public_URL + '/papers/Portenoy2016ScienceOfScience.pdf'} target="_blank">PDF</a></div>
       },
       {
           location: <div><a href="https://wsdmcupchallenge.azurewebsites.net/Home/Workshop" target="_blank">Static Ranking of Scholarly Papers using Article-Level Eignefactor (ALEF)</a>. San Francisco, CA</div>,
-          title: <div className="bold">WSDM Cup 2016 - Entity Ranking Challenge Workshop. <a href={public_URL + '/submissions/wsdm_west_wesley-smith.pdf'} target="_blank">PDF</a> (Feb. 22)</div>
+          title: <div className="bold">WSDM Cup 2016 - Entity Ranking Challenge Workshop. <a href={public_URL + '/papers/wsdm_west_wesley-smith.pdf'} target="_blank">PDF</a> (Feb. 22)</div>
       },
     ],
     2014: [
@@ -2704,7 +2704,7 @@ const teachingData = Immutable.OrderedMap({
           </p>
           <p>
             <a href="http://depts.washington.edu/sotl/index.html" target="_blank">Scholarship of Teaching and Learning Symposium.</a> University of Washington, Seattle, WA <br/>
-            <span className="italics">The Missing Link</span> <a href={public_URL + '/submissions/West2007Eigenfactor.pdf'} target="_blank">PDF</a>(April 2007) <br/>
+            <span className="italics">The Missing Link</span> <a href={public_URL + '/papers/West2007Eigenfactor.pdf'} target="_blank">PDF</a>(April 2007) <br/>
             J.D. West, K. Hall
           </p>
         </Col>

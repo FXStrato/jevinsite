@@ -21,10 +21,12 @@ class App extends Component {
   }
 
   componentWillMount = () => {
-  let path = browserHistory.getCurrentLocation().pathname;
-  if(path.indexOf('.html') !== -1) browserHistory.push(path.replace('.html', ''));
-  let currentTab = path.split('/').pop().replace('.html', '');
-  this.setState({ activeTab: currentTab || 'home' });
+    let path = browserHistory.getCurrentLocation().pathname;
+    if(path.indexOf('.html') !== -1) browserHistory.push(path.replace('.html', ''));
+    else {
+      let currentTab = path.split('/').pop();
+      this.setState({ activeTab: currentTab || 'home' });
+    }
   }
 
   componentDidUpdate = () => {
